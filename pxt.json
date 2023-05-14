@@ -7,7 +7,8 @@
     "files": [
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "jsbi.ts"
     ],
     "testFiles": [
         "test.ts"
