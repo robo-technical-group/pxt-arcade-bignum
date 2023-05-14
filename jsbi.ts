@@ -11,9 +11,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-interface bigdiv {
-    quotient: JSBI.bigint
-    remainder: JSBI.bigint
+interface BigDiv {
+    quotient: JSBI.BigInt
+    remainder: JSBI.BigInt
 }
 
 namespace JSBI {
@@ -41,7 +41,7 @@ namespace JSBI {
     // const kConversionChars: string[] = '0123456789abcdefghijklmnopqrstuvwxyz'.split('')
     let kBitConversionBuffer: Buffer = Buffer.create(8)
 
-    export class bigint {
+    export class BigInt {
         protected data: number[]
 
         public constructor(length: number, public sign: boolean) {
@@ -56,7 +56,7 @@ namespace JSBI {
         }
 
         public toDebugString(): string {
-            const result = ['BigInt['];
+            const result = ['CreateBigInt['];
             for (const digit of this.data) {
                 result.push((digit ? (digit >>> 0).toString() : digit) + ', ');
             }
@@ -76,8 +76,8 @@ namespace JSBI {
             return clz30(this.__digit(this.data.length - 1))
         }
 
-        public __copy(): bigint {
-            const result = new bigint(this.length, this.sign)
+        public __copy(): BigInt {
+            const result = new BigInt(this.length, this.sign)
             for (let i = 0; i < this.length; i++) {
                 result.data[i] = this.data[i]
             }
@@ -105,7 +105,7 @@ namespace JSBI {
         }
 
         // TODO: work on full digits, like __inplaceSub?
-        public __inplaceAdd(summand: bigint, startIndex: number, halfDigits: number): number {
+        public __inplaceAdd(summand: BigInt, startIndex: number, halfDigits: number): number {
             let carry: number = 0;
             for (let i = 0; i < halfDigits; i++) {
                 const sum: number = this.__halfDigit(startIndex + i) +
@@ -129,7 +129,7 @@ namespace JSBI {
             this.__setDigit(last, carry)
         }
 
-        public __inplaceSub(subtrahend: bigint, startIndex: number, halfDigits: number): number {
+        public __inplaceSub(subtrahend: BigInt, startIndex: number, halfDigits: number): number {
             const fullSteps: number = (halfDigits - 1) >>> 1
             let borrow: number = 0
             if (startIndex & 1) {
@@ -219,7 +219,7 @@ namespace JSBI {
         }
     }
 
-    export function BigInt(arg: number | string | boolean | object): bigint {
+    export function CreateBigInt(arg: number | string | boolean | object): BigInt {
         if (typeof arg === 'number') {
             if (arg === 0) {
                 return zero()
@@ -232,32 +232,32 @@ namespace JSBI {
             }
             if (Number.isNaN(arg) || Math.floor(arg) !== arg) {
                 throw 'The number ' + arg + ' cannot be converted to ' +
-                'BigInt because it is not an integer'
+                'CreateBigInt because it is not an integer'
             }
             return fromDouble(arg)
         }
 
-        throw 'Cannot convert ' + arg + ' to bigint.'
+        throw 'Cannot convert ' + arg + ' to BigInt.'
     }
 
-    function absoluteDivLarge(dividend: bigint, divisor: bigint,
-        wantQuotient: boolean, wantRemainder: boolean): bigdiv | bigint | undefined {
+    function absoluteDivLarge(dividend: BigInt, divisor: BigInt,
+        wantQuotient: boolean, wantRemainder: boolean): BigDiv | BigInt | undefined {
         const n: number = divisor.__halfDigitLength()
         const n2: number = divisor.length
         const m: number = dividend.__halfDigitLength() - n
-        let q: bigint = null
+        let q: BigInt = null
         if (wantQuotient) {
-            q = new bigint((m + 2) >>> 1, false)
+            q = new BigInt((m + 2) >>> 1, false)
             q.__initializeDigits()
         }
-        const qhatv: bigint = new bigint((n + 2) >>> 1, false)
+        const qhatv: BigInt = new BigInt((n + 2) >>> 1, false)
         qhatv.__initializeDigits()
         // D1.
         const shift: number = clz15(divisor.__halfDigit(n - 1))
         if (shift > 0) {
             divisor = specialLeftShift(divisor, shift, 0 /* add no digits*/)
         }
-        const u: bigint = specialLeftShift(dividend, shift, 1 /* add one digit */)
+        const u: BigInt = specialLeftShift(dividend, shift, 1 /* add one digit */)
         // D2.
         const vn1: number = divisor.__halfDigit(n - 1)
         let halfDigitBuffer: number = 0
@@ -290,18 +290,18 @@ namespace JSBI {
                     halfDigitBuffer = qhat << 15
                 } else {
                     // TODO make this statically determinable
-                    (q as bigint).__setDigit(j >>> 1, halfDigitBuffer | qhat)
+                    (q as BigInt).__setDigit(j >>> 1, halfDigitBuffer | qhat)
                 }
             }
         }
         if (wantRemainder) {
             u.__inplaceRightShift(shift)
             if (wantQuotient) {
-                return { quotient: (q as bigint), remainder: u }
+                return { quotient: (q as BigInt), remainder: u }
             }
             return u
         }
-        if (wantQuotient) return (q as bigint)
+        if (wantQuotient) return (q as BigInt)
         // TODO find a way to make this statically unreachable?
         throw 'unreachable'
     }
@@ -315,7 +315,7 @@ namespace JSBI {
         return 29 - (Math.log(x >>> 0) / Math.LN2 | 0) | 0
     }
 
-    export function exponentiate(x: bigint, y: bigint): bigint {
+    export function exponentiate(x: BigInt, y: BigInt): BigInt {
         if (y.sign) {
             throw 'Exponent must be positive'
         }
@@ -333,25 +333,25 @@ namespace JSBI {
         }
         // For all bases >= 2, very large exponents would lead to unrepresentable
         // results.
-        if (y.length > 1) throw 'BigInt too big'
+        if (y.length > 1) throw 'CreateBigInt too big'
         let expValue: number = y.__unsignedDigit(0)
         if (expValue === 1) return x
         if (expValue >= kMaxLengthBits) {
-            throw 'BigInt too big'
+            throw 'CreateBigInt too big'
         }
         if (x.length === 1 && x.__digit(0) === 2) {
             // Fast path for 2^n.
             const neededDigits: number = 1 + ((expValue / 30) | 0)
             const sign: boolean = x.sign && ((expValue & 1) !== 0)
-            const result: bigint = new bigint(neededDigits, sign)
+            const result: BigInt = new BigInt(neededDigits, sign)
             result.__initializeDigits()
             // All bits are zero. Now set the n-th bit.
             const msd: number = 1 << (expValue % 30)
             result.__setDigit(neededDigits - 1, msd)
             return result
         }
-        let result: bigint = null
-        let runningSquare: bigint = x
+        let result: BigInt = null
+        let runningSquare: BigInt = x
         // This implicitly sets the result's sign correctly.
         if ((expValue & 1) !== 0) result = x
         expValue >>= 1
@@ -366,10 +366,10 @@ namespace JSBI {
             }
         }
         // TODO see if there's a way for tsc to infer this will always happen?
-        return result as bigint
+        return result as BigInt
     }
 
-    function fromDouble(value: number): bigint {
+    function fromDouble(value: number): BigInt {
         const sign = value < 0
         // __kBitConversionDouble[0] = value;
         kBitConversionBuffer.setNumber(NumberFormat.Float64LE, 0, value)
@@ -378,7 +378,7 @@ namespace JSBI {
             Buffer.sizeOfNumberFormat(NumberFormat.Int32LE)) >>> 20) & 0x7FF
         const exponent: number = rawExponent - 0x3FF
         const digits: number = ((exponent / 30) | 0) + 1
-        const result: bigint = new bigint(digits, sign)
+        const result: BigInt = new BigInt(digits, sign)
         const kHiddenBit: number = 0x00100000
         // let mantissaHigh = (JSBI.__kBitConversionInts[1] & 0xFFFFF) | kHiddenBit;
         let mantissaHigh: number = (kBitConversionBuffer.getNumber(NumberFormat.Int32LE,
@@ -428,8 +428,8 @@ namespace JSBI {
         return result.__trim()
     }
 
-    function internalMultiplyAdd(source: bigint, factor: number, summand: number,
-        n: number, result: bigint): void {
+    function internalMultiplyAdd(source: BigInt, factor: number, summand: number,
+        n: number, result: BigInt): void {
         let carry: number = summand
         let high: number = 0
         for (let i = 0; i < n; i++) {
@@ -455,14 +455,14 @@ namespace JSBI {
         return (x & 0x3FFFFFFF) === x
     }
 
-    export function multiply(x: bigint, y: bigint): bigint {
+    export function multiply(x: BigInt, y: BigInt): BigInt {
         if (x.length === 0) return x
         if (y.length === 0) return y
         let resultLength: number = x.length + y.length
         if (x.__clzmsd() + y.__clzmsd() >= 30) {
             resultLength--
         }
-        const result: bigint = new bigint(resultLength, x.sign !== y.sign)
+        const result: BigInt = new BigInt(resultLength, x.sign !== y.sign)
         result.__initializeDigits();
         for (let i = 0; i < x.length; i++) {
             multiplyAccumulate(y, x.__digit(i), result, i)
@@ -470,8 +470,8 @@ namespace JSBI {
         return result.__trim()
     }
 
-    function multiplyAccumulate(multiplicand: bigint, multiplier: number,
-        accumulator: bigint, accumulatorIndex: number): void {
+    function multiplyAccumulate(multiplicand: BigInt, multiplier: number,
+        accumulator: BigInt, accumulatorIndex: number): void {
         if (multiplier === 0) return
         const m2Low: number = multiplier & 0x7FFF
         const m2High: number = multiplier >>> 15
@@ -503,16 +503,16 @@ namespace JSBI {
         }
     }
 
-    function oneDigit(value: number, sign: boolean): bigint {
-        const result = new bigint(1, sign)
+    function oneDigit(value: number, sign: boolean): BigInt {
+        const result = new BigInt(1, sign)
         result.__setDigit(0, value)
         return result
     }
 
-    function specialLeftShift(x: bigint, shift: number, addDigit: 0 | 1): bigint {
+    function specialLeftShift(x: BigInt, shift: number, addDigit: 0 | 1): BigInt {
         const n: number = x.length
         const resultLength: number = n + addDigit
-        const result: bigint = new bigint(resultLength, false)
+        const result: BigInt = new BigInt(resultLength, false)
         if (shift === 0) {
             for (let i: number = 0; i < n; i++) result.__setDigit(i, x.__digit(i))
             if (addDigit > 0) result.__setDigit(n, 0)
@@ -531,7 +531,7 @@ namespace JSBI {
     }
 
 
-    function stringify(x: bigint, isRecursiveCall: boolean): string {
+    function stringify(x: BigInt, isRecursiveCall: boolean): string {
         // Simplified implementation; always using radix 10.
         const length: number = x.length
         if (length === 0) return ''
@@ -551,12 +551,12 @@ namespace JSBI {
         const secondHalfChars: number = (charsRequired + 1) >> 1
         // Divide-and-conquer: split by a power of {radix = 10} that's approximately
         // the square root of {x}, then recurse.
-        const conqueror: bigint = exponentiate(oneDigit(10, false), oneDigit(secondHalfChars, false))
-        let quotient: bigint
+        const conqueror: BigInt = exponentiate(oneDigit(10, false), oneDigit(secondHalfChars, false))
+        let quotient: BigInt
         let secondHalf: string
         const divisor: number = conqueror.__unsignedDigit(0)
         if (conqueror.length === 1 && divisor <= 0x7FFF) {
-            quotient = new bigint(x.length, false)
+            quotient = new BigInt(x.length, false)
             quotient.__initializeDigits()
             let remainder: number = 0
             for (let i = x.length * 2 - 1; i >= 0; i--) {
@@ -566,9 +566,9 @@ namespace JSBI {
             }
             secondHalf = remainder.toString()
         } else {
-            const divisionResult: bigdiv = <bigdiv>absoluteDivLarge(x, conqueror, true, true)
+            const divisionResult: BigDiv = <BigDiv>absoluteDivLarge(x, conqueror, true, true)
             quotient = divisionResult.quotient
-            const remainder: bigint = divisionResult.remainder.__trim()
+            const remainder: BigInt = divisionResult.remainder.__trim()
             secondHalf = stringify(remainder, true)
         }
         quotient.__trim()
@@ -582,14 +582,14 @@ namespace JSBI {
         return firstHalf + secondHalf
     }
 
-    export function unaryMinus(x: bigint): bigint {
+    export function unaryMinus(x: BigInt): BigInt {
         if (x.length === 0) return x
         const result = x.__copy()
         result.sign = !x.sign
         return result
     }
 
-    function zero(): bigint {
-        return new bigint(0, false)
+    function zero(): BigInt {
+        return new BigInt(0, false)
     }
 }
