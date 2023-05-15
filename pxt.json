@@ -1,6 +1,6 @@
 {
     "name": "pxt-arcade-bigint",
-    "version": "0.2.6",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "device": "*"

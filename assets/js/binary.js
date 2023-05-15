@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.30/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.2.6","target":"arcade","targetVersion":"1.12.30","repo":"robo-technical-group/pxt-arcade-bigint"}
-// total=1700931 new=21.89% cached=73.24% other=4.88%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.30/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.0","target":"arcade","targetVersion":"1.12.30","repo":"robo-technical-group/pxt-arcade-bigint"}
+// total=1714078 new=22.48% cached=72.68% other=4.84%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -488,7 +488,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P1032749(s) {
+function _main___P1068428(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -498,37 +498,29 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.i___983771 = undefined;
-    s.verify___983799 = undefined;
-    s.compare___983803 = undefined;
-    s.test___983848 = undefined;
-    s.unnamed10846___U4 = undefined;
-    s.unnamed10847___U5 = undefined;
-    s.a___983850 = undefined;
-    s.b___983856 = undefined;
-    s.expected___983862 = undefined;
-    s.result___983868 = undefined;
-    s.compare___983898 = undefined;
-    s.v___983945 = undefined;
-    s.unnamed10848___U12 = undefined;
-    s.unnamed10849___U13 = undefined;
-    s.result___983947 = undefined;
-    s.i___983975 = undefined;
-    s.unnamed10850___U16 = undefined;
-    s.unnamed10851___U17 = undefined;
-    s.result___983978 = undefined;
-    s.exception___983991 = undefined;
-    s.ct___984090 = undefined;
-    s.unnamed10852___U21 = undefined;
-    s.unnamed10853___U22 = undefined;
-    s.a___984092 = undefined;
-    s.b___984098 = undefined;
-    s.compare___984104 = undefined;
-    s.ct___984241 = undefined;
-    s.unnamed10854___U27 = undefined;
-    s.unnamed10855___U28 = undefined;
-    s.a___984243 = undefined;
-    s.compare___984248 = undefined;
+    s.i___1062968 = undefined;
+    s.verify___1062996 = undefined;
+    s.compare___1063000 = undefined;
+    s.v___1063216 = undefined;
+    s.unnamed11664___U4 = undefined;
+    s.unnamed11665___U5 = undefined;
+    s.result___1063218 = undefined;
+    s.i___1063246 = undefined;
+    s.unnamed11666___U8 = undefined;
+    s.unnamed11667___U9 = undefined;
+    s.result___1063249 = undefined;
+    s.exception___1063262 = undefined;
+    s.ct___1063361 = undefined;
+    s.unnamed11668___U13 = undefined;
+    s.unnamed11669___U14 = undefined;
+    s.a___1063363 = undefined;
+    s.b___1063369 = undefined;
+    s.compare___1063375 = undefined;
+    s.ct___1063512 = undefined;
+    s.unnamed11670___U19 = undefined;
+    s.unnamed11671___U20 = undefined;
+    s.a___1063514 = undefined;
+    s.compare___1063519 = undefined;
     globals._intervals___611820 = (undefined);
     globals._pollEventQueue___611829 = (undefined);
     globals.minPriority___607757 = (1);
@@ -543,8 +535,8 @@ switch (step) {
     s.tmp_1 = music_Melody_constructor__P609011_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = "~15 e3:3 r:1 d#:3 r:1 d:4 r:1 c#:8";
-    s.callLocIdx = 0; s.pc = 96; return s.tmp_1;
-  case 96:
+    s.callLocIdx = 0; s.pc = 77; return s.tmp_1;
+  case 77:
     r0 = s.retval;
     globals.wawawawaa___609029 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(music_Melody__C609008_VT);
@@ -552,8 +544,8 @@ switch (step) {
     s.tmp_1 = music_Melody_constructor__P609011_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = "g4:1 c5 e g:2 e:1 g:3";
-    s.callLocIdx = 1; s.pc = 97; return s.tmp_1;
-  case 97:
+    s.callLocIdx = 1; s.pc = 78; return s.tmp_1;
+  case 78:
     r0 = s.retval;
     globals.powerUp___609032 = (s.tmp_0);
     globals.brightness___609333 = (100);
@@ -586,15 +578,15 @@ switch (step) {
     globals.screen___609414 = (r0);
     s.tmp_0 = control___screen_setupUpdate__P609376_mk(s);
     s.tmp_0.arg0 = _screen_internal_inline__P612023;
-    s.callLocIdx = 6; s.pc = 98; return s.tmp_0;
-  case 98:
+    s.callLocIdx = 6; s.pc = 79; return s.tmp_0;
+  case 79:
     r0 = s.retval;
     globals.control_EventContext_onStats___607780 = (_screen_internal_inline__P612028);
     globals.RUN_KEY___612033 = ("#run");
     globals.SCOPE_KEY___612034 = ("#scope");
     s.tmp_0 = settings_initScopes__P612045_mk(s);
-    s.callLocIdx = 7; s.pc = 99; return s.tmp_0;
-  case 99:
+    s.callLocIdx = 7; s.pc = 80; return s.tmp_0;
+  case 80:
     r0 = s.retval;
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
     s.tmp_0 = r0;
@@ -602,8 +594,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 5;
     s.tmp_1.arg2 = 4;
-    s.callLocIdx = 8; s.pc = 100; return s.tmp_1;
-  case 100:
+    s.callLocIdx = 8; s.pc = 81; return s.tmp_1;
+  case 81:
     r0 = s.retval;
     globals.A___609495 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
@@ -612,8 +604,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 6;
     s.tmp_1.arg2 = 5;
-    s.callLocIdx = 9; s.pc = 101; return s.tmp_1;
-  case 101:
+    s.callLocIdx = 9; s.pc = 82; return s.tmp_1;
+  case 82:
     r0 = s.retval;
     globals.B___609496 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
@@ -622,8 +614,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 1;
     s.tmp_1.arg2 = 47;
-    s.callLocIdx = 10; s.pc = 102; return s.tmp_1;
-  case 102:
+    s.callLocIdx = 10; s.pc = 83; return s.tmp_1;
+  case 83:
     r0 = s.retval;
     globals.left___609497 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
@@ -632,8 +624,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 2;
     s.tmp_1.arg2 = 49;
-    s.callLocIdx = 11; s.pc = 103; return s.tmp_1;
-  case 103:
+    s.callLocIdx = 11; s.pc = 84; return s.tmp_1;
+  case 84:
     r0 = s.retval;
     globals.up___609498 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
@@ -642,8 +634,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 3;
     s.tmp_1.arg2 = 48;
-    s.callLocIdx = 12; s.pc = 104; return s.tmp_1;
-  case 104:
+    s.callLocIdx = 12; s.pc = 85; return s.tmp_1;
+  case 85:
     r0 = s.retval;
     globals.right___609499 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
@@ -652,8 +644,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 4;
     s.tmp_1.arg2 = 50;
-    s.callLocIdx = 13; s.pc = 105; return s.tmp_1;
-  case 105:
+    s.callLocIdx = 13; s.pc = 86; return s.tmp_1;
+  case 86:
     r0 = s.retval;
     globals.down___609500 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Button__C609571_VT);
@@ -662,8 +654,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 7;
     s.tmp_1.arg2 = 51;
-    s.callLocIdx = 14; s.pc = 106; return s.tmp_1;
-  case 106:
+    s.callLocIdx = 14; s.pc = 87; return s.tmp_1;
+  case 87:
     r0 = s.retval;
     globals.menu___609501 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Controller__C609516_VT);
@@ -672,8 +664,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 2;
     s.tmp_1.arg2 = undefined;
-    s.callLocIdx = 15; s.pc = 107; return s.tmp_1;
-  case 107:
+    s.callLocIdx = 15; s.pc = 88; return s.tmp_1;
+  case 88:
     r0 = s.retval;
     globals.player2___609502 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Controller__C609516_VT);
@@ -682,8 +674,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 3;
     s.tmp_1.arg2 = undefined;
-    s.callLocIdx = 16; s.pc = 108; return s.tmp_1;
-  case 108:
+    s.callLocIdx = 16; s.pc = 89; return s.tmp_1;
+  case 89:
     r0 = s.retval;
     globals.player3___609503 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(controller_Controller__C609516_VT);
@@ -692,24 +684,24 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 4;
     s.tmp_1.arg2 = undefined;
-    s.callLocIdx = 17; s.pc = 109; return s.tmp_1;
-  case 109:
+    s.callLocIdx = 17; s.pc = 90; return s.tmp_1;
+  case 90:
     r0 = s.retval;
     globals.player4___609504 = (s.tmp_0);
     s.tmp_0 = controller__player1__P609510_mk(s);
-    s.callLocIdx = 18; s.pc = 110; return s.tmp_0;
-  case 110:
+    s.callLocIdx = 18; s.pc = 91; return s.tmp_0;
+  case 91:
     r0 = s.retval;
     globals.player1___609505 = (r0);
     s.tmp_0 = game_addScenePopHandler__P610401_mk(s);
     s.tmp_0.arg0 = controller_inline__P612073;
-    s.callLocIdx = 23; s.pc = 111; return s.tmp_0;
-  case 111:
+    s.callLocIdx = 23; s.pc = 92; return s.tmp_0;
+  case 92:
     r0 = s.retval;
     s.tmp_0 = game_addScenePushHandler__P610399_mk(s);
     s.tmp_0.arg0 = controller_inline__P612113;
-    s.callLocIdx = 25; s.pc = 112; return s.tmp_0;
-  case 112:
+    s.callLocIdx = 25; s.pc = 93; return s.tmp_0;
+  case 93:
     r0 = s.retval;
     r0 = pxsim_pxtcore_mkClassInstance(controller_AnyButton__C612137_VT);
     s.tmp_0 = r0;
@@ -717,26 +709,26 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 0;
     s.tmp_1.arg2 = -1;
-    s.callLocIdx = 26; s.pc = 113; return s.tmp_1;
-  case 113:
+    s.callLocIdx = 26; s.pc = 94; return s.tmp_1;
+  case 94:
     r0 = s.retval;
     globals.anyButton___609552 = (s.tmp_0);
     globals._userEventsEnabled___612151 = (true);
     globals.defaultRepeatDelay___612153 = (500);
     globals.defaultRepeatInterval___612155 = (30);
     s.tmp_0 = SpriteKind_create__P609860_mk(s);
-    s.callLocIdx = 27; s.pc = 114; return s.tmp_0;
-  case 114:
+    s.callLocIdx = 27; s.pc = 95; return s.tmp_0;
+  case 95:
     r0 = s.retval;
     globals.Player___609861 = (r0);
     s.tmp_0 = SpriteKind_create__P609860_mk(s);
-    s.callLocIdx = 28; s.pc = 115; return s.tmp_0;
-  case 115:
+    s.callLocIdx = 28; s.pc = 96; return s.tmp_0;
+  case 96:
     r0 = s.retval;
     globals.Food___609863 = (r0);
     s.tmp_0 = SpriteKind_create__P609860_mk(s);
-    s.callLocIdx = 29; s.pc = 116; return s.tmp_0;
-  case 116:
+    s.callLocIdx = 29; s.pc = 97; return s.tmp_0;
+  case 97:
     r0 = s.retval;
     globals.Enemy___609864 = (r0);
     r0 = (0.1 * 256);
@@ -746,13 +738,13 @@ switch (step) {
     globals.infoState___612220 = (undefined);
     s.tmp_0 = game_addScenePushHandler__P610399_mk(s);
     s.tmp_0.arg0 = info_inline__P612224;
-    s.callLocIdx = 31; s.pc = 117; return s.tmp_0;
-  case 117:
+    s.callLocIdx = 31; s.pc = 98; return s.tmp_0;
+  case 98:
     r0 = s.retval;
     s.tmp_0 = game_addScenePopHandler__P610401_mk(s);
     s.tmp_0.arg0 = info_inline__P612239;
-    s.callLocIdx = 35; s.pc = 118; return s.tmp_0;
-  case 118:
+    s.callLocIdx = 35; s.pc = 99; return s.tmp_0;
+  case 99:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
     globals.scene_Scene_initializers___610246 = (r0);
@@ -766,12 +758,12 @@ switch (step) {
     globals.stats___610349 = (false);
     globals.gameOverConfig___610379 = (gameOverConfig_inline__P612348);
     s.tmp_0 = scene_systemMenu_initVolume__P612622_mk(s);
-    s.callLocIdx = 37; s.pc = 119; return s.tmp_0;
-  case 119:
+    s.callLocIdx = 37; s.pc = 100; return s.tmp_0;
+  case 100:
     r0 = s.retval;
     s.tmp_0 = scene_systemMenu_initScreen__P612623_mk(s);
-    s.callLocIdx = 38; s.pc = 120; return s.tmp_0;
-  case 120:
+    s.callLocIdx = 38; s.pc = 101; return s.tmp_0;
+  case 101:
     r0 = s.retval;
     r0 = pxsim_Array__push(globals.scene_Scene_initializers___610246, scene_systemMenu_register__P610487);
     r0 = pxsim.image.ofBuffer(_hex612630);
@@ -809,9 +801,9 @@ switch (step) {
       s.tmp_5.fn = s.tmp_5.arg0.vtable.iface["charHeight"];
       if (s.tmp_5.fn == null) { s.retval = s.tmp_5.arg0.fields["charHeight"]; }
       else if (!s.tmp_5.fn.isGetter) { s.retval = bind(s.tmp_5); }
-     else { s.callLocIdx = 39; s.pc = 121; return s.tmp_5; }
+     else { s.callLocIdx = 39; s.pc = 102; return s.tmp_5; }
     }
-  case 121:
+  case 102:
     r0 = s.retval;
     s.tmp_4 = r0;
     r0 = (s.tmp_4 + 2);
@@ -834,9 +826,9 @@ switch (step) {
       s.tmp_4.fn = s.tmp_4.arg0.vtable.iface["charWidth"];
       if (s.tmp_4.fn == null) { s.retval = s.tmp_4.arg0.fields["charWidth"]; }
       else if (!s.tmp_4.fn.isGetter) { s.retval = bind(s.tmp_4); }
-     else { s.callLocIdx = 40; s.pc = 122; return s.tmp_4; }
+     else { s.callLocIdx = 40; s.pc = 103; return s.tmp_4; }
     }
-  case 122:
+  case 103:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = (s.tmp_1 / s.tmp_3);
@@ -845,14 +837,14 @@ switch (step) {
     globals.consoleColumns___612677 = (r0);
     s.tmp_0 = console_addListener__P607765_mk(s);
     s.tmp_0.arg0 = game_consoleOverlay_listener__P612689;
-    s.callLocIdx = 41; s.pc = 123; return s.tmp_0;
-  case 123:
+    s.callLocIdx = 41; s.pc = 104; return s.tmp_0;
+  case 104:
     r0 = s.retval;
     s.tmp_0 = lambda_1_mk(s);
     s.tmp_0.argL = MAX_SOURCES_inline__P625065;
     setupLambda(s.tmp_0, s.tmp_0.argL);
-    s.callLocIdx = 43; s.pc = 124; return s.tmp_0;
-  case 124:
+    s.callLocIdx = 43; s.pc = 105; return s.tmp_0;
+  case 105:
     r0 = s.retval;
     globals.MAX_SOURCES___612691 = (r0);
     r0 = pxsim_pxtcore_mkClassInstance(particles_SprayFactory__C610572_VT);
@@ -862,8 +854,8 @@ switch (step) {
     s.tmp_1.arg1 = 20;
     s.tmp_1.arg2 = 0;
     s.tmp_1.arg3 = 60;
-    s.callLocIdx = 44; s.pc = 125; return s.tmp_1;
-  case 125:
+    s.callLocIdx = 44; s.pc = 106; return s.tmp_1;
+  case 106:
     r0 = s.retval;
     globals.defaultFactory___610552 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(Math_FastRandom__C610440_VT);
@@ -871,8 +863,8 @@ switch (step) {
     s.tmp_1 = Math_FastRandom_constructor__P610442_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = undefined;
-    s.callLocIdx = 45; s.pc = 126; return s.tmp_1;
-  case 126:
+    s.callLocIdx = 45; s.pc = 107; return s.tmp_1;
+  case 107:
     r0 = s.retval;
     globals.galois___612711 = (s.tmp_0);
     globals.angleSlice___612719 = (0.06283185307179587);
@@ -884,8 +876,8 @@ switch (step) {
     s.tmp_1.arg2 = 40;
     s.tmp_1.arg3 = 4000;
     s.tmp_1.arg4 = confetti_inline__P624819;
-    s.callLocIdx = 51; s.pc = 127; return s.tmp_1;
-  case 127:
+    s.callLocIdx = 51; s.pc = 108; return s.tmp_1;
+  case 108:
     r0 = s.retval;
     globals.confetti___610655 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(effects_ImageEffect__C610671_VT);
@@ -894,8 +886,8 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 100;
     s.tmp_1.arg2 = dissolve_inline__P623459;
-    s.callLocIdx = 57; s.pc = 128; return s.tmp_1;
-  case 128:
+    s.callLocIdx = 57; s.pc = 109; return s.tmp_1;
+  case 109:
     r0 = s.retval;
     globals.dissolve___610676 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(effects_ImageEffect__C610671_VT);
@@ -904,18 +896,18 @@ switch (step) {
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 125;
     s.tmp_1.arg2 = melt_inline__P624765;
-    s.callLocIdx = 60; s.pc = 129; return s.tmp_1;
-  case 129:
+    s.callLocIdx = 60; s.pc = 110; return s.tmp_1;
+  case 110:
     r0 = s.retval;
     globals.melt___610677 = (s.tmp_0);
     s.tmp_0 = game_setWaitAnyButton__P610381_mk(s);
     s.tmp_0.arg0 = controller_pauseUntilAnyButtonIsPressed__P609587;
-    s.callLocIdx = 61; s.pc = 130; return s.tmp_0;
-  case 130:
+    s.callLocIdx = 61; s.pc = 111; return s.tmp_0;
+  case 111:
     r0 = s.retval;
     s.tmp_0 = game_eventContext__P610383_mk(s);
-    s.callLocIdx = 62; s.pc = 131; return s.tmp_0;
-  case 131:
+    s.callLocIdx = 62; s.pc = 112; return s.tmp_0;
+  case 112:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
@@ -959,7 +951,7 @@ switch (step) {
     globals.kMaxBitsPerChar___1026719 = (s.tmp_0);
     r0 = pxsim.control.createBuffer(8);
     globals.kBitConversionBuffer___1026729 = (r0);
-    globals.allPassed___983763 = (true);
+    globals.allPassed___1062960 = (true);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "                        1");
@@ -983,42 +975,42 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, "    6 402 373 705 728 000");
     r0 = pxsim_Array__push(s.tmp_0, "  121 645 100 408 832 000");
     r0 = pxsim_Array__push(s.tmp_0, "2 432 902 008 176 640 000");
-    globals.facts___983764 = (s.tmp_0);
+    globals.facts___1062961 = (s.tmp_0);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 1;
-    s.callLocIdx = 360; s.pc = 132; return s.tmp_0;
-  case 132:
+    s.callLocIdx = 360; s.pc = 113; return s.tmp_0;
+  case 113:
     r0 = s.retval;
-    globals.fact___983768 = (r0);
+    globals.fact___1062965 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.msg___983770 = (r0);
-    s.i___983771 = (1);
+    globals.msg___1062967 = (r0);
+    s.i___1062968 = (1);
   case 1:
-    r0 = (s.i___983771 <= 20);
+    r0 = (s.i___1062968 <= 20);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 10; continue; }
     s.tmp_1 = JSBI_multiply__P1028893_mk(s);
-    s.tmp_1.arg0 = globals.fact___983768;
+    s.tmp_1.arg0 = globals.fact___1062965;
     s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
-    s.tmp_2.arg0 = s.i___983771;
-    s.callLocIdx = 361; s.pc = 134; return s.tmp_2;
-  case 134:
+    s.tmp_2.arg0 = s.i___1062968;
+    s.callLocIdx = 361; s.pc = 115; return s.tmp_2;
+  case 115:
     r0 = s.retval;
     s.tmp_1.arg1 = r0;
-    s.callLocIdx = 362; s.pc = 133; return s.tmp_1;
-  case 133:
+    s.callLocIdx = 362; s.pc = 114; return s.tmp_1;
+  case 114:
     r0 = s.retval;
-    globals.fact___983768 = (r0);
+    globals.fact___1062965 = (r0);
     r0 = pxsim_String_.mkEmpty();
     s.tmp_5 = r0;
-    if ((s.i___983771) && (s.i___983771).vtable) {
-    setupResume(s, 135);
-    pxsim_String__stringConv(s.i___983771);
+    if ((s.i___1062968) && (s.i___1062968).vtable) {
+    setupResume(s, 116);
+    pxsim_String__stringConv(s.i___1062968);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.i___983771) + ""; }
-  case 135:
+    } else { s.retval = (s.i___1062968) + ""; }
+  case 116:
     r0 = s.retval;
     s.tmp_6 = r0;
     r0 = pxsim_String__concat(s.tmp_5, s.tmp_6);
@@ -1026,56 +1018,56 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, "! = ");
     s.tmp_3 = r0;
     s.tmp_9 = JSBI_BigInt_toString__P1026735_mk(s);
-    s.tmp_9.arg0 = globals.fact___983768;
-    s.callLocIdx = 363; s.pc = 136; return s.tmp_9;
-  case 136:
+    s.tmp_9.arg0 = globals.fact___1062965;
+    s.callLocIdx = 363; s.pc = 117; return s.tmp_9;
+  case 117:
     r0 = s.retval;
     s.tmp_8 = r0;
     if ((s.tmp_8) && (s.tmp_8).vtable) {
-    setupResume(s, 137);
+    setupResume(s, 118);
     pxsim_String__stringConv(s.tmp_8);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_8) + ""; }
-  case 137:
+  case 118:
     r0 = s.retval;
     s.tmp_7 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_7);
     s.tmp_2 = r0;
     r0 = pxsim_String__concat(s.tmp_2, " (length: ");
     s.tmp_1 = r0;
-    r0 = globals.fact___983768.fields["data"];
+    r0 = globals.fact___1062965.fields["data"];
     s.tmp_12 = r0;
     r0 = pxsim_Array__length(s.tmp_12);
     s.tmp_11 = r0;
     if ((s.tmp_11) && (s.tmp_11).vtable) {
-    setupResume(s, 138);
+    setupResume(s, 119);
     pxsim_String__stringConv(s.tmp_11);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_11) + ""; }
-  case 138:
+  case 119:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = pxsim_String__concat(s.tmp_1, s.tmp_10);
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, ")");
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
-    r0 = pxsim_Array__getAt(globals.facts___983764, s.i___983771);
+    r0 = pxsim_Array__getAt(globals.facts___1062961, s.i___1062968);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 365; s.pc = 139; return s.tmp_0;
-  case 139:
+    s.callLocIdx = 365; s.pc = 120; return s.tmp_0;
+  case 120:
     r0 = s.retval;
-    s.verify___983799 = (r0);
+    s.verify___1062996 = (r0);
     s.tmp_0 = JSBI_compare__P1028098_mk(s);
-    s.tmp_0.arg0 = globals.fact___983768;
-    s.tmp_0.arg1 = s.verify___983799;
-    s.callLocIdx = 366; s.pc = 140; return s.tmp_0;
-  case 140:
+    s.tmp_0.arg0 = globals.fact___1062965;
+    s.tmp_0.arg1 = s.verify___1062996;
+    s.callLocIdx = 366; s.pc = 121; return s.tmp_0;
+  case 121:
     r0 = s.retval;
-    s.compare___983803 = (r0);
-    r0 = (s.compare___983803 == 0);
+    s.compare___1063000 = (r0);
+    r0 = (s.compare___1063000 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
@@ -1086,27 +1078,27 @@ switch (step) {
   case 3:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 141);
-    pxsim_String__stringConv(globals.msg___983770);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 122);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 141:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 122:
     r0 = s.retval;
     s.tmp_2 = r0;
     if ((s.tmp_1) && (s.tmp_1).vtable) {
-    setupResume(s, 142);
+    setupResume(s, 123);
     pxsim_String__stringConv(s.tmp_1);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_1) + ""; }
-  case 142:
+  case 123:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_2, s.tmp_3);
-    globals.msg___983770 = (r0);
-    r0 = (s.compare___983803 != 0);
+    globals.msg___1062967 = (r0);
+    r0 = (s.compare___1063000 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 4; continue; }
@@ -1120,22 +1112,22 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 6; continue; }
     s.tmp_2 = game_showLongText__P610341_mk(s);
-    s.tmp_2.arg0 = globals.msg___983770;
+    s.tmp_2.arg0 = globals.msg___1062967;
     s.tmp_2.arg1 = 5;
-    s.callLocIdx = 367; s.pc = 143; return s.tmp_2;
-  case 143:
+    s.callLocIdx = 367; s.pc = 124; return s.tmp_2;
+  case 124:
     r0 = s.retval;
   case 6:
   case 7:
-    r0 = (s.compare___983803 != 0);
+    r0 = (s.compare___1063000 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    globals.allPassed___983763 = (false);
+    globals.allPassed___1062960 = (false);
   case 8:
   case 9:
-    r0 = (s.i___983771 + 1);
-    s.i___983771 = (r0);
+    r0 = (s.i___1062968 + 1);
+    s.i___1062968 = (r0);
     { step = 1; continue; }
   case 10:
     r0 = pxsim_pxtrt.mkMap();
@@ -1182,260 +1174,20 @@ switch (step) {
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "b", "32");
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "expected", "-0x100000000");
     r0 = pxsim_Array__push(s.tmp_1, s.tmp_6);
-    globals.TESTS___983829 = (s.tmp_1);
-    globals.testNumber___983846 = (0);
-    s.test___983848 = (undefined);
-    s.unnamed10846___U4 = (globals.TESTS___983829);
-    s.unnamed10847___U5 = (0);
-  case 11:
-    s.tmp_0 = r0 = s.unnamed10847___U5;
-    r0 = pxsim_Array__length(s.unnamed10846___U4);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_0 < s.tmp_1);
-    if (!r0) { step = 29; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10846___U4, s.unnamed10847___U5);
-    s.test___983848 = (r0);
-    s.tmp_2 = parseString__P983831_mk(s);
-    s.tmp_3 = if_a_1_mk(s);
-    s.tmp_3.arg0 = s.test___983848;
-    if (!s.tmp_3.arg0.vtable.iface) {
-      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
-    } else {
-      s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
-      if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
-      else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 372; s.pc = 145; return s.tmp_3; }
-    }
-  case 145:
+    globals.TESTS___1063026 = (s.tmp_1);
+    globals.testNumber___1063043 = (0);
+    s.tmp_0 = runTests__P1063044_mk(s);
+    s.tmp_0.arg0 = globals.TESTS___1063026;
+    s.tmp_0.arg1 = "JSBI source";
+    s.callLocIdx = 396; s.pc = 125; return s.tmp_0;
+  case 125:
     r0 = s.retval;
-    s.tmp_2.arg0 = r0;
-    s.callLocIdx = 373; s.pc = 144; return s.tmp_2;
-  case 144:
-    r0 = s.retval;
-    s.a___983850 = (r0);
-    s.tmp_0 = parseString__P983831_mk(s);
-    s.tmp_1 = if_b_1_mk(s);
-    s.tmp_1.arg0 = s.test___983848;
-    if (!s.tmp_1.arg0.vtable.iface) {
-      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
-    } else {
-      s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
-      if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
-      else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 374; s.pc = 147; return s.tmp_1; }
-    }
-  case 147:
-    r0 = s.retval;
-    s.tmp_0.arg0 = r0;
-    s.callLocIdx = 375; s.pc = 146; return s.tmp_0;
-  case 146:
-    r0 = s.retval;
-    s.b___983856 = (r0);
-    s.tmp_0 = parseString__P983831_mk(s);
-    s.tmp_1 = if_expected_1_mk(s);
-    s.tmp_1.arg0 = s.test___983848;
-    if (!s.tmp_1.arg0.vtable.iface) {
-      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "expected");
-    } else {
-      s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["expected"];
-      if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["expected"]; }
-      else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 376; s.pc = 149; return s.tmp_1; }
-    }
-  case 149:
-    r0 = s.retval;
-    s.tmp_0.arg0 = r0;
-    s.callLocIdx = 377; s.pc = 148; return s.tmp_0;
-  case 148:
-    r0 = s.retval;
-    s.expected___983862 = (r0);
-    s.result___983868 = (null);
-    s.tmp_1 = helpers_stringToUpperCase__P607502_mk(s);
-    s.tmp_2 = if_operation_1_mk(s);
-    s.tmp_2.arg0 = s.test___983848;
-    if (!s.tmp_2.arg0.vtable.iface) {
-      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "operation");
-    } else {
-      s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["operation"];
-      if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["operation"]; }
-      else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 378; s.pc = 151; return s.tmp_2; }
-    }
-  case 151:
-    r0 = s.retval;
-    s.tmp_1.arg0 = r0;
-    s.callLocIdx = 379; s.pc = 150; return s.tmp_1;
-  case 150:
-    r0 = s.retval;
-    s.tmp_0 = r0;
-    r0 = pxsim_pxtcore.switch_eq("ADD", s.tmp_0);
-    if (r0) { step = 12; continue; }
-    r0 = pxsim_pxtcore.switch_eq("SUBTRACT", s.tmp_0);
-    if (r0) { step = 13; continue; }
-    r0 = pxsim_pxtcore.switch_eq("MULTIPLY", s.tmp_0);
-    if (r0) { step = 14; continue; }
-    r0 = pxsim_pxtcore.switch_eq("REMAINDER", s.tmp_0);
-    if (r0) { step = 15; continue; }
-    r0 = pxsim_pxtcore.switch_eq("MOD", s.tmp_0);
-    if (r0) { step = 16; continue; }
-    r0 = pxsim_pxtcore.switch_eq("DIVIDE", s.tmp_0);
-    if (r0) { step = 17; continue; }
-    r0 = s.tmp_0;
-    { step = 18; continue; }
-  case 12:
-    s.tmp_3 = JSBI_add__P1028081_mk(s);
-    s.tmp_3.arg0 = s.a___983850;
-    s.tmp_3.arg1 = s.b___983856;
-    s.callLocIdx = 380; s.pc = 152; return s.tmp_3;
-  case 152:
-    r0 = s.retval;
-    s.result___983868 = (r0);
-    { step = 18; continue; }
-  case 13:
-    s.tmp_0 = JSBI_subtract__P1030064_mk(s);
-    s.tmp_0.arg0 = s.a___983850;
-    s.tmp_0.arg1 = s.b___983856;
-    s.callLocIdx = 381; s.pc = 153; return s.tmp_0;
-  case 153:
-    r0 = s.retval;
-    s.result___983868 = (r0);
-    { step = 18; continue; }
-  case 14:
-    s.tmp_0 = JSBI_multiply__P1028893_mk(s);
-    s.tmp_0.arg0 = s.a___983850;
-    s.tmp_0.arg1 = s.b___983856;
-    s.callLocIdx = 382; s.pc = 154; return s.tmp_0;
-  case 154:
-    r0 = s.retval;
-    s.result___983868 = (r0);
-    { step = 18; continue; }
-  case 15:
-  case 16:
-    s.tmp_0 = JSBI_mod__P1029736_mk(s);
-    s.tmp_0.arg0 = s.a___983850;
-    s.tmp_0.arg1 = s.b___983856;
-    s.callLocIdx = 383; s.pc = 155; return s.tmp_0;
-  case 155:
-    r0 = s.retval;
-    s.result___983868 = (r0);
-    { step = 18; continue; }
-  case 17:
-    s.tmp_0 = JSBI_divide__P1028530_mk(s);
-    s.tmp_0.arg0 = s.a___983850;
-    s.tmp_0.arg1 = s.b___983856;
-    s.callLocIdx = 384; s.pc = 156; return s.tmp_0;
-  case 156:
-    r0 = s.retval;
-    s.result___983868 = (r0);
-  case 18:
-    r0 = (s.result___983868 != null);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 25; continue; }
-    s.tmp_1 = JSBI_compare__P1028098_mk(s);
-    s.tmp_1.arg0 = s.result___983868;
-    s.tmp_1.arg1 = s.expected___983862;
-    s.callLocIdx = 385; s.pc = 157; return s.tmp_1;
-  case 157:
-    r0 = s.retval;
-    s.compare___983898 = (r0);
-    r0 = (s.compare___983898 != 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_0);
-    if (!r0) { step = 19; continue; }
-    r0 = s.tmp_0;
-    { step = 20; continue; }
-  case 19:
-    r0 = false;
-  case 20:
-    // jmp value (already in r0)
-    s.tmp_1 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_1);
-    if (!r0) { step = 23; continue; }
-    r0 = (s.compare___983898 == 0);
-    s.tmp_2 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_2);
-    if (!r0) { step = 21; continue; }
-    s.tmp_3 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 159);
-    pxsim_String__stringConv(globals.testNumber___983846);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 159:
-    r0 = s.retval;
-    s.tmp_5 = r0;
-    r0 = pxsim_String__concat("Test ", s.tmp_5);
-    s.tmp_4 = r0;
-    r0 = pxsim_String__concat(s.tmp_4, " passed.");
-    s.tmp_3.arg0 = r0;
-    s.tmp_3.arg1 = undefined;
-    s.callLocIdx = 386; s.pc = 158; return s.tmp_3;
-  case 158:
-    r0 = s.retval;
-    { step = 22; continue; }
-  case 21:
-    s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 161);
-    pxsim_String__stringConv(globals.testNumber___983846);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 161:
-    r0 = s.retval;
-    s.tmp_2 = r0;
-    r0 = pxsim_String__concat("Test ", s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = pxsim_String__concat(s.tmp_1, " failed!");
-    s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 387; s.pc = 160; return s.tmp_0;
-  case 160:
-    r0 = s.retval;
-    globals.allPassed___983763 = (false);
-  case 22:
-  case 23:
-  case 24:
-    { step = 28; continue; }
-  case 25:
-    r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 26; continue; }
-    s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 163);
-    pxsim_String__stringConv(globals.testNumber___983846);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 163:
-    r0 = s.retval;
-    s.tmp_2 = r0;
-    r0 = pxsim_String__concat("Test ", s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = pxsim_String__concat(s.tmp_1, " not implemented; skipped.");
-    s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 388; s.pc = 162; return s.tmp_0;
-  case 162:
-    r0 = s.retval;
-  case 26:
-  case 27:
-  case 28:
-    r0 = (globals.testNumber___983846 + 1);
-    globals.testNumber___983846 = (r0);
-    r0 = (s.unnamed10847___U5 + 1);
-    s.unnamed10847___U5 = (r0);
-    { step = 11; continue; }
-  case 29:
-    s.unnamed10846___U4 = (undefined);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "123");
     r0 = pxsim_Array__push(s.tmp_0, " 123 ");
     r0 = pxsim_Array__push(s.tmp_0, "   123   ");
-    globals.VALID___983936 = (s.tmp_0);
+    globals.VALID___1063207 = (s.tmp_0);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "x123");
@@ -1448,51 +1200,51 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, "-0x0");
     r0 = pxsim_Array__push(s.tmp_0, "-0b0");
     r0 = pxsim_Array__push(s.tmp_0, "-0x1");
-    globals.INVALID___983938 = (s.tmp_0);
+    globals.INVALID___1063209 = (s.tmp_0);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 123;
-    s.callLocIdx = 389; s.pc = 164; return s.tmp_0;
-  case 164:
+    s.callLocIdx = 397; s.pc = 126; return s.tmp_0;
+  case 126:
     r0 = s.retval;
-    globals.EXPECTED___983942 = (r0);
-    s.v___983945 = (undefined);
-    s.unnamed10848___U12 = (globals.VALID___983936);
-    s.unnamed10849___U13 = (0);
-  case 30:
-    s.tmp_0 = r0 = s.unnamed10849___U13;
-    r0 = pxsim_Array__length(s.unnamed10848___U12);
+    globals.EXPECTED___1063213 = (r0);
+    s.v___1063216 = (undefined);
+    s.unnamed11664___U4 = (globals.VALID___1063207);
+    s.unnamed11665___U5 = (0);
+  case 11:
+    s.tmp_0 = r0 = s.unnamed11665___U5;
+    r0 = pxsim_Array__length(s.unnamed11664___U4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
-    if (!r0) { step = 35; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10848___U12, s.unnamed10849___U13);
-    s.v___983945 = (r0);
+    if (!r0) { step = 16; continue; }
+    r0 = pxsim_Array__getAt(s.unnamed11664___U4, s.unnamed11665___U5);
+    s.v___1063216 = (r0);
     s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
-    s.tmp_2.arg0 = s.v___983945;
-    s.callLocIdx = 390; s.pc = 165; return s.tmp_2;
-  case 165:
+    s.tmp_2.arg0 = s.v___1063216;
+    s.callLocIdx = 398; s.pc = 127; return s.tmp_2;
+  case 127:
     r0 = s.retval;
-    s.result___983947 = (r0);
+    s.result___1063218 = (r0);
     s.tmp_2 = JSBI_compare__P1028098_mk(s);
-    s.tmp_2.arg0 = s.result___983947;
-    s.tmp_2.arg1 = globals.EXPECTED___983942;
-    s.callLocIdx = 391; s.pc = 166; return s.tmp_2;
-  case 166:
+    s.tmp_2.arg0 = s.result___1063218;
+    s.tmp_2.arg1 = globals.EXPECTED___1063213;
+    s.callLocIdx = 399; s.pc = 128; return s.tmp_2;
+  case 128:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 33; continue; }
+    if (!r0) { step = 14; continue; }
     r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 31; continue; }
+    if (!r0) { step = 12; continue; }
     s.tmp_3 = game_splash__P610346_mk(s);
-    if ((s.v___983945) && (s.v___983945).vtable) {
-    setupResume(s, 168);
-    pxsim_String__stringConv(s.v___983945);
+    if ((s.v___1063216) && (s.v___1063216).vtable) {
+    setupResume(s, 130);
+    pxsim_String__stringConv(s.v___1063216);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.v___983945) + ""; }
-  case 168:
+    } else { s.retval = (s.v___1063216) + ""; }
+  case 130:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_5);
@@ -1500,21 +1252,21 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, "\" parsed correctly.");
     s.tmp_3.arg0 = r0;
     s.tmp_3.arg1 = undefined;
-    s.callLocIdx = 392; s.pc = 167; return s.tmp_3;
-  case 167:
+    s.callLocIdx = 400; s.pc = 129; return s.tmp_3;
+  case 129:
     r0 = s.retval;
-  case 31:
-  case 32:
-    { step = 34; continue; }
-  case 33:
+  case 12:
+  case 13:
+    { step = 15; continue; }
+  case 14:
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((s.v___983945) && (s.v___983945).vtable) {
-    setupResume(s, 170);
-    pxsim_String__stringConv(s.v___983945);
+    if ((s.v___1063216) && (s.v___1063216).vtable) {
+    setupResume(s, 132);
+    pxsim_String__stringConv(s.v___1063216);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.v___983945) + ""; }
-  case 170:
+    } else { s.retval = (s.v___1063216) + ""; }
+  case 132:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_2);
@@ -1522,42 +1274,42 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\" was not parsed correctly!");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 393; s.pc = 169; return s.tmp_0;
-  case 169:
+    s.callLocIdx = 401; s.pc = 131; return s.tmp_0;
+  case 131:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-  case 34:
-    r0 = (s.unnamed10849___U13 + 1);
-    s.unnamed10849___U13 = (r0);
-    { step = 30; continue; }
-  case 35:
-    s.unnamed10848___U12 = (undefined);
-    s.i___983975 = (undefined);
-    s.unnamed10850___U16 = (globals.INVALID___983938);
-    s.unnamed10851___U17 = (0);
-  case 36:
-    s.tmp_0 = r0 = s.unnamed10851___U17;
-    r0 = pxsim_Array__length(s.unnamed10850___U16);
+    globals.allPassed___1062960 = (false);
+  case 15:
+    r0 = (s.unnamed11665___U5 + 1);
+    s.unnamed11665___U5 = (r0);
+    { step = 11; continue; }
+  case 16:
+    s.unnamed11664___U4 = (undefined);
+    s.i___1063246 = (undefined);
+    s.unnamed11666___U8 = (globals.INVALID___1063209);
+    s.unnamed11667___U9 = (0);
+  case 17:
+    s.tmp_0 = r0 = s.unnamed11667___U9;
+    r0 = pxsim_Array__length(s.unnamed11666___U8);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
-    if (!r0) { step = 41; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10850___U16, s.unnamed10851___U17);
-    s.i___983975 = (r0);
-    r0 = pxsim_pxtcore.beginTry(37);
+    if (!r0) { step = 22; continue; }
+    r0 = pxsim_Array__getAt(s.unnamed11666___U8, s.unnamed11667___U9);
+    s.i___1063246 = (r0);
+    r0 = pxsim_pxtcore.beginTry(18);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
-    s.tmp_0.arg0 = s.i___983975;
-    s.callLocIdx = 394; s.pc = 171; return s.tmp_0;
-  case 171:
+    s.tmp_0.arg0 = s.i___1063246;
+    s.callLocIdx = 402; s.pc = 133; return s.tmp_0;
+  case 133:
     r0 = s.retval;
-    s.result___983978 = (r0);
+    s.result___1063249 = (r0);
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    if ((s.i___983975) && (s.i___983975).vtable) {
-    setupResume(s, 173);
-    pxsim_String__stringConv(s.i___983975);
+    if ((s.i___1063246) && (s.i___1063246).vtable) {
+    setupResume(s, 135);
+    pxsim_String__stringConv(s.i___1063246);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.i___983975) + ""; }
-  case 173:
+    } else { s.retval = (s.i___1063246) + ""; }
+  case 135:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_2);
@@ -1565,26 +1317,26 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\" was successfully parsed but should have failed. Error!");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = 4;
-    s.callLocIdx = 395; s.pc = 172; return s.tmp_0;
-  case 172:
+    s.callLocIdx = 403; s.pc = 134; return s.tmp_0;
+  case 134:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
+    globals.allPassed___1062960 = (false);
     r0 = pxsim_pxtcore.endTry();
-    { step = 40; continue; }
-  case 37:
-    s.exception___983991 = (undefined);
+    { step = 21; continue; }
+  case 18:
+    s.exception___1063262 = (undefined);
     r0 = pxsim_pxtcore.getThrownValue();
-    s.exception___983991 = (r0);
+    s.exception___1063262 = (r0);
     r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 38; continue; }
+    if (!r0) { step = 19; continue; }
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    if ((s.i___983975) && (s.i___983975).vtable) {
-    setupResume(s, 175);
-    pxsim_String__stringConv(s.i___983975);
+    if ((s.i___1063246) && (s.i___1063246).vtable) {
+    setupResume(s, 137);
+    pxsim_String__stringConv(s.i___1063246);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.i___983975) + ""; }
-  case 175:
+    } else { s.retval = (s.i___1063246) + ""; }
+  case 137:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_2);
@@ -1592,75 +1344,75 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\" was correctly rejected.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = 4;
-    s.callLocIdx = 396; s.pc = 174; return s.tmp_0;
-  case 174:
+    s.callLocIdx = 404; s.pc = 136; return s.tmp_0;
+  case 136:
     r0 = s.retval;
-  case 38:
-  case 39:
-  case 40:
-    r0 = (s.unnamed10851___U17 + 1);
-    s.unnamed10851___U17 = (r0);
-    { step = 36; continue; }
-  case 41:
-    s.unnamed10850___U16 = (undefined);
+  case 19:
+  case 20:
+  case 21:
+    r0 = (s.unnamed11667___U9 + 1);
+    s.unnamed11667___U9 = (r0);
+    { step = 17; continue; }
+  case 22:
+    s.unnamed11666___U8 = (undefined);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 9007199254740991;
-    s.callLocIdx = 397; s.pc = 176; return s.tmp_0;
-  case 176:
+    s.callLocIdx = 405; s.pc = 138; return s.tmp_0;
+  case 138:
     r0 = s.retval;
-    globals.max___984005 = (r0);
+    globals.max___1063276 = (r0);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 2;
-    s.callLocIdx = 398; s.pc = 177; return s.tmp_0;
-  case 177:
+    s.callLocIdx = 406; s.pc = 139; return s.tmp_0;
+  case 139:
     r0 = s.retval;
-    globals.other___984009 = (r0);
+    globals.other___1063280 = (r0);
     s.tmp_0 = JSBI_add__P1028081_mk(s);
-    s.tmp_0.arg0 = globals.max___984005;
-    s.tmp_0.arg1 = globals.other___984009;
-    s.callLocIdx = 399; s.pc = 178; return s.tmp_0;
-  case 178:
+    s.tmp_0.arg0 = globals.max___1063276;
+    s.tmp_0.arg1 = globals.other___1063280;
+    s.callLocIdx = 407; s.pc = 140; return s.tmp_0;
+  case 140:
     r0 = s.retval;
-    globals.result___984012 = (r0);
+    globals.result___1063283 = (r0);
     s.tmp_2 = JSBI_BigInt_toString__P1026735_mk(s);
-    s.tmp_2.arg0 = globals.result___984012;
-    s.callLocIdx = 400; s.pc = 179; return s.tmp_2;
-  case 179:
+    s.tmp_2.arg0 = globals.result___1063283;
+    s.callLocIdx = 408; s.pc = 141; return s.tmp_2;
+  case 141:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== "9007199254740993");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 42; continue; }
-    globals.msg___983770 = ("README test FAILED (string version).");
+    if (!r0) { step = 23; continue; }
+    globals.msg___1062967 = ("README test FAILED (string version).");
     s.tmp_0 = game_splash__P610346_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
+    s.tmp_0.arg0 = globals.msg___1062967;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 401; s.pc = 180; return s.tmp_0;
-  case 180:
+    s.callLocIdx = 409; s.pc = 142; return s.tmp_0;
+  case 142:
     r0 = s.retval;
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 181);
-    pxsim_String__stringConv(globals.msg___983770);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 143);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 181:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 143:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_7 = JSBI_BigInt_toString__P1026735_mk(s);
-    s.tmp_7.arg0 = globals.result___984012;
-    s.callLocIdx = 402; s.pc = 182; return s.tmp_7;
-  case 182:
+    s.tmp_7.arg0 = globals.result___1063283;
+    s.callLocIdx = 410; s.pc = 144; return s.tmp_7;
+  case 144:
     r0 = s.retval;
     s.tmp_6 = r0;
     if ((s.tmp_6) && (s.tmp_6).vtable) {
-    setupResume(s, 183);
+    setupResume(s, 145);
     pxsim_String__stringConv(s.tmp_6);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_6) + ""; }
-  case 183:
+  case 145:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(" result = ", s.tmp_5);
@@ -1668,80 +1420,80 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, " ");
     s.tmp_3 = r0;
     s.tmp_10 = JSBI_BigInt_toDebugString__P1026733_mk(s);
-    s.tmp_10.arg0 = globals.result___984012;
-    s.callLocIdx = 403; s.pc = 184; return s.tmp_10;
-  case 184:
+    s.tmp_10.arg0 = globals.result___1063283;
+    s.callLocIdx = 411; s.pc = 146; return s.tmp_10;
+  case 146:
     r0 = s.retval;
     s.tmp_9 = r0;
     if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 185);
+    setupResume(s, 147);
     pxsim_String__stringConv(s.tmp_9);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_9) + ""; }
-  case 185:
+  case 147:
     r0 = s.retval;
     s.tmp_8 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_8);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 186);
+    setupResume(s, 148);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 186:
+  case 148:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
-    s.callLocIdx = 404; s.pc = 187; return s.tmp_0;
-  case 187:
+    s.tmp_0.arg0 = globals.msg___1062967;
+    s.callLocIdx = 412; s.pc = 149; return s.tmp_0;
+  case 149:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-  case 42:
-  case 43:
+    globals.allPassed___1062960 = (false);
+  case 23:
+  case 24:
     s.tmp_2 = JSBI_BigInt_toNumber__P1026734_mk(s);
-    s.tmp_2.arg0 = globals.other___984009;
-    s.callLocIdx = 405; s.pc = 188; return s.tmp_2;
-  case 188:
+    s.tmp_2.arg0 = globals.other___1063280;
+    s.callLocIdx = 413; s.pc = 150; return s.tmp_2;
+  case 150:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 2);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 44; continue; }
-    globals.msg___983770 = ("README test FAILED (number version).");
+    if (!r0) { step = 25; continue; }
+    globals.msg___1062967 = ("README test FAILED (number version).");
     s.tmp_0 = game_splash__P610346_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
+    s.tmp_0.arg0 = globals.msg___1062967;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 406; s.pc = 189; return s.tmp_0;
-  case 189:
+    s.callLocIdx = 414; s.pc = 151; return s.tmp_0;
+  case 151:
     r0 = s.retval;
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 190);
-    pxsim_String__stringConv(globals.msg___983770);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 152);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 190:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 152:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_7 = JSBI_BigInt_toString__P1026735_mk(s);
-    s.tmp_7.arg0 = globals.result___984012;
-    s.callLocIdx = 407; s.pc = 191; return s.tmp_7;
-  case 191:
+    s.tmp_7.arg0 = globals.result___1063283;
+    s.callLocIdx = 415; s.pc = 153; return s.tmp_7;
+  case 153:
     r0 = s.retval;
     s.tmp_6 = r0;
     if ((s.tmp_6) && (s.tmp_6).vtable) {
-    setupResume(s, 192);
+    setupResume(s, 154);
     pxsim_String__stringConv(s.tmp_6);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_6) + ""; }
-  case 192:
+  case 154:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(" result = ", s.tmp_5);
@@ -1749,41 +1501,41 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, " ");
     s.tmp_3 = r0;
     s.tmp_10 = JSBI_BigInt_toDebugString__P1026733_mk(s);
-    s.tmp_10.arg0 = globals.result___984012;
-    s.callLocIdx = 408; s.pc = 193; return s.tmp_10;
-  case 193:
+    s.tmp_10.arg0 = globals.result___1063283;
+    s.callLocIdx = 416; s.pc = 155; return s.tmp_10;
+  case 155:
     r0 = s.retval;
     s.tmp_9 = r0;
     if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 194);
+    setupResume(s, 156);
     pxsim_String__stringConv(s.tmp_9);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_9) + ""; }
-  case 194:
+  case 156:
     r0 = s.retval;
     s.tmp_8 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_8);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 195);
+    setupResume(s, 157);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 195:
+  case 157:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
-    s.callLocIdx = 409; s.pc = 196; return s.tmp_0;
-  case 196:
+    s.tmp_0.arg0 = globals.msg___1062967;
+    s.callLocIdx = 417; s.pc = 158; return s.tmp_0;
+  case 158:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-  case 44:
-  case 45:
+    globals.allPassed___1062960 = (false);
+  case 25:
+  case 26:
     r0 = pxsim_pxtrt.mkMap();
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "a", "0x100000000");
@@ -1828,196 +1580,196 @@ switch (step) {
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "b", -2147483647);
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "expected", 1);
     r0 = pxsim_Array__push(s.tmp_1, s.tmp_7);
-    globals.COMPARISON_TESTS___984074 = (s.tmp_1);
-    globals.testNumber___983846 = (0);
-    s.ct___984090 = (undefined);
-    s.unnamed10852___U21 = (globals.COMPARISON_TESTS___984074);
-    s.unnamed10853___U22 = (0);
-  case 46:
-    s.tmp_0 = r0 = s.unnamed10853___U22;
-    r0 = pxsim_Array__length(s.unnamed10852___U21);
+    globals.COMPARISON_TESTS___1063345 = (s.tmp_1);
+    globals.testNumber___1063043 = (0);
+    s.ct___1063361 = (undefined);
+    s.unnamed11668___U13 = (globals.COMPARISON_TESTS___1063345);
+    s.unnamed11669___U14 = (0);
+  case 27:
+    s.tmp_0 = r0 = s.unnamed11669___U14;
+    r0 = pxsim_Array__length(s.unnamed11668___U13);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
-    if (!r0) { step = 65; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10852___U21, s.unnamed10853___U22);
-    s.ct___984090 = (r0);
+    if (!r0) { step = 46; continue; }
+    r0 = pxsim_Array__getAt(s.unnamed11668___U13, s.unnamed11669___U14);
+    s.ct___1063361 = (r0);
     s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_3 = if_a_1_mk(s);
-    s.tmp_3.arg0 = s.ct___984090;
+    s.tmp_3.arg0 = s.ct___1063361;
     if (!s.tmp_3.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
     } else {
       s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
       if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
       else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 410; s.pc = 198; return s.tmp_3; }
+     else { s.callLocIdx = 418; s.pc = 160; return s.tmp_3; }
     }
-  case 198:
+  case 160:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 411; s.pc = 197; return s.tmp_2;
-  case 197:
+    s.callLocIdx = 419; s.pc = 159; return s.tmp_2;
+  case 159:
     r0 = s.retval;
-    s.a___984092 = (r0);
+    s.a___1063363 = (r0);
     s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_1 = if_b_1_mk(s);
-    s.tmp_1.arg0 = s.ct___984090;
+    s.tmp_1.arg0 = s.ct___1063361;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 412; s.pc = 200; return s.tmp_1; }
+     else { s.callLocIdx = 420; s.pc = 162; return s.tmp_1; }
     }
-  case 200:
+  case 162:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 413; s.pc = 199; return s.tmp_0;
-  case 199:
+    s.callLocIdx = 421; s.pc = 161; return s.tmp_0;
+  case 161:
     r0 = s.retval;
-    s.b___984098 = (r0);
+    s.b___1063369 = (r0);
     s.tmp_0 = JSBI_compare__P1028098_mk(s);
-    s.tmp_0.arg0 = s.a___984092;
-    s.tmp_0.arg1 = s.b___984098;
-    s.callLocIdx = 414; s.pc = 201; return s.tmp_0;
-  case 201:
+    s.tmp_0.arg0 = s.a___1063363;
+    s.tmp_0.arg1 = s.b___1063369;
+    s.callLocIdx = 422; s.pc = 163; return s.tmp_0;
+  case 163:
     r0 = s.retval;
-    s.compare___984104 = (r0);
-    r0 = (s.compare___984104 == 0);
+    s.compare___1063375 = (r0);
+    r0 = (s.compare___1063375 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
-    if (r0) { step = 47; continue; }
+    if (r0) { step = 28; continue; }
     r0 = s.tmp_0;
-    { step = 48; continue; }
-  case 47:
+    { step = 29; continue; }
+  case 28:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___984090;
+    s.tmp_2.arg0 = s.ct___1063361;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 415; s.pc = 202; return s.tmp_2; }
+     else { s.callLocIdx = 423; s.pc = 164; return s.tmp_2; }
     }
-  case 202:
+  case 164:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 != 0);
-  case 48:
+  case 29:
     // jmp value (already in r0)
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBool(s.tmp_3);
-    if (!r0) { step = 49; continue; }
+    if (!r0) { step = 30; continue; }
     r0 = s.tmp_3;
-    { step = 52; continue; }
-  case 49:
-    r0 = (s.compare___984104 > 0);
+    { step = 33; continue; }
+  case 30:
+    r0 = (s.compare___1063375 > 0);
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBool(s.tmp_4);
-    if (r0) { step = 50; continue; }
+    if (r0) { step = 31; continue; }
     r0 = s.tmp_4;
-    { step = 51; continue; }
-  case 50:
+    { step = 32; continue; }
+  case 31:
     s.tmp_6 = if_expected_1_mk(s);
-    s.tmp_6.arg0 = s.ct___984090;
+    s.tmp_6.arg0 = s.ct___1063361;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "expected");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["expected"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["expected"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 416; s.pc = 203; return s.tmp_6; }
+     else { s.callLocIdx = 424; s.pc = 165; return s.tmp_6; }
     }
-  case 203:
+  case 165:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = (s.tmp_5 <= 0);
-  case 51:
+  case 32:
     // jmp value (already in r0)
     s.tmp_7 = r0;
     r0 = s.tmp_7;
-  case 52:
+  case 33:
     // jmp value (already in r0)
     s.tmp_8 = r0;
     r0 = pxsim_numops_toBool(s.tmp_8);
-    if (!r0) { step = 53; continue; }
+    if (!r0) { step = 34; continue; }
     r0 = s.tmp_8;
-    { step = 56; continue; }
-  case 53:
-    r0 = (s.compare___984104 < 0);
+    { step = 37; continue; }
+  case 34:
+    r0 = (s.compare___1063375 < 0);
     s.tmp_9 = r0;
     r0 = pxsim_numops_toBool(s.tmp_9);
-    if (r0) { step = 54; continue; }
+    if (r0) { step = 35; continue; }
     r0 = s.tmp_9;
-    { step = 55; continue; }
-  case 54:
+    { step = 36; continue; }
+  case 35:
     s.tmp_11 = if_expected_1_mk(s);
-    s.tmp_11.arg0 = s.ct___984090;
+    s.tmp_11.arg0 = s.ct___1063361;
     if (!s.tmp_11.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_11.arg0, "expected");
     } else {
       s.tmp_11.fn = s.tmp_11.arg0.vtable.iface["expected"];
       if (s.tmp_11.fn == null) { s.retval = s.tmp_11.arg0.fields["expected"]; }
       else if (!s.tmp_11.fn.isGetter) { s.retval = bind(s.tmp_11); }
-     else { s.callLocIdx = 417; s.pc = 204; return s.tmp_11; }
+     else { s.callLocIdx = 425; s.pc = 166; return s.tmp_11; }
     }
-  case 204:
+  case 166:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = (s.tmp_10 >= 0);
-  case 55:
+  case 36:
     // jmp value (already in r0)
     s.tmp_12 = r0;
     r0 = s.tmp_12;
-  case 56:
+  case 37:
     // jmp value (already in r0)
     s.tmp_13 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_13);
-    if (!r0) { step = 61; continue; }
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 205);
-    pxsim_String__stringConv(globals.testNumber___983846);
+    if (!r0) { step = 42; continue; }
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 167);
+    pxsim_String__stringConv(globals.testNumber___1063043);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 205:
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 167:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_15);
     s.tmp_14 = r0;
     r0 = pxsim_String__concat(s.tmp_14, " (BigInt version) failed. ");
-    globals.msg___983770 = (r0);
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 206);
-    pxsim_String__stringConv(globals.msg___983770);
+    globals.msg___1062967 = (r0);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 168);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 206:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 168:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_6 = if_a_1_mk(s);
-    s.tmp_6.arg0 = s.ct___984090;
+    s.tmp_6.arg0 = s.ct___1063361;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "a");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["a"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["a"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 418; s.pc = 207; return s.tmp_6; }
+     else { s.callLocIdx = 426; s.pc = 169; return s.tmp_6; }
     }
-  case 207:
+  case 169:
     r0 = s.retval;
     s.tmp_5 = r0;
     if ((s.tmp_5) && (s.tmp_5).vtable) {
-    setupResume(s, 208);
+    setupResume(s, 170);
     pxsim_String__stringConv(s.tmp_5);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_5) + ""; }
-  case 208:
+  case 170:
     r0 = s.retval;
     s.tmp_4 = r0;
     r0 = pxsim_String__concat("Expecting ", s.tmp_4);
@@ -2025,133 +1777,133 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " ");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 209);
+    setupResume(s, 171);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 209:
+  case 171:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___984090;
+    s.tmp_2.arg0 = s.ct___1063361;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 419; s.pc = 210; return s.tmp_2; }
+     else { s.callLocIdx = 427; s.pc = 172; return s.tmp_2; }
     }
-  case 210:
+  case 172:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 57; continue; }
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 211);
-    pxsim_String__stringConv(globals.msg___983770);
+    if (!r0) { step = 38; continue; }
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 173);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 211:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 173:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "= ");
-    globals.msg___983770 = (r0);
-    { step = 60; continue; }
-  case 57:
+    globals.msg___1062967 = (r0);
+    { step = 41; continue; }
+  case 38:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___984090;
+    s.tmp_2.arg0 = s.ct___1063361;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 420; s.pc = 212; return s.tmp_2; }
+     else { s.callLocIdx = 428; s.pc = 174; return s.tmp_2; }
     }
-  case 212:
+  case 174:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 58; continue; }
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 213);
-    pxsim_String__stringConv(globals.msg___983770);
+    if (!r0) { step = 39; continue; }
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 175);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 213:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 175:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "< ");
-    globals.msg___983770 = (r0);
-    { step = 59; continue; }
-  case 58:
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 214);
-    pxsim_String__stringConv(globals.msg___983770);
+    globals.msg___1062967 = (r0);
+    { step = 40; continue; }
+  case 39:
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 176);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 214:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 176:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, "> ");
-    globals.msg___983770 = (r0);
-  case 59:
-  case 60:
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 215);
-    pxsim_String__stringConv(globals.msg___983770);
+    globals.msg___1062967 = (r0);
+  case 40:
+  case 41:
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 177);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 215:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 177:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_6 = r0;
     s.tmp_9 = if_b_1_mk(s);
-    s.tmp_9.arg0 = s.ct___984090;
+    s.tmp_9.arg0 = s.ct___1063361;
     if (!s.tmp_9.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_9.arg0, "b");
     } else {
       s.tmp_9.fn = s.tmp_9.arg0.vtable.iface["b"];
       if (s.tmp_9.fn == null) { s.retval = s.tmp_9.arg0.fields["b"]; }
       else if (!s.tmp_9.fn.isGetter) { s.retval = bind(s.tmp_9); }
-     else { s.callLocIdx = 421; s.pc = 216; return s.tmp_9; }
+     else { s.callLocIdx = 429; s.pc = 178; return s.tmp_9; }
     }
-  case 216:
+  case 178:
     r0 = s.retval;
     s.tmp_8 = r0;
     if ((s.tmp_8) && (s.tmp_8).vtable) {
-    setupResume(s, 217);
+    setupResume(s, 179);
     pxsim_String__stringConv(s.tmp_8);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_8) + ""; }
-  case 217:
+  case 179:
     r0 = s.retval;
     s.tmp_7 = r0;
     r0 = pxsim_String__concat(s.tmp_6, s.tmp_7);
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(s.tmp_5, ". Compare() returned ");
     s.tmp_4 = r0;
-    if ((s.compare___984104) && (s.compare___984104).vtable) {
-    setupResume(s, 218);
-    pxsim_String__stringConv(s.compare___984104);
+    if ((s.compare___1063375) && (s.compare___1063375).vtable) {
+    setupResume(s, 180);
+    pxsim_String__stringConv(s.compare___1063375);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.compare___984104) + ""; }
-  case 218:
+    } else { s.retval = (s.compare___1063375) + ""; }
+  case 180:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = pxsim_String__concat(s.tmp_4, s.tmp_10);
@@ -2159,44 +1911,44 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " instead.");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 219);
+    setupResume(s, 181);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 219:
+  case 181:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
+    s.tmp_0.arg0 = globals.msg___1062967;
     s.tmp_0.arg1 = 5;
-    s.callLocIdx = 422; s.pc = 220; return s.tmp_0;
-  case 220:
+    s.callLocIdx = 430; s.pc = 182; return s.tmp_0;
+  case 182:
     r0 = s.retval;
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 221);
-    pxsim_String__stringConv(globals.msg___983770);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 183);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 221:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 183:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_11 = JSBI_BigInt_toString__P1026735_mk(s);
-    s.tmp_11.arg0 = s.a___984092;
-    s.callLocIdx = 423; s.pc = 222; return s.tmp_11;
-  case 222:
+    s.tmp_11.arg0 = s.a___1063363;
+    s.callLocIdx = 431; s.pc = 184; return s.tmp_11;
+  case 184:
     r0 = s.retval;
     s.tmp_10 = r0;
     if ((s.tmp_10) && (s.tmp_10).vtable) {
-    setupResume(s, 223);
+    setupResume(s, 185);
     pxsim_String__stringConv(s.tmp_10);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_10) + ""; }
-  case 223:
+  case 185:
     r0 = s.retval;
     s.tmp_9 = r0;
     r0 = pxsim_String__concat(" a: ", s.tmp_9);
@@ -2204,18 +1956,18 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_8, " ");
     s.tmp_7 = r0;
     s.tmp_14 = JSBI_BigInt_toDebugString__P1026733_mk(s);
-    s.tmp_14.arg0 = s.a___984092;
-    s.callLocIdx = 424; s.pc = 224; return s.tmp_14;
-  case 224:
+    s.tmp_14.arg0 = s.a___1063363;
+    s.callLocIdx = 432; s.pc = 186; return s.tmp_14;
+  case 186:
     r0 = s.retval;
     s.tmp_13 = r0;
     if ((s.tmp_13) && (s.tmp_13).vtable) {
-    setupResume(s, 225);
+    setupResume(s, 187);
     pxsim_String__stringConv(s.tmp_13);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_13) + ""; }
-  case 225:
+  case 187:
     r0 = s.retval;
     s.tmp_12 = r0;
     r0 = pxsim_String__concat(s.tmp_7, s.tmp_12);
@@ -2223,18 +1975,18 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_6, ", b: ");
     s.tmp_5 = r0;
     s.tmp_17 = JSBI_BigInt_toString__P1026735_mk(s);
-    s.tmp_17.arg0 = s.b___984098;
-    s.callLocIdx = 425; s.pc = 226; return s.tmp_17;
-  case 226:
+    s.tmp_17.arg0 = s.b___1063369;
+    s.callLocIdx = 433; s.pc = 188; return s.tmp_17;
+  case 188:
     r0 = s.retval;
     s.tmp_16 = r0;
     if ((s.tmp_16) && (s.tmp_16).vtable) {
-    setupResume(s, 227);
+    setupResume(s, 189);
     pxsim_String__stringConv(s.tmp_16);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_16) + ""; }
-  case 227:
+  case 189:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_String__concat(s.tmp_5, s.tmp_15);
@@ -2242,51 +1994,51 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, " ");
     s.tmp_3 = r0;
     s.tmp_20 = JSBI_BigInt_toDebugString__P1026733_mk(s);
-    s.tmp_20.arg0 = s.b___984098;
-    s.callLocIdx = 426; s.pc = 228; return s.tmp_20;
-  case 228:
+    s.tmp_20.arg0 = s.b___1063369;
+    s.callLocIdx = 434; s.pc = 190; return s.tmp_20;
+  case 190:
     r0 = s.retval;
     s.tmp_19 = r0;
     if ((s.tmp_19) && (s.tmp_19).vtable) {
-    setupResume(s, 229);
+    setupResume(s, 191);
     pxsim_String__stringConv(s.tmp_19);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_19) + ""; }
-  case 229:
+  case 191:
     r0 = s.retval;
     s.tmp_18 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_18);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 230);
+    setupResume(s, 192);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 230:
+  case 192:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
-    s.callLocIdx = 427; s.pc = 231; return s.tmp_0;
-  case 231:
+    s.tmp_0.arg0 = globals.msg___1062967;
+    s.callLocIdx = 435; s.pc = 193; return s.tmp_0;
+  case 193:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-    { step = 64; continue; }
-  case 61:
+    globals.allPassed___1062960 = (false);
+    { step = 45; continue; }
+  case 42:
     r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 62; continue; }
+    if (!r0) { step = 43; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 233);
-    pxsim_String__stringConv(globals.testNumber___983846);
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 195);
+    pxsim_String__stringConv(globals.testNumber___1063043);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 233:
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 195:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_2);
@@ -2294,202 +2046,202 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, " (BigInt version) passed.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 428; s.pc = 232; return s.tmp_0;
-  case 232:
+    s.callLocIdx = 436; s.pc = 194; return s.tmp_0;
+  case 194:
     r0 = s.retval;
-  case 62:
-  case 63:
-  case 64:
-    r0 = (globals.testNumber___983846 + 1);
-    globals.testNumber___983846 = (r0);
-    r0 = (s.unnamed10853___U22 + 1);
-    s.unnamed10853___U22 = (r0);
-    { step = 46; continue; }
-  case 65:
-    s.unnamed10852___U21 = (undefined);
-    globals.testNumber___983846 = (0);
-    s.ct___984241 = (undefined);
-    s.unnamed10854___U27 = (globals.COMPARISON_TESTS___984074);
-    s.unnamed10855___U28 = (0);
-  case 66:
-    s.tmp_0 = r0 = s.unnamed10855___U28;
-    r0 = pxsim_Array__length(s.unnamed10854___U27);
+  case 43:
+  case 44:
+  case 45:
+    r0 = (globals.testNumber___1063043 + 1);
+    globals.testNumber___1063043 = (r0);
+    r0 = (s.unnamed11669___U14 + 1);
+    s.unnamed11669___U14 = (r0);
+    { step = 27; continue; }
+  case 46:
+    s.unnamed11668___U13 = (undefined);
+    globals.testNumber___1063043 = (0);
+    s.ct___1063512 = (undefined);
+    s.unnamed11670___U19 = (globals.COMPARISON_TESTS___1063345);
+    s.unnamed11671___U20 = (0);
+  case 47:
+    s.tmp_0 = r0 = s.unnamed11671___U20;
+    r0 = pxsim_Array__length(s.unnamed11670___U19);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
-    if (!r0) { step = 85; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10854___U27, s.unnamed10855___U28);
-    s.ct___984241 = (r0);
+    if (!r0) { step = 66; continue; }
+    r0 = pxsim_Array__getAt(s.unnamed11670___U19, s.unnamed11671___U20);
+    s.ct___1063512 = (r0);
     s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_3 = if_a_1_mk(s);
-    s.tmp_3.arg0 = s.ct___984241;
+    s.tmp_3.arg0 = s.ct___1063512;
     if (!s.tmp_3.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
     } else {
       s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
       if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
       else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 429; s.pc = 235; return s.tmp_3; }
+     else { s.callLocIdx = 437; s.pc = 197; return s.tmp_3; }
     }
-  case 235:
+  case 197:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 430; s.pc = 234; return s.tmp_2;
-  case 234:
+    s.callLocIdx = 438; s.pc = 196; return s.tmp_2;
+  case 196:
     r0 = s.retval;
-    s.a___984243 = (r0);
+    s.a___1063514 = (r0);
     s.tmp_0 = JSBI_compare__P1028098_mk(s);
-    s.tmp_0.arg0 = s.a___984243;
+    s.tmp_0.arg0 = s.a___1063514;
     s.tmp_1 = if_b_1_mk(s);
-    s.tmp_1.arg0 = s.ct___984241;
+    s.tmp_1.arg0 = s.ct___1063512;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 431; s.pc = 237; return s.tmp_1; }
+     else { s.callLocIdx = 439; s.pc = 199; return s.tmp_1; }
     }
-  case 237:
+  case 199:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 432; s.pc = 236; return s.tmp_0;
-  case 236:
+    s.callLocIdx = 440; s.pc = 198; return s.tmp_0;
+  case 198:
     r0 = s.retval;
-    s.compare___984248 = (r0);
-    r0 = (s.compare___984248 == 0);
+    s.compare___1063519 = (r0);
+    r0 = (s.compare___1063519 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
-    if (r0) { step = 67; continue; }
+    if (r0) { step = 48; continue; }
     r0 = s.tmp_0;
-    { step = 68; continue; }
-  case 67:
+    { step = 49; continue; }
+  case 48:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___984241;
+    s.tmp_2.arg0 = s.ct___1063512;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 433; s.pc = 238; return s.tmp_2; }
+     else { s.callLocIdx = 441; s.pc = 200; return s.tmp_2; }
     }
-  case 238:
+  case 200:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 != 0);
-  case 68:
+  case 49:
     // jmp value (already in r0)
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBool(s.tmp_3);
-    if (!r0) { step = 69; continue; }
+    if (!r0) { step = 50; continue; }
     r0 = s.tmp_3;
-    { step = 72; continue; }
-  case 69:
-    r0 = (s.compare___984248 > 0);
+    { step = 53; continue; }
+  case 50:
+    r0 = (s.compare___1063519 > 0);
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBool(s.tmp_4);
-    if (r0) { step = 70; continue; }
+    if (r0) { step = 51; continue; }
     r0 = s.tmp_4;
-    { step = 71; continue; }
-  case 70:
+    { step = 52; continue; }
+  case 51:
     s.tmp_6 = if_expected_1_mk(s);
-    s.tmp_6.arg0 = s.ct___984241;
+    s.tmp_6.arg0 = s.ct___1063512;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "expected");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["expected"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["expected"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 434; s.pc = 239; return s.tmp_6; }
+     else { s.callLocIdx = 442; s.pc = 201; return s.tmp_6; }
     }
-  case 239:
+  case 201:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = (s.tmp_5 <= 0);
-  case 71:
+  case 52:
     // jmp value (already in r0)
     s.tmp_7 = r0;
     r0 = s.tmp_7;
-  case 72:
+  case 53:
     // jmp value (already in r0)
     s.tmp_8 = r0;
     r0 = pxsim_numops_toBool(s.tmp_8);
-    if (!r0) { step = 73; continue; }
+    if (!r0) { step = 54; continue; }
     r0 = s.tmp_8;
-    { step = 76; continue; }
-  case 73:
-    r0 = (s.compare___984248 < 0);
+    { step = 57; continue; }
+  case 54:
+    r0 = (s.compare___1063519 < 0);
     s.tmp_9 = r0;
     r0 = pxsim_numops_toBool(s.tmp_9);
-    if (r0) { step = 74; continue; }
+    if (r0) { step = 55; continue; }
     r0 = s.tmp_9;
-    { step = 75; continue; }
-  case 74:
+    { step = 56; continue; }
+  case 55:
     s.tmp_11 = if_expected_1_mk(s);
-    s.tmp_11.arg0 = s.ct___984241;
+    s.tmp_11.arg0 = s.ct___1063512;
     if (!s.tmp_11.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_11.arg0, "expected");
     } else {
       s.tmp_11.fn = s.tmp_11.arg0.vtable.iface["expected"];
       if (s.tmp_11.fn == null) { s.retval = s.tmp_11.arg0.fields["expected"]; }
       else if (!s.tmp_11.fn.isGetter) { s.retval = bind(s.tmp_11); }
-     else { s.callLocIdx = 435; s.pc = 240; return s.tmp_11; }
+     else { s.callLocIdx = 443; s.pc = 202; return s.tmp_11; }
     }
-  case 240:
+  case 202:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = (s.tmp_10 >= 0);
-  case 75:
+  case 56:
     // jmp value (already in r0)
     s.tmp_12 = r0;
     r0 = s.tmp_12;
-  case 76:
+  case 57:
     // jmp value (already in r0)
     s.tmp_13 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_13);
-    if (!r0) { step = 81; continue; }
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 241);
-    pxsim_String__stringConv(globals.testNumber___983846);
+    if (!r0) { step = 62; continue; }
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 203);
+    pxsim_String__stringConv(globals.testNumber___1063043);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 241:
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 203:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_15);
     s.tmp_14 = r0;
     r0 = pxsim_String__concat(s.tmp_14, " (number version) failed. ");
-    globals.msg___983770 = (r0);
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 242);
-    pxsim_String__stringConv(globals.msg___983770);
+    globals.msg___1062967 = (r0);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 204);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 242:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 204:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_6 = if_a_1_mk(s);
-    s.tmp_6.arg0 = s.ct___984241;
+    s.tmp_6.arg0 = s.ct___1063512;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "a");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["a"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["a"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 436; s.pc = 243; return s.tmp_6; }
+     else { s.callLocIdx = 444; s.pc = 205; return s.tmp_6; }
     }
-  case 243:
+  case 205:
     r0 = s.retval;
     s.tmp_5 = r0;
     if ((s.tmp_5) && (s.tmp_5).vtable) {
-    setupResume(s, 244);
+    setupResume(s, 206);
     pxsim_String__stringConv(s.tmp_5);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_5) + ""; }
-  case 244:
+  case 206:
     r0 = s.retval;
     s.tmp_4 = r0;
     r0 = pxsim_String__concat("Expecting ", s.tmp_4);
@@ -2497,133 +2249,133 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " ");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 245);
+    setupResume(s, 207);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 245:
+  case 207:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___984241;
+    s.tmp_2.arg0 = s.ct___1063512;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 437; s.pc = 246; return s.tmp_2; }
+     else { s.callLocIdx = 445; s.pc = 208; return s.tmp_2; }
     }
-  case 246:
+  case 208:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 77; continue; }
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 247);
-    pxsim_String__stringConv(globals.msg___983770);
+    if (!r0) { step = 58; continue; }
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 209);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 247:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 209:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "= ");
-    globals.msg___983770 = (r0);
-    { step = 80; continue; }
-  case 77:
+    globals.msg___1062967 = (r0);
+    { step = 61; continue; }
+  case 58:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___984241;
+    s.tmp_2.arg0 = s.ct___1063512;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 438; s.pc = 248; return s.tmp_2; }
+     else { s.callLocIdx = 446; s.pc = 210; return s.tmp_2; }
     }
-  case 248:
+  case 210:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 78; continue; }
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 249);
-    pxsim_String__stringConv(globals.msg___983770);
+    if (!r0) { step = 59; continue; }
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 211);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 249:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 211:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "< ");
-    globals.msg___983770 = (r0);
-    { step = 79; continue; }
-  case 78:
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 250);
-    pxsim_String__stringConv(globals.msg___983770);
+    globals.msg___1062967 = (r0);
+    { step = 60; continue; }
+  case 59:
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 212);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 250:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 212:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, "> ");
-    globals.msg___983770 = (r0);
-  case 79:
-  case 80:
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 251);
-    pxsim_String__stringConv(globals.msg___983770);
+    globals.msg___1062967 = (r0);
+  case 60:
+  case 61:
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 213);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 251:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 213:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_6 = r0;
     s.tmp_9 = if_b_1_mk(s);
-    s.tmp_9.arg0 = s.ct___984241;
+    s.tmp_9.arg0 = s.ct___1063512;
     if (!s.tmp_9.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_9.arg0, "b");
     } else {
       s.tmp_9.fn = s.tmp_9.arg0.vtable.iface["b"];
       if (s.tmp_9.fn == null) { s.retval = s.tmp_9.arg0.fields["b"]; }
       else if (!s.tmp_9.fn.isGetter) { s.retval = bind(s.tmp_9); }
-     else { s.callLocIdx = 439; s.pc = 252; return s.tmp_9; }
+     else { s.callLocIdx = 447; s.pc = 214; return s.tmp_9; }
     }
-  case 252:
+  case 214:
     r0 = s.retval;
     s.tmp_8 = r0;
     if ((s.tmp_8) && (s.tmp_8).vtable) {
-    setupResume(s, 253);
+    setupResume(s, 215);
     pxsim_String__stringConv(s.tmp_8);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_8) + ""; }
-  case 253:
+  case 215:
     r0 = s.retval;
     s.tmp_7 = r0;
     r0 = pxsim_String__concat(s.tmp_6, s.tmp_7);
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(s.tmp_5, ". Compare() returned ");
     s.tmp_4 = r0;
-    if ((s.compare___984248) && (s.compare___984248).vtable) {
-    setupResume(s, 254);
-    pxsim_String__stringConv(s.compare___984248);
+    if ((s.compare___1063519) && (s.compare___1063519).vtable) {
+    setupResume(s, 216);
+    pxsim_String__stringConv(s.compare___1063519);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.compare___984248) + ""; }
-  case 254:
+    } else { s.retval = (s.compare___1063519) + ""; }
+  case 216:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = pxsim_String__concat(s.tmp_4, s.tmp_10);
@@ -2631,77 +2383,77 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " instead.");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 255);
+    setupResume(s, 217);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 255:
+  case 217:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
+    s.tmp_0.arg0 = globals.msg___1062967;
     s.tmp_0.arg1 = 5;
-    s.callLocIdx = 440; s.pc = 256; return s.tmp_0;
-  case 256:
+    s.callLocIdx = 448; s.pc = 218; return s.tmp_0;
+  case 218:
     r0 = s.retval;
-    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
-    setupResume(s, 257);
-    pxsim_String__stringConv(globals.msg___983770);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 219);
+    pxsim_String__stringConv(globals.msg___1062967);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___983770) + ""; }
-  case 257:
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 219:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_5 = JSBI_BigInt_toDebugString__P1026733_mk(s);
-    s.tmp_5.arg0 = s.a___984243;
-    s.callLocIdx = 441; s.pc = 258; return s.tmp_5;
-  case 258:
+    s.tmp_5.arg0 = s.a___1063514;
+    s.callLocIdx = 449; s.pc = 220; return s.tmp_5;
+  case 220:
     r0 = s.retval;
     s.tmp_4 = r0;
     if ((s.tmp_4) && (s.tmp_4).vtable) {
-    setupResume(s, 259);
+    setupResume(s, 221);
     pxsim_String__stringConv(s.tmp_4);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_4) + ""; }
-  case 259:
+  case 221:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(" a: ", s.tmp_3);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 260);
+    setupResume(s, 222);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 260:
+  case 222:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___983770 = (r0);
+    globals.msg___1062967 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___983770;
-    s.callLocIdx = 442; s.pc = 261; return s.tmp_0;
-  case 261:
+    s.tmp_0.arg0 = globals.msg___1062967;
+    s.callLocIdx = 450; s.pc = 223; return s.tmp_0;
+  case 223:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-    { step = 84; continue; }
-  case 81:
+    globals.allPassed___1062960 = (false);
+    { step = 65; continue; }
+  case 62:
     r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 82; continue; }
+    if (!r0) { step = 63; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
-    setupResume(s, 263);
-    pxsim_String__stringConv(globals.testNumber___983846);
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 225);
+    pxsim_String__stringConv(globals.testNumber___1063043);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___983846) + ""; }
-  case 263:
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 225:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_2);
@@ -2709,120 +2461,206 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, " (number version) passed.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 443; s.pc = 262; return s.tmp_0;
-  case 262:
+    s.callLocIdx = 451; s.pc = 224; return s.tmp_0;
+  case 224:
     r0 = s.retval;
-  case 82:
-  case 83:
-  case 84:
-    r0 = (globals.testNumber___983846 + 1);
-    globals.testNumber___983846 = (r0);
-    r0 = (s.unnamed10855___U28 + 1);
-    s.unnamed10855___U28 = (r0);
-    { step = 66; continue; }
-  case 85:
-    s.unnamed10854___U27 = (undefined);
+  case 63:
+  case 64:
+  case 65:
+    r0 = (globals.testNumber___1063043 + 1);
+    globals.testNumber___1063043 = (r0);
+    r0 = (s.unnamed11671___U20 + 1);
+    s.unnamed11671___U20 = (r0);
+    { step = 47; continue; }
+  case 66:
+    s.unnamed11670___U19 = (undefined);
     s.tmp_0 = JSBI_BigInt_toString__P1026735_mk(s);
     s.tmp_1 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_1.arg0 = 4.4384296245614243e+42;
-    s.callLocIdx = 444; s.pc = 265; return s.tmp_1;
-  case 265:
+    s.callLocIdx = 452; s.pc = 227; return s.tmp_1;
+  case 227:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 445; s.pc = 264; return s.tmp_0;
-  case 264:
+    s.callLocIdx = 453; s.pc = 226; return s.tmp_0;
+  case 226:
     r0 = s.retval;
-    globals.t63a___984366 = (r0);
-    globals.t63b___984369 = ("4438429624561424320047307980392507864252416");
-    r0 = (globals.t63a___984366 == globals.t63b___984369);
+    globals.t63a___1063637 = (r0);
+    globals.t63b___1063640 = ("4438429624561424320047307980392507864252416");
+    r0 = (globals.t63a___1063637 == globals.t63b___1063640);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 88; continue; }
+    if (!r0) { step = 69; continue; }
     r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 86; continue; }
+    if (!r0) { step = 67; continue; }
     s.tmp_1 = game_splash__P610346_mk(s);
     s.tmp_1.arg0 = "Test 1 for issue #63 passed.";
     s.tmp_1.arg1 = undefined;
-    s.callLocIdx = 446; s.pc = 266; return s.tmp_1;
-  case 266:
+    s.callLocIdx = 454; s.pc = 228; return s.tmp_1;
+  case 228:
     r0 = s.retval;
-  case 86:
-  case 87:
-    { step = 89; continue; }
-  case 88:
+  case 67:
+  case 68:
+    { step = 70; continue; }
+  case 69:
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "Test 1 for issue #63 failed.";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 447; s.pc = 267; return s.tmp_0;
-  case 267:
+    s.callLocIdx = 455; s.pc = 229; return s.tmp_0;
+  case 229:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-  case 89:
-    globals.t63c___984379 = ("3361387880631608742970259577528807057005903");
+    globals.allPassed___1062960 = (false);
+  case 70:
+    globals.t63c___1063650 = ("3361387880631608742970259577528807057005903");
     s.tmp_0 = JSBI_BigInt_toNumber__P1026734_mk(s);
     s.tmp_1 = JSBI_CreateBigInt__P1027446_mk(s);
-    s.tmp_1.arg0 = globals.t63c___984379;
-    s.callLocIdx = 448; s.pc = 269; return s.tmp_1;
-  case 269:
+    s.tmp_1.arg0 = globals.t63c___1063650;
+    s.callLocIdx = 456; s.pc = 231; return s.tmp_1;
+  case 231:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 449; s.pc = 268; return s.tmp_0;
-  case 268:
+    s.callLocIdx = 457; s.pc = 230; return s.tmp_0;
+  case 230:
     r0 = s.retval;
-    globals.t63d___984382 = (r0);
-    globals.t63e___984387 = (3.361387880631609e+42);
-    r0 = (globals.t63d___984382 == globals.t63e___984387);
+    globals.t63d___1063653 = (r0);
+    globals.t63e___1063658 = (3.361387880631609e+42);
+    r0 = (globals.t63d___1063653 == globals.t63e___1063658);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 92; continue; }
+    if (!r0) { step = 73; continue; }
     r0 = pxsim_numops_toBoolDecr(false);
-    if (!r0) { step = 90; continue; }
+    if (!r0) { step = 71; continue; }
     s.tmp_1 = game_splash__P610346_mk(s);
     s.tmp_1.arg0 = "Test 2 for issue #63 passed.";
     s.tmp_1.arg1 = undefined;
-    s.callLocIdx = 450; s.pc = 270; return s.tmp_1;
-  case 270:
+    s.callLocIdx = 458; s.pc = 232; return s.tmp_1;
+  case 232:
     r0 = s.retval;
-  case 90:
-  case 91:
-    { step = 93; continue; }
-  case 92:
+  case 71:
+  case 72:
+    { step = 74; continue; }
+  case 73:
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "Test 2 for issue #63 failed.";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 451; s.pc = 271; return s.tmp_0;
-  case 271:
+    s.callLocIdx = 459; s.pc = 233; return s.tmp_0;
+  case 233:
     r0 = s.retval;
-    globals.allPassed___983763 = (false);
-  case 93:
-    r0 = pxsim_numops_toBoolDecr(globals.allPassed___983763);
-    if (!r0) { step = 94; continue; }
+    globals.allPassed___1062960 = (false);
+  case 74:
+    r0 = pxsim_numops_toBoolDecr(globals.allPassed___1062960);
+    if (!r0) { step = 75; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "All tests passed!";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 452; s.pc = 272; return s.tmp_0;
-  case 272:
+    s.callLocIdx = 460; s.pc = 234; return s.tmp_0;
+  case 234:
     r0 = s.retval;
-    { step = 95; continue; }
-  case 94:
+    { step = 76; continue; }
+  case 75:
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "At least one test failed.";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 453; s.pc = 273; return s.tmp_0;
-  case 273:
+    s.callLocIdx = 461; s.pc = 235; return s.tmp_0;
+  case 235:
     r0 = s.retval;
-  case 95:
+  case 76:
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_0 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "a", "0");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "b", "0");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "operation", "add");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "expected", "0");
+    r0 = pxsim_Array__mk();
+    s.tmp_1 = r0;
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_0);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_2 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_2, "a", "0");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_2, "b", "1");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_2, "operation", "add");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_2, "expected", "1");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_2);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_3 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_3, "a", "8589934591");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_3, "b", "4294967298");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_3, "operation", "add");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_3, "expected", "12884901889");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_3);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_4 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_4, "a", "1");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_4, "b", "0");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_4, "operation", "subtract");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_4, "expected", "1");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_4);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_5 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_5, "a", "1");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_5, "b", "1");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_5, "operation", "subtract");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_5, "expected", "0");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_5);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_6 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "a", "2");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "b", "1");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "operation", "subtract");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "expected", "1");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_6);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_7 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "a", "12884901889");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "b", "4294967298");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "operation", "subtract");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "expected", "8589934591");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_7);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_8 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_8, "a", "4294967296");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_8, "b", "1");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_8, "operation", "subtract");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_8, "expected", "4294967295");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_8);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_9 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_9, "a", "314159265");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_9, "b", "358979323");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_9, "operation", "multiply");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_9, "expected", "112776680263877595");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_9);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_10 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_10, "a", "112776680263877595");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_10, "b", "123");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_10, "operation", "divide");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_10, "expected", "916883579381118");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_10);
+    r0 = pxsim_pxtrt.mkMap();
+    s.tmp_11 = r0;
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_11, "a", "112776680263877595");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_11, "b", "123");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_11, "operation", "mod");
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_11, "expected", "81");
+    r0 = pxsim_Array__push(s.tmp_1, s.tmp_11);
+    globals.MM_TESTS___1063674 = (s.tmp_1);
+    s.tmp_0 = runTests__P1063044_mk(s);
+    s.tmp_0.arg0 = globals.MM_TESTS___1063674;
+    s.tmp_0.arg1 = "Matt McCutchen";
+    s.callLocIdx = 462; s.pc = 236; return s.tmp_0;
+  case 236:
+    r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P1032749.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P1032749.continuations = [ 135,137,138,141,142,159,161,163,168,170,173,175,181,183,185,186,190,192,194,195,205,206,208,209,211,213,214,215,217,218,219,221,223,225,227,229,230,233,241,242,244,245,247,249,250,251,253,254,255,257,259,260,263 ]
+_main___P1068428.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P1068428.continuations = [ 116,118,119,122,123,130,132,135,137,143,145,147,148,152,154,156,157,167,168,170,171,173,175,176,177,179,180,181,183,185,187,189,191,192,195,203,204,206,207,209,211,212,213,215,216,217,219,221,222,225 ]
 
-function _main___P1032749_mk(s) {
+function _main___P1068428_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P1032749, depth: s.depth + 1,
+        parent: s, fn: _main___P1068428, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2845,37 +2683,29 @@ function _main___P1032749_mk(s) {
   tmp_18: undefined,
   tmp_19: undefined,
   tmp_20: undefined,
-  i___983771: undefined,
-  verify___983799: undefined,
-  compare___983803: undefined,
-  test___983848: undefined,
-  unnamed10846___U4: undefined,
-  unnamed10847___U5: undefined,
-  a___983850: undefined,
-  b___983856: undefined,
-  expected___983862: undefined,
-  result___983868: undefined,
-  compare___983898: undefined,
-  v___983945: undefined,
-  unnamed10848___U12: undefined,
-  unnamed10849___U13: undefined,
-  result___983947: undefined,
-  i___983975: undefined,
-  unnamed10850___U16: undefined,
-  unnamed10851___U17: undefined,
-  result___983978: undefined,
-  exception___983991: undefined,
-  ct___984090: undefined,
-  unnamed10852___U21: undefined,
-  unnamed10853___U22: undefined,
-  a___984092: undefined,
-  b___984098: undefined,
-  compare___984104: undefined,
-  ct___984241: undefined,
-  unnamed10854___U27: undefined,
-  unnamed10855___U28: undefined,
-  a___984243: undefined,
-  compare___984248: undefined,
+  i___1062968: undefined,
+  verify___1062996: undefined,
+  compare___1063000: undefined,
+  v___1063216: undefined,
+  unnamed11664___U4: undefined,
+  unnamed11665___U5: undefined,
+  result___1063218: undefined,
+  i___1063246: undefined,
+  unnamed11666___U8: undefined,
+  unnamed11667___U9: undefined,
+  result___1063249: undefined,
+  exception___1063262: undefined,
+  ct___1063361: undefined,
+  unnamed11668___U13: undefined,
+  unnamed11669___U14: undefined,
+  a___1063363: undefined,
+  b___1063369: undefined,
+  compare___1063375: undefined,
+  ct___1063512: undefined,
+  unnamed11670___U19: undefined,
+  unnamed11671___U20: undefined,
+  a___1063514: undefined,
+  compare___1063519: undefined,
 } }
 
 const _hex619459 = pxsim.BufferMethods.createBufferFromHex("2000000000000000210000005e0000002200000e000e0000230028fe28fe280024004c92ff926400250002651248a64026006c92926ca000270000000e000000280000007c82000029000000827c00002a005438103854002b0010107c1010002c000000907000002d001010101010002e000000606000002f000060100806003000003c42423c00310000447e4000003200004462524c00330000424a4e320034003028247e20003500004e4a4a32003600003c4a4a30003700000262120e00380000344a4a34003900000c52523c003a0000006c6c00003b000000967600003c001028284444003d002828282828003e004444282810003f0000025909060040003c425a560800410078141214780042007e4a4a4a34004300003c424224004400007e42423c004500007e4a4a42004600007e0a0a02004700003c425234004800007e08087e00490000427e4200004a002040423e02004b00007e081462004c00007e404040004d007e0418047e004e00007e04087e004f003c4242423c005000007e12120c005100003c5262bc005200007e12126c00530000244a522400540002027e0202005500003e40403e005600001e70701e0057007e2018207e00580042241824420059000608700806005a000062524a46005b00007e424200005c000006081060005d000042427e00005e000804020408005f00808080808000600000000204000061000030484878006200007e4848300063000030484848006400003048487e006500003068585000660000107c12040067000018a4a478006800007e08087000690000487a4000006a000040847d00006b00007e102840006c0000427e4000006d007808300870006e000078080870006f00003048483000700000fc24241800710000182424fc0072000078100810007300005058682800740000083e48200075000038404078007600001860601800770038403040380078000048303048007900005ca0a07c007a000048685848007b000008364100007c000000fe0000007d000041360800007e00000804080400a000000000000000a10000007a000000a200003048fc4800a30090fc92928400a400542844285400a5002a2c782c2a00a6000000ee000000a7000094aaaa5200a800000200020000a9003e414955413eaa0000242a2e0000ab00102854284400ac00001010107000ad00001010101000ae003e415d45413eaf00000202020200b000000814140800b1008888be888800b2000024322c0000b30000222a140000b400000004020000b50000f840207800b6000c1e7e027e00b700000010000000b800000080400000b90000243e200000ba0000242a240000bb00442854281000bc00025f70f84000bd00021f90c8b000be0011557af84000bf000030484d2000c000601916186000c100601816196000c200601a151a6000c300601a151a6100c400601914196000c500601a151a6000c6007c0a7e4a4200c700001ea1611200c800007c55564400c900007c56554400ca00007c56554600cb00007c55544500cc0000457e440000cd0000447e450000ce0000467d460000cf0000457c450000d000087e4a423c00d100007e09127d00d200003845463800d300003846453800d400003846453a00d500003a45463900d600003845443900d700442810284400d80000fc724e3f00d900003c41423c00da00003c42413c00db00003c42413e00dc00003c41403d00dd00040872090400de00007e24241800df00007c025a2400e0000030494a7800e10000304a497800e20000304a497a00e3000032494a7900e40000304a487a00e50000304a4d7a00e600304878685000e7000018a4642400e8000030695a5000e90000306a595000ea0000306a595200eb0000306a585200ec0000497a400000ed0000487a410000ee00004a79420000ef00004a78420000f00000304a4b3d00f100007a090a7100f2000030494a3000f30000304a493000f40000304a493200f5000032494a3100f60000304a483200f700101054101000f800007068583800f900003841427800fa00003842417800fb00003842417a00fc00003842407a00fd0000b84241f800fe0000ff24241800ff00005ca1a07d000001601915196000010100304a4a7a000201611a16196000030100314a4a790004013c0a094abc00050100182464bc000601003846452800070100304a4948000801003846452a00090100304a494a000a010038444528000b010030484a48000c010038454629000d010030494a49000e01007c454639000f0100314a497e001001087e4a423c00110130484c7e04001201007d55554500130100326a5a52001401007d56564500150100316a5a51001601007c55544400170100306a5850001801003f65a521001901001874ac28001a01007c555645001b010030695a51001c010038465536001d0100304a49f2001e010039465635001f0100314a4af100200100384455340021010018a4a578002201001ea1691a0023010018a6a578002401007812117a0025017e080a7102002601047e147e04002701047e0c08700028010002457e450029010002497a41002a0100457d4500002b01004a7a4200002c0100014a7a49002d0100014a7a41002e0100217fa100002f0100247da00000300100447d440000310100487840000032017e0022423e0033013d0040847d0034012040463d0600350100800af90200360100bf440a3100370100bf4814200038010078102848003901007c404241003a0100467d4000003b01003fa06020003c0100a17f2000003d01007c414241003e0100457e4100003f01007e40484000400100427e4008004101107e48404000420100527e4800004301007c0a117c00440100780a097000450100bf42043f00460100bc440438004701007c09127d00480100790a09700049010a06780870004a01003f02847f004b01003c048478004c013945454539004d0100324a4a32004e013946464639004f0100314a4a310050013a4544463900510132494832010052013c427e4a420053013048306850005401007c163548005501007812091000560100bf49093600570100bc480408005801007d1635480059010079120910005a010048565524005b0100505a6928005c010048565526005d0100505a692a005e010012a56912005f010028ac741400600100485556250061010050596a290062010101bf410100630100049f641000640104057e050400650100083d4a2100660102127e120200670100183e5820006801003a414239006901003a414279006a01003d41413d006b01003a42427a006c010039424239006d010039424279006e01003a45453a006f01003a45457a0070013a41403a010071013a41407a01007201001f60a01f007301001c60a03c00740178221122780075013842314238007601081261120800770100b84241fa00780104097009040079010064564d44007a0100486a5948007b010064544d44007c010048685a48007d010064554e45007e010048695a49007f0100087c0204008f01003452523c00920100887e090200a0013c42423c0806a101003048483008af01003e403e0806b001003840781008b501006a5a4a4e00b601005878585800d101003845463900d2010030494a3100e601003845563500e7010030494af100fa0100742a750000fb0100304c4a7d00fc0178147e554400fd0130487a695000fe010078744e3d00ff0100706a59380018020012a569120019020028ac7414001a020101bf4101001b0200049f641000bb0200000c0a0000bc0200000a060000bd020000060a0000c602000201020000c702000102010000c902000202020000d802000102020100d902000002000000da02000205020000db02000040800000dc02000201020100dd02020100020100740300000201000075030000804000007a030000c08000007e03000096760000840300000300000085030200030002008603037c12127c008703000010000000880303007e4a4200890303007e087e008a030300427e42008c03033c42423c008e0303000e700e008f03035c62625c00900302003b400200910378141214780092037e4a4a4a34009303007e0202020094036058465860009503007e4a4a420096030062524a46009703007e08087e0098033c4a4a4a3c00990300427e4200009a03007e081462009b036018061860009c037e0418047e009d03007e04087e009e0300424a4a42009f033c4242423c00a003007e02027e00a103007e12120c00a30300665a424200a40302027e020200a503060870080600a60318247e241800a703422418244200a8030e107e100e00a9035c6202625c00aa0300457c450000ab03040970090400ac030030484a7900ad030030685a5100ae0378100a09f000af03003a41200000b0033a4043403a00b103003048487800b20300fe25251a00b3030c30c0300c00b403344a4a4a3000b503003068585000b603021aa6a24200b7033c080404f800b803003c4a4a3c00b903003840200000ba03007820504800bb03641212227c00bc03fc2020103c00bd03182040201800be03112d2ba94100bf03003048483000c003087808780800c103f82424241800c2031824a4a44800c303304848582800c403000838482800c503384040403800c6031c20f8241800c703c4281028c400c8031c20fc201c00c903304820483000ca03000238422000cb03384240423800cc0330484a493000cd03384042413800ce03304822493000d0033c52525c2000d10310344a3c0800d203067804020400d303120a7c020400d4030d7009040800d5031824ff241800d603384828483800d70348302221d800da031c2221a14200db031824a4a44200dc037e1212020200dd0300fc24240400de033e2010087c00df030c0ac9281800e003700c621c7000e10301092516f800e2039ea0bea07e00e30398a0b8a07800e4030c1214107e00e503001028207800e603be9088887000e70348544e443800e803245252524c00e903285454544800ea0364524c526400eb03086458640800ec03385454542200ed03306848682400ee03184a7e4a1800ef031848ff0a0800f003483020205800f10378a4a4a49800f203304848485000f303006080847d00f4033c4a4a4a3c00f5030030585848000004007c555644000104007c55544500020401013f8579000304007c0605040004043c4a4a422400050400244a522400060400427e420000070400457c45000008042040423e020009047c027e4830000a047e087e4830000b0402027e0a72000c04007c102a45000d047c2112087c000e040c5152523d000f043f20e0203f00100478141214780011047e4a4a4a300012047e4a4a4a34001304007e020202001404c07c427ec0001504007e4a4a4200160476087e087600170424424a4a34001804007e08047e001904007d120a7d001a04007e081462001b04403c02027e001c047e0418047e001d04007e08087e001e043c4242423c001f047e0202027e002004007e12120c002104003c42422400220402027e02020023040e5050503e00240418247e241800250442241824420026043f2020bf600027040e1010107e0028047e407e407e0029043f203fa07f002a04027e484830002b047e4848307e002c04007e484830002d0424424a4a3c002e047e183c423c002f04006c12127e0030043048487840003104003c4a4a3100320400786850200033040078080808003404c0704878c000350430686850000036044830783048003704004058683000380478402010780039047942221279003a040078203048003b044030080878003c047810201078003d047810101078003e043048484830003f047808080878004004fc24242418004104304848485000420408087808080043041ca0a0a07c0044041824ff241800450400483030480046043c2020bc60004704182020207800480478407840780049043c203ca07c004a040878505020004b047850502078004c040078505020004d044858683000004e047830304830004f0450282878000050040030696a500051040032686a50005204023f0a887000530400780a09080054040030685848005504005058682800560400487a4000005704004a784200005804004080847d0059047008785020005a047810785020005b04047e141060005c040078223148005d047841221078005e0418a1a2a279005f043c20e0203c006204027f4a4830006304087e5850200070040e107e100e00710418207820180072043c4a4a4a3c0073043068586830007404001e70180c0075040018603010009004007e020203009104007808080c009204087e0a0a0200930420782808080096043b043f043be0970424183c1824c09a04003f040a31c09b04003c101824c0ae04060870080600af040c10e0100c00b004161870181600b1042c30e0302c00b20421120c1221c0b3040024181824c0ba047e0808087000bb04007e08087000d804003452523c00d904002868583000e20400457d450000e304004a7a420000e8043c4a4a4a3c00e904003058583000ee04003d41413d00ef04003a42427a00d005681020285000d105484848784000d205004830600000d305080808780800d405680808087800d505000008780000d605080818680800d705087808087800d805784050487800d905000008180000da0504040404fc00db05484848483800dc050e4848281800dd05087848487800de05582010487000df05000004fc0000e005004040487800e105000878483800e205487840281800e305041c0404fc00e405485848483800e50504f820140800e605485060685000e705f40424241c00e805080808087000e905785058403800ea05487808087800f005087800087800f105081800087800f205081800081800f305000010080000f405100800100800021e7c5455542800031e007e484930000a1e007c454438000b1e003049487e001e1e007c151404001f1e001079140800401e7e0419047e00411e780832087000561e007c15140800571e00fc25241800601e004854552400611e0050586a28006a1e04047d0404006b1e00083d482000801e7c2112207c00811e384132403800821e7c2012217c00831e384032413800841e7c2110217c00851e384230423800f21e040972080400f31e00b84142f800a3207e0a7a120a00a420a8fcaa828400a720087e2a1c0800ab200098a4a6bf02ac20183c5a5a4200af20627f224438009021103854101000912108047e0408009221101054381000932110207e201000942110381010381095212844fe442800")
@@ -5092,8 +4922,8 @@ switch (step) {
 
     s.result___1026774 = undefined;
     s.digit___1026777 = undefined;
-    s.unnamed10844___U2 = undefined;
-    s.unnamed10845___U3 = undefined;
+    s.unnamed11660___U2 = undefined;
+    s.unnamed11661___U3 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -5106,15 +4936,15 @@ switch (step) {
     s.result___1026774 = (s.tmp_0);
     s.digit___1026777 = (undefined);
     r0 = s.arg0.fields["data"];
-    s.unnamed10844___U2 = (r0);
-    s.unnamed10845___U3 = (0);
+    s.unnamed11660___U2 = (r0);
+    s.unnamed11661___U3 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed10845___U3;
-    r0 = pxsim_Array__length(s.unnamed10844___U2);
+    s.tmp_0 = r0 = s.unnamed11661___U3;
+    r0 = pxsim_Array__length(s.unnamed11660___U2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 4; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10844___U2, s.unnamed10845___U3);
+    r0 = pxsim_Array__getAt(s.unnamed11660___U2, s.unnamed11661___U3);
     s.digit___1026777 = (r0);
     r0 = pxsim_numops_toBoolDecr(s.digit___1026777);
     if (!r0) { step = 2; continue; }
@@ -5140,11 +4970,11 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_6, ", ");
     s.tmp_5 = r0;
     r0 = pxsim_Array__push(s.tmp_4, s.tmp_5);
-    r0 = (s.unnamed10845___U3 + 1);
-    s.unnamed10845___U3 = (r0);
+    r0 = (s.unnamed11661___U3 + 1);
+    s.unnamed11661___U3 = (r0);
     { step = 1; continue; }
   case 4:
-    s.unnamed10844___U2 = (undefined);
+    s.unnamed11660___U2 = (undefined);
     s.tmp_0 = r0 = s.result___1026774;
     r0 = s.arg0.fields["sign"];
     s.tmp_3 = r0;
@@ -5186,8 +5016,957 @@ function JSBI_BigInt_toDebugString__P1026733_mk(s) {
   tmp_6: undefined,
   result___1026774: undefined,
   digit___1026777: undefined,
-  unnamed10844___U2: undefined,
-  unnamed10845___U3: undefined,
+  unnamed11660___U2: undefined,
+  unnamed11661___U3: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function JSBI_add__P1028081(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.sign___1028084 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0.fields["sign"];
+    s.sign___1028084 = (r0);
+    r0 = s.arg1.fields["sign"];
+    s.tmp_1 = r0;
+    r0 = (s.sign___1028084 === s.tmp_1);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    s.tmp_2 = JSBI_absoluteAdd__P1027514_mk(s);
+    s.tmp_2.arg0 = s.arg0;
+    s.tmp_2.arg1 = s.arg1;
+    s.tmp_2.arg2 = s.sign___1028084;
+    s.callLocIdx = 189; s.pc = 6; return s.tmp_2;
+  case 6:
+    r0 = s.retval;
+    { step = 5; continue; }
+  case 1:
+  case 2:
+    s.tmp_5 = JSBI_compare__P1028098_mk(s);
+    s.tmp_5.arg0 = s.arg0;
+    s.tmp_5.arg1 = s.arg1;
+    s.callLocIdx = 190; s.pc = 7; return s.tmp_5;
+  case 7:
+    r0 = s.retval;
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 >= 0);
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    if (!r0) { step = 3; continue; }
+    s.tmp_6 = JSBI_absoluteSub__P1028001_mk(s);
+    s.tmp_6.arg0 = s.arg0;
+    s.tmp_6.arg1 = s.arg1;
+    s.tmp_6.arg2 = s.sign___1028084;
+    s.callLocIdx = 191; s.pc = 8; return s.tmp_6;
+  case 8:
+    r0 = s.retval;
+    { step = 5; continue; }
+  case 3:
+  case 4:
+    s.tmp_7 = JSBI_absoluteSub__P1028001_mk(s);
+    s.tmp_7.arg0 = s.arg1;
+    s.tmp_7.arg1 = s.arg0;
+    r0 = pxsim_numops_toBoolDecr(s.sign___1028084);
+    s.tmp_8 = r0;
+    r0 = pxsim_Boolean__bang(s.tmp_8);
+    s.tmp_7.arg2 = r0;
+    s.callLocIdx = 192; s.pc = 9; return s.tmp_7;
+  case 9:
+    r0 = s.retval;
+  case 5:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_add__P1028081.info = {"start":17223,"length":439,"line":436,"column":4,"endLine":449,"endColumn":5,"fileName":"jsbi.ts","functionName":"add","argumentNames":["x","y"]}
+
+function JSBI_add__P1028081_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_add__P1028081, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  tmp_8: undefined,
+  sign___1028084: undefined,
+  arg0: undefined,
+  arg1: undefined,
+} }
+
+
+
+
+
+function JSBI_absoluteSub__P1028001(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.result___1028019 = undefined;
+    s.borrow___1028025 = undefined;
+    s.i___1028026 = undefined;
+    s.r___1028032 = undefined;
+    s.r___1028060 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.arg2 = (s.lambdaArgs[2]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    r0 = s.arg0;
+    { step = 11; continue; }
+  case 1:
+  case 2:
+    r0 = s.arg1.fields["data"];
+    s.tmp_5 = r0;
+    r0 = pxsim_Array__length(s.tmp_5);
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 === 0);
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    if (!r0) { step = 5; continue; }
+    r0 = s.arg0.fields["sign"];
+    s.tmp_7 = r0;
+    r0 = (s.tmp_7 === s.arg2);
+    s.tmp_6 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_6);
+    if (!r0) { step = 3; continue; }
+    r0 = s.arg0;
+    { step = 4; continue; }
+  case 3:
+    s.tmp_8 = JSBI_unaryMinus__P1027540_mk(s);
+    s.tmp_8.arg0 = s.arg0;
+    s.callLocIdx = 178; s.pc = 12; return s.tmp_8;
+  case 12:
+    r0 = s.retval;
+  case 4:
+    // jmp value (already in r0)
+    s.tmp_9 = r0;
+    r0 = s.tmp_9;
+    { step = 11; continue; }
+  case 5:
+  case 6:
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_10 = r0;
+    s.tmp_11 = JSBI_BigInt_constructor__P1026750_mk(s);
+    s.tmp_11.arg0 = s.tmp_10;
+    r0 = s.arg0.fields["data"];
+    s.tmp_12 = r0;
+    r0 = pxsim_Array__length(s.tmp_12);
+    s.tmp_11.arg1 = r0;
+    s.tmp_11.arg2 = s.arg2;
+    s.callLocIdx = 180; s.pc = 13; return s.tmp_11;
+  case 13:
+    r0 = s.retval;
+    s.result___1028019 = (s.tmp_10);
+    s.borrow___1028025 = (0);
+    s.i___1028026 = (0);
+  case 7:
+    s.tmp_1 = r0 = s.i___1028026;
+    r0 = s.arg1.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 8; continue; }
+    r0 = s.arg0.fields["data"];
+    s.tmp_6 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_6, s.i___1028026);
+    s.tmp_5 = r0;
+    r0 = s.arg1.fields["data"];
+    s.tmp_8 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_8, s.i___1028026);
+    s.tmp_7 = r0;
+    r0 = (s.tmp_5 - s.tmp_7);
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 - s.borrow___1028025);
+    s.r___1028032 = (r0);
+    r0 = (s.r___1028032 >>> 30);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 & 1);
+    s.borrow___1028025 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1028019;
+    s.tmp_0.arg1 = s.i___1028026;
+    r0 = (s.r___1028032 & 1073741823);
+    s.tmp_0.arg2 = r0;
+    s.callLocIdx = 184; s.pc = 14; return s.tmp_0;
+  case 14:
+    r0 = s.retval;
+    r0 = (s.i___1028026 + 1);
+    s.i___1028026 = (r0);
+    { step = 7; continue; }
+  case 8:
+  case 9:
+    s.tmp_1 = r0 = s.i___1028026;
+    r0 = s.arg0.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 10; continue; }
+    r0 = s.arg0.fields["data"];
+    s.tmp_5 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1028026);
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 - s.borrow___1028025);
+    s.r___1028060 = (r0);
+    r0 = (s.r___1028060 >>> 30);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 & 1);
+    s.borrow___1028025 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1028019;
+    s.tmp_0.arg1 = s.i___1028026;
+    r0 = (s.r___1028060 & 1073741823);
+    s.tmp_0.arg2 = r0;
+    s.callLocIdx = 187; s.pc = 15; return s.tmp_0;
+  case 15:
+    r0 = s.retval;
+    r0 = (s.i___1028026 + 1);
+    s.i___1028026 = (r0);
+    { step = 9; continue; }
+  case 10:
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1028019;
+    s.callLocIdx = 188; s.pc = 16; return s.tmp_0;
+  case 16:
+    r0 = s.retval;
+  case 11:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_absoluteSub__P1028001.info = {"start":16507,"length":710,"line":417,"column":4,"endLine":434,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteSub","argumentNames":["x","y","resultSign"]}
+
+function JSBI_absoluteSub__P1028001_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_absoluteSub__P1028001, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  tmp_8: undefined,
+  tmp_9: undefined,
+  tmp_10: undefined,
+  tmp_11: undefined,
+  tmp_12: undefined,
+  result___1028019: undefined,
+  borrow___1028025: undefined,
+  i___1028026: undefined,
+  r___1028032: undefined,
+  r___1028060: undefined,
+  arg0: undefined,
+  arg1: undefined,
+  arg2: undefined,
+} }
+
+
+
+
+
+function JSBI_BigInt___trim__P1026748(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.newLength___1027412 = undefined;
+    s.last___1027416 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    r0 = s.arg0.fields["data"];
+    s.tmp_0 = r0;
+    r0 = pxsim_Array__length(s.tmp_0);
+    s.newLength___1027412 = (r0);
+    r0 = s.arg0.fields["data"];
+    s.tmp_0 = r0;
+    r0 = (s.newLength___1027412 - 1);
+    s.tmp_1 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_0, s.tmp_1);
+    s.last___1027416 = (r0);
+  case 1:
+    r0 = (s.last___1027416 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 2; continue; }
+    r0 = (s.newLength___1027412 - 1);
+    s.newLength___1027412 = (r0);
+    r0 = s.arg0.fields["data"];
+    s.tmp_0 = r0;
+    r0 = (s.newLength___1027412 - 1);
+    s.tmp_1 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_0, s.tmp_1);
+    s.last___1027416 = (r0);
+    r0 = s.arg0.fields["data"];
+    s.tmp_0 = r0;
+    r0 = pxsim_Array_.pop(s.tmp_0);
+    { step = 1; continue; }
+  case 2:
+    r0 = (s.newLength___1027412 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 3; continue; }
+    r0 = (s.arg0).fields["sign"] = (false);
+  case 3:
+  case 4:
+    r0 = s.arg0;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_BigInt___trim__P1026748.info = {"start":9846,"length":356,"line":239,"column":8,"endLine":249,"endColumn":9,"fileName":"jsbi.ts","functionName":"__trim","argumentNames":["this"]}
+
+function JSBI_BigInt___trim__P1026748_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_BigInt___trim__P1026748, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  newLength___1027412: undefined,
+  last___1027416: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function JSBI_BigInt___setDigit__P1026746(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.arg2 = (s.lambdaArgs[2]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    r0 = s.arg0.fields["data"];
+    s.tmp_0 = r0;
+    s.tmp_1 = r0 = s.arg1;
+    r0 = (s.arg2 | 0);
+    s.tmp_2 = r0;
+    r0 = pxsim_Array_.setAt(s.tmp_0, s.tmp_1, s.tmp_2);
+    r0 = undefined;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_BigInt___setDigit__P1026746.info = {"start":9381,"length":99,"line":227,"column":8,"endLine":229,"endColumn":9,"fileName":"jsbi.ts","functionName":"__setDigit","argumentNames":["this","i","digit"]}
+
+function JSBI_BigInt___setDigit__P1026746_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_BigInt___setDigit__P1026746, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  arg0: undefined,
+  arg1: undefined,
+  arg2: undefined,
+} }
+
+
+
+
+
+function JSBI_BigInt_constructor__P1026750(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.i___1026758 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.arg2 = (s.lambdaArgs[2]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    r0 = (s.arg0).fields["sign"] = (s.arg2);
+    s.tmp_0 = r0 = s.arg0;
+    r0 = pxsim_Array__mk();
+    s.tmp_1 = r0;
+    r0 = (s.tmp_0).fields["data"] = (s.tmp_1);
+    s.i___1026758 = (0);
+  case 1:
+    r0 = (s.i___1026758 < s.arg1);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 2; continue; }
+    r0 = s.arg0.fields["data"];
+    s.tmp_1 = r0;
+    r0 = pxsim_Array__push(s.tmp_1, 0);
+    r0 = (s.i___1026758 + 1);
+    s.i___1026758 = (r0);
+    { step = 1; continue; }
+  case 2:
+    r0 = undefined;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_BigInt_constructor__P1026750.info = {"start":1757,"length":198,"line":44,"column":8,"endLine":49,"endColumn":9,"fileName":"jsbi.ts","functionName":"inline","argumentNames":["this","length","sign"]}
+
+function JSBI_BigInt_constructor__P1026750_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_BigInt_constructor__P1026750, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  i___1026758: undefined,
+  arg0: undefined,
+  arg1: undefined,
+  arg2: undefined,
+} }
+
+
+
+
+
+function JSBI_unaryMinus__P1027540(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.result___1030273 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    r0 = s.arg0;
+    { step = 3; continue; }
+  case 1:
+  case 2:
+    s.tmp_3 = JSBI_BigInt___copy__P1026737_mk(s);
+    s.tmp_3.arg0 = s.arg0;
+    s.callLocIdx = 358; s.pc = 4; return s.tmp_3;
+  case 4:
+    r0 = s.retval;
+    s.result___1030273 = (r0);
+    s.tmp_0 = r0 = s.result___1030273;
+    r0 = s.arg0.fields["sign"];
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = pxsim_Boolean__bang(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_0).fields["sign"] = (s.tmp_1);
+    r0 = s.result___1030273;
+  case 3:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_unaryMinus__P1027540.info = {"start":49197,"length":176,"line":1212,"column":4,"endLine":1217,"endColumn":5,"fileName":"jsbi.ts","functionName":"unaryMinus","argumentNames":["x"]}
+
+function JSBI_unaryMinus__P1027540_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_unaryMinus__P1027540, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  result___1030273: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function JSBI_BigInt___copy__P1026737(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.result___1026845 = undefined;
+    s.i___1026851 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_0 = r0;
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
+    s.tmp_1.arg0 = s.tmp_0;
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1.arg1 = r0;
+    r0 = s.arg0.fields["sign"];
+    s.tmp_1.arg2 = r0;
+    s.callLocIdx = 74; s.pc = 3; return s.tmp_1;
+  case 3:
+    r0 = s.retval;
+    s.result___1026845 = (s.tmp_0);
+    s.i___1026851 = (0);
+  case 1:
+    s.tmp_1 = r0 = s.i___1026851;
+    r0 = s.arg0.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 2; continue; }
+    r0 = s.result___1026845.fields["data"];
+    s.tmp_4 = r0;
+    s.tmp_5 = r0 = s.i___1026851;
+    r0 = s.arg0.fields["data"];
+    s.tmp_7 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_7, s.i___1026851);
+    s.tmp_6 = r0;
+    r0 = pxsim_Array_.setAt(s.tmp_4, s.tmp_5, s.tmp_6);
+    r0 = (s.i___1026851 + 1);
+    s.i___1026851 = (r0);
+    { step = 1; continue; }
+  case 2:
+    r0 = s.result___1026845;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_BigInt___copy__P1026737.info = {"start":3117,"length":235,"line":86,"column":8,"endLine":92,"endColumn":9,"fileName":"jsbi.ts","functionName":"__copy","argumentNames":["this"]}
+
+function JSBI_BigInt___copy__P1026737_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_BigInt___copy__P1026737, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  result___1026845: undefined,
+  i___1026851: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function JSBI_absoluteAdd__P1027514(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.resultLength___1027542 = undefined;
+    s.result___1027562 = undefined;
+    s.carry___1027567 = undefined;
+    s.i___1027568 = undefined;
+    s.r___1027574 = undefined;
+    s.r___1027601 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.arg2 = (s.lambdaArgs[2]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = s.arg1.fields["data"];
+    s.tmp_4 = r0;
+    r0 = pxsim_Array__length(s.tmp_4);
+    s.tmp_3 = r0;
+    r0 = (s.tmp_1 < s.tmp_3);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    s.tmp_5 = JSBI_absoluteAdd__P1027514_mk(s);
+    s.tmp_5.arg0 = s.arg1;
+    s.tmp_5.arg1 = s.arg0;
+    s.tmp_5.arg2 = s.arg2;
+    s.callLocIdx = 118; s.pc = 22; return s.tmp_5;
+  case 22:
+    r0 = s.retval;
+    { step = 21; continue; }
+  case 1:
+  case 2:
+    r0 = s.arg0.fields["data"];
+    s.tmp_8 = r0;
+    r0 = pxsim_Array__length(s.tmp_8);
+    s.tmp_7 = r0;
+    r0 = (s.tmp_7 === 0);
+    s.tmp_6 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_6);
+    if (!r0) { step = 3; continue; }
+    r0 = s.arg0;
+    { step = 21; continue; }
+  case 3:
+  case 4:
+    r0 = s.arg1.fields["data"];
+    s.tmp_11 = r0;
+    r0 = pxsim_Array__length(s.tmp_11);
+    s.tmp_10 = r0;
+    r0 = (s.tmp_10 === 0);
+    s.tmp_9 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_9);
+    if (!r0) { step = 7; continue; }
+    r0 = s.arg0.fields["sign"];
+    s.tmp_13 = r0;
+    r0 = (s.tmp_13 === s.arg2);
+    s.tmp_12 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_12);
+    if (!r0) { step = 5; continue; }
+    r0 = s.arg0;
+    { step = 6; continue; }
+  case 5:
+    s.tmp_14 = JSBI_unaryMinus__P1027540_mk(s);
+    s.tmp_14.arg0 = s.arg0;
+    s.callLocIdx = 121; s.pc = 23; return s.tmp_14;
+  case 23:
+    r0 = s.retval;
+  case 6:
+    // jmp value (already in r0)
+    s.tmp_15 = r0;
+    r0 = s.tmp_15;
+    { step = 21; continue; }
+  case 7:
+  case 8:
+    r0 = s.arg0.fields["data"];
+    s.tmp_16 = r0;
+    r0 = pxsim_Array__length(s.tmp_16);
+    s.resultLength___1027542 = (r0);
+    s.tmp_2 = JSBI_BigInt___clzmsd__P1026736_mk(s);
+    s.tmp_2.arg0 = s.arg0;
+    s.callLocIdx = 123; s.pc = 24; return s.tmp_2;
+  case 24:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBool(s.tmp_0);
+    if (!r0) { step = 9; continue; }
+    r0 = s.tmp_0;
+    { step = 12; continue; }
+  case 9:
+    r0 = s.arg1.fields["data"];
+    s.tmp_5 = r0;
+    r0 = pxsim_Array__length(s.tmp_5);
+    s.tmp_4 = r0;
+    r0 = s.arg0.fields["data"];
+    s.tmp_7 = r0;
+    r0 = pxsim_Array__length(s.tmp_7);
+    s.tmp_6 = r0;
+    r0 = (s.tmp_4 === s.tmp_6);
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBool(s.tmp_3);
+    if (r0) { step = 10; continue; }
+    r0 = s.tmp_3;
+    { step = 11; continue; }
+  case 10:
+    s.tmp_9 = JSBI_BigInt___clzmsd__P1026736_mk(s);
+    s.tmp_9.arg0 = s.arg1;
+    s.callLocIdx = 126; s.pc = 25; return s.tmp_9;
+  case 25:
+    r0 = s.retval;
+    s.tmp_8 = r0;
+    r0 = (s.tmp_8 === 0);
+  case 11:
+    // jmp value (already in r0)
+    s.tmp_10 = r0;
+    r0 = s.tmp_10;
+  case 12:
+    // jmp value (already in r0)
+    s.tmp_11 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_11);
+    if (!r0) { step = 13; continue; }
+    r0 = (s.resultLength___1027542 + 1);
+    s.resultLength___1027542 = (r0);
+  case 13:
+  case 14:
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_0 = r0;
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
+    s.tmp_1.arg0 = s.tmp_0;
+    s.tmp_1.arg1 = s.resultLength___1027542;
+    s.tmp_1.arg2 = s.arg2;
+    s.callLocIdx = 127; s.pc = 26; return s.tmp_1;
+  case 26:
+    r0 = s.retval;
+    s.result___1027562 = (s.tmp_0);
+    s.carry___1027567 = (0);
+    s.i___1027568 = (0);
+  case 15:
+    s.tmp_1 = r0 = s.i___1027568;
+    r0 = s.arg1.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 16; continue; }
+    r0 = s.arg0.fields["data"];
+    s.tmp_6 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_6, s.i___1027568);
+    s.tmp_5 = r0;
+    r0 = s.arg1.fields["data"];
+    s.tmp_8 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_8, s.i___1027568);
+    s.tmp_7 = r0;
+    r0 = (s.tmp_5 + s.tmp_7);
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 + s.carry___1027567);
+    s.r___1027574 = (r0);
+    r0 = (s.r___1027574 >>> 30);
+    s.carry___1027567 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1027562;
+    s.tmp_0.arg1 = s.i___1027568;
+    r0 = (s.r___1027574 & 1073741823);
+    s.tmp_0.arg2 = r0;
+    s.callLocIdx = 131; s.pc = 27; return s.tmp_0;
+  case 27:
+    r0 = s.retval;
+    r0 = (s.i___1027568 + 1);
+    s.i___1027568 = (r0);
+    { step = 15; continue; }
+  case 16:
+  case 17:
+    s.tmp_1 = r0 = s.i___1027568;
+    r0 = s.arg0.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 18; continue; }
+    r0 = s.arg0.fields["data"];
+    s.tmp_5 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1027568);
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 + s.carry___1027567);
+    s.r___1027601 = (r0);
+    r0 = (s.r___1027601 >>> 30);
+    s.carry___1027567 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1027562;
+    s.tmp_0.arg1 = s.i___1027568;
+    r0 = (s.r___1027601 & 1073741823);
+    s.tmp_0.arg2 = r0;
+    s.callLocIdx = 134; s.pc = 28; return s.tmp_0;
+  case 28:
+    r0 = s.retval;
+    r0 = (s.i___1027568 + 1);
+    s.i___1027568 = (r0);
+    { step = 17; continue; }
+  case 18:
+    s.tmp_1 = r0 = s.i___1027568;
+    r0 = s.result___1027562.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 19; continue; }
+    s.tmp_4 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_4.arg0 = s.result___1027562;
+    s.tmp_4.arg1 = s.i___1027568;
+    s.tmp_4.arg2 = s.carry___1027567;
+    s.callLocIdx = 136; s.pc = 29; return s.tmp_4;
+  case 29:
+    r0 = s.retval;
+  case 19:
+  case 20:
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1027562;
+    s.callLocIdx = 137; s.pc = 30; return s.tmp_0;
+  case 30:
+    r0 = s.retval;
+  case 21:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_absoluteAdd__P1027514.info = {"start":11212,"length":1020,"line":283,"column":4,"endLine":308,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteAdd","argumentNames":["x","y","resultSign"]}
+
+function JSBI_absoluteAdd__P1027514_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_absoluteAdd__P1027514, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  tmp_8: undefined,
+  tmp_9: undefined,
+  tmp_10: undefined,
+  tmp_11: undefined,
+  tmp_12: undefined,
+  tmp_13: undefined,
+  tmp_14: undefined,
+  tmp_15: undefined,
+  tmp_16: undefined,
+  resultLength___1027542: undefined,
+  result___1027562: undefined,
+  carry___1027567: undefined,
+  i___1027568: undefined,
+  r___1027574: undefined,
+  r___1027601: undefined,
+  arg0: undefined,
+  arg1: undefined,
+  arg2: undefined,
+} }
+
+
+
+
+
+function JSBI_BigInt___clzmsd__P1026736(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    s.tmp_0 = JSBI_clz30__P1026838_mk(s);
+    s.tmp_1 = r0 = s.arg0;
+    r0 = s.arg0.fields["data"];
+    s.tmp_4 = r0;
+    r0 = pxsim_Array__length(s.tmp_4);
+    s.tmp_3 = r0;
+    r0 = (s.tmp_3 - 1);
+    s.tmp_2 = r0;
+    r0 = s.tmp_1.fields["data"];
+    s.tmp_5 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_5, s.tmp_2);
+    s.tmp_0.arg0 = r0;
+    s.callLocIdx = 72; s.pc = 1; return s.tmp_0;
+  case 1:
+    r0 = s.retval;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_BigInt___clzmsd__P1026736.info = {"start":3009,"length":98,"line":82,"column":8,"endLine":84,"endColumn":9,"fileName":"jsbi.ts","functionName":"__clzmsd","argumentNames":["this"]}
+
+function JSBI_BigInt___clzmsd__P1026736_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_BigInt___clzmsd__P1026736, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
   arg0: undefined,
 } }
 
@@ -20139,6 +20918,550 @@ function control_PollEvent_constructor__P611827_mk(s) {
 
 
 
+function runTests__P1063044(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.test___1063048 = undefined;
+    s.unnamed11662___U1 = undefined;
+    s.unnamed11663___U2 = undefined;
+    s.a___1063050 = undefined;
+    s.b___1063056 = undefined;
+    s.expected___1063062 = undefined;
+    s.result___1063068 = undefined;
+    s.compare___1063098 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.lambdaArgs = null;
+    }
+    s.test___1063048 = (undefined);
+    s.unnamed11662___U1 = (s.arg0);
+    s.unnamed11663___U2 = (0);
+  case 1:
+    s.tmp_0 = r0 = s.unnamed11663___U2;
+    r0 = pxsim_Array__length(s.unnamed11662___U1);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_0 < s.tmp_1);
+    if (!r0) { step = 19; continue; }
+    r0 = pxsim_Array__getAt(s.unnamed11662___U1, s.unnamed11663___U2);
+    s.test___1063048 = (r0);
+    s.tmp_2 = parseString__P1063028_mk(s);
+    s.tmp_3 = if_a_1_mk(s);
+    s.tmp_3.arg0 = s.test___1063048;
+    if (!s.tmp_3.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
+    } else {
+      s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
+      if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
+      else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
+     else { s.callLocIdx = 372; s.pc = 21; return s.tmp_3; }
+    }
+  case 21:
+    r0 = s.retval;
+    s.tmp_2.arg0 = r0;
+    s.callLocIdx = 373; s.pc = 20; return s.tmp_2;
+  case 20:
+    r0 = s.retval;
+    s.a___1063050 = (r0);
+    s.tmp_0 = parseString__P1063028_mk(s);
+    s.tmp_1 = if_b_1_mk(s);
+    s.tmp_1.arg0 = s.test___1063048;
+    if (!s.tmp_1.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
+    } else {
+      s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
+      if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
+      else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
+     else { s.callLocIdx = 374; s.pc = 23; return s.tmp_1; }
+    }
+  case 23:
+    r0 = s.retval;
+    s.tmp_0.arg0 = r0;
+    s.callLocIdx = 375; s.pc = 22; return s.tmp_0;
+  case 22:
+    r0 = s.retval;
+    s.b___1063056 = (r0);
+    s.tmp_0 = parseString__P1063028_mk(s);
+    s.tmp_1 = if_expected_1_mk(s);
+    s.tmp_1.arg0 = s.test___1063048;
+    if (!s.tmp_1.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "expected");
+    } else {
+      s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["expected"];
+      if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["expected"]; }
+      else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
+     else { s.callLocIdx = 376; s.pc = 25; return s.tmp_1; }
+    }
+  case 25:
+    r0 = s.retval;
+    s.tmp_0.arg0 = r0;
+    s.callLocIdx = 377; s.pc = 24; return s.tmp_0;
+  case 24:
+    r0 = s.retval;
+    s.expected___1063062 = (r0);
+    s.result___1063068 = (null);
+    s.tmp_1 = helpers_stringToUpperCase__P607502_mk(s);
+    s.tmp_2 = if_operation_1_mk(s);
+    s.tmp_2.arg0 = s.test___1063048;
+    if (!s.tmp_2.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "operation");
+    } else {
+      s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["operation"];
+      if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["operation"]; }
+      else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
+     else { s.callLocIdx = 378; s.pc = 27; return s.tmp_2; }
+    }
+  case 27:
+    r0 = s.retval;
+    s.tmp_1.arg0 = r0;
+    s.callLocIdx = 379; s.pc = 26; return s.tmp_1;
+  case 26:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    r0 = pxsim_pxtcore.switch_eq("ADD", s.tmp_0);
+    if (r0) { step = 2; continue; }
+    r0 = pxsim_pxtcore.switch_eq("SUBTRACT", s.tmp_0);
+    if (r0) { step = 3; continue; }
+    r0 = pxsim_pxtcore.switch_eq("MULTIPLY", s.tmp_0);
+    if (r0) { step = 4; continue; }
+    r0 = pxsim_pxtcore.switch_eq("REMAINDER", s.tmp_0);
+    if (r0) { step = 5; continue; }
+    r0 = pxsim_pxtcore.switch_eq("MOD", s.tmp_0);
+    if (r0) { step = 6; continue; }
+    r0 = pxsim_pxtcore.switch_eq("DIVIDE", s.tmp_0);
+    if (r0) { step = 7; continue; }
+    r0 = s.tmp_0;
+    { step = 8; continue; }
+  case 2:
+    s.tmp_3 = JSBI_add__P1028081_mk(s);
+    s.tmp_3.arg0 = s.a___1063050;
+    s.tmp_3.arg1 = s.b___1063056;
+    s.callLocIdx = 380; s.pc = 28; return s.tmp_3;
+  case 28:
+    r0 = s.retval;
+    s.result___1063068 = (r0);
+    { step = 8; continue; }
+  case 3:
+    s.tmp_0 = JSBI_subtract__P1030064_mk(s);
+    s.tmp_0.arg0 = s.a___1063050;
+    s.tmp_0.arg1 = s.b___1063056;
+    s.callLocIdx = 381; s.pc = 29; return s.tmp_0;
+  case 29:
+    r0 = s.retval;
+    s.result___1063068 = (r0);
+    { step = 8; continue; }
+  case 4:
+    s.tmp_0 = JSBI_multiply__P1028893_mk(s);
+    s.tmp_0.arg0 = s.a___1063050;
+    s.tmp_0.arg1 = s.b___1063056;
+    s.callLocIdx = 382; s.pc = 30; return s.tmp_0;
+  case 30:
+    r0 = s.retval;
+    s.result___1063068 = (r0);
+    { step = 8; continue; }
+  case 5:
+  case 6:
+    s.tmp_0 = JSBI_mod__P1029736_mk(s);
+    s.tmp_0.arg0 = s.a___1063050;
+    s.tmp_0.arg1 = s.b___1063056;
+    s.callLocIdx = 383; s.pc = 31; return s.tmp_0;
+  case 31:
+    r0 = s.retval;
+    s.result___1063068 = (r0);
+    { step = 8; continue; }
+  case 7:
+    s.tmp_0 = JSBI_divide__P1028530_mk(s);
+    s.tmp_0.arg0 = s.a___1063050;
+    s.tmp_0.arg1 = s.b___1063056;
+    s.callLocIdx = 384; s.pc = 32; return s.tmp_0;
+  case 32:
+    r0 = s.retval;
+    s.result___1063068 = (r0);
+  case 8:
+    r0 = (s.result___1063068 != null);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 15; continue; }
+    s.tmp_1 = JSBI_compare__P1028098_mk(s);
+    s.tmp_1.arg0 = s.result___1063068;
+    s.tmp_1.arg1 = s.expected___1063062;
+    s.callLocIdx = 385; s.pc = 33; return s.tmp_1;
+  case 33:
+    r0 = s.retval;
+    s.compare___1063098 = (r0);
+    r0 = (s.compare___1063098 != 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBool(s.tmp_0);
+    if (!r0) { step = 9; continue; }
+    r0 = s.tmp_0;
+    { step = 10; continue; }
+  case 9:
+    r0 = false;
+  case 10:
+    // jmp value (already in r0)
+    s.tmp_1 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_1);
+    if (!r0) { step = 13; continue; }
+    r0 = (s.compare___1063098 == 0);
+    s.tmp_2 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_2);
+    if (!r0) { step = 11; continue; }
+    s.tmp_3 = game_splash__P610346_mk(s);
+    if ((s.arg1) && (s.arg1).vtable) {
+    setupResume(s, 35);
+    pxsim_String__stringConv(s.arg1);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.arg1) + ""; }
+  case 35:
+    r0 = s.retval;
+    s.tmp_7 = r0;
+    r0 = pxsim_String__concat("Group ", s.tmp_7);
+    s.tmp_6 = r0;
+    r0 = pxsim_String__concat(s.tmp_6, " Test ");
+    s.tmp_5 = r0;
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 36);
+    pxsim_String__stringConv(globals.testNumber___1063043);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 36:
+    r0 = s.retval;
+    s.tmp_8 = r0;
+    r0 = pxsim_String__concat(s.tmp_5, s.tmp_8);
+    s.tmp_4 = r0;
+    r0 = pxsim_String__concat(s.tmp_4, " passed.");
+    s.tmp_3.arg0 = r0;
+    s.tmp_3.arg1 = undefined;
+    s.callLocIdx = 386; s.pc = 34; return s.tmp_3;
+  case 34:
+    r0 = s.retval;
+    { step = 12; continue; }
+  case 11:
+    if ((s.arg1) && (s.arg1).vtable) {
+    setupResume(s, 37);
+    pxsim_String__stringConv(s.arg1);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.arg1) + ""; }
+  case 37:
+    r0 = s.retval;
+    s.tmp_3 = r0;
+    r0 = pxsim_String__concat("Group ", s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = pxsim_String__concat(s.tmp_2, " Test ");
+    s.tmp_1 = r0;
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 38);
+    pxsim_String__stringConv(globals.testNumber___1063043);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 38:
+    r0 = s.retval;
+    s.tmp_4 = r0;
+    r0 = pxsim_String__concat(s.tmp_1, s.tmp_4);
+    s.tmp_0 = r0;
+    r0 = pxsim_String__concat(s.tmp_0, " failed!");
+    globals.msg___1062967 = (r0);
+    s.tmp_0 = game_splash__P610346_mk(s);
+    s.tmp_0.arg0 = globals.msg___1062967;
+    s.tmp_0.arg1 = undefined;
+    s.callLocIdx = 387; s.pc = 39; return s.tmp_0;
+  case 39:
+    r0 = s.retval;
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 40);
+    pxsim_String__stringConv(globals.msg___1062967);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 40:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_9 = if_a_1_mk(s);
+    s.tmp_9.arg0 = s.test___1063048;
+    if (!s.tmp_9.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_9.arg0, "a");
+    } else {
+      s.tmp_9.fn = s.tmp_9.arg0.vtable.iface["a"];
+      if (s.tmp_9.fn == null) { s.retval = s.tmp_9.arg0.fields["a"]; }
+      else if (!s.tmp_9.fn.isGetter) { s.retval = bind(s.tmp_9); }
+     else { s.callLocIdx = 388; s.pc = 41; return s.tmp_9; }
+    }
+  case 41:
+    r0 = s.retval;
+    s.tmp_8 = r0;
+    if ((s.tmp_8) && (s.tmp_8).vtable) {
+    setupResume(s, 42);
+    pxsim_String__stringConv(s.tmp_8);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_8) + ""; }
+  case 42:
+    r0 = s.retval;
+    s.tmp_7 = r0;
+    r0 = pxsim_String__concat(" a = ", s.tmp_7);
+    s.tmp_6 = r0;
+    r0 = pxsim_String__concat(s.tmp_6, " b = ");
+    s.tmp_5 = r0;
+    s.tmp_12 = if_b_1_mk(s);
+    s.tmp_12.arg0 = s.test___1063048;
+    if (!s.tmp_12.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_12.arg0, "b");
+    } else {
+      s.tmp_12.fn = s.tmp_12.arg0.vtable.iface["b"];
+      if (s.tmp_12.fn == null) { s.retval = s.tmp_12.arg0.fields["b"]; }
+      else if (!s.tmp_12.fn.isGetter) { s.retval = bind(s.tmp_12); }
+     else { s.callLocIdx = 389; s.pc = 43; return s.tmp_12; }
+    }
+  case 43:
+    r0 = s.retval;
+    s.tmp_11 = r0;
+    if ((s.tmp_11) && (s.tmp_11).vtable) {
+    setupResume(s, 44);
+    pxsim_String__stringConv(s.tmp_11);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_11) + ""; }
+  case 44:
+    r0 = s.retval;
+    s.tmp_10 = r0;
+    r0 = pxsim_String__concat(s.tmp_5, s.tmp_10);
+    s.tmp_4 = r0;
+    r0 = pxsim_String__concat(s.tmp_4, " operator ");
+    s.tmp_3 = r0;
+    s.tmp_15 = if_operation_1_mk(s);
+    s.tmp_15.arg0 = s.test___1063048;
+    if (!s.tmp_15.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_15.arg0, "operation");
+    } else {
+      s.tmp_15.fn = s.tmp_15.arg0.vtable.iface["operation"];
+      if (s.tmp_15.fn == null) { s.retval = s.tmp_15.arg0.fields["operation"]; }
+      else if (!s.tmp_15.fn.isGetter) { s.retval = bind(s.tmp_15); }
+     else { s.callLocIdx = 390; s.pc = 45; return s.tmp_15; }
+    }
+  case 45:
+    r0 = s.retval;
+    s.tmp_14 = r0;
+    if ((s.tmp_14) && (s.tmp_14).vtable) {
+    setupResume(s, 46);
+    pxsim_String__stringConv(s.tmp_14);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_14) + ""; }
+  case 46:
+    r0 = s.retval;
+    s.tmp_13 = r0;
+    r0 = pxsim_String__concat(s.tmp_3, s.tmp_13);
+    s.tmp_2 = r0;
+    if ((s.tmp_2) && (s.tmp_2).vtable) {
+    setupResume(s, 47);
+    pxsim_String__stringConv(s.tmp_2);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_2) + ""; }
+  case 47:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
+    globals.msg___1062967 = (r0);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 48);
+    pxsim_String__stringConv(globals.msg___1062967);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 48:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_8 = if_expected_1_mk(s);
+    s.tmp_8.arg0 = s.test___1063048;
+    if (!s.tmp_8.arg0.vtable.iface) {
+      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_8.arg0, "expected");
+    } else {
+      s.tmp_8.fn = s.tmp_8.arg0.vtable.iface["expected"];
+      if (s.tmp_8.fn == null) { s.retval = s.tmp_8.arg0.fields["expected"]; }
+      else if (!s.tmp_8.fn.isGetter) { s.retval = bind(s.tmp_8); }
+     else { s.callLocIdx = 391; s.pc = 49; return s.tmp_8; }
+    }
+  case 49:
+    r0 = s.retval;
+    s.tmp_7 = r0;
+    if ((s.tmp_7) && (s.tmp_7).vtable) {
+    setupResume(s, 50);
+    pxsim_String__stringConv(s.tmp_7);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_7) + ""; }
+  case 50:
+    r0 = s.retval;
+    s.tmp_6 = r0;
+    r0 = pxsim_String__concat(" expected ", s.tmp_6);
+    s.tmp_5 = r0;
+    r0 = pxsim_String__concat(s.tmp_5, " result ");
+    s.tmp_4 = r0;
+    s.tmp_11 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_11.arg0 = s.result___1063068;
+    s.callLocIdx = 392; s.pc = 51; return s.tmp_11;
+  case 51:
+    r0 = s.retval;
+    s.tmp_10 = r0;
+    if ((s.tmp_10) && (s.tmp_10).vtable) {
+    setupResume(s, 52);
+    pxsim_String__stringConv(s.tmp_10);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_10) + ""; }
+  case 52:
+    r0 = s.retval;
+    s.tmp_9 = r0;
+    r0 = pxsim_String__concat(s.tmp_4, s.tmp_9);
+    s.tmp_3 = r0;
+    r0 = pxsim_String__concat(s.tmp_3, " ");
+    s.tmp_2 = r0;
+    if ((s.tmp_2) && (s.tmp_2).vtable) {
+    setupResume(s, 53);
+    pxsim_String__stringConv(s.tmp_2);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_2) + ""; }
+  case 53:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
+    globals.msg___1062967 = (r0);
+    if ((globals.msg___1062967) && (globals.msg___1062967).vtable) {
+    setupResume(s, 54);
+    pxsim_String__stringConv(globals.msg___1062967);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___1062967) + ""; }
+  case 54:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_3 = JSBI_BigInt_toDebugString__P1026733_mk(s);
+    s.tmp_3.arg0 = s.result___1063068;
+    s.callLocIdx = 393; s.pc = 55; return s.tmp_3;
+  case 55:
+    r0 = s.retval;
+    s.tmp_2 = r0;
+    if ((s.tmp_2) && (s.tmp_2).vtable) {
+    setupResume(s, 56);
+    pxsim_String__stringConv(s.tmp_2);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_2) + ""; }
+  case 56:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
+    globals.msg___1062967 = (r0);
+    s.tmp_0 = console_log__P607762_mk(s);
+    s.tmp_0.arg0 = globals.msg___1062967;
+    s.callLocIdx = 394; s.pc = 57; return s.tmp_0;
+  case 57:
+    r0 = s.retval;
+    globals.allPassed___1062960 = (false);
+  case 12:
+  case 13:
+  case 14:
+    { step = 18; continue; }
+  case 15:
+    r0 = pxsim_numops_toBoolDecr(false);
+    if (!r0) { step = 16; continue; }
+    s.tmp_0 = game_splash__P610346_mk(s);
+    if ((s.arg1) && (s.arg1).vtable) {
+    setupResume(s, 59);
+    pxsim_String__stringConv(s.arg1);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.arg1) + ""; }
+  case 59:
+    r0 = s.retval;
+    s.tmp_4 = r0;
+    r0 = pxsim_String__concat("Group ", s.tmp_4);
+    s.tmp_3 = r0;
+    r0 = pxsim_String__concat(s.tmp_3, " Test ");
+    s.tmp_2 = r0;
+    if ((globals.testNumber___1063043) && (globals.testNumber___1063043).vtable) {
+    setupResume(s, 60);
+    pxsim_String__stringConv(globals.testNumber___1063043);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.testNumber___1063043) + ""; }
+  case 60:
+    r0 = s.retval;
+    s.tmp_5 = r0;
+    r0 = pxsim_String__concat(s.tmp_2, s.tmp_5);
+    s.tmp_1 = r0;
+    r0 = pxsim_String__concat(s.tmp_1, " not implemented; skipped.");
+    s.tmp_0.arg0 = r0;
+    s.tmp_0.arg1 = undefined;
+    s.callLocIdx = 395; s.pc = 58; return s.tmp_0;
+  case 58:
+    r0 = s.retval;
+  case 16:
+  case 17:
+  case 18:
+    r0 = (globals.testNumber___1063043 + 1);
+    globals.testNumber___1063043 = (r0);
+    r0 = (s.unnamed11663___U2 + 1);
+    s.unnamed11663___U2 = (r0);
+    { step = 1; continue; }
+  case 19:
+    s.unnamed11662___U1 = (undefined);
+    r0 = undefined;
+    return leave(s, r0)
+  default: oops()
+} } }
+runTests__P1063044.info = {"start":3577,"length":1797,"line":100,"column":0,"endLine":149,"endColumn":1,"fileName":"test.ts","functionName":"runTests","argumentNames":["tests","testGroupName"]}
+
+function runTests__P1063044_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: runTests__P1063044, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  tmp_8: undefined,
+  tmp_9: undefined,
+  tmp_10: undefined,
+  tmp_11: undefined,
+  tmp_12: undefined,
+  tmp_13: undefined,
+  tmp_14: undefined,
+  tmp_15: undefined,
+  test___1063048: undefined,
+  unnamed11662___U1: undefined,
+  unnamed11663___U2: undefined,
+  a___1063050: undefined,
+  b___1063056: undefined,
+  expected___1063062: undefined,
+  result___1063068: undefined,
+  compare___1063098: undefined,
+  arg0: undefined,
+  arg1: undefined,
+} }
+
+
+
+
+
 function JSBI_divide__P1028530(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
@@ -20292,81 +21615,6 @@ function JSBI_divide__P1028530_mk(s) {
   quotient___1028553: undefined,
   arg0: undefined,
   arg1: undefined,
-} }
-
-
-
-
-
-function JSBI_BigInt___trim__P1026748(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.newLength___1027412 = undefined;
-    s.last___1027416 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
-    r0 = s.arg0.fields["data"];
-    s.tmp_0 = r0;
-    r0 = pxsim_Array__length(s.tmp_0);
-    s.newLength___1027412 = (r0);
-    r0 = s.arg0.fields["data"];
-    s.tmp_0 = r0;
-    r0 = (s.newLength___1027412 - 1);
-    s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.tmp_1);
-    s.last___1027416 = (r0);
-  case 1:
-    r0 = (s.last___1027416 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 2; continue; }
-    r0 = (s.newLength___1027412 - 1);
-    s.newLength___1027412 = (r0);
-    r0 = s.arg0.fields["data"];
-    s.tmp_0 = r0;
-    r0 = (s.newLength___1027412 - 1);
-    s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.tmp_1);
-    s.last___1027416 = (r0);
-    r0 = s.arg0.fields["data"];
-    s.tmp_0 = r0;
-    r0 = pxsim_Array_.pop(s.tmp_0);
-    { step = 1; continue; }
-  case 2:
-    r0 = (s.newLength___1027412 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 3; continue; }
-    r0 = (s.arg0).fields["sign"] = (false);
-  case 3:
-  case 4:
-    r0 = s.arg0;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_BigInt___trim__P1026748.info = {"start":9846,"length":356,"line":239,"column":8,"endLine":249,"endColumn":9,"fileName":"jsbi.ts","functionName":"__trim","argumentNames":["this"]}
-
-function JSBI_BigInt___trim__P1026748_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_BigInt___trim__P1026748, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  newLength___1027412: undefined,
-  last___1027416: undefined,
-  arg0: undefined,
 } }
 
 
@@ -20860,53 +22108,6 @@ function JSBI_BigInt___inplaceRightShift__P1026744_mk(s) {
   d___1027070: undefined,
   arg0: undefined,
   arg1: undefined,
-} }
-
-
-
-
-
-function JSBI_BigInt___setDigit__P1026746(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
-    r0 = s.arg0.fields["data"];
-    s.tmp_0 = r0;
-    s.tmp_1 = r0 = s.arg1;
-    r0 = (s.arg2 | 0);
-    s.tmp_2 = r0;
-    r0 = pxsim_Array_.setAt(s.tmp_0, s.tmp_1, s.tmp_2);
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_BigInt___setDigit__P1026746.info = {"start":9381,"length":99,"line":227,"column":8,"endLine":229,"endColumn":9,"fileName":"jsbi.ts","functionName":"__setDigit","argumentNames":["this","i","digit"]}
-
-function JSBI_BigInt___setDigit__P1026746_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_BigInt___setDigit__P1026746, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
 } }
 
 
@@ -21950,66 +23151,6 @@ function JSBI_BigInt___initializeDigits__P1026741_mk(s) {
 
 
 
-function JSBI_BigInt_constructor__P1026750(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.i___1026758 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
-    r0 = (s.arg0).fields["sign"] = (s.arg2);
-    s.tmp_0 = r0 = s.arg0;
-    r0 = pxsim_Array__mk();
-    s.tmp_1 = r0;
-    r0 = (s.tmp_0).fields["data"] = (s.tmp_1);
-    s.i___1026758 = (0);
-  case 1:
-    r0 = (s.i___1026758 < s.arg1);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 2; continue; }
-    r0 = s.arg0.fields["data"];
-    s.tmp_1 = r0;
-    r0 = pxsim_Array__push(s.tmp_1, 0);
-    r0 = (s.i___1026758 + 1);
-    s.i___1026758 = (r0);
-    { step = 1; continue; }
-  case 2:
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_BigInt_constructor__P1026750.info = {"start":1757,"length":198,"line":44,"column":8,"endLine":49,"endColumn":9,"fileName":"jsbi.ts","functionName":"inline","argumentNames":["this","length","sign"]}
-
-function JSBI_BigInt_constructor__P1026750_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_BigInt_constructor__P1026750, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  i___1026758: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-} }
-
-
-
-
-
 function JSBI_BigInt___halfDigitLength__P1026740(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
@@ -22213,154 +23354,6 @@ function JSBI_absoluteDivSmall__P1027670_mk(s) {
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
-} }
-
-
-
-
-
-function JSBI_unaryMinus__P1027540(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.result___1030273 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_1 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    r0 = s.arg0;
-    { step = 3; continue; }
-  case 1:
-  case 2:
-    s.tmp_3 = JSBI_BigInt___copy__P1026737_mk(s);
-    s.tmp_3.arg0 = s.arg0;
-    s.callLocIdx = 358; s.pc = 4; return s.tmp_3;
-  case 4:
-    r0 = s.retval;
-    s.result___1030273 = (r0);
-    s.tmp_0 = r0 = s.result___1030273;
-    r0 = s.arg0.fields["sign"];
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_0).fields["sign"] = (s.tmp_1);
-    r0 = s.result___1030273;
-  case 3:
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_unaryMinus__P1027540.info = {"start":49197,"length":176,"line":1212,"column":4,"endLine":1217,"endColumn":5,"fileName":"jsbi.ts","functionName":"unaryMinus","argumentNames":["x"]}
-
-function JSBI_unaryMinus__P1027540_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_unaryMinus__P1027540, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  result___1030273: undefined,
-  arg0: undefined,
-} }
-
-
-
-
-
-function JSBI_BigInt___copy__P1026737(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.result___1026845 = undefined;
-    s.i___1026851 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
-    s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
-    s.tmp_1.arg0 = s.tmp_0;
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1.arg1 = r0;
-    r0 = s.arg0.fields["sign"];
-    s.tmp_1.arg2 = r0;
-    s.callLocIdx = 74; s.pc = 3; return s.tmp_1;
-  case 3:
-    r0 = s.retval;
-    s.result___1026845 = (s.tmp_0);
-    s.i___1026851 = (0);
-  case 1:
-    s.tmp_1 = r0 = s.i___1026851;
-    r0 = s.arg0.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 2; continue; }
-    r0 = s.result___1026845.fields["data"];
-    s.tmp_4 = r0;
-    s.tmp_5 = r0 = s.i___1026851;
-    r0 = s.arg0.fields["data"];
-    s.tmp_7 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_7, s.i___1026851);
-    s.tmp_6 = r0;
-    r0 = pxsim_Array_.setAt(s.tmp_4, s.tmp_5, s.tmp_6);
-    r0 = (s.i___1026851 + 1);
-    s.i___1026851 = (r0);
-    { step = 1; continue; }
-  case 2:
-    r0 = s.result___1026845;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_BigInt___copy__P1026737.info = {"start":3117,"length":235,"line":86,"column":8,"endLine":92,"endColumn":9,"fileName":"jsbi.ts","functionName":"__copy","argumentNames":["this"]}
-
-function JSBI_BigInt___copy__P1026737_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_BigInt___copy__P1026737, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tmp_6: undefined,
-  tmp_7: undefined,
-  result___1026845: undefined,
-  i___1026851: undefined,
-  arg0: undefined,
 } }
 
 
@@ -22916,625 +23909,6 @@ function JSBI_subtract__P1030064_mk(s) {
 
 
 
-function JSBI_absoluteSub__P1028001(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.result___1028019 = undefined;
-    s.borrow___1028025 = undefined;
-    s.i___1028026 = undefined;
-    s.r___1028032 = undefined;
-    s.r___1028060 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_1 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    r0 = s.arg0;
-    { step = 11; continue; }
-  case 1:
-  case 2:
-    r0 = s.arg1.fields["data"];
-    s.tmp_5 = r0;
-    r0 = pxsim_Array__length(s.tmp_5);
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 === 0);
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
-    if (!r0) { step = 5; continue; }
-    r0 = s.arg0.fields["sign"];
-    s.tmp_7 = r0;
-    r0 = (s.tmp_7 === s.arg2);
-    s.tmp_6 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_6);
-    if (!r0) { step = 3; continue; }
-    r0 = s.arg0;
-    { step = 4; continue; }
-  case 3:
-    s.tmp_8 = JSBI_unaryMinus__P1027540_mk(s);
-    s.tmp_8.arg0 = s.arg0;
-    s.callLocIdx = 178; s.pc = 12; return s.tmp_8;
-  case 12:
-    r0 = s.retval;
-  case 4:
-    // jmp value (already in r0)
-    s.tmp_9 = r0;
-    r0 = s.tmp_9;
-    { step = 11; continue; }
-  case 5:
-  case 6:
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
-    s.tmp_10 = r0;
-    s.tmp_11 = JSBI_BigInt_constructor__P1026750_mk(s);
-    s.tmp_11.arg0 = s.tmp_10;
-    r0 = s.arg0.fields["data"];
-    s.tmp_12 = r0;
-    r0 = pxsim_Array__length(s.tmp_12);
-    s.tmp_11.arg1 = r0;
-    s.tmp_11.arg2 = s.arg2;
-    s.callLocIdx = 180; s.pc = 13; return s.tmp_11;
-  case 13:
-    r0 = s.retval;
-    s.result___1028019 = (s.tmp_10);
-    s.borrow___1028025 = (0);
-    s.i___1028026 = (0);
-  case 7:
-    s.tmp_1 = r0 = s.i___1028026;
-    r0 = s.arg1.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 8; continue; }
-    r0 = s.arg0.fields["data"];
-    s.tmp_6 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_6, s.i___1028026);
-    s.tmp_5 = r0;
-    r0 = s.arg1.fields["data"];
-    s.tmp_8 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_8, s.i___1028026);
-    s.tmp_7 = r0;
-    r0 = (s.tmp_5 - s.tmp_7);
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 - s.borrow___1028025);
-    s.r___1028032 = (r0);
-    r0 = (s.r___1028032 >>> 30);
-    s.tmp_0 = r0;
-    r0 = (s.tmp_0 & 1);
-    s.borrow___1028025 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
-    s.tmp_0.arg0 = s.result___1028019;
-    s.tmp_0.arg1 = s.i___1028026;
-    r0 = (s.r___1028032 & 1073741823);
-    s.tmp_0.arg2 = r0;
-    s.callLocIdx = 184; s.pc = 14; return s.tmp_0;
-  case 14:
-    r0 = s.retval;
-    r0 = (s.i___1028026 + 1);
-    s.i___1028026 = (r0);
-    { step = 7; continue; }
-  case 8:
-  case 9:
-    s.tmp_1 = r0 = s.i___1028026;
-    r0 = s.arg0.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 10; continue; }
-    r0 = s.arg0.fields["data"];
-    s.tmp_5 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1028026);
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 - s.borrow___1028025);
-    s.r___1028060 = (r0);
-    r0 = (s.r___1028060 >>> 30);
-    s.tmp_0 = r0;
-    r0 = (s.tmp_0 & 1);
-    s.borrow___1028025 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
-    s.tmp_0.arg0 = s.result___1028019;
-    s.tmp_0.arg1 = s.i___1028026;
-    r0 = (s.r___1028060 & 1073741823);
-    s.tmp_0.arg2 = r0;
-    s.callLocIdx = 187; s.pc = 15; return s.tmp_0;
-  case 15:
-    r0 = s.retval;
-    r0 = (s.i___1028026 + 1);
-    s.i___1028026 = (r0);
-    { step = 9; continue; }
-  case 10:
-    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
-    s.tmp_0.arg0 = s.result___1028019;
-    s.callLocIdx = 188; s.pc = 16; return s.tmp_0;
-  case 16:
-    r0 = s.retval;
-  case 11:
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_absoluteSub__P1028001.info = {"start":16507,"length":710,"line":417,"column":4,"endLine":434,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteSub","argumentNames":["x","y","resultSign"]}
-
-function JSBI_absoluteSub__P1028001_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_absoluteSub__P1028001, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tmp_6: undefined,
-  tmp_7: undefined,
-  tmp_8: undefined,
-  tmp_9: undefined,
-  tmp_10: undefined,
-  tmp_11: undefined,
-  tmp_12: undefined,
-  result___1028019: undefined,
-  borrow___1028025: undefined,
-  i___1028026: undefined,
-  r___1028032: undefined,
-  r___1028060: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-} }
-
-
-
-
-
-function JSBI_absoluteAdd__P1027514(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.resultLength___1027542 = undefined;
-    s.result___1027562 = undefined;
-    s.carry___1027567 = undefined;
-    s.i___1027568 = undefined;
-    s.r___1027574 = undefined;
-    s.r___1027601 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = s.arg1.fields["data"];
-    s.tmp_4 = r0;
-    r0 = pxsim_Array__length(s.tmp_4);
-    s.tmp_3 = r0;
-    r0 = (s.tmp_1 < s.tmp_3);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    s.tmp_5 = JSBI_absoluteAdd__P1027514_mk(s);
-    s.tmp_5.arg0 = s.arg1;
-    s.tmp_5.arg1 = s.arg0;
-    s.tmp_5.arg2 = s.arg2;
-    s.callLocIdx = 118; s.pc = 22; return s.tmp_5;
-  case 22:
-    r0 = s.retval;
-    { step = 21; continue; }
-  case 1:
-  case 2:
-    r0 = s.arg0.fields["data"];
-    s.tmp_8 = r0;
-    r0 = pxsim_Array__length(s.tmp_8);
-    s.tmp_7 = r0;
-    r0 = (s.tmp_7 === 0);
-    s.tmp_6 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_6);
-    if (!r0) { step = 3; continue; }
-    r0 = s.arg0;
-    { step = 21; continue; }
-  case 3:
-  case 4:
-    r0 = s.arg1.fields["data"];
-    s.tmp_11 = r0;
-    r0 = pxsim_Array__length(s.tmp_11);
-    s.tmp_10 = r0;
-    r0 = (s.tmp_10 === 0);
-    s.tmp_9 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_9);
-    if (!r0) { step = 7; continue; }
-    r0 = s.arg0.fields["sign"];
-    s.tmp_13 = r0;
-    r0 = (s.tmp_13 === s.arg2);
-    s.tmp_12 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_12);
-    if (!r0) { step = 5; continue; }
-    r0 = s.arg0;
-    { step = 6; continue; }
-  case 5:
-    s.tmp_14 = JSBI_unaryMinus__P1027540_mk(s);
-    s.tmp_14.arg0 = s.arg0;
-    s.callLocIdx = 121; s.pc = 23; return s.tmp_14;
-  case 23:
-    r0 = s.retval;
-  case 6:
-    // jmp value (already in r0)
-    s.tmp_15 = r0;
-    r0 = s.tmp_15;
-    { step = 21; continue; }
-  case 7:
-  case 8:
-    r0 = s.arg0.fields["data"];
-    s.tmp_16 = r0;
-    r0 = pxsim_Array__length(s.tmp_16);
-    s.resultLength___1027542 = (r0);
-    s.tmp_2 = JSBI_BigInt___clzmsd__P1026736_mk(s);
-    s.tmp_2.arg0 = s.arg0;
-    s.callLocIdx = 123; s.pc = 24; return s.tmp_2;
-  case 24:
-    r0 = s.retval;
-    s.tmp_1 = r0;
-    r0 = (s.tmp_1 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_0);
-    if (!r0) { step = 9; continue; }
-    r0 = s.tmp_0;
-    { step = 12; continue; }
-  case 9:
-    r0 = s.arg1.fields["data"];
-    s.tmp_5 = r0;
-    r0 = pxsim_Array__length(s.tmp_5);
-    s.tmp_4 = r0;
-    r0 = s.arg0.fields["data"];
-    s.tmp_7 = r0;
-    r0 = pxsim_Array__length(s.tmp_7);
-    s.tmp_6 = r0;
-    r0 = (s.tmp_4 === s.tmp_6);
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_3);
-    if (r0) { step = 10; continue; }
-    r0 = s.tmp_3;
-    { step = 11; continue; }
-  case 10:
-    s.tmp_9 = JSBI_BigInt___clzmsd__P1026736_mk(s);
-    s.tmp_9.arg0 = s.arg1;
-    s.callLocIdx = 126; s.pc = 25; return s.tmp_9;
-  case 25:
-    r0 = s.retval;
-    s.tmp_8 = r0;
-    r0 = (s.tmp_8 === 0);
-  case 11:
-    // jmp value (already in r0)
-    s.tmp_10 = r0;
-    r0 = s.tmp_10;
-  case 12:
-    // jmp value (already in r0)
-    s.tmp_11 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_11);
-    if (!r0) { step = 13; continue; }
-    r0 = (s.resultLength___1027542 + 1);
-    s.resultLength___1027542 = (r0);
-  case 13:
-  case 14:
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
-    s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
-    s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.resultLength___1027542;
-    s.tmp_1.arg2 = s.arg2;
-    s.callLocIdx = 127; s.pc = 26; return s.tmp_1;
-  case 26:
-    r0 = s.retval;
-    s.result___1027562 = (s.tmp_0);
-    s.carry___1027567 = (0);
-    s.i___1027568 = (0);
-  case 15:
-    s.tmp_1 = r0 = s.i___1027568;
-    r0 = s.arg1.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 16; continue; }
-    r0 = s.arg0.fields["data"];
-    s.tmp_6 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_6, s.i___1027568);
-    s.tmp_5 = r0;
-    r0 = s.arg1.fields["data"];
-    s.tmp_8 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_8, s.i___1027568);
-    s.tmp_7 = r0;
-    r0 = (s.tmp_5 + s.tmp_7);
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 + s.carry___1027567);
-    s.r___1027574 = (r0);
-    r0 = (s.r___1027574 >>> 30);
-    s.carry___1027567 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
-    s.tmp_0.arg0 = s.result___1027562;
-    s.tmp_0.arg1 = s.i___1027568;
-    r0 = (s.r___1027574 & 1073741823);
-    s.tmp_0.arg2 = r0;
-    s.callLocIdx = 131; s.pc = 27; return s.tmp_0;
-  case 27:
-    r0 = s.retval;
-    r0 = (s.i___1027568 + 1);
-    s.i___1027568 = (r0);
-    { step = 15; continue; }
-  case 16:
-  case 17:
-    s.tmp_1 = r0 = s.i___1027568;
-    r0 = s.arg0.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 18; continue; }
-    r0 = s.arg0.fields["data"];
-    s.tmp_5 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1027568);
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 + s.carry___1027567);
-    s.r___1027601 = (r0);
-    r0 = (s.r___1027601 >>> 30);
-    s.carry___1027567 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
-    s.tmp_0.arg0 = s.result___1027562;
-    s.tmp_0.arg1 = s.i___1027568;
-    r0 = (s.r___1027601 & 1073741823);
-    s.tmp_0.arg2 = r0;
-    s.callLocIdx = 134; s.pc = 28; return s.tmp_0;
-  case 28:
-    r0 = s.retval;
-    r0 = (s.i___1027568 + 1);
-    s.i___1027568 = (r0);
-    { step = 17; continue; }
-  case 18:
-    s.tmp_1 = r0 = s.i___1027568;
-    r0 = s.result___1027562.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 19; continue; }
-    s.tmp_4 = JSBI_BigInt___setDigit__P1026746_mk(s);
-    s.tmp_4.arg0 = s.result___1027562;
-    s.tmp_4.arg1 = s.i___1027568;
-    s.tmp_4.arg2 = s.carry___1027567;
-    s.callLocIdx = 136; s.pc = 29; return s.tmp_4;
-  case 29:
-    r0 = s.retval;
-  case 19:
-  case 20:
-    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
-    s.tmp_0.arg0 = s.result___1027562;
-    s.callLocIdx = 137; s.pc = 30; return s.tmp_0;
-  case 30:
-    r0 = s.retval;
-  case 21:
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_absoluteAdd__P1027514.info = {"start":11212,"length":1020,"line":283,"column":4,"endLine":308,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteAdd","argumentNames":["x","y","resultSign"]}
-
-function JSBI_absoluteAdd__P1027514_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_absoluteAdd__P1027514, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tmp_6: undefined,
-  tmp_7: undefined,
-  tmp_8: undefined,
-  tmp_9: undefined,
-  tmp_10: undefined,
-  tmp_11: undefined,
-  tmp_12: undefined,
-  tmp_13: undefined,
-  tmp_14: undefined,
-  tmp_15: undefined,
-  tmp_16: undefined,
-  resultLength___1027542: undefined,
-  result___1027562: undefined,
-  carry___1027567: undefined,
-  i___1027568: undefined,
-  r___1027574: undefined,
-  r___1027601: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-} }
-
-
-
-
-
-function JSBI_BigInt___clzmsd__P1026736(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
-    s.tmp_0 = JSBI_clz30__P1026838_mk(s);
-    s.tmp_1 = r0 = s.arg0;
-    r0 = s.arg0.fields["data"];
-    s.tmp_4 = r0;
-    r0 = pxsim_Array__length(s.tmp_4);
-    s.tmp_3 = r0;
-    r0 = (s.tmp_3 - 1);
-    s.tmp_2 = r0;
-    r0 = s.tmp_1.fields["data"];
-    s.tmp_5 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_5, s.tmp_2);
-    s.tmp_0.arg0 = r0;
-    s.callLocIdx = 72; s.pc = 1; return s.tmp_0;
-  case 1:
-    r0 = s.retval;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_BigInt___clzmsd__P1026736.info = {"start":3009,"length":98,"line":82,"column":8,"endLine":84,"endColumn":9,"fileName":"jsbi.ts","functionName":"__clzmsd","argumentNames":["this"]}
-
-function JSBI_BigInt___clzmsd__P1026736_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_BigInt___clzmsd__P1026736, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  arg0: undefined,
-} }
-
-
-
-
-
-function JSBI_add__P1028081(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.sign___1028084 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0.fields["sign"];
-    s.sign___1028084 = (r0);
-    r0 = s.arg1.fields["sign"];
-    s.tmp_1 = r0;
-    r0 = (s.sign___1028084 === s.tmp_1);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    s.tmp_2 = JSBI_absoluteAdd__P1027514_mk(s);
-    s.tmp_2.arg0 = s.arg0;
-    s.tmp_2.arg1 = s.arg1;
-    s.tmp_2.arg2 = s.sign___1028084;
-    s.callLocIdx = 189; s.pc = 6; return s.tmp_2;
-  case 6:
-    r0 = s.retval;
-    { step = 5; continue; }
-  case 1:
-  case 2:
-    s.tmp_5 = JSBI_compare__P1028098_mk(s);
-    s.tmp_5.arg0 = s.arg0;
-    s.tmp_5.arg1 = s.arg1;
-    s.callLocIdx = 190; s.pc = 7; return s.tmp_5;
-  case 7:
-    r0 = s.retval;
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 >= 0);
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
-    if (!r0) { step = 3; continue; }
-    s.tmp_6 = JSBI_absoluteSub__P1028001_mk(s);
-    s.tmp_6.arg0 = s.arg0;
-    s.tmp_6.arg1 = s.arg1;
-    s.tmp_6.arg2 = s.sign___1028084;
-    s.callLocIdx = 191; s.pc = 8; return s.tmp_6;
-  case 8:
-    r0 = s.retval;
-    { step = 5; continue; }
-  case 3:
-  case 4:
-    s.tmp_7 = JSBI_absoluteSub__P1028001_mk(s);
-    s.tmp_7.arg0 = s.arg1;
-    s.tmp_7.arg1 = s.arg0;
-    r0 = pxsim_numops_toBoolDecr(s.sign___1028084);
-    s.tmp_8 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_8);
-    s.tmp_7.arg2 = r0;
-    s.callLocIdx = 192; s.pc = 9; return s.tmp_7;
-  case 9:
-    r0 = s.retval;
-  case 5:
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_add__P1028081.info = {"start":17223,"length":439,"line":436,"column":4,"endLine":449,"endColumn":5,"fileName":"jsbi.ts","functionName":"add","argumentNames":["x","y"]}
-
-function JSBI_add__P1028081_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_add__P1028081, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tmp_6: undefined,
-  tmp_7: undefined,
-  tmp_8: undefined,
-  sign___1028084: undefined,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
 function helpers_stringToUpperCase__P607502(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
@@ -23701,7 +24075,7 @@ function helpers_stringToUpperCase__P607502_mk(s) {
 
 
 
-function parseString__P983831(s) {
+function parseString__P1063028(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23750,12 +24124,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-parseString__P983831.info = {"start":3349,"length":196,"line":92,"column":0,"endLine":97,"endColumn":1,"fileName":"test.ts","functionName":"parseString","argumentNames":["s"]}
+parseString__P1063028.info = {"start":3349,"length":196,"line":92,"column":0,"endLine":97,"endColumn":1,"fileName":"test.ts","functionName":"parseString","argumentNames":["s"]}
 
-function parseString__P983831_mk(s) {
+function parseString__P1063028_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: parseString__P983831, depth: s.depth + 1,
+        parent: s, fn: parseString__P1063028, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -55802,20 +56176,6 @@ function if_expected_1_mk(s) {
 } }
 
 
-function if_operation_1_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: null, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  arg0: undefined,
-} }
-
-
 function if_scene_1_mk(s) {
     checkStack(s.depth);
     return {
@@ -55831,6 +56191,20 @@ function if_scene_1_mk(s) {
 
 
 function if_state_1_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: null, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  arg0: undefined,
+} }
+
+
+function if_operation_1_mk(s) {
     checkStack(s.depth);
     return {
         parent: s, fn: null, depth: s.depth + 1,
@@ -57460,7 +57834,7 @@ const sprites_BaseSpriteSayRenderer__C609641_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["kBitConversionBuffer___1026729","fact___983768","msg___983770","facts___983764","allPassed___983763","TESTS___983829","testNumber___983846","EXPECTED___983942","VALID___983936","INVALID___983938","max___984005","other___984009","result___984012","COMPARISON_TESTS___984074","t63a___984366","t63b___984369","t63d___984382","t63c___984379","t63e___984387","kMaxBitsPerChar___1026719"])
+const breakpoints = setupDebugger(1, ["kBitConversionBuffer___1026729","fact___1062965","msg___1062967","facts___1062961","allPassed___1062960","TESTS___1063026","EXPECTED___1063213","VALID___1063207","INVALID___1063209","max___1063276","other___1063280","result___1063283","COMPARISON_TESTS___1063345","testNumber___1063043","t63a___1063637","t63b___1063640","t63d___1063653","t63c___1063650","t63e___1063658","MM_TESTS___1063674","kMaxBitsPerChar___1026719"])
 
-return _main___P1032749
+return _main___P1068428
 })
