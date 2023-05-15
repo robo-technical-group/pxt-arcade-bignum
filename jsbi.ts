@@ -308,6 +308,15 @@ namespace JSBI {
         return result.__trim()
     }
 
+    function absoluteCompare(x: BigInt, y: BigInt): number {
+        const diff: number = x.length - y.length
+        if (diff !== 0) return diff
+        let i: number = x.length - 1
+        while (i >= 0 && x.__digit(i) === y.__digit(i)) i--
+        if (i < 0) return 0
+        return x.__unsignedDigit(i) > y.__unsignedDigit(i) ? 1 : -1
+    }
+
     function absoluteDivLarge(dividend: BigInt, divisor: BigInt,
         wantQuotient: boolean, wantRemainder: boolean): BigDiv | BigInt | undefined {
         const n: number = divisor.__halfDigitLength()
@@ -443,10 +452,8 @@ namespace JSBI {
     export function compare(x: BigInt, y: BigInt | number): number {
         if (typeof y == 'number') {
             if (isOneDigitInt(y)) {
-                console.log('Comparing with number as integer.')
                 return compareWithInt(x, y)
             } else {
-                console.log('Comparing with number as double.')
                 return compareWithDouble(x, y)
             }
         } else {
@@ -455,13 +462,12 @@ namespace JSBI {
     }
 
     function compareWithBigInt(x: BigInt, y: BigInt): number {
-        if (x.sign !== y.sign) return x.sign ? -1 : 1
-        const diff: number = x.length - y.length
-        if (diff !== 0) return diff
-        let i: number = x.length - 1
-        while (i >= 0 && x.__digit(i) === y.__digit(i)) i--
-        if (i < 0) return 0
-        return x.__unsignedDigit(i) - y.__unsignedDigit(i)
+        const xSign: boolean = x.sign
+        if (xSign !== y.sign) return unequalSign(xSign)
+        const result: number = absoluteCompare(x, y)
+        if (result > 0) return absoluteGreater(xSign)
+        if (result < 0) return absoluteLess(xSign)
+        return 0
     }
 
     function compareWithDouble(x: BigInt, y: number): number {

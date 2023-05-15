@@ -120,6 +120,10 @@ for (const test of TESTS) {
         case 'MOD':
             result = JSBI.mod(a, b)
             break
+
+        case 'DIVIDE':
+            // result = JSBI.divide(a, b)
+            break
     }
 
     if (result != null) {
@@ -177,12 +181,18 @@ const other: JSBI.BigInt = JSBI.CreateBigInt(2)
 const result: JSBI.BigInt = JSBI.add(max, other)
 // → 9007199254740993
 if (result.toString() !== '9007199254740993') {
-    game.splash('README test FAILED (string version).')
+    msg = 'README test FAILED (string version).'
+    game.splash(msg)
+    msg += ` result = ${result.toString()} ${result.toDebugString()}`
+    console.log(msg)
     allPassed = false
 }
 // Test `JSBI.toNumber` as well.
 if (other.toNumber() !== 2) {
-    game.splash('README test FAILED (number version).')
+    msg = 'README test FAILED (number version).'
+    game.splash(msg)
+    msg += ` result = ${result.toString()} ${result.toDebugString()}`
+    console.log(msg)
     allPassed = false
 }
 
@@ -251,7 +261,7 @@ for (let ct of COMPARISON_TESTS) {
         }
         msg += `${ct.b}. Compare() returned ${compare} instead.`
         game.showLongText(msg, DialogLayout.Full)
-        msg += ` a: ${a.toDebugString()}, b: ${b.toDebugString()}`
+        msg += ` a: ${a.toString()} ${a.toDebugString()}, b: ${b.toString()} ${b.toDebugString()}`
         console.log(msg)
         allPassed = false
     } else if (INTERACTIVE) {
