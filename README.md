@@ -1,9 +1,20 @@
-# MakeCode gets Big Integers!
+# Big Numbers for MakeCode
 
-This repository is (already!) deprecated and archived. Further enhancements will be made at its replacement,
-[BigNum for MakeCode](https://github.com/robo-technical-group/pxt-arcade-bignum). File issues and pull requests there, please.
+This library contains ports of Google's [JavaScript BigInt library *a.k.a.* JSBI](https://github.com/GoogleChromeLabs/jsbi) and
+MikeMcl's [big.js library](https://github.com/MikeMcl/big.js/) to MakeCode. This will start as a TypeScript-only implementation;
+it eventually will include support for the Blocks interface.
 
-> Open this page at [https://robo-technical-group.github.io/pxt-arcade-bigint/](https://robo-technical-group.github.io/pxt-arcade-bigint/)
+# TODO
+
+- [ ] Change namespace to `BigNum`.
+- [ ] Add appropriate jsdoc and cleanup documentation.
+- [ ] Add annotations to enhance debugger support.
+- [ ] Implement method chaining to support things like `a.multiply(x).add(b).mod(m).mod(p)`.
+- [ ] Add remaining JSBI operations.
+  - [ ] Right shift.
+- [ ] Add `big.js` library.
+
+> Open this page at [https://robo-technical-group.github.io/pxt-arcade-bignum/](https://robo-technical-group.github.io/pxt-arcade-bignum/)
 
 ## Use as Extension
 
@@ -12,22 +23,22 @@ This repository can be added as an **extension** in MakeCode.
 * open [https://arcade.makecode.com/](https://arcade.makecode.com/)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **https://github.com/robo-technical-group/pxt-arcade-bigint** and import
+* search for **https://github.com/robo-technical-group/pxt-arcade-bignum** and import
 
-## Edit this project ![Build status badge](https://github.com/robo-technical-group/pxt-arcade-bigint/workflows/MakeCode/badge.svg)
+## Edit this project ![Build status badge](https://github.com/robo-technical-group/pxt-arcade-bignum/workflows/MakeCode/badge.svg)
 
 To edit this repository in MakeCode.
 
 * open [https://arcade.makecode.com/](https://arcade.makecode.com/)
 * click on **Import** then click on **Import URL**
-* paste **https://github.com/robo-technical-group/pxt-arcade-bigint** and click import
+* paste **https://github.com/robo-technical-group/pxt-arcade-bignum** and click import
 
 ## Blocks preview
 
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
 
-![A rendered view of the blocks](https://github.com/robo-technical-group/pxt-arcade-bigint/raw/master/.github/makecode/blocks.png)
+![A rendered view of the blocks](https://github.com/robo-technical-group/pxt-arcade-bignum/raw/master/.github/makecode/blocks.png)
 
 #### Metadata (used for search, rendering)
 
