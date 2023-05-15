@@ -122,7 +122,7 @@ for (const test of TESTS) {
             break
 
         case 'DIVIDE':
-            // result = JSBI.divide(a, b)
+            result = JSBI.divide(a, b)
             break
     }
 

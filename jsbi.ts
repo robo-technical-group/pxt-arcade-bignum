@@ -317,8 +317,23 @@ namespace JSBI {
         return x.__unsignedDigit(i) > y.__unsignedDigit(i) ? 1 : -1
     }
 
+    function absoluteDivSmall(x: BigInt, divisor: number, quotient: BigInt | null = null): BigInt {
+        if (quotient === null) quotient = new BigInt(x.length, false)
+        let remainder: number = 0
+        for (let i = x.length * 2 - 1; i >= 0; i -= 2) {
+            let input: number = ((remainder << 15) | x.__halfDigit(i)) >>> 0
+            const upperHalf: number = (input / divisor) | 0
+            remainder = (input % divisor) | 0
+            input = ((remainder << 15) | x.__halfDigit(i - 1)) >>> 0
+            const lowerHalf: number = (input / divisor) | 0
+            remainder = (input % divisor) | 0
+            quotient.__setDigit(i >>> 1, (upperHalf << 15) | lowerHalf)
+        }
+        return quotient
+    }
+
     function absoluteDivLarge(dividend: BigInt, divisor: BigInt,
-        wantQuotient: boolean, wantRemainder: boolean): BigDiv | BigInt | undefined {
+    wantQuotient: boolean, wantRemainder: boolean): BigDiv | BigInt | undefined {
         const n: number = divisor.__halfDigitLength()
         const n2: number = divisor.length
         const m: number = dividend.__halfDigitLength() - n
@@ -604,6 +619,24 @@ namespace JSBI {
             if (x.__digit(digitIndex) !== 0) return 1
         }
         return 0
+    }
+
+    export function divide(x: BigInt, y: BigInt): BigInt {
+        if (y.length === 0) throw 'divide: Division by zero.'
+        if (absoluteCompare(x, y) < 0) return zero()
+        const resultSign: boolean = x.sign !== y.sign
+        const divisor: number = y.__unsignedDigit(0)
+        let quotient: BigInt
+        if (y.length === 1 && divisor <= 0x7FFF) {
+            if (divisor === 1) {
+                return resultSign === x.sign ? x : unaryMinus(x)
+            }
+            quotient = absoluteDivSmall(x, divisor, null)
+        } else {
+            quotient = <BigInt>absoluteDivLarge(x, y, true, false)
+        }
+        quotient.sign = resultSign;
+        return quotient.__trim();
     }
 
     function toDouble(x: BigInt): number {
