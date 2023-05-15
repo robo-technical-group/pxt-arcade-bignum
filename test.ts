@@ -251,9 +251,38 @@ for (let ct of COMPARISON_TESTS) {
         }
         msg += `${ct.b}. Compare() returned ${compare} instead.`
         game.showLongText(msg, DialogLayout.Full)
+        msg += ` a: ${a.toDebugString()}, b: ${b.toDebugString()}`
+        console.log(msg)
         allPassed = false
     } else if (INTERACTIVE) {
         game.splash(`Comparison test ${testNumber} (BigInt version) passed.`)
+    }
+    testNumber++
+}
+
+testNumber = 0
+for (let ct of COMPARISON_TESTS) {
+    const a: JSBI.BigInt = JSBI.CreateBigInt(ct.a)
+    const compare: number = JSBI.compare(a, ct.b)
+    if ((compare == 0 && ct.expected != 0) ||
+        (compare > 0 && ct.expected <= 0) ||
+        (compare < 0 && ct.expected >= 0)) {
+        msg = `Comparison test ${testNumber} (number version) failed. `
+        msg += `Expecting ${ct.a} `
+        if (ct.expected == 0) {
+            msg += "= "
+        } else if (ct.expected < 0) {
+            msg += "< "
+        } else {
+            msg += "> "
+        }
+        msg += `${ct.b}. Compare() returned ${compare} instead.`
+        game.showLongText(msg, DialogLayout.Full)
+        msg += ` a: ${a.toDebugString()}`
+        console.log(msg)
+        allPassed = false
+    } else if (INTERACTIVE) {
+        game.splash(`Comparison test ${testNumber} (number version) passed.`)
     }
     testNumber++
 }

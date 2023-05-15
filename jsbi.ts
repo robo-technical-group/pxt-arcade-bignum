@@ -54,12 +54,12 @@ namespace JSBI {
         }
 
         public toDebugString(): string {
-            const result = ['CreateBigInt['];
+            const result = ['BigInt: [']
             for (const digit of this.data) {
-                result.push((digit ? (digit >>> 0).toString() : digit) + ', ');
+                result.push((digit ? (digit >>> 0).toString() : digit) + ', ')
             }
-            result.push(']');
-            return result.join('');
+            result.push(`] sign: ${this.sign}`)
+            return result.join('')
         }
 
         public toNumber(): number {
@@ -441,8 +441,10 @@ namespace JSBI {
     export function compare(x: BigInt, y: BigInt | number): number {
         if (typeof y == 'number') {
             if (isOneDigitInt(y)) {
+                console.log('Comparing with number as integer.')
                 return compareWithInt(x, y)
             } else {
+                console.log('Comparing with number as double.')
                 return compareWithDouble(x, y)
             }
         } else {
@@ -474,8 +476,8 @@ namespace JSBI {
         // JSBI.__kBitConversionDouble[0] = y;
         kBitConversionBuffer.setNumber(NumberFormat.Float64LE, 0, y)
         // const rawExponent = (JSBI.__kBitConversionInts[1] >>> 20) & 0x7FF;
-        const rawExponent: number = kBitConversionBuffer.getNumber(NumberFormat.Int32LE,
-            Buffer.sizeOfNumberFormat(NumberFormat.Int32LE))
+        const rawExponent: number = (kBitConversionBuffer.getNumber(NumberFormat.Int32LE,
+            Buffer.sizeOfNumberFormat(NumberFormat.Int32LE)) >>> 20) & 0x7FF
         if (rawExponent === 0x7FF) {
             throw 'compareWithDouble: implementation bug: handled elsewhere.'
         }
