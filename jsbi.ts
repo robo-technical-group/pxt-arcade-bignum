@@ -372,6 +372,14 @@ namespace JSBI {
         throw 'absoluteDivLarge: unreachable.'
     }
 
+    function absoluteGreater(bothNegative: boolean): number {
+        return bothNegative ? -1 : 1
+    }
+
+    function absoluteLess(bothNegative: boolean): number {
+        return bothNegative ? 1 : -1
+    }
+
     function absoluteModSmall(x: BigInt, divisor: number): number {
         let remainder = 0
         for (let i = x.length * 2 - 1; i >= 0; i--) {
@@ -430,7 +438,19 @@ namespace JSBI {
      * Positive value ==> x > y
      * Zero ==> x == y
      */
-    export function compare(x: BigInt, y: BigInt): number {
+    export function compare(x: BigInt, y: BigInt | number): number {
+        if (typeof y == 'number') {
+            if (isOneDigitInt(y)) {
+                return compareWithInt(x, y)
+            } else {
+                return compareWithDouble(x, y)
+            }
+        } else {
+            return compareWithBigInt(x, y)
+        }
+    }
+
+    function compareWithBigInt(x: BigInt, y: BigInt): number {
         if (x.sign !== y.sign) return x.sign ? -1 : 1
         const diff: number = x.length - y.length
         if (diff !== 0) return diff
@@ -438,6 +458,116 @@ namespace JSBI {
         while (i >= 0 && x.__digit(i) === y.__digit(i)) i--
         if (i < 0) return 0
         return x.__unsignedDigit(i) - y.__unsignedDigit(i)
+    }
+
+    function compareWithDouble(x: BigInt, y: number): number {
+        if (y !== y) return y // NaN.
+        if (y === Infinity) return -1
+        if (y === -Infinity) return 1
+        const xSign: boolean = x.sign
+        const ySign: boolean = (y < 0)
+        if (xSign !== ySign) return unequalSign(xSign)
+        if (y === 0) {
+            throw 'compareWithDouble: implementation bug: should be handled elsewhere.'
+        }
+        if (x.length === 0) return -1
+        // JSBI.__kBitConversionDouble[0] = y;
+        kBitConversionBuffer.setNumber(NumberFormat.Float64LE, 0, y)
+        // const rawExponent = (JSBI.__kBitConversionInts[1] >>> 20) & 0x7FF;
+        const rawExponent: number = kBitConversionBuffer.getNumber(NumberFormat.Int32LE,
+            Buffer.sizeOfNumberFormat(NumberFormat.Int32LE))
+        if (rawExponent === 0x7FF) {
+            throw 'compareWithDouble: implementation bug: handled elsewhere.'
+        }
+        const exponent = rawExponent - 0x3FF
+        if (exponent < 0) {
+            // The absolute value of y is less than 1. Only 0n has an absolute
+            // value smaller than that, but we've already covered that case.
+            return absoluteGreater(xSign)
+        }
+        const xLength: number = x.length
+        let xMsd: number = x.__digit(xLength - 1)
+        const msdLeadingZeros: number = clz30(xMsd)
+        const xBitLength: number = xLength * 30 - msdLeadingZeros
+        const yBitLength: number = exponent + 1
+        if (xBitLength < yBitLength) return absoluteLess(xSign)
+        if (xBitLength > yBitLength) return absoluteGreater(xSign)
+        // Same sign, same bit length. Shift mantissa to align with x and compare
+        // bit for bit.
+        const kHiddenBit: number = 0x00100000
+        // let mantissaHigh = (JSBI.__kBitConversionInts[1] & 0xFFFFF) | kHiddenBit;
+        let mantissaHigh: number = (kBitConversionBuffer.getNumber(NumberFormat.Int32LE,
+            Buffer.sizeOfNumberFormat(NumberFormat.Int32LE)) & 0xFFFFF) | kHiddenBit
+        // let mantissaLow = JSBI.__kBitConversionInts[0];
+        let mantissaLow: number = kBitConversionBuffer.getNumber(NumberFormat.Int32LE, 0)
+        const kMantissaHighTopBit: number = 20
+        const msdTopBit: number = 29 - msdLeadingZeros
+        if (msdTopBit !== (((xBitLength - 1) % 30) | 0)) {
+            throw 'compareWithDouble: implementation bug.'
+        }
+        let compareMantissa: number // Shifted chunk of mantissa.
+        let remainingMantissaBits: number = 0
+        // First, compare most significant digit against beginning of mantissa.
+        if (msdTopBit < kMantissaHighTopBit) {
+            const shift: number = kMantissaHighTopBit - msdTopBit
+            remainingMantissaBits = shift + 32
+            compareMantissa = mantissaHigh >>> shift
+            mantissaHigh = (mantissaHigh << (32 - shift)) | (mantissaLow >>> shift)
+            mantissaLow = mantissaLow << (32 - shift)
+        } else if (msdTopBit === kMantissaHighTopBit) {
+            remainingMantissaBits = 32
+            compareMantissa = mantissaHigh
+            mantissaHigh = mantissaLow
+            mantissaLow = 0
+        } else {
+            const shift: number = msdTopBit - kMantissaHighTopBit
+            remainingMantissaBits = 32 - shift
+            compareMantissa =
+                (mantissaHigh << shift) | (mantissaLow >>> (32 - shift))
+            mantissaHigh = mantissaLow << shift
+            mantissaLow = 0
+        }
+        xMsd = xMsd >>> 0
+        compareMantissa = compareMantissa >>> 0
+        if (xMsd > compareMantissa) return absoluteGreater(xSign)
+        if (xMsd < compareMantissa) return absoluteLess(xSign)
+        // Then, compare additional digits against remaining mantissa bits.
+        for (let digitIndex = xLength - 2; digitIndex >= 0; digitIndex--) {
+            if (remainingMantissaBits > 0) {
+                remainingMantissaBits -= 30
+                compareMantissa = mantissaHigh >>> 2
+                mantissaHigh = (mantissaHigh << 30) | (mantissaLow >>> 2)
+                mantissaLow = (mantissaLow << 30)
+            } else {
+                compareMantissa = 0
+            }
+            const digit: number = x.__unsignedDigit(digitIndex)
+            if (digit > compareMantissa) return absoluteGreater(xSign)
+            if (digit < compareMantissa) return absoluteLess(xSign)
+        }
+        // Integer parts are equal; check whether {y} has a fractional part.
+        if (mantissaHigh !== 0 || mantissaLow !== 0) {
+            if (remainingMantissaBits === 0) throw 'compareWithDouble: implementation bug.'
+            return absoluteLess(xSign)
+        }
+        return 0;
+    }
+
+    function compareWithInt(x: BigInt, y: number): number {
+        const xSign: boolean = x.sign
+        const ySign: boolean = (y < 0)
+        if (xSign !== ySign) return unequalSign(xSign)
+        if (x.length === 0) {
+            if (ySign) throw 'compareWithInt: implementation bug.'
+            return y === 0 ? 0 : -1
+        }
+        // Any multi-digit BigInt is bigger than an int32.
+        if (x.length > 1) return absoluteGreater(xSign)
+        const yAbs = Math.abs(y)
+        const xDigit = x.__unsignedDigit(0)
+        if (xDigit > yAbs) return absoluteGreater(xSign)
+        if (xDigit < yAbs) return absoluteLess(xSign)
+        return 0
     }
 
     export function exponentiate(x: BigInt, y: BigInt): BigInt {
@@ -526,7 +656,7 @@ namespace JSBI {
         const sign = value < 0
         // __kBitConversionDouble[0] = value;
         kBitConversionBuffer.setNumber(NumberFormat.Float64LE, 0, value)
-        // const rawExponent = (__kBitConversionInts[1] >>> 20) & 0x7FF;\
+        // const rawExponent = (__kBitConversionInts[1] >>> 20) & 0x7FF;
         const rawExponent = (kBitConversionBuffer.getNumber(NumberFormat.Int32LE,
             Buffer.sizeOfNumberFormat(NumberFormat.Int32LE)) >>> 20) & 0x7FF
         const exponent: number = rawExponent - 0x3FF
@@ -953,6 +1083,10 @@ namespace JSBI {
         const result = x.__copy()
         result.sign = !x.sign
         return result
+    }
+
+    function unequalSign(leftNegative: boolean): number {
+        return leftNegative ? -1 : 1
     }
 
     function zero(): BigInt {
