@@ -63,11 +63,13 @@ namespace JSBI {
         }
 
         public toNumber(): number {
-            // Simplified version.
             if (this.length == 0) return 0
-            if (this.length > 2) return this.sign ? -Infinity : Infinity
-            const value: number = this.__unsignedDigit(0)
-            return this.sign ? 0 - value : value
+            if (this.length == 1) {
+                const value: number = this.__unsignedDigit(0)
+                return this.sign ? -value : value
+            }
+            // Full implementation
+            return toDouble(this)
         }
 
         public toString(): string {
@@ -570,6 +572,95 @@ namespace JSBI {
         if (xDigit > yAbs) return absoluteGreater(xSign)
         if (xDigit < yAbs) return absoluteLess(xSign)
         return 0
+    }
+
+    function decideRounding(x: BigInt, mantissaBitsUnset: number,
+    digitIndex: number, currentDigit: number): 1 | 0 | -1 {
+        if (mantissaBitsUnset > 0) return -1
+        let topUnconsumedBit: number
+        if (mantissaBitsUnset < 0) {
+            topUnconsumedBit = -mantissaBitsUnset - 1
+        } else {
+            // {currentDigit} fit the mantissa exactly; look at the next digit.
+            if (digitIndex === 0) return -1
+            digitIndex--
+            currentDigit = x.__digit(digitIndex)
+            topUnconsumedBit = 29
+        }
+        // If the most significant remaining bit is 0, round down.
+        let mask: number = 1 << topUnconsumedBit
+        if ((currentDigit & mask) === 0) return -1
+        // If any other remaining bit is set, round up.
+        mask -= 1
+        if ((currentDigit & mask) !== 0) return 1
+        while (digitIndex > 0) {
+            digitIndex--
+            if (x.__digit(digitIndex) !== 0) return 1
+        }
+        return 0
+    }
+
+    function toDouble(x: BigInt): number {
+        const xLength: number = x.length
+        if (xLength === 0) throw 'toDouble: length zero handled elsewhere.'
+        if (xLength === 1) throw 'toDouble: length 1 handled elsewhere.'
+        const xMsd: number = x.__digit(xLength - 1)
+        const msdLeadingZeros: number = clz30(xMsd)
+        const xBitLength: number = xLength * 30 - msdLeadingZeros
+        if (xBitLength > 1024) return x.sign ? -Infinity : Infinity
+        let exponent: number = xBitLength - 1
+        let currentDigit: number = xMsd
+        let digitIndex: number = xLength - 1
+        const shift: number = msdLeadingZeros + 3
+        let mantissaHigh: number = (shift === 32) ? 0 : currentDigit << shift
+        mantissaHigh >>>= 12
+        const mantissaHighBitsUnset: number = shift - 12
+        let mantissaLow: number = (shift >= 12) ? 0 : (currentDigit << (20 + shift))
+        let mantissaLowBitsUnset: number = 20 + shift
+        if (mantissaHighBitsUnset > 0 && digitIndex > 0) {
+            digitIndex--
+            currentDigit = x.__digit(digitIndex)
+            mantissaHigh |= (currentDigit >>> (30 - mantissaHighBitsUnset))
+            mantissaLow = currentDigit << mantissaHighBitsUnset + 2
+            mantissaLowBitsUnset = mantissaHighBitsUnset + 2
+        }
+        while (mantissaLowBitsUnset > 0 && digitIndex > 0) {
+            digitIndex--
+            currentDigit = x.__digit(digitIndex)
+            if (mantissaLowBitsUnset >= 30) {
+                mantissaLow |= (currentDigit << (mantissaLowBitsUnset - 30))
+            } else {
+                mantissaLow |= (currentDigit >>> (30 - mantissaLowBitsUnset))
+            }
+            mantissaLowBitsUnset -= 30
+        }
+        const rounding: number = decideRounding(x, mantissaLowBitsUnset,
+            digitIndex, currentDigit)
+        if (rounding === 1 || (rounding === 0 && (mantissaLow & 1) === 1)) {
+            mantissaLow = (mantissaLow + 1) >>> 0
+            if (mantissaLow === 0) {
+                // Incrementing mantissaLow overflowed.
+                mantissaHigh++
+                if ((mantissaHigh >>> 20) !== 0) {
+                    // Incrementing mantissaHigh overflowed.
+                    mantissaHigh = 0
+                    exponent++
+                    if (exponent > 1023) {
+                        // Incrementing the exponent overflowed.
+                        return x.sign ? -Infinity : Infinity
+                    }
+                }
+            }
+        }
+        const signBit: number = x.sign ? (1 << 31) : 0
+        exponent = (exponent + 0x3FF) << 20
+        // JSBI.__kBitConversionInts[1] = signBit | exponent | mantissaHigh;
+        kBitConversionBuffer.setNumber(NumberFormat.Int32LE,
+            Buffer.sizeOfNumberFormat(NumberFormat.Int32LE), signBit | exponent | mantissaHigh)
+        // JSBI.__kBitConversionInts[0] = mantissaLow;
+        kBitConversionBuffer.setNumber(NumberFormat.Int32LE, 0, mantissaLow)
+        // return JSBI.__kBitConversionDouble[0];
+        return kBitConversionBuffer.getNumber(NumberFormat.Float64LE, 0)
     }
 
     export function exponentiate(x: BigInt, y: BigInt): BigInt {
