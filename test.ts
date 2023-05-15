@@ -98,49 +98,58 @@ function parseString(s: string): JSBI.BigInt {
 }
 
 let testNumber: number = 0
-for (const test of TESTS) {
-    const a: JSBI.BigInt = parseString(test.a)
-    const b: JSBI.BigInt = parseString(test.b)
-    const expected: JSBI.BigInt = parseString(test.expected)
-    let result: JSBI.BigInt = null
-    switch (test.operation.toUpperCase()) {
-        case 'ADD':
-            result = JSBI.add(a, b)
-            break
+function runTests(tests: Test[], testGroupName: string): void {
+    for (const test of tests) {
+        const a: JSBI.BigInt = parseString(test.a)
+        const b: JSBI.BigInt = parseString(test.b)
+        const expected: JSBI.BigInt = parseString(test.expected)
+        let result: JSBI.BigInt = null
+        switch (test.operation.toUpperCase()) {
+            case 'ADD':
+                result = JSBI.add(a, b)
+                break
 
-        case 'SUBTRACT':
-            result = JSBI.subtract(a, b)
-            break
+            case 'SUBTRACT':
+                result = JSBI.subtract(a, b)
+                break
 
-        case 'MULTIPLY':
-            result = JSBI.multiply(a, b)
-            break
+            case 'MULTIPLY':
+                result = JSBI.multiply(a, b)
+                break
 
-        case 'REMAINDER':
-        case 'MOD':
-            result = JSBI.mod(a, b)
-            break
+            case 'REMAINDER':
+            case 'MOD':
+                result = JSBI.mod(a, b)
+                break
 
-        case 'DIVIDE':
-            result = JSBI.divide(a, b)
-            break
-    }
-
-    if (result != null) {
-        let compare: number = JSBI.compare(result, expected)
-        if (compare != 0 || INTERACTIVE) {
-            if (compare == 0) {
-                game.splash(`Test ${testNumber} passed.`)
-            } else {
-                game.splash(`Test ${testNumber} failed!`)
-                allPassed = false
-            }
+            case 'DIVIDE':
+                result = JSBI.divide(a, b)
+                break
         }
-    } else if (INTERACTIVE) {
-        game.splash(`Test ${testNumber} not implemented; skipped.`)
+
+        if (result != null) {
+            let compare: number = JSBI.compare(result, expected)
+            if (compare != 0 || INTERACTIVE) {
+                if (compare == 0) {
+                    game.splash(`Group ${testGroupName} Test ${testNumber} passed.`)
+                } else {
+                    msg = `Group ${testGroupName} Test ${testNumber} failed!`
+                    game.splash(msg)
+                    msg += ` a = ${test.a} b = ${test.b} operator ${test.operation}`
+                    msg += ` expected ${test.expected} result ${result.toString()} `
+                    msg += result.toDebugString()
+                    console.log(msg)
+                    allPassed = false
+                }
+            }
+        } else if (INTERACTIVE) {
+            game.splash(`Group ${testGroupName} Test ${testNumber} not implemented; skipped.`)
+        }
+        testNumber++
     }
-    testNumber++
 }
+
+runTests(TESTS, 'JSBI source')
 
 // Parsing tests https://github.com/GoogleChromeLabs/jsbi/issues/36
 const VALID: string[] = ['123', ' 123 ', '   123   ']
@@ -336,3 +345,76 @@ if (allPassed) {
 } else {
     game.splash("At least one test failed.")
 }
+
+// Additional tests from Matt McCutchen's C++ bigint library.
+// https://mattmccutchen.net/bigint/
+const MM_TESTS: Test[] = [
+    {
+        // Test 0
+        a: '0',
+        b: '0',
+        operation: 'add',
+        expected: '0',
+    }, {
+        // Test 1
+        a: '0',
+        b: '1',
+        operation: 'add',
+        expected: '1',
+    }, {
+        // Test 2
+        a: '8589934591',
+        b: '4294967298',
+        operation: 'add',
+        expected: '12884901889',
+    }, {
+        // Test 3
+        a: '1',
+        b: '0',
+        operation: 'subtract',
+        expected: '1',
+    }, {
+        // Test 4
+        a: '1',
+        b: '1',
+        operation: 'subtract',
+        expected: '0',
+    }, {
+        // Test 5
+        a: '2',
+        b: '1',
+        operation: 'subtract',
+        expected: '1',
+    }, {
+        // Test 6
+        a: '12884901889',
+        b: '4294967298',
+        operation: 'subtract',
+        expected: '8589934591',
+    }, {
+        // Test 7
+        a: '4294967296',
+        b: '1',
+        operation: 'subtract',
+        expected: '4294967295',
+    }, {
+        // Test 8
+        a: '314159265',
+        b: '358979323',
+        operation: 'multiply',
+        expected: '112776680263877595',
+    }, {
+        // Test 9
+        a: '112776680263877595',
+        b: '123',
+        operation: 'divide',
+        expected: '916883579381118',
+    }, {
+        // Test 10
+        a: '112776680263877595',
+        b: '123',
+        operation: 'mod',
+        expected: '81',
+    },
+]
+runTests(MM_TESTS, 'Matt McCutchen')
