@@ -26,7 +26,6 @@ namespace JSBI {
     // for (let i = 0; i <= 36; i++) {
     //   console.log(Math.ceil(Math.log2(i) * 32) + ',');
     // }
-    /*
     const kMaxBitsPerChar: number[] = [
         0, 0, 32, 51, 64, 75, 83, 90, 96, // 0..8
         102, 107, 111, 115, 119, 122, 126, 128, // 9..16
@@ -34,7 +33,6 @@ namespace JSBI {
         149, 151, 153, 154, 156, 158, 159, 160, // 25..32
         162, 163, 165, 166, // 33..36
     ]
-    */
 
     const kBitsPerCharTableShift: number = 5
     const kBitsPerCharTableMultiplier: number = 1 << kBitsPerCharTableShift
@@ -374,6 +372,15 @@ namespace JSBI {
         throw 'unreachable'
     }
 
+    function absoluteModSmall(x: BigInt, divisor: number): number {
+        let remainder = 0
+        for (let i = x.length * 2 - 1; i >= 0; i--) {
+            const input: number = ((remainder << 15) | x.__halfDigit(i)) >>> 0
+            remainder = (input % divisor) | 0
+        }
+        return remainder
+    }
+
     function absoluteSub(x: BigInt, y: BigInt, resultSign: boolean): BigInt {
         if (x.length === 0) return x
         if (y.length === 0) return x.sign === resultSign ? x : unaryMinus(x)
@@ -487,6 +494,34 @@ namespace JSBI {
         return result as BigInt
     }
 
+    function fillFromParts(result: BigInt, parts: number[], partsBits: number[]): void {
+        let digitIndex: number = 0
+        let digit: number = 0
+        let bitsInDigit: number = 0
+        for (let i = parts.length - 1; i >= 0; i--) {
+            const part: number = parts[i]
+            const partBits: number = partsBits[i]
+            digit |= (part << bitsInDigit)
+            bitsInDigit += partBits
+            if (bitsInDigit === 30) {
+                result.__setDigit(digitIndex++, digit)
+                bitsInDigit = 0
+                digit = 0
+            } else if (bitsInDigit > 30) {
+                result.__setDigit(digitIndex++, digit & 0x3FFFFFFF)
+                bitsInDigit -= 30
+                digit = part >>> (partBits - bitsInDigit)
+            }
+        }
+        if (digit !== 0) {
+            if (digitIndex >= result.length) throw 'fillFromParts(): implementation bug'
+            result.__setDigit(digitIndex++, digit)
+        }
+        for (; digitIndex < result.length; digitIndex++) {
+            result.__setDigit(digitIndex, 0)
+        }
+    }
+
     function fromDouble(value: number): BigInt {
         const sign = value < 0
         // __kBitConversionDouble[0] = value;
@@ -546,14 +581,13 @@ namespace JSBI {
         return result.__trim()
     }
 
-    function fromString(s: string): BigInt | null {
+    function fromString(s: string, radix: number = 0): BigInt | null {
         // Strip whitespace and separators
         s = s.split('').filter((value: string, index: number): boolean => {
             return !(isWhitespace(value.charCodeAt(0)) ||
                 value == ',' || value == '.' || value == '_')
         }).join('')
 
-        // Simplified version; radix is always 10.
         let sign: number = 0
         let leadingZero: boolean = false
         const length: number = s.length
@@ -561,7 +595,7 @@ namespace JSBI {
         if (cursor === length) return zero()
         let current: number = s.charCodeAt(cursor)
 
-        // Detect sign indicator.
+        // Detect leading sign character.
         if (current === 0x2B) { // '+'
             if (++cursor === length) return null
             current = s.charCodeAt(cursor)
@@ -572,6 +606,42 @@ namespace JSBI {
             sign = -1
         }
 
+        // Detect radix.
+        if (radix === 0) {
+            radix = 10
+            if (current === 0x30) { // '0'
+                if (++cursor === length) return zero()
+                current = s.charCodeAt(cursor)
+                if (current === 0x58 || current === 0x78) { // 'X' or 'x'
+                    radix = 16
+                    if (++cursor === length) return null
+                    current = s.charCodeAt(cursor)
+                } else if (current === 0x4F || current === 0x6F) { // 'O' or 'o'
+                    radix = 8
+                    if (++cursor === length) return null
+                    current = s.charCodeAt(cursor)
+                } else if (current === 0x42 || current === 0x62) { // 'B' or 'b'
+                    radix = 2
+                    if (++cursor === length) return null
+                    current = s.charCodeAt(cursor)
+                } else {
+                    leadingZero = true
+                }
+            }
+        } else if (radix === 16) {
+            if (current === 0x30) { // '0'
+                // Allow "0x" prefix.
+                if (++cursor === length) return zero()
+                current = s.charCodeAt(cursor)
+                if (current === 0x58 || current === 0x78) { // 'X' or 'x'
+                    if (++cursor === length) return null
+                    current = s.charCodeAt(cursor)
+                } else {
+                    leadingZero = true
+                }
+            }
+        }
+        if (sign !== 0 && radix !== 10) return null
         // Skip leading zeros.
         while (current === 0x30) {
             leadingZero = true
@@ -581,51 +651,85 @@ namespace JSBI {
 
         // Allocate result.
         const chars: number = length - cursor
-        let bitsPerChar: number = 107 // Magic number from kMaxBitsPerChar[]
+        let bitsPerChar: number = kMaxBitsPerChar[radix]
         let roundup: number = kBitsPerCharTableMultiplier - 1
         if (chars > (1 << 30) / bitsPerChar) return null
         const bitsMin: number =
             (bitsPerChar * chars + roundup) >>> kBitsPerCharTableShift
-        const resultLength: number = ((bitsMin + 29) / 30) | 0;
+        const resultLength: number = ((bitsMin + 29) / 30) | 0
         const result: BigInt = new BigInt(resultLength, false)
 
         // Parse.
-        const limDigit: number = 10
-        const limAlpha: number = 0
+        const limDigit = radix < 10 ? radix : 10
+        const limAlpha = radix > 10 ? radix - 10 : 0
 
-        result.__initializeDigits()
-        let done: boolean = false
-        let charsSoFar: number = 0
-        do {
-            let part: number = 0
-            let multiplier: number = 1
-            while (true) {
-                let d: number
-                if (((current - 48) >>> 0) < limDigit) {
-                    d = current - 48
-                } else if ((((current | 32) - 97) >>> 0) < limAlpha) {
-                    d = (current | 32) - 87
-                } else {
-                    done = true
-                    break
+        if ((radix & (radix - 1)) === 0) {
+            // Power-of-two radix.
+            bitsPerChar >>= kBitsPerCharTableShift
+            const parts = []
+            const partsBits = []
+            let done: boolean = false
+            do {
+                let part: number = 0
+                let bits: number = 0
+                while (true) {
+                    let d: number
+                    if (((current - 48) >>> 0) < limDigit) {
+                        d = current - 48
+                    } else if ((((current | 32) - 97) >>> 0) < limAlpha) {
+                        d = (current | 32) - 87
+                    } else {
+                        done = true
+                        break
+                    }
+                    bits += bitsPerChar
+                    part = (part << bitsPerChar) | d
+                    if (++cursor === length) {
+                        done = true
+                        break
+                    }
+                    current = s.charCodeAt(cursor)
+                    if (bits + bitsPerChar > 30) break
                 }
+                parts.push(part)
+                partsBits.push(bits)
+            } while (!done)
+            fillFromParts(result, parts, partsBits)
+        } else {
+            result.__initializeDigits()
+            let done: boolean = false
+            let charsSoFar: number = 0
+            do {
+                let part: number = 0
+                let multiplier: number = 1
+                while (true) {
+                    let d: number
+                    if (((current - 48) >>> 0) < limDigit) {
+                        d = current - 48
+                    } else if ((((current | 32) - 97) >>> 0) < limAlpha) {
+                        d = (current | 32) - 87
+                    } else {
+                        done = true
+                        break
+                    }
 
-                const m: number = multiplier * 10
-                if (m > 0x3FFFFFFF) break
-                multiplier = m
-                part = part * 10 + d
-                charsSoFar++
-                if (++cursor === length) {
-                    done = true
-                    break
+                    const m: number = multiplier * radix
+                    if (m > 0x3FFFFFFF) break
+                    multiplier = m
+                    part = part * radix + d
+                    charsSoFar++
+                    if (++cursor === length) {
+                        done = true
+                        break
+                    }
+                    current = s.charCodeAt(cursor)
                 }
-                current = s.charCodeAt(cursor)
-            }
-            roundup = kBitsPerCharTableMultiplier * 30 - 1
-            const digitsSoFar: number = (((bitsPerChar * charsSoFar + roundup) >>>
-                kBitsPerCharTableShift) / 30) | 0
-            result.__inplaceMultiplyAdd(multiplier, part, digitsSoFar)
-        } while (!done)
+                roundup = kBitsPerCharTableMultiplier * 30 - 1
+                const digitsSoFar = (((bitsPerChar * charsSoFar + roundup) >>>
+                    kBitsPerCharTableShift) / 30) | 0
+                result.__inplaceMultiplyAdd(multiplier, part, digitsSoFar)
+            } while (!done)
+        }
 
         if (cursor !== length) {
             if (!isWhitespace(current)) return null
@@ -681,6 +785,21 @@ namespace JSBI {
         return c === 0xFEFF;
     }
 
+    export function mod(x: BigInt, y: BigInt): BigInt {
+        if (y.length === 0) throw 'Division by zero'
+        if (compare(x, y) < 0) return x
+        const divisor: number = y.__unsignedDigit(0)
+        if (y.length === 1 && divisor <= 0x7FFF) {
+            if (divisor === 1) return zero()
+            const remainderDigit: number = absoluteModSmall(x, divisor)
+            if (remainderDigit === 0) return zero()
+            return oneDigit(remainderDigit, x.sign)
+        }
+        const r: BigInt = <BigInt>absoluteDivLarge(x, y, false, true)
+        r.sign = x.sign
+        return r.__trim()
+    }
+
     export function multiply(x: BigInt, y: BigInt): BigInt {
         if (x.length === 0) return x
         if (y.length === 0) return y
@@ -733,6 +852,13 @@ namespace JSBI {
         const result = new BigInt(1, sign)
         result.__setDigit(0, value)
         return result
+    }
+
+    /**
+     * Synonym for mod(x: BigInt, y: BigInt).
+     */
+    function remainder(x: BigInt, y: BigInt): BigInt {
+        return mod(x, y)
     }
 
     function specialLeftShift(x: BigInt, shift: number, addDigit: 0 | 1): BigInt {
