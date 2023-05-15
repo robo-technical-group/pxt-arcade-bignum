@@ -64,6 +64,14 @@ namespace JSBI {
             return result.join('');
         }
 
+        public toNumber(): number {
+            // Simplified version.
+            if (this.length == 0) return 0
+            if (this.length > 2) return this.sign ? -Infinity : Infinity
+            const value: number = this.__unsignedDigit(0)
+            return this.sign ? 0 - value : value
+        }
+
         public toString(): string {
             // return this.toDebugString()
             // Simplifying implementation; always using radix 10.
@@ -115,6 +123,33 @@ namespace JSBI {
                 this.__setHalfDigit(startIndex + i, sum & 0x7FFF)
             }
             return carry
+        }
+
+        public __inplaceMultiplyAdd(multiplier: number, summand: number, length: number): void {
+            if (length > this.length) length = this.length
+            const mLow: number = multiplier & 0x7FFF
+            const mHigh: number = multiplier >>> 15
+            let carry: number = 0
+            let high: number = summand
+            for (let i = 0; i < length; i++) {
+                const d: number = this.__digit(i)
+                const dLow: number = d & 0x7FFF
+                const dHigh: number = d >>> 15
+                const pLow: number = Math.imul(dLow, mLow)
+                const pMid1: number = Math.imul(dLow, mHigh)
+                const pMid2: number = Math.imul(dHigh, mLow)
+                const pHigh: number = Math.imul(dHigh, mHigh)
+                let result: number = high + pLow + carry
+                carry = result >>> 30
+                result &= 0x3FFFFFFF
+                result += ((pMid1 & 0x7FFF) << 15) + ((pMid2 & 0x7FFF) << 15)
+                carry += result >>> 30
+                high = pHigh + (pMid1 >>> 15) + (pMid2 >>> 15)
+                this.__setDigit(i, result & 0x3FFFFFFF)
+            }
+            if (carry !== 0 || high !== 0) {
+                throw 'implementation bug'
+            }
         }
 
         public __inplaceRightShift(shift: number): void {
@@ -236,8 +271,41 @@ namespace JSBI {
             }
             return fromDouble(arg)
         }
+        if (typeof arg === 'string') {
+            const result: BigInt = fromString(arg)
+            if (result !== null) {
+                return result
+            }
+        }
 
-        throw 'Cannot convert ' + arg + ' to BigInt.'
+        throw `Cannot convert ${arg} (type ${typeof arg}) to BigInt.`
+    }
+
+    function absoluteAdd(x: BigInt, y: BigInt, resultSign: boolean): BigInt {
+        if (x.length < y.length) return absoluteAdd(y, x, resultSign)
+        if (x.length === 0) return x
+        if (y.length === 0) return x.sign === resultSign ? x : JSBI.unaryMinus(x)
+        let resultLength: number = x.length
+        if (x.__clzmsd() === 0 || (y.length === x.length && y.__clzmsd() === 0)) {
+            resultLength++
+        }
+        const result: BigInt = new BigInt(resultLength, resultSign)
+        let carry = 0
+        let i = 0
+        for (; i < y.length; i++) {
+            const r: number = x.__digit(i) + y.__digit(i) + carry;
+            carry = r >>> 30
+            result.__setDigit(i, r & 0x3FFFFFFF)
+        }
+        for (; i < x.length; i++) {
+            const r: number = x.__digit(i) + carry
+            carry = r >>> 30
+            result.__setDigit(i, r & 0x3FFFFFFF)
+        }
+        if (i < result.length) {
+            result.__setDigit(i, carry)
+        }
+        return result.__trim()
     }
 
     function absoluteDivLarge(dividend: BigInt, divisor: BigInt,
@@ -306,6 +374,40 @@ namespace JSBI {
         throw 'unreachable'
     }
 
+    function absoluteSub(x: BigInt, y: BigInt, resultSign: boolean): BigInt {
+        if (x.length === 0) return x
+        if (y.length === 0) return x.sign === resultSign ? x : unaryMinus(x)
+        const result: BigInt = new BigInt(x.length, resultSign)
+        let borrow = 0
+        let i = 0
+        for (; i < y.length; i++) {
+            const r: number = x.__digit(i) - y.__digit(i) - borrow
+            borrow = (r >>> 30) & 1
+            result.__setDigit(i, r & 0x3FFFFFFF)
+        }
+        for (; i < x.length; i++) {
+            const r: number = x.__digit(i) - borrow
+            borrow = (r >>> 30) & 1
+            result.__setDigit(i, r & 0x3FFFFFFF)
+        }
+        return result.__trim()
+    }
+
+    export function add(x: BigInt, y: BigInt): BigInt {
+        const sign = x.sign
+        if (sign === y.sign) {
+            // x + y == x + y
+            // -x + -y == -(x + y)
+            return absoluteAdd(x, y, sign)
+        }
+        // x + -y == x - y == -(y - x)
+        // -x + y == y - x == -(x - y)
+        if (compare(x, y) >= 0) {
+            return absoluteSub(x, y, sign)
+        }
+        return absoluteSub(y, x, !sign)
+    }
+
     function clz15(value: number): number {
         return clz30(value) - 15
     }
@@ -313,6 +415,22 @@ namespace JSBI {
     function clz30(x: number): number {
         if (x === 0) return 30
         return 29 - (Math.log(x >>> 0) / Math.LN2 | 0) | 0
+    }
+
+    /**
+     * Standard comparator function.
+     * Negative value ==> x < y
+     * Positive value ==> x > y
+     * Zero ==> x == y
+     */
+    export function compare(x: BigInt, y: BigInt): number {
+        if (x.sign !== y.sign) return x.sign ? -1 : 1
+        const diff: number = x.length - y.length
+        if (diff !== 0) return diff
+        let i: number = x.length - 1
+        while (i >= 0 && x.__digit(i) === y.__digit(i)) i--
+        if (i < 0) return 0
+        return x.__unsignedDigit(i) - y.__unsignedDigit(i)
     }
 
     export function exponentiate(x: BigInt, y: BigInt): BigInt {
@@ -428,6 +546,100 @@ namespace JSBI {
         return result.__trim()
     }
 
+    function fromString(s: string): BigInt | null {
+        // Strip whitespace and separators
+        s = s.split('').filter((value: string, index: number): boolean => {
+            return !(isWhitespace(value.charCodeAt(0)) ||
+                value == ',' || value == '.' || value == '_')
+        }).join('')
+
+        // Simplified version; radix is always 10.
+        let sign: number = 0
+        let leadingZero: boolean = false
+        const length: number = s.length
+        let cursor: number = 0
+        if (cursor === length) return zero()
+        let current: number = s.charCodeAt(cursor)
+
+        // Detect sign indicator.
+        if (current === 0x2B) { // '+'
+            if (++cursor === length) return null
+            current = s.charCodeAt(cursor)
+            sign = 1
+        } else if (current === 0x2D) { // '-'
+            if (++cursor === length) return null
+            current = s.charCodeAt(cursor)
+            sign = -1
+        }
+
+        // Skip leading zeros.
+        while (current === 0x30) {
+            leadingZero = true
+            if (++cursor === length) return zero()
+            current = s.charCodeAt(cursor)
+        }
+
+        // Allocate result.
+        const chars: number = length - cursor
+        let bitsPerChar: number = 107 // Magic number from kMaxBitsPerChar[]
+        let roundup: number = kBitsPerCharTableMultiplier - 1
+        if (chars > (1 << 30) / bitsPerChar) return null
+        const bitsMin: number =
+            (bitsPerChar * chars + roundup) >>> kBitsPerCharTableShift
+        const resultLength: number = ((bitsMin + 29) / 30) | 0;
+        const result: BigInt = new BigInt(resultLength, false)
+
+        // Parse.
+        const limDigit: number = 10
+        const limAlpha: number = 0
+
+        result.__initializeDigits()
+        let done: boolean = false
+        let charsSoFar: number = 0
+        do {
+            let part: number = 0
+            let multiplier: number = 1
+            while (true) {
+                let d: number
+                if (((current - 48) >>> 0) < limDigit) {
+                    d = current - 48
+                } else if ((((current | 32) - 97) >>> 0) < limAlpha) {
+                    d = (current | 32) - 87
+                } else {
+                    done = true
+                    break
+                }
+
+                const m: number = multiplier * 10
+                if (m > 0x3FFFFFFF) break
+                multiplier = m
+                part = part * 10 + d
+                charsSoFar++
+                if (++cursor === length) {
+                    done = true
+                    break
+                }
+                current = s.charCodeAt(cursor)
+            }
+            roundup = kBitsPerCharTableMultiplier * 30 - 1
+            const digitsSoFar: number = (((bitsPerChar * charsSoFar + roundup) >>>
+                kBitsPerCharTableShift) / 30) | 0
+            result.__inplaceMultiplyAdd(multiplier, part, digitsSoFar)
+        } while (!done)
+
+        if (cursor !== length) {
+            if (!isWhitespace(current)) return null
+            for (cursor++; cursor < length; cursor++) {
+                current = s.charCodeAt(cursor)
+                if (!isWhitespace(current)) return null
+            }
+        }
+
+        // Get result.
+        result.sign = (sign === -1)
+        return result.__trim()
+    }
+
     function internalMultiplyAdd(source: BigInt, factor: number, summand: number,
         n: number, result: BigInt): void {
         let carry: number = summand
@@ -453,6 +665,20 @@ namespace JSBI {
 
     function isOneDigitInt(x: number): boolean {
         return (x & 0x3FFFFFFF) === x
+    }
+
+    function isWhitespace(c: number): boolean {
+        if (c <= 0x0D && c >= 0x09) return true;
+        if (c <= 0x9F) return c === 0x20;
+        if (c <= 0x01FFFF) {
+            return c === 0xA0 || c === 0x1680;
+        }
+        if (c <= 0x02FFFF) {
+            c &= 0x01FFFF;
+            return c <= 0x0A || c === 0x28 || c === 0x29 || c === 0x2F ||
+                c === 0x5F || c === 0x1000;
+        }
+        return c === 0xFEFF;
     }
 
     export function multiply(x: BigInt, y: BigInt): BigInt {
@@ -530,6 +756,20 @@ namespace JSBI {
         return result
     }
 
+    export function subtract(x: BigInt, y: BigInt): BigInt {
+        const sign = x.sign;
+        if (sign !== y.sign) {
+            // x - (-y) == x + y
+            // (-x) - y == -(x + y)
+            return absoluteAdd(x, y, sign);
+        }
+        // x - y == -(y - x)
+        // (-x) - (-y) == y - x == -(x - y)
+        if (compare(x, y) >= 0) {
+            return absoluteSub(x, y, sign);
+        }
+        return absoluteSub(y, x, !sign);
+    }
 
     function stringify(x: BigInt, isRecursiveCall: boolean): string {
         // Simplified implementation; always using radix 10.
