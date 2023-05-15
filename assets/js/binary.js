@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.30/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.2.5","target":"arcade","targetVersion":"1.12.30","repo":"robo-technical-group/pxt-arcade-bigint"}
-// total=1690153 new=21.39% cached=73.70% other=4.91%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.30/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.2.6","target":"arcade","targetVersion":"1.12.30","repo":"robo-technical-group/pxt-arcade-bigint"}
+// total=1700931 new=21.89% cached=73.24% other=4.88%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -488,7 +488,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P976900(s) {
+function _main___P1032749(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -498,37 +498,37 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.i___932874 = undefined;
-    s.verify___932902 = undefined;
-    s.compare___932906 = undefined;
-    s.test___932951 = undefined;
-    s.unnamed10342___U4 = undefined;
-    s.unnamed10343___U5 = undefined;
-    s.a___932953 = undefined;
-    s.b___932959 = undefined;
-    s.expected___932965 = undefined;
-    s.result___932971 = undefined;
-    s.compare___932997 = undefined;
-    s.v___933044 = undefined;
-    s.unnamed10344___U12 = undefined;
-    s.unnamed10345___U13 = undefined;
-    s.result___933046 = undefined;
-    s.i___933074 = undefined;
-    s.unnamed10346___U16 = undefined;
-    s.unnamed10347___U17 = undefined;
-    s.result___933077 = undefined;
-    s.exception___933090 = undefined;
-    s.ct___933189 = undefined;
-    s.unnamed10348___U21 = undefined;
-    s.unnamed10349___U22 = undefined;
-    s.a___933191 = undefined;
-    s.b___933197 = undefined;
-    s.compare___933203 = undefined;
-    s.ct___933340 = undefined;
-    s.unnamed10350___U27 = undefined;
-    s.unnamed10351___U28 = undefined;
-    s.a___933342 = undefined;
-    s.compare___933347 = undefined;
+    s.i___983771 = undefined;
+    s.verify___983799 = undefined;
+    s.compare___983803 = undefined;
+    s.test___983848 = undefined;
+    s.unnamed10846___U4 = undefined;
+    s.unnamed10847___U5 = undefined;
+    s.a___983850 = undefined;
+    s.b___983856 = undefined;
+    s.expected___983862 = undefined;
+    s.result___983868 = undefined;
+    s.compare___983898 = undefined;
+    s.v___983945 = undefined;
+    s.unnamed10848___U12 = undefined;
+    s.unnamed10849___U13 = undefined;
+    s.result___983947 = undefined;
+    s.i___983975 = undefined;
+    s.unnamed10850___U16 = undefined;
+    s.unnamed10851___U17 = undefined;
+    s.result___983978 = undefined;
+    s.exception___983991 = undefined;
+    s.ct___984090 = undefined;
+    s.unnamed10852___U21 = undefined;
+    s.unnamed10853___U22 = undefined;
+    s.a___984092 = undefined;
+    s.b___984098 = undefined;
+    s.compare___984104 = undefined;
+    s.ct___984241 = undefined;
+    s.unnamed10854___U27 = undefined;
+    s.unnamed10855___U28 = undefined;
+    s.a___984243 = undefined;
+    s.compare___984248 = undefined;
     globals._intervals___611820 = (undefined);
     globals._pollEventQueue___611829 = (undefined);
     globals.minPriority___607757 = (1);
@@ -956,10 +956,10 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, 163);
     r0 = pxsim_Array__push(s.tmp_0, 165);
     r0 = pxsim_Array__push(s.tmp_0, 166);
-    globals.kMaxBitsPerChar___969065 = (s.tmp_0);
+    globals.kMaxBitsPerChar___1026719 = (s.tmp_0);
     r0 = pxsim.control.createBuffer(8);
-    globals.kBitConversionBuffer___969075 = (r0);
-    globals.allPassed___932866 = (true);
+    globals.kBitConversionBuffer___1026729 = (r0);
+    globals.allPassed___983763 = (true);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "                        1");
@@ -983,41 +983,41 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, "    6 402 373 705 728 000");
     r0 = pxsim_Array__push(s.tmp_0, "  121 645 100 408 832 000");
     r0 = pxsim_Array__push(s.tmp_0, "2 432 902 008 176 640 000");
-    globals.facts___932867 = (s.tmp_0);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
+    globals.facts___983764 = (s.tmp_0);
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 1;
-    s.callLocIdx = 345; s.pc = 132; return s.tmp_0;
+    s.callLocIdx = 360; s.pc = 132; return s.tmp_0;
   case 132:
     r0 = s.retval;
-    globals.fact___932871 = (r0);
+    globals.fact___983768 = (r0);
     r0 = pxsim_String_.mkEmpty();
-    globals.msg___932873 = (r0);
-    s.i___932874 = (1);
+    globals.msg___983770 = (r0);
+    s.i___983771 = (1);
   case 1:
-    r0 = (s.i___932874 <= 20);
+    r0 = (s.i___983771 <= 20);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 10; continue; }
-    s.tmp_1 = JSBI_multiply__P971107_mk(s);
-    s.tmp_1.arg0 = globals.fact___932871;
-    s.tmp_2 = JSBI_CreateBigInt__P969792_mk(s);
-    s.tmp_2.arg0 = s.i___932874;
-    s.callLocIdx = 346; s.pc = 134; return s.tmp_2;
+    s.tmp_1 = JSBI_multiply__P1028893_mk(s);
+    s.tmp_1.arg0 = globals.fact___983768;
+    s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
+    s.tmp_2.arg0 = s.i___983771;
+    s.callLocIdx = 361; s.pc = 134; return s.tmp_2;
   case 134:
     r0 = s.retval;
     s.tmp_1.arg1 = r0;
-    s.callLocIdx = 347; s.pc = 133; return s.tmp_1;
+    s.callLocIdx = 362; s.pc = 133; return s.tmp_1;
   case 133:
     r0 = s.retval;
-    globals.fact___932871 = (r0);
+    globals.fact___983768 = (r0);
     r0 = pxsim_String_.mkEmpty();
     s.tmp_5 = r0;
-    if ((s.i___932874) && (s.i___932874).vtable) {
+    if ((s.i___983771) && (s.i___983771).vtable) {
     setupResume(s, 135);
-    pxsim_String__stringConv(s.i___932874);
+    pxsim_String__stringConv(s.i___983771);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.i___932874) + ""; }
+    } else { s.retval = (s.i___983771) + ""; }
   case 135:
     r0 = s.retval;
     s.tmp_6 = r0;
@@ -1025,9 +1025,9 @@ switch (step) {
     s.tmp_4 = r0;
     r0 = pxsim_String__concat(s.tmp_4, "! = ");
     s.tmp_3 = r0;
-    s.tmp_9 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_9.arg0 = globals.fact___932871;
-    s.callLocIdx = 348; s.pc = 136; return s.tmp_9;
+    s.tmp_9 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_9.arg0 = globals.fact___983768;
+    s.callLocIdx = 363; s.pc = 136; return s.tmp_9;
   case 136:
     r0 = s.retval;
     s.tmp_8 = r0;
@@ -1044,7 +1044,7 @@ switch (step) {
     s.tmp_2 = r0;
     r0 = pxsim_String__concat(s.tmp_2, " (length: ");
     s.tmp_1 = r0;
-    r0 = globals.fact___932871.fields["data"];
+    r0 = globals.fact___983768.fields["data"];
     s.tmp_12 = r0;
     r0 = pxsim_Array__length(s.tmp_12);
     s.tmp_11 = r0;
@@ -1060,22 +1060,22 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, s.tmp_10);
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, ")");
-    globals.msg___932873 = (r0);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
-    r0 = pxsim_Array__getAt(globals.facts___932867, s.i___932874);
+    globals.msg___983770 = (r0);
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
+    r0 = pxsim_Array__getAt(globals.facts___983764, s.i___983771);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 350; s.pc = 139; return s.tmp_0;
+    s.callLocIdx = 365; s.pc = 139; return s.tmp_0;
   case 139:
     r0 = s.retval;
-    s.verify___932902 = (r0);
-    s.tmp_0 = JSBI_compare__P970365_mk(s);
-    s.tmp_0.arg0 = globals.fact___932871;
-    s.tmp_0.arg1 = s.verify___932902;
-    s.callLocIdx = 351; s.pc = 140; return s.tmp_0;
+    s.verify___983799 = (r0);
+    s.tmp_0 = JSBI_compare__P1028098_mk(s);
+    s.tmp_0.arg0 = globals.fact___983768;
+    s.tmp_0.arg1 = s.verify___983799;
+    s.callLocIdx = 366; s.pc = 140; return s.tmp_0;
   case 140:
     r0 = s.retval;
-    s.compare___932906 = (r0);
-    r0 = (s.compare___932906 == 0);
+    s.compare___983803 = (r0);
+    r0 = (s.compare___983803 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
@@ -1086,12 +1086,12 @@ switch (step) {
   case 3:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
     setupResume(s, 141);
-    pxsim_String__stringConv(globals.msg___932873);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
+    } else { s.retval = (globals.msg___983770) + ""; }
   case 141:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -1105,8 +1105,8 @@ switch (step) {
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_2, s.tmp_3);
-    globals.msg___932873 = (r0);
-    r0 = (s.compare___932906 != 0);
+    globals.msg___983770 = (r0);
+    r0 = (s.compare___983803 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 4; continue; }
@@ -1120,22 +1120,22 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 6; continue; }
     s.tmp_2 = game_showLongText__P610341_mk(s);
-    s.tmp_2.arg0 = globals.msg___932873;
+    s.tmp_2.arg0 = globals.msg___983770;
     s.tmp_2.arg1 = 5;
-    s.callLocIdx = 352; s.pc = 143; return s.tmp_2;
+    s.callLocIdx = 367; s.pc = 143; return s.tmp_2;
   case 143:
     r0 = s.retval;
   case 6:
   case 7:
-    r0 = (s.compare___932906 != 0);
+    r0 = (s.compare___983803 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
   case 8:
   case 9:
-    r0 = (s.i___932874 + 1);
-    s.i___932874 = (r0);
+    r0 = (s.i___983771 + 1);
+    s.i___983771 = (r0);
     { step = 1; continue; }
   case 10:
     r0 = pxsim_pxtrt.mkMap();
@@ -1182,89 +1182,89 @@ switch (step) {
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "b", "32");
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_6, "expected", "-0x100000000");
     r0 = pxsim_Array__push(s.tmp_1, s.tmp_6);
-    globals.TESTS___932932 = (s.tmp_1);
-    globals.testNumber___932949 = (0);
-    s.test___932951 = (undefined);
-    s.unnamed10342___U4 = (globals.TESTS___932932);
-    s.unnamed10343___U5 = (0);
+    globals.TESTS___983829 = (s.tmp_1);
+    globals.testNumber___983846 = (0);
+    s.test___983848 = (undefined);
+    s.unnamed10846___U4 = (globals.TESTS___983829);
+    s.unnamed10847___U5 = (0);
   case 11:
-    s.tmp_0 = r0 = s.unnamed10343___U5;
-    r0 = pxsim_Array__length(s.unnamed10342___U4);
+    s.tmp_0 = r0 = s.unnamed10847___U5;
+    r0 = pxsim_Array__length(s.unnamed10846___U4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 29; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10342___U4, s.unnamed10343___U5);
-    s.test___932951 = (r0);
-    s.tmp_2 = parseString__P932934_mk(s);
+    r0 = pxsim_Array__getAt(s.unnamed10846___U4, s.unnamed10847___U5);
+    s.test___983848 = (r0);
+    s.tmp_2 = parseString__P983831_mk(s);
     s.tmp_3 = if_a_1_mk(s);
-    s.tmp_3.arg0 = s.test___932951;
+    s.tmp_3.arg0 = s.test___983848;
     if (!s.tmp_3.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
     } else {
       s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
       if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
       else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 357; s.pc = 145; return s.tmp_3; }
+     else { s.callLocIdx = 372; s.pc = 145; return s.tmp_3; }
     }
   case 145:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 358; s.pc = 144; return s.tmp_2;
+    s.callLocIdx = 373; s.pc = 144; return s.tmp_2;
   case 144:
     r0 = s.retval;
-    s.a___932953 = (r0);
-    s.tmp_0 = parseString__P932934_mk(s);
+    s.a___983850 = (r0);
+    s.tmp_0 = parseString__P983831_mk(s);
     s.tmp_1 = if_b_1_mk(s);
-    s.tmp_1.arg0 = s.test___932951;
+    s.tmp_1.arg0 = s.test___983848;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 359; s.pc = 147; return s.tmp_1; }
+     else { s.callLocIdx = 374; s.pc = 147; return s.tmp_1; }
     }
   case 147:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 360; s.pc = 146; return s.tmp_0;
+    s.callLocIdx = 375; s.pc = 146; return s.tmp_0;
   case 146:
     r0 = s.retval;
-    s.b___932959 = (r0);
-    s.tmp_0 = parseString__P932934_mk(s);
+    s.b___983856 = (r0);
+    s.tmp_0 = parseString__P983831_mk(s);
     s.tmp_1 = if_expected_1_mk(s);
-    s.tmp_1.arg0 = s.test___932951;
+    s.tmp_1.arg0 = s.test___983848;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "expected");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["expected"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["expected"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 361; s.pc = 149; return s.tmp_1; }
+     else { s.callLocIdx = 376; s.pc = 149; return s.tmp_1; }
     }
   case 149:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 362; s.pc = 148; return s.tmp_0;
+    s.callLocIdx = 377; s.pc = 148; return s.tmp_0;
   case 148:
     r0 = s.retval;
-    s.expected___932965 = (r0);
-    s.result___932971 = (null);
+    s.expected___983862 = (r0);
+    s.result___983868 = (null);
     s.tmp_1 = helpers_stringToUpperCase__P607502_mk(s);
     s.tmp_2 = if_operation_1_mk(s);
-    s.tmp_2.arg0 = s.test___932951;
+    s.tmp_2.arg0 = s.test___983848;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "operation");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["operation"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["operation"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 363; s.pc = 151; return s.tmp_2; }
+     else { s.callLocIdx = 378; s.pc = 151; return s.tmp_2; }
     }
   case 151:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.callLocIdx = 364; s.pc = 150; return s.tmp_1;
+    s.callLocIdx = 379; s.pc = 150; return s.tmp_1;
   case 150:
     r0 = s.retval;
     s.tmp_0 = r0;
@@ -1283,56 +1283,63 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 18; continue; }
   case 12:
-    s.tmp_3 = JSBI_add__P970348_mk(s);
-    s.tmp_3.arg0 = s.a___932953;
-    s.tmp_3.arg1 = s.b___932959;
-    s.callLocIdx = 365; s.pc = 152; return s.tmp_3;
+    s.tmp_3 = JSBI_add__P1028081_mk(s);
+    s.tmp_3.arg0 = s.a___983850;
+    s.tmp_3.arg1 = s.b___983856;
+    s.callLocIdx = 380; s.pc = 152; return s.tmp_3;
   case 152:
     r0 = s.retval;
-    s.result___932971 = (r0);
+    s.result___983868 = (r0);
     { step = 18; continue; }
   case 13:
-    s.tmp_0 = JSBI_subtract__P972278_mk(s);
-    s.tmp_0.arg0 = s.a___932953;
-    s.tmp_0.arg1 = s.b___932959;
-    s.callLocIdx = 366; s.pc = 153; return s.tmp_0;
+    s.tmp_0 = JSBI_subtract__P1030064_mk(s);
+    s.tmp_0.arg0 = s.a___983850;
+    s.tmp_0.arg1 = s.b___983856;
+    s.callLocIdx = 381; s.pc = 153; return s.tmp_0;
   case 153:
     r0 = s.retval;
-    s.result___932971 = (r0);
+    s.result___983868 = (r0);
     { step = 18; continue; }
   case 14:
-    s.tmp_0 = JSBI_multiply__P971107_mk(s);
-    s.tmp_0.arg0 = s.a___932953;
-    s.tmp_0.arg1 = s.b___932959;
-    s.callLocIdx = 367; s.pc = 154; return s.tmp_0;
+    s.tmp_0 = JSBI_multiply__P1028893_mk(s);
+    s.tmp_0.arg0 = s.a___983850;
+    s.tmp_0.arg1 = s.b___983856;
+    s.callLocIdx = 382; s.pc = 154; return s.tmp_0;
   case 154:
     r0 = s.retval;
-    s.result___932971 = (r0);
+    s.result___983868 = (r0);
     { step = 18; continue; }
   case 15:
   case 16:
-    s.tmp_0 = JSBI_mod__P971950_mk(s);
-    s.tmp_0.arg0 = s.a___932953;
-    s.tmp_0.arg1 = s.b___932959;
-    s.callLocIdx = 368; s.pc = 155; return s.tmp_0;
+    s.tmp_0 = JSBI_mod__P1029736_mk(s);
+    s.tmp_0.arg0 = s.a___983850;
+    s.tmp_0.arg1 = s.b___983856;
+    s.callLocIdx = 383; s.pc = 155; return s.tmp_0;
   case 155:
     r0 = s.retval;
-    s.result___932971 = (r0);
+    s.result___983868 = (r0);
     { step = 18; continue; }
   case 17:
+    s.tmp_0 = JSBI_divide__P1028530_mk(s);
+    s.tmp_0.arg0 = s.a___983850;
+    s.tmp_0.arg1 = s.b___983856;
+    s.callLocIdx = 384; s.pc = 156; return s.tmp_0;
+  case 156:
+    r0 = s.retval;
+    s.result___983868 = (r0);
   case 18:
-    r0 = (s.result___932971 != null);
+    r0 = (s.result___983868 != null);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 25; continue; }
-    s.tmp_1 = JSBI_compare__P970365_mk(s);
-    s.tmp_1.arg0 = s.result___932971;
-    s.tmp_1.arg1 = s.expected___932965;
-    s.callLocIdx = 369; s.pc = 156; return s.tmp_1;
-  case 156:
+    s.tmp_1 = JSBI_compare__P1028098_mk(s);
+    s.tmp_1.arg0 = s.result___983868;
+    s.tmp_1.arg1 = s.expected___983862;
+    s.callLocIdx = 385; s.pc = 157; return s.tmp_1;
+  case 157:
     r0 = s.retval;
-    s.compare___932997 = (r0);
-    r0 = (s.compare___932997 != 0);
+    s.compare___983898 = (r0);
+    r0 = (s.compare___983898 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 19; continue; }
@@ -1345,18 +1352,18 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 23; continue; }
-    r0 = (s.compare___932997 == 0);
+    r0 = (s.compare___983898 == 0);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 21; continue; }
     s.tmp_3 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 158);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 159);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 158:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 159:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat("Test ", s.tmp_5);
@@ -1364,19 +1371,19 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, " passed.");
     s.tmp_3.arg0 = r0;
     s.tmp_3.arg1 = undefined;
-    s.callLocIdx = 370; s.pc = 157; return s.tmp_3;
-  case 157:
+    s.callLocIdx = 386; s.pc = 158; return s.tmp_3;
+  case 158:
     r0 = s.retval;
     { step = 22; continue; }
   case 21:
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 160);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 161);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 160:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 161:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("Test ", s.tmp_2);
@@ -1384,10 +1391,10 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, " failed!");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 371; s.pc = 159; return s.tmp_0;
-  case 159:
+    s.callLocIdx = 387; s.pc = 160; return s.tmp_0;
+  case 160:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
   case 22:
   case 23:
   case 24:
@@ -1396,13 +1403,13 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(false);
     if (!r0) { step = 26; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 162);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 163);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 162:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 163:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("Test ", s.tmp_2);
@@ -1410,25 +1417,25 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, " not implemented; skipped.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 372; s.pc = 161; return s.tmp_0;
-  case 161:
+    s.callLocIdx = 388; s.pc = 162; return s.tmp_0;
+  case 162:
     r0 = s.retval;
   case 26:
   case 27:
   case 28:
-    r0 = (globals.testNumber___932949 + 1);
-    globals.testNumber___932949 = (r0);
-    r0 = (s.unnamed10343___U5 + 1);
-    s.unnamed10343___U5 = (r0);
+    r0 = (globals.testNumber___983846 + 1);
+    globals.testNumber___983846 = (r0);
+    r0 = (s.unnamed10847___U5 + 1);
+    s.unnamed10847___U5 = (r0);
     { step = 11; continue; }
   case 29:
-    s.unnamed10342___U4 = (undefined);
+    s.unnamed10846___U4 = (undefined);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "123");
     r0 = pxsim_Array__push(s.tmp_0, " 123 ");
     r0 = pxsim_Array__push(s.tmp_0, "   123   ");
-    globals.VALID___933035 = (s.tmp_0);
+    globals.VALID___983936 = (s.tmp_0);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "x123");
@@ -1441,35 +1448,35 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, "-0x0");
     r0 = pxsim_Array__push(s.tmp_0, "-0b0");
     r0 = pxsim_Array__push(s.tmp_0, "-0x1");
-    globals.INVALID___933037 = (s.tmp_0);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
+    globals.INVALID___983938 = (s.tmp_0);
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 123;
-    s.callLocIdx = 373; s.pc = 163; return s.tmp_0;
-  case 163:
+    s.callLocIdx = 389; s.pc = 164; return s.tmp_0;
+  case 164:
     r0 = s.retval;
-    globals.EXPECTED___933041 = (r0);
-    s.v___933044 = (undefined);
-    s.unnamed10344___U12 = (globals.VALID___933035);
-    s.unnamed10345___U13 = (0);
+    globals.EXPECTED___983942 = (r0);
+    s.v___983945 = (undefined);
+    s.unnamed10848___U12 = (globals.VALID___983936);
+    s.unnamed10849___U13 = (0);
   case 30:
-    s.tmp_0 = r0 = s.unnamed10345___U13;
-    r0 = pxsim_Array__length(s.unnamed10344___U12);
+    s.tmp_0 = r0 = s.unnamed10849___U13;
+    r0 = pxsim_Array__length(s.unnamed10848___U12);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 35; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10344___U12, s.unnamed10345___U13);
-    s.v___933044 = (r0);
-    s.tmp_2 = JSBI_CreateBigInt__P969792_mk(s);
-    s.tmp_2.arg0 = s.v___933044;
-    s.callLocIdx = 374; s.pc = 164; return s.tmp_2;
-  case 164:
-    r0 = s.retval;
-    s.result___933046 = (r0);
-    s.tmp_2 = JSBI_compare__P970365_mk(s);
-    s.tmp_2.arg0 = s.result___933046;
-    s.tmp_2.arg1 = globals.EXPECTED___933041;
-    s.callLocIdx = 375; s.pc = 165; return s.tmp_2;
+    r0 = pxsim_Array__getAt(s.unnamed10848___U12, s.unnamed10849___U13);
+    s.v___983945 = (r0);
+    s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
+    s.tmp_2.arg0 = s.v___983945;
+    s.callLocIdx = 390; s.pc = 165; return s.tmp_2;
   case 165:
+    r0 = s.retval;
+    s.result___983947 = (r0);
+    s.tmp_2 = JSBI_compare__P1028098_mk(s);
+    s.tmp_2.arg0 = s.result___983947;
+    s.tmp_2.arg1 = globals.EXPECTED___983942;
+    s.callLocIdx = 391; s.pc = 166; return s.tmp_2;
+  case 166:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
@@ -1479,13 +1486,13 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(false);
     if (!r0) { step = 31; continue; }
     s.tmp_3 = game_splash__P610346_mk(s);
-    if ((s.v___933044) && (s.v___933044).vtable) {
-    setupResume(s, 167);
-    pxsim_String__stringConv(s.v___933044);
+    if ((s.v___983945) && (s.v___983945).vtable) {
+    setupResume(s, 168);
+    pxsim_String__stringConv(s.v___983945);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.v___933044) + ""; }
-  case 167:
+    } else { s.retval = (s.v___983945) + ""; }
+  case 168:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_5);
@@ -1493,21 +1500,21 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_4, "\" parsed correctly.");
     s.tmp_3.arg0 = r0;
     s.tmp_3.arg1 = undefined;
-    s.callLocIdx = 376; s.pc = 166; return s.tmp_3;
-  case 166:
+    s.callLocIdx = 392; s.pc = 167; return s.tmp_3;
+  case 167:
     r0 = s.retval;
   case 31:
   case 32:
     { step = 34; continue; }
   case 33:
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((s.v___933044) && (s.v___933044).vtable) {
-    setupResume(s, 169);
-    pxsim_String__stringConv(s.v___933044);
+    if ((s.v___983945) && (s.v___983945).vtable) {
+    setupResume(s, 170);
+    pxsim_String__stringConv(s.v___983945);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.v___933044) + ""; }
-  case 169:
+    } else { s.retval = (s.v___983945) + ""; }
+  case 170:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_2);
@@ -1515,42 +1522,42 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\" was not parsed correctly!");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 377; s.pc = 168; return s.tmp_0;
-  case 168:
+    s.callLocIdx = 393; s.pc = 169; return s.tmp_0;
+  case 169:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
   case 34:
-    r0 = (s.unnamed10345___U13 + 1);
-    s.unnamed10345___U13 = (r0);
+    r0 = (s.unnamed10849___U13 + 1);
+    s.unnamed10849___U13 = (r0);
     { step = 30; continue; }
   case 35:
-    s.unnamed10344___U12 = (undefined);
-    s.i___933074 = (undefined);
-    s.unnamed10346___U16 = (globals.INVALID___933037);
-    s.unnamed10347___U17 = (0);
+    s.unnamed10848___U12 = (undefined);
+    s.i___983975 = (undefined);
+    s.unnamed10850___U16 = (globals.INVALID___983938);
+    s.unnamed10851___U17 = (0);
   case 36:
-    s.tmp_0 = r0 = s.unnamed10347___U17;
-    r0 = pxsim_Array__length(s.unnamed10346___U16);
+    s.tmp_0 = r0 = s.unnamed10851___U17;
+    r0 = pxsim_Array__length(s.unnamed10850___U16);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 41; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10346___U16, s.unnamed10347___U17);
-    s.i___933074 = (r0);
+    r0 = pxsim_Array__getAt(s.unnamed10850___U16, s.unnamed10851___U17);
+    s.i___983975 = (r0);
     r0 = pxsim_pxtcore.beginTry(37);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
-    s.tmp_0.arg0 = s.i___933074;
-    s.callLocIdx = 378; s.pc = 170; return s.tmp_0;
-  case 170:
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
+    s.tmp_0.arg0 = s.i___983975;
+    s.callLocIdx = 394; s.pc = 171; return s.tmp_0;
+  case 171:
     r0 = s.retval;
-    s.result___933077 = (r0);
+    s.result___983978 = (r0);
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    if ((s.i___933074) && (s.i___933074).vtable) {
-    setupResume(s, 172);
-    pxsim_String__stringConv(s.i___933074);
+    if ((s.i___983975) && (s.i___983975).vtable) {
+    setupResume(s, 173);
+    pxsim_String__stringConv(s.i___983975);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.i___933074) + ""; }
-  case 172:
+    } else { s.retval = (s.i___983975) + ""; }
+  case 173:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_2);
@@ -1558,26 +1565,26 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\" was successfully parsed but should have failed. Error!");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = 4;
-    s.callLocIdx = 379; s.pc = 171; return s.tmp_0;
-  case 171:
+    s.callLocIdx = 395; s.pc = 172; return s.tmp_0;
+  case 172:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
     r0 = pxsim_pxtcore.endTry();
     { step = 40; continue; }
   case 37:
-    s.exception___933090 = (undefined);
+    s.exception___983991 = (undefined);
     r0 = pxsim_pxtcore.getThrownValue();
-    s.exception___933090 = (r0);
+    s.exception___983991 = (r0);
     r0 = pxsim_numops_toBoolDecr(false);
     if (!r0) { step = 38; continue; }
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    if ((s.i___933074) && (s.i___933074).vtable) {
-    setupResume(s, 174);
-    pxsim_String__stringConv(s.i___933074);
+    if ((s.i___983975) && (s.i___983975).vtable) {
+    setupResume(s, 175);
+    pxsim_String__stringConv(s.i___983975);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.i___933074) + ""; }
-  case 174:
+    } else { s.retval = (s.i___983975) + ""; }
+  case 175:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("String \"", s.tmp_2);
@@ -1585,196 +1592,196 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\" was correctly rejected.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = 4;
-    s.callLocIdx = 380; s.pc = 173; return s.tmp_0;
-  case 173:
+    s.callLocIdx = 396; s.pc = 174; return s.tmp_0;
+  case 174:
     r0 = s.retval;
   case 38:
   case 39:
   case 40:
-    r0 = (s.unnamed10347___U17 + 1);
-    s.unnamed10347___U17 = (r0);
+    r0 = (s.unnamed10851___U17 + 1);
+    s.unnamed10851___U17 = (r0);
     { step = 36; continue; }
   case 41:
-    s.unnamed10346___U16 = (undefined);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
+    s.unnamed10850___U16 = (undefined);
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_0.arg0 = 9007199254740991;
-    s.callLocIdx = 381; s.pc = 175; return s.tmp_0;
-  case 175:
-    r0 = s.retval;
-    globals.max___933104 = (r0);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
-    s.tmp_0.arg0 = 2;
-    s.callLocIdx = 382; s.pc = 176; return s.tmp_0;
+    s.callLocIdx = 397; s.pc = 176; return s.tmp_0;
   case 176:
     r0 = s.retval;
-    globals.other___933108 = (r0);
-    s.tmp_0 = JSBI_add__P970348_mk(s);
-    s.tmp_0.arg0 = globals.max___933104;
-    s.tmp_0.arg1 = globals.other___933108;
-    s.callLocIdx = 383; s.pc = 177; return s.tmp_0;
+    globals.max___984005 = (r0);
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
+    s.tmp_0.arg0 = 2;
+    s.callLocIdx = 398; s.pc = 177; return s.tmp_0;
   case 177:
     r0 = s.retval;
-    globals.result___933111 = (r0);
-    s.tmp_2 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_2.arg0 = globals.result___933111;
-    s.callLocIdx = 384; s.pc = 178; return s.tmp_2;
+    globals.other___984009 = (r0);
+    s.tmp_0 = JSBI_add__P1028081_mk(s);
+    s.tmp_0.arg0 = globals.max___984005;
+    s.tmp_0.arg1 = globals.other___984009;
+    s.callLocIdx = 399; s.pc = 178; return s.tmp_0;
   case 178:
+    r0 = s.retval;
+    globals.result___984012 = (r0);
+    s.tmp_2 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_2.arg0 = globals.result___984012;
+    s.callLocIdx = 400; s.pc = 179; return s.tmp_2;
+  case 179:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== "9007199254740993");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 42; continue; }
-    globals.msg___932873 = ("README test FAILED (string version).");
+    globals.msg___983770 = ("README test FAILED (string version).");
     s.tmp_0 = game_splash__P610346_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
+    s.tmp_0.arg0 = globals.msg___983770;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 385; s.pc = 179; return s.tmp_0;
-  case 179:
-    r0 = s.retval;
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 180);
-    pxsim_String__stringConv(globals.msg___932873);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.msg___932873) + ""; }
+    s.callLocIdx = 401; s.pc = 180; return s.tmp_0;
   case 180:
     r0 = s.retval;
-    s.tmp_0 = r0;
-    s.tmp_7 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_7.arg0 = globals.result___933111;
-    s.callLocIdx = 386; s.pc = 181; return s.tmp_7;
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 181);
+    pxsim_String__stringConv(globals.msg___983770);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___983770) + ""; }
   case 181:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_7 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_7.arg0 = globals.result___984012;
+    s.callLocIdx = 402; s.pc = 182; return s.tmp_7;
+  case 182:
     r0 = s.retval;
     s.tmp_6 = r0;
     if ((s.tmp_6) && (s.tmp_6).vtable) {
-    setupResume(s, 182);
+    setupResume(s, 183);
     pxsim_String__stringConv(s.tmp_6);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_6) + ""; }
-  case 182:
+  case 183:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(" result = ", s.tmp_5);
     s.tmp_4 = r0;
     r0 = pxsim_String__concat(s.tmp_4, " ");
     s.tmp_3 = r0;
-    s.tmp_10 = JSBI_BigInt_toDebugString__P969079_mk(s);
-    s.tmp_10.arg0 = globals.result___933111;
-    s.callLocIdx = 387; s.pc = 183; return s.tmp_10;
-  case 183:
+    s.tmp_10 = JSBI_BigInt_toDebugString__P1026733_mk(s);
+    s.tmp_10.arg0 = globals.result___984012;
+    s.callLocIdx = 403; s.pc = 184; return s.tmp_10;
+  case 184:
     r0 = s.retval;
     s.tmp_9 = r0;
     if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 184);
+    setupResume(s, 185);
     pxsim_String__stringConv(s.tmp_9);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_9) + ""; }
-  case 184:
+  case 185:
     r0 = s.retval;
     s.tmp_8 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_8);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 185);
+    setupResume(s, 186);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 185:
+  case 186:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
-    s.callLocIdx = 388; s.pc = 186; return s.tmp_0;
-  case 186:
+    s.tmp_0.arg0 = globals.msg___983770;
+    s.callLocIdx = 404; s.pc = 187; return s.tmp_0;
+  case 187:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
   case 42:
   case 43:
-    s.tmp_2 = JSBI_BigInt_toNumber__P969080_mk(s);
-    s.tmp_2.arg0 = globals.other___933108;
-    s.callLocIdx = 389; s.pc = 187; return s.tmp_2;
-  case 187:
+    s.tmp_2 = JSBI_BigInt_toNumber__P1026734_mk(s);
+    s.tmp_2.arg0 = globals.other___984009;
+    s.callLocIdx = 405; s.pc = 188; return s.tmp_2;
+  case 188:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 2);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 44; continue; }
-    globals.msg___932873 = ("README test FAILED (number version).");
+    globals.msg___983770 = ("README test FAILED (number version).");
     s.tmp_0 = game_splash__P610346_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
+    s.tmp_0.arg0 = globals.msg___983770;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 390; s.pc = 188; return s.tmp_0;
-  case 188:
-    r0 = s.retval;
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 189);
-    pxsim_String__stringConv(globals.msg___932873);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.msg___932873) + ""; }
+    s.callLocIdx = 406; s.pc = 189; return s.tmp_0;
   case 189:
     r0 = s.retval;
-    s.tmp_0 = r0;
-    s.tmp_7 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_7.arg0 = globals.result___933111;
-    s.callLocIdx = 391; s.pc = 190; return s.tmp_7;
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 190);
+    pxsim_String__stringConv(globals.msg___983770);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___983770) + ""; }
   case 190:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_7 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_7.arg0 = globals.result___984012;
+    s.callLocIdx = 407; s.pc = 191; return s.tmp_7;
+  case 191:
     r0 = s.retval;
     s.tmp_6 = r0;
     if ((s.tmp_6) && (s.tmp_6).vtable) {
-    setupResume(s, 191);
+    setupResume(s, 192);
     pxsim_String__stringConv(s.tmp_6);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_6) + ""; }
-  case 191:
+  case 192:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(" result = ", s.tmp_5);
     s.tmp_4 = r0;
     r0 = pxsim_String__concat(s.tmp_4, " ");
     s.tmp_3 = r0;
-    s.tmp_10 = JSBI_BigInt_toDebugString__P969079_mk(s);
-    s.tmp_10.arg0 = globals.result___933111;
-    s.callLocIdx = 392; s.pc = 192; return s.tmp_10;
-  case 192:
+    s.tmp_10 = JSBI_BigInt_toDebugString__P1026733_mk(s);
+    s.tmp_10.arg0 = globals.result___984012;
+    s.callLocIdx = 408; s.pc = 193; return s.tmp_10;
+  case 193:
     r0 = s.retval;
     s.tmp_9 = r0;
     if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 193);
+    setupResume(s, 194);
     pxsim_String__stringConv(s.tmp_9);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_9) + ""; }
-  case 193:
+  case 194:
     r0 = s.retval;
     s.tmp_8 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_8);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 194);
+    setupResume(s, 195);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 194:
+  case 195:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
-    s.callLocIdx = 393; s.pc = 195; return s.tmp_0;
-  case 195:
+    s.tmp_0.arg0 = globals.msg___983770;
+    s.callLocIdx = 409; s.pc = 196; return s.tmp_0;
+  case 196:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
   case 44:
   case 45:
     r0 = pxsim_pxtrt.mkMap();
@@ -1821,63 +1828,63 @@ switch (step) {
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "b", -2147483647);
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_7, "expected", 1);
     r0 = pxsim_Array__push(s.tmp_1, s.tmp_7);
-    globals.COMPARISON_TESTS___933173 = (s.tmp_1);
-    globals.testNumber___932949 = (0);
-    s.ct___933189 = (undefined);
-    s.unnamed10348___U21 = (globals.COMPARISON_TESTS___933173);
-    s.unnamed10349___U22 = (0);
+    globals.COMPARISON_TESTS___984074 = (s.tmp_1);
+    globals.testNumber___983846 = (0);
+    s.ct___984090 = (undefined);
+    s.unnamed10852___U21 = (globals.COMPARISON_TESTS___984074);
+    s.unnamed10853___U22 = (0);
   case 46:
-    s.tmp_0 = r0 = s.unnamed10349___U22;
-    r0 = pxsim_Array__length(s.unnamed10348___U21);
+    s.tmp_0 = r0 = s.unnamed10853___U22;
+    r0 = pxsim_Array__length(s.unnamed10852___U21);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 65; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10348___U21, s.unnamed10349___U22);
-    s.ct___933189 = (r0);
-    s.tmp_2 = JSBI_CreateBigInt__P969792_mk(s);
+    r0 = pxsim_Array__getAt(s.unnamed10852___U21, s.unnamed10853___U22);
+    s.ct___984090 = (r0);
+    s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_3 = if_a_1_mk(s);
-    s.tmp_3.arg0 = s.ct___933189;
+    s.tmp_3.arg0 = s.ct___984090;
     if (!s.tmp_3.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
     } else {
       s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
       if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
       else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 394; s.pc = 197; return s.tmp_3; }
+     else { s.callLocIdx = 410; s.pc = 198; return s.tmp_3; }
     }
-  case 197:
+  case 198:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 395; s.pc = 196; return s.tmp_2;
-  case 196:
+    s.callLocIdx = 411; s.pc = 197; return s.tmp_2;
+  case 197:
     r0 = s.retval;
-    s.a___933191 = (r0);
-    s.tmp_0 = JSBI_CreateBigInt__P969792_mk(s);
+    s.a___984092 = (r0);
+    s.tmp_0 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_1 = if_b_1_mk(s);
-    s.tmp_1.arg0 = s.ct___933189;
+    s.tmp_1.arg0 = s.ct___984090;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 396; s.pc = 199; return s.tmp_1; }
+     else { s.callLocIdx = 412; s.pc = 200; return s.tmp_1; }
     }
-  case 199:
-    r0 = s.retval;
-    s.tmp_0.arg0 = r0;
-    s.callLocIdx = 397; s.pc = 198; return s.tmp_0;
-  case 198:
-    r0 = s.retval;
-    s.b___933197 = (r0);
-    s.tmp_0 = JSBI_compare__P970365_mk(s);
-    s.tmp_0.arg0 = s.a___933191;
-    s.tmp_0.arg1 = s.b___933197;
-    s.callLocIdx = 398; s.pc = 200; return s.tmp_0;
   case 200:
     r0 = s.retval;
-    s.compare___933203 = (r0);
-    r0 = (s.compare___933203 == 0);
+    s.tmp_0.arg0 = r0;
+    s.callLocIdx = 413; s.pc = 199; return s.tmp_0;
+  case 199:
+    r0 = s.retval;
+    s.b___984098 = (r0);
+    s.tmp_0 = JSBI_compare__P1028098_mk(s);
+    s.tmp_0.arg0 = s.a___984092;
+    s.tmp_0.arg1 = s.b___984098;
+    s.callLocIdx = 414; s.pc = 201; return s.tmp_0;
+  case 201:
+    r0 = s.retval;
+    s.compare___984104 = (r0);
+    r0 = (s.compare___984104 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 47; continue; }
@@ -1885,16 +1892,16 @@ switch (step) {
     { step = 48; continue; }
   case 47:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___933189;
+    s.tmp_2.arg0 = s.ct___984090;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 399; s.pc = 201; return s.tmp_2; }
+     else { s.callLocIdx = 415; s.pc = 202; return s.tmp_2; }
     }
-  case 201:
+  case 202:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 != 0);
@@ -1906,7 +1913,7 @@ switch (step) {
     r0 = s.tmp_3;
     { step = 52; continue; }
   case 49:
-    r0 = (s.compare___933203 > 0);
+    r0 = (s.compare___984104 > 0);
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBool(s.tmp_4);
     if (r0) { step = 50; continue; }
@@ -1914,16 +1921,16 @@ switch (step) {
     { step = 51; continue; }
   case 50:
     s.tmp_6 = if_expected_1_mk(s);
-    s.tmp_6.arg0 = s.ct___933189;
+    s.tmp_6.arg0 = s.ct___984090;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "expected");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["expected"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["expected"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 400; s.pc = 202; return s.tmp_6; }
+     else { s.callLocIdx = 416; s.pc = 203; return s.tmp_6; }
     }
-  case 202:
+  case 203:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = (s.tmp_5 <= 0);
@@ -1939,7 +1946,7 @@ switch (step) {
     r0 = s.tmp_8;
     { step = 56; continue; }
   case 53:
-    r0 = (s.compare___933203 < 0);
+    r0 = (s.compare___984104 < 0);
     s.tmp_9 = r0;
     r0 = pxsim_numops_toBool(s.tmp_9);
     if (r0) { step = 54; continue; }
@@ -1947,16 +1954,16 @@ switch (step) {
     { step = 55; continue; }
   case 54:
     s.tmp_11 = if_expected_1_mk(s);
-    s.tmp_11.arg0 = s.ct___933189;
+    s.tmp_11.arg0 = s.ct___984090;
     if (!s.tmp_11.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_11.arg0, "expected");
     } else {
       s.tmp_11.fn = s.tmp_11.arg0.vtable.iface["expected"];
       if (s.tmp_11.fn == null) { s.retval = s.tmp_11.arg0.fields["expected"]; }
       else if (!s.tmp_11.fn.isGetter) { s.retval = bind(s.tmp_11); }
-     else { s.callLocIdx = 401; s.pc = 203; return s.tmp_11; }
+     else { s.callLocIdx = 417; s.pc = 204; return s.tmp_11; }
     }
-  case 203:
+  case 204:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = (s.tmp_10 >= 0);
@@ -1969,48 +1976,48 @@ switch (step) {
     s.tmp_13 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_13);
     if (!r0) { step = 61; continue; }
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 204);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 205);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 204:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 205:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_15);
     s.tmp_14 = r0;
     r0 = pxsim_String__concat(s.tmp_14, " (BigInt version) failed. ");
-    globals.msg___932873 = (r0);
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 205);
-    pxsim_String__stringConv(globals.msg___932873);
+    globals.msg___983770 = (r0);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 206);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 205:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 206:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_6 = if_a_1_mk(s);
-    s.tmp_6.arg0 = s.ct___933189;
+    s.tmp_6.arg0 = s.ct___984090;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "a");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["a"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["a"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 402; s.pc = 206; return s.tmp_6; }
+     else { s.callLocIdx = 418; s.pc = 207; return s.tmp_6; }
     }
-  case 206:
+  case 207:
     r0 = s.retval;
     s.tmp_5 = r0;
     if ((s.tmp_5) && (s.tmp_5).vtable) {
-    setupResume(s, 207);
+    setupResume(s, 208);
     pxsim_String__stringConv(s.tmp_5);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_5) + ""; }
-  case 207:
+  case 208:
     r0 = s.retval;
     s.tmp_4 = r0;
     r0 = pxsim_String__concat("Expecting ", s.tmp_4);
@@ -2018,133 +2025,133 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " ");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 208);
+    setupResume(s, 209);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 208:
+  case 209:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___933189;
+    s.tmp_2.arg0 = s.ct___984090;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 403; s.pc = 209; return s.tmp_2; }
+     else { s.callLocIdx = 419; s.pc = 210; return s.tmp_2; }
     }
-  case 209:
+  case 210:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 57; continue; }
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 210);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 211);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 210:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 211:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "= ");
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     { step = 60; continue; }
   case 57:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___933189;
+    s.tmp_2.arg0 = s.ct___984090;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 404; s.pc = 211; return s.tmp_2; }
+     else { s.callLocIdx = 420; s.pc = 212; return s.tmp_2; }
     }
-  case 211:
+  case 212:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 58; continue; }
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 212);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 213);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 212:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 213:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "< ");
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     { step = 59; continue; }
   case 58:
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 213);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 214);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 213:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 214:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, "> ");
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
   case 59:
   case 60:
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 214);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 215);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 214:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 215:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_6 = r0;
     s.tmp_9 = if_b_1_mk(s);
-    s.tmp_9.arg0 = s.ct___933189;
+    s.tmp_9.arg0 = s.ct___984090;
     if (!s.tmp_9.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_9.arg0, "b");
     } else {
       s.tmp_9.fn = s.tmp_9.arg0.vtable.iface["b"];
       if (s.tmp_9.fn == null) { s.retval = s.tmp_9.arg0.fields["b"]; }
       else if (!s.tmp_9.fn.isGetter) { s.retval = bind(s.tmp_9); }
-     else { s.callLocIdx = 405; s.pc = 215; return s.tmp_9; }
+     else { s.callLocIdx = 421; s.pc = 216; return s.tmp_9; }
     }
-  case 215:
+  case 216:
     r0 = s.retval;
     s.tmp_8 = r0;
     if ((s.tmp_8) && (s.tmp_8).vtable) {
-    setupResume(s, 216);
+    setupResume(s, 217);
     pxsim_String__stringConv(s.tmp_8);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_8) + ""; }
-  case 216:
+  case 217:
     r0 = s.retval;
     s.tmp_7 = r0;
     r0 = pxsim_String__concat(s.tmp_6, s.tmp_7);
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(s.tmp_5, ". Compare() returned ");
     s.tmp_4 = r0;
-    if ((s.compare___933203) && (s.compare___933203).vtable) {
-    setupResume(s, 217);
-    pxsim_String__stringConv(s.compare___933203);
+    if ((s.compare___984104) && (s.compare___984104).vtable) {
+    setupResume(s, 218);
+    pxsim_String__stringConv(s.compare___984104);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.compare___933203) + ""; }
-  case 217:
+    } else { s.retval = (s.compare___984104) + ""; }
+  case 218:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = pxsim_String__concat(s.tmp_4, s.tmp_10);
@@ -2152,134 +2159,134 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " instead.");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 218);
+    setupResume(s, 219);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 218:
+  case 219:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
+    s.tmp_0.arg0 = globals.msg___983770;
     s.tmp_0.arg1 = 5;
-    s.callLocIdx = 406; s.pc = 219; return s.tmp_0;
-  case 219:
-    r0 = s.retval;
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 220);
-    pxsim_String__stringConv(globals.msg___932873);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.msg___932873) + ""; }
+    s.callLocIdx = 422; s.pc = 220; return s.tmp_0;
   case 220:
     r0 = s.retval;
-    s.tmp_0 = r0;
-    s.tmp_11 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_11.arg0 = s.a___933191;
-    s.callLocIdx = 407; s.pc = 221; return s.tmp_11;
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 221);
+    pxsim_String__stringConv(globals.msg___983770);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___983770) + ""; }
   case 221:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_11 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_11.arg0 = s.a___984092;
+    s.callLocIdx = 423; s.pc = 222; return s.tmp_11;
+  case 222:
     r0 = s.retval;
     s.tmp_10 = r0;
     if ((s.tmp_10) && (s.tmp_10).vtable) {
-    setupResume(s, 222);
+    setupResume(s, 223);
     pxsim_String__stringConv(s.tmp_10);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_10) + ""; }
-  case 222:
+  case 223:
     r0 = s.retval;
     s.tmp_9 = r0;
     r0 = pxsim_String__concat(" a: ", s.tmp_9);
     s.tmp_8 = r0;
     r0 = pxsim_String__concat(s.tmp_8, " ");
     s.tmp_7 = r0;
-    s.tmp_14 = JSBI_BigInt_toDebugString__P969079_mk(s);
-    s.tmp_14.arg0 = s.a___933191;
-    s.callLocIdx = 408; s.pc = 223; return s.tmp_14;
-  case 223:
+    s.tmp_14 = JSBI_BigInt_toDebugString__P1026733_mk(s);
+    s.tmp_14.arg0 = s.a___984092;
+    s.callLocIdx = 424; s.pc = 224; return s.tmp_14;
+  case 224:
     r0 = s.retval;
     s.tmp_13 = r0;
     if ((s.tmp_13) && (s.tmp_13).vtable) {
-    setupResume(s, 224);
+    setupResume(s, 225);
     pxsim_String__stringConv(s.tmp_13);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_13) + ""; }
-  case 224:
+  case 225:
     r0 = s.retval;
     s.tmp_12 = r0;
     r0 = pxsim_String__concat(s.tmp_7, s.tmp_12);
     s.tmp_6 = r0;
     r0 = pxsim_String__concat(s.tmp_6, ", b: ");
     s.tmp_5 = r0;
-    s.tmp_17 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_17.arg0 = s.b___933197;
-    s.callLocIdx = 409; s.pc = 225; return s.tmp_17;
-  case 225:
+    s.tmp_17 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_17.arg0 = s.b___984098;
+    s.callLocIdx = 425; s.pc = 226; return s.tmp_17;
+  case 226:
     r0 = s.retval;
     s.tmp_16 = r0;
     if ((s.tmp_16) && (s.tmp_16).vtable) {
-    setupResume(s, 226);
+    setupResume(s, 227);
     pxsim_String__stringConv(s.tmp_16);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_16) + ""; }
-  case 226:
+  case 227:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_String__concat(s.tmp_5, s.tmp_15);
     s.tmp_4 = r0;
     r0 = pxsim_String__concat(s.tmp_4, " ");
     s.tmp_3 = r0;
-    s.tmp_20 = JSBI_BigInt_toDebugString__P969079_mk(s);
-    s.tmp_20.arg0 = s.b___933197;
-    s.callLocIdx = 410; s.pc = 227; return s.tmp_20;
-  case 227:
+    s.tmp_20 = JSBI_BigInt_toDebugString__P1026733_mk(s);
+    s.tmp_20.arg0 = s.b___984098;
+    s.callLocIdx = 426; s.pc = 228; return s.tmp_20;
+  case 228:
     r0 = s.retval;
     s.tmp_19 = r0;
     if ((s.tmp_19) && (s.tmp_19).vtable) {
-    setupResume(s, 228);
+    setupResume(s, 229);
     pxsim_String__stringConv(s.tmp_19);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_19) + ""; }
-  case 228:
+  case 229:
     r0 = s.retval;
     s.tmp_18 = r0;
     r0 = pxsim_String__concat(s.tmp_3, s.tmp_18);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 229);
+    setupResume(s, 230);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 229:
+  case 230:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
-    s.callLocIdx = 411; s.pc = 230; return s.tmp_0;
-  case 230:
+    s.tmp_0.arg0 = globals.msg___983770;
+    s.callLocIdx = 427; s.pc = 231; return s.tmp_0;
+  case 231:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
     { step = 64; continue; }
   case 61:
     r0 = pxsim_numops_toBoolDecr(false);
     if (!r0) { step = 62; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 232);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 233);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 232:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 233:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_2);
@@ -2287,69 +2294,69 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, " (BigInt version) passed.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 412; s.pc = 231; return s.tmp_0;
-  case 231:
+    s.callLocIdx = 428; s.pc = 232; return s.tmp_0;
+  case 232:
     r0 = s.retval;
   case 62:
   case 63:
   case 64:
-    r0 = (globals.testNumber___932949 + 1);
-    globals.testNumber___932949 = (r0);
-    r0 = (s.unnamed10349___U22 + 1);
-    s.unnamed10349___U22 = (r0);
+    r0 = (globals.testNumber___983846 + 1);
+    globals.testNumber___983846 = (r0);
+    r0 = (s.unnamed10853___U22 + 1);
+    s.unnamed10853___U22 = (r0);
     { step = 46; continue; }
   case 65:
-    s.unnamed10348___U21 = (undefined);
-    globals.testNumber___932949 = (0);
-    s.ct___933340 = (undefined);
-    s.unnamed10350___U27 = (globals.COMPARISON_TESTS___933173);
-    s.unnamed10351___U28 = (0);
+    s.unnamed10852___U21 = (undefined);
+    globals.testNumber___983846 = (0);
+    s.ct___984241 = (undefined);
+    s.unnamed10854___U27 = (globals.COMPARISON_TESTS___984074);
+    s.unnamed10855___U28 = (0);
   case 66:
-    s.tmp_0 = r0 = s.unnamed10351___U28;
-    r0 = pxsim_Array__length(s.unnamed10350___U27);
+    s.tmp_0 = r0 = s.unnamed10855___U28;
+    r0 = pxsim_Array__length(s.unnamed10854___U27);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 85; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10350___U27, s.unnamed10351___U28);
-    s.ct___933340 = (r0);
-    s.tmp_2 = JSBI_CreateBigInt__P969792_mk(s);
+    r0 = pxsim_Array__getAt(s.unnamed10854___U27, s.unnamed10855___U28);
+    s.ct___984241 = (r0);
+    s.tmp_2 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_3 = if_a_1_mk(s);
-    s.tmp_3.arg0 = s.ct___933340;
+    s.tmp_3.arg0 = s.ct___984241;
     if (!s.tmp_3.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "a");
     } else {
       s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["a"];
       if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["a"]; }
       else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 413; s.pc = 234; return s.tmp_3; }
+     else { s.callLocIdx = 429; s.pc = 235; return s.tmp_3; }
     }
-  case 234:
+  case 235:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 414; s.pc = 233; return s.tmp_2;
-  case 233:
+    s.callLocIdx = 430; s.pc = 234; return s.tmp_2;
+  case 234:
     r0 = s.retval;
-    s.a___933342 = (r0);
-    s.tmp_0 = JSBI_compare__P970365_mk(s);
-    s.tmp_0.arg0 = s.a___933342;
+    s.a___984243 = (r0);
+    s.tmp_0 = JSBI_compare__P1028098_mk(s);
+    s.tmp_0.arg0 = s.a___984243;
     s.tmp_1 = if_b_1_mk(s);
-    s.tmp_1.arg0 = s.ct___933340;
+    s.tmp_1.arg0 = s.ct___984241;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "b");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["b"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["b"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 415; s.pc = 236; return s.tmp_1; }
+     else { s.callLocIdx = 431; s.pc = 237; return s.tmp_1; }
     }
-  case 236:
+  case 237:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 416; s.pc = 235; return s.tmp_0;
-  case 235:
+    s.callLocIdx = 432; s.pc = 236; return s.tmp_0;
+  case 236:
     r0 = s.retval;
-    s.compare___933347 = (r0);
-    r0 = (s.compare___933347 == 0);
+    s.compare___984248 = (r0);
+    r0 = (s.compare___984248 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 67; continue; }
@@ -2357,16 +2364,16 @@ switch (step) {
     { step = 68; continue; }
   case 67:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___933340;
+    s.tmp_2.arg0 = s.ct___984241;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 417; s.pc = 237; return s.tmp_2; }
+     else { s.callLocIdx = 433; s.pc = 238; return s.tmp_2; }
     }
-  case 237:
+  case 238:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 != 0);
@@ -2378,7 +2385,7 @@ switch (step) {
     r0 = s.tmp_3;
     { step = 72; continue; }
   case 69:
-    r0 = (s.compare___933347 > 0);
+    r0 = (s.compare___984248 > 0);
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBool(s.tmp_4);
     if (r0) { step = 70; continue; }
@@ -2386,16 +2393,16 @@ switch (step) {
     { step = 71; continue; }
   case 70:
     s.tmp_6 = if_expected_1_mk(s);
-    s.tmp_6.arg0 = s.ct___933340;
+    s.tmp_6.arg0 = s.ct___984241;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "expected");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["expected"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["expected"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 418; s.pc = 238; return s.tmp_6; }
+     else { s.callLocIdx = 434; s.pc = 239; return s.tmp_6; }
     }
-  case 238:
+  case 239:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = (s.tmp_5 <= 0);
@@ -2411,7 +2418,7 @@ switch (step) {
     r0 = s.tmp_8;
     { step = 76; continue; }
   case 73:
-    r0 = (s.compare___933347 < 0);
+    r0 = (s.compare___984248 < 0);
     s.tmp_9 = r0;
     r0 = pxsim_numops_toBool(s.tmp_9);
     if (r0) { step = 74; continue; }
@@ -2419,16 +2426,16 @@ switch (step) {
     { step = 75; continue; }
   case 74:
     s.tmp_11 = if_expected_1_mk(s);
-    s.tmp_11.arg0 = s.ct___933340;
+    s.tmp_11.arg0 = s.ct___984241;
     if (!s.tmp_11.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_11.arg0, "expected");
     } else {
       s.tmp_11.fn = s.tmp_11.arg0.vtable.iface["expected"];
       if (s.tmp_11.fn == null) { s.retval = s.tmp_11.arg0.fields["expected"]; }
       else if (!s.tmp_11.fn.isGetter) { s.retval = bind(s.tmp_11); }
-     else { s.callLocIdx = 419; s.pc = 239; return s.tmp_11; }
+     else { s.callLocIdx = 435; s.pc = 240; return s.tmp_11; }
     }
-  case 239:
+  case 240:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = (s.tmp_10 >= 0);
@@ -2441,48 +2448,48 @@ switch (step) {
     s.tmp_13 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_13);
     if (!r0) { step = 81; continue; }
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 240);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 241);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 240:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 241:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_15);
     s.tmp_14 = r0;
     r0 = pxsim_String__concat(s.tmp_14, " (number version) failed. ");
-    globals.msg___932873 = (r0);
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 241);
-    pxsim_String__stringConv(globals.msg___932873);
+    globals.msg___983770 = (r0);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 242);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 241:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 242:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_6 = if_a_1_mk(s);
-    s.tmp_6.arg0 = s.ct___933340;
+    s.tmp_6.arg0 = s.ct___984241;
     if (!s.tmp_6.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_6.arg0, "a");
     } else {
       s.tmp_6.fn = s.tmp_6.arg0.vtable.iface["a"];
       if (s.tmp_6.fn == null) { s.retval = s.tmp_6.arg0.fields["a"]; }
       else if (!s.tmp_6.fn.isGetter) { s.retval = bind(s.tmp_6); }
-     else { s.callLocIdx = 420; s.pc = 242; return s.tmp_6; }
+     else { s.callLocIdx = 436; s.pc = 243; return s.tmp_6; }
     }
-  case 242:
+  case 243:
     r0 = s.retval;
     s.tmp_5 = r0;
     if ((s.tmp_5) && (s.tmp_5).vtable) {
-    setupResume(s, 243);
+    setupResume(s, 244);
     pxsim_String__stringConv(s.tmp_5);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_5) + ""; }
-  case 243:
+  case 244:
     r0 = s.retval;
     s.tmp_4 = r0;
     r0 = pxsim_String__concat("Expecting ", s.tmp_4);
@@ -2490,133 +2497,133 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " ");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 244);
+    setupResume(s, 245);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 244:
+  case 245:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___933340;
+    s.tmp_2.arg0 = s.ct___984241;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 421; s.pc = 245; return s.tmp_2; }
+     else { s.callLocIdx = 437; s.pc = 246; return s.tmp_2; }
     }
-  case 245:
+  case 246:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 77; continue; }
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 246);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 247);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 246:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 247:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "= ");
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     { step = 80; continue; }
   case 77:
     s.tmp_2 = if_expected_1_mk(s);
-    s.tmp_2.arg0 = s.ct___933340;
+    s.tmp_2.arg0 = s.ct___984241;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "expected");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["expected"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["expected"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 422; s.pc = 247; return s.tmp_2; }
+     else { s.callLocIdx = 438; s.pc = 248; return s.tmp_2; }
     }
-  case 247:
+  case 248:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 78; continue; }
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 248);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 249);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 248:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 249:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(s.tmp_3, "< ");
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     { step = 79; continue; }
   case 78:
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 249);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 250);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 249:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 250:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String__concat(s.tmp_0, "> ");
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
   case 79:
   case 80:
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 250);
-    pxsim_String__stringConv(globals.msg___932873);
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 251);
+    pxsim_String__stringConv(globals.msg___983770);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.msg___932873) + ""; }
-  case 250:
+    } else { s.retval = (globals.msg___983770) + ""; }
+  case 251:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_6 = r0;
     s.tmp_9 = if_b_1_mk(s);
-    s.tmp_9.arg0 = s.ct___933340;
+    s.tmp_9.arg0 = s.ct___984241;
     if (!s.tmp_9.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_9.arg0, "b");
     } else {
       s.tmp_9.fn = s.tmp_9.arg0.vtable.iface["b"];
       if (s.tmp_9.fn == null) { s.retval = s.tmp_9.arg0.fields["b"]; }
       else if (!s.tmp_9.fn.isGetter) { s.retval = bind(s.tmp_9); }
-     else { s.callLocIdx = 423; s.pc = 251; return s.tmp_9; }
+     else { s.callLocIdx = 439; s.pc = 252; return s.tmp_9; }
     }
-  case 251:
+  case 252:
     r0 = s.retval;
     s.tmp_8 = r0;
     if ((s.tmp_8) && (s.tmp_8).vtable) {
-    setupResume(s, 252);
+    setupResume(s, 253);
     pxsim_String__stringConv(s.tmp_8);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_8) + ""; }
-  case 252:
+  case 253:
     r0 = s.retval;
     s.tmp_7 = r0;
     r0 = pxsim_String__concat(s.tmp_6, s.tmp_7);
     s.tmp_5 = r0;
     r0 = pxsim_String__concat(s.tmp_5, ". Compare() returned ");
     s.tmp_4 = r0;
-    if ((s.compare___933347) && (s.compare___933347).vtable) {
-    setupResume(s, 253);
-    pxsim_String__stringConv(s.compare___933347);
+    if ((s.compare___984248) && (s.compare___984248).vtable) {
+    setupResume(s, 254);
+    pxsim_String__stringConv(s.compare___984248);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.compare___933347) + ""; }
-  case 253:
+    } else { s.retval = (s.compare___984248) + ""; }
+  case 254:
     r0 = s.retval;
     s.tmp_10 = r0;
     r0 = pxsim_String__concat(s.tmp_4, s.tmp_10);
@@ -2624,77 +2631,77 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_3, " instead.");
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 254);
+    setupResume(s, 255);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 254:
+  case 255:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_0 = game_showLongText__P610341_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
+    s.tmp_0.arg0 = globals.msg___983770;
     s.tmp_0.arg1 = 5;
-    s.callLocIdx = 424; s.pc = 255; return s.tmp_0;
-  case 255:
-    r0 = s.retval;
-    if ((globals.msg___932873) && (globals.msg___932873).vtable) {
-    setupResume(s, 256);
-    pxsim_String__stringConv(globals.msg___932873);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (globals.msg___932873) + ""; }
+    s.callLocIdx = 440; s.pc = 256; return s.tmp_0;
   case 256:
     r0 = s.retval;
-    s.tmp_0 = r0;
-    s.tmp_5 = JSBI_BigInt_toDebugString__P969079_mk(s);
-    s.tmp_5.arg0 = s.a___933342;
-    s.callLocIdx = 425; s.pc = 257; return s.tmp_5;
+    if ((globals.msg___983770) && (globals.msg___983770).vtable) {
+    setupResume(s, 257);
+    pxsim_String__stringConv(globals.msg___983770);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (globals.msg___983770) + ""; }
   case 257:
+    r0 = s.retval;
+    s.tmp_0 = r0;
+    s.tmp_5 = JSBI_BigInt_toDebugString__P1026733_mk(s);
+    s.tmp_5.arg0 = s.a___984243;
+    s.callLocIdx = 441; s.pc = 258; return s.tmp_5;
+  case 258:
     r0 = s.retval;
     s.tmp_4 = r0;
     if ((s.tmp_4) && (s.tmp_4).vtable) {
-    setupResume(s, 258);
+    setupResume(s, 259);
     pxsim_String__stringConv(s.tmp_4);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_4) + ""; }
-  case 258:
+  case 259:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat(" a: ", s.tmp_3);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 259);
+    setupResume(s, 260);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 259:
+  case 260:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_0, s.tmp_1);
-    globals.msg___932873 = (r0);
+    globals.msg___983770 = (r0);
     s.tmp_0 = console_log__P607762_mk(s);
-    s.tmp_0.arg0 = globals.msg___932873;
-    s.callLocIdx = 426; s.pc = 260; return s.tmp_0;
-  case 260:
+    s.tmp_0.arg0 = globals.msg___983770;
+    s.callLocIdx = 442; s.pc = 261; return s.tmp_0;
+  case 261:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
     { step = 84; continue; }
   case 81:
     r0 = pxsim_numops_toBoolDecr(false);
     if (!r0) { step = 82; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
-    if ((globals.testNumber___932949) && (globals.testNumber___932949).vtable) {
-    setupResume(s, 262);
-    pxsim_String__stringConv(globals.testNumber___932949);
+    if ((globals.testNumber___983846) && (globals.testNumber___983846).vtable) {
+    setupResume(s, 263);
+    pxsim_String__stringConv(globals.testNumber___983846);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.testNumber___932949) + ""; }
-  case 262:
+    } else { s.retval = (globals.testNumber___983846) + ""; }
+  case 263:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("Comparison test ", s.tmp_2);
@@ -2702,32 +2709,32 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, " (number version) passed.");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 427; s.pc = 261; return s.tmp_0;
-  case 261:
+    s.callLocIdx = 443; s.pc = 262; return s.tmp_0;
+  case 262:
     r0 = s.retval;
   case 82:
   case 83:
   case 84:
-    r0 = (globals.testNumber___932949 + 1);
-    globals.testNumber___932949 = (r0);
-    r0 = (s.unnamed10351___U28 + 1);
-    s.unnamed10351___U28 = (r0);
+    r0 = (globals.testNumber___983846 + 1);
+    globals.testNumber___983846 = (r0);
+    r0 = (s.unnamed10855___U28 + 1);
+    s.unnamed10855___U28 = (r0);
     { step = 66; continue; }
   case 85:
-    s.unnamed10350___U27 = (undefined);
-    s.tmp_0 = JSBI_BigInt_toString__P969081_mk(s);
-    s.tmp_1 = JSBI_CreateBigInt__P969792_mk(s);
+    s.unnamed10854___U27 = (undefined);
+    s.tmp_0 = JSBI_BigInt_toString__P1026735_mk(s);
+    s.tmp_1 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_1.arg0 = 4.4384296245614243e+42;
-    s.callLocIdx = 428; s.pc = 264; return s.tmp_1;
-  case 264:
+    s.callLocIdx = 444; s.pc = 265; return s.tmp_1;
+  case 265:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 429; s.pc = 263; return s.tmp_0;
-  case 263:
+    s.callLocIdx = 445; s.pc = 264; return s.tmp_0;
+  case 264:
     r0 = s.retval;
-    globals.t63a___933465 = (r0);
-    globals.t63b___933468 = ("4438429624561424320047307980392507864252416");
-    r0 = (globals.t63a___933465 == globals.t63b___933468);
+    globals.t63a___984366 = (r0);
+    globals.t63b___984369 = ("4438429624561424320047307980392507864252416");
+    r0 = (globals.t63a___984366 == globals.t63b___984369);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 88; continue; }
@@ -2736,8 +2743,8 @@ switch (step) {
     s.tmp_1 = game_splash__P610346_mk(s);
     s.tmp_1.arg0 = "Test 1 for issue #63 passed.";
     s.tmp_1.arg1 = undefined;
-    s.callLocIdx = 430; s.pc = 265; return s.tmp_1;
-  case 265:
+    s.callLocIdx = 446; s.pc = 266; return s.tmp_1;
+  case 266:
     r0 = s.retval;
   case 86:
   case 87:
@@ -2746,25 +2753,25 @@ switch (step) {
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "Test 1 for issue #63 failed.";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 431; s.pc = 266; return s.tmp_0;
-  case 266:
-    r0 = s.retval;
-    globals.allPassed___932866 = (false);
-  case 89:
-    globals.t63c___933478 = ("3361387880631608742970259577528807057005903");
-    s.tmp_0 = JSBI_BigInt_toNumber__P969080_mk(s);
-    s.tmp_1 = JSBI_CreateBigInt__P969792_mk(s);
-    s.tmp_1.arg0 = globals.t63c___933478;
-    s.callLocIdx = 432; s.pc = 268; return s.tmp_1;
-  case 268:
-    r0 = s.retval;
-    s.tmp_0.arg0 = r0;
-    s.callLocIdx = 433; s.pc = 267; return s.tmp_0;
+    s.callLocIdx = 447; s.pc = 267; return s.tmp_0;
   case 267:
     r0 = s.retval;
-    globals.t63d___933481 = (r0);
-    globals.t63e___933486 = (3.361387880631609e+42);
-    r0 = (globals.t63d___933481 == globals.t63e___933486);
+    globals.allPassed___983763 = (false);
+  case 89:
+    globals.t63c___984379 = ("3361387880631608742970259577528807057005903");
+    s.tmp_0 = JSBI_BigInt_toNumber__P1026734_mk(s);
+    s.tmp_1 = JSBI_CreateBigInt__P1027446_mk(s);
+    s.tmp_1.arg0 = globals.t63c___984379;
+    s.callLocIdx = 448; s.pc = 269; return s.tmp_1;
+  case 269:
+    r0 = s.retval;
+    s.tmp_0.arg0 = r0;
+    s.callLocIdx = 449; s.pc = 268; return s.tmp_0;
+  case 268:
+    r0 = s.retval;
+    globals.t63d___984382 = (r0);
+    globals.t63e___984387 = (3.361387880631609e+42);
+    r0 = (globals.t63d___984382 == globals.t63e___984387);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 92; continue; }
@@ -2773,8 +2780,8 @@ switch (step) {
     s.tmp_1 = game_splash__P610346_mk(s);
     s.tmp_1.arg0 = "Test 2 for issue #63 passed.";
     s.tmp_1.arg1 = undefined;
-    s.callLocIdx = 434; s.pc = 269; return s.tmp_1;
-  case 269:
+    s.callLocIdx = 450; s.pc = 270; return s.tmp_1;
+  case 270:
     r0 = s.retval;
   case 90:
   case 91:
@@ -2783,39 +2790,39 @@ switch (step) {
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "Test 2 for issue #63 failed.";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 435; s.pc = 270; return s.tmp_0;
-  case 270:
+    s.callLocIdx = 451; s.pc = 271; return s.tmp_0;
+  case 271:
     r0 = s.retval;
-    globals.allPassed___932866 = (false);
+    globals.allPassed___983763 = (false);
   case 93:
-    r0 = pxsim_numops_toBoolDecr(globals.allPassed___932866);
+    r0 = pxsim_numops_toBoolDecr(globals.allPassed___983763);
     if (!r0) { step = 94; continue; }
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "All tests passed!";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 436; s.pc = 271; return s.tmp_0;
-  case 271:
+    s.callLocIdx = 452; s.pc = 272; return s.tmp_0;
+  case 272:
     r0 = s.retval;
     { step = 95; continue; }
   case 94:
     s.tmp_0 = game_splash__P610346_mk(s);
     s.tmp_0.arg0 = "At least one test failed.";
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 437; s.pc = 272; return s.tmp_0;
-  case 272:
+    s.callLocIdx = 453; s.pc = 273; return s.tmp_0;
+  case 273:
     r0 = s.retval;
   case 95:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P976900.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P976900.continuations = [ 135,137,138,141,142,158,160,162,167,169,172,174,180,182,184,185,189,191,193,194,204,205,207,208,210,212,213,214,216,217,218,220,222,224,226,228,229,232,240,241,243,244,246,248,249,250,252,253,254,256,258,259,262 ]
+_main___P1032749.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P1032749.continuations = [ 135,137,138,141,142,159,161,163,168,170,173,175,181,183,185,186,190,192,194,195,205,206,208,209,211,213,214,215,217,218,219,221,223,225,227,229,230,233,241,242,244,245,247,249,250,251,253,254,255,257,259,260,263 ]
 
-function _main___P976900_mk(s) {
+function _main___P1032749_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P976900, depth: s.depth + 1,
+        parent: s, fn: _main___P1032749, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2838,37 +2845,37 @@ function _main___P976900_mk(s) {
   tmp_18: undefined,
   tmp_19: undefined,
   tmp_20: undefined,
-  i___932874: undefined,
-  verify___932902: undefined,
-  compare___932906: undefined,
-  test___932951: undefined,
-  unnamed10342___U4: undefined,
-  unnamed10343___U5: undefined,
-  a___932953: undefined,
-  b___932959: undefined,
-  expected___932965: undefined,
-  result___932971: undefined,
-  compare___932997: undefined,
-  v___933044: undefined,
-  unnamed10344___U12: undefined,
-  unnamed10345___U13: undefined,
-  result___933046: undefined,
-  i___933074: undefined,
-  unnamed10346___U16: undefined,
-  unnamed10347___U17: undefined,
-  result___933077: undefined,
-  exception___933090: undefined,
-  ct___933189: undefined,
-  unnamed10348___U21: undefined,
-  unnamed10349___U22: undefined,
-  a___933191: undefined,
-  b___933197: undefined,
-  compare___933203: undefined,
-  ct___933340: undefined,
-  unnamed10350___U27: undefined,
-  unnamed10351___U28: undefined,
-  a___933342: undefined,
-  compare___933347: undefined,
+  i___983771: undefined,
+  verify___983799: undefined,
+  compare___983803: undefined,
+  test___983848: undefined,
+  unnamed10846___U4: undefined,
+  unnamed10847___U5: undefined,
+  a___983850: undefined,
+  b___983856: undefined,
+  expected___983862: undefined,
+  result___983868: undefined,
+  compare___983898: undefined,
+  v___983945: undefined,
+  unnamed10848___U12: undefined,
+  unnamed10849___U13: undefined,
+  result___983947: undefined,
+  i___983975: undefined,
+  unnamed10850___U16: undefined,
+  unnamed10851___U17: undefined,
+  result___983978: undefined,
+  exception___983991: undefined,
+  ct___984090: undefined,
+  unnamed10852___U21: undefined,
+  unnamed10853___U22: undefined,
+  a___984092: undefined,
+  b___984098: undefined,
+  compare___984104: undefined,
+  ct___984241: undefined,
+  unnamed10854___U27: undefined,
+  unnamed10855___U28: undefined,
+  a___984243: undefined,
+  compare___984248: undefined,
 } }
 
 const _hex619459 = pxsim.BufferMethods.createBufferFromHex("2000000000000000210000005e0000002200000e000e0000230028fe28fe280024004c92ff926400250002651248a64026006c92926ca000270000000e000000280000007c82000029000000827c00002a005438103854002b0010107c1010002c000000907000002d001010101010002e000000606000002f000060100806003000003c42423c00310000447e4000003200004462524c00330000424a4e320034003028247e20003500004e4a4a32003600003c4a4a30003700000262120e00380000344a4a34003900000c52523c003a0000006c6c00003b000000967600003c001028284444003d002828282828003e004444282810003f0000025909060040003c425a560800410078141214780042007e4a4a4a34004300003c424224004400007e42423c004500007e4a4a42004600007e0a0a02004700003c425234004800007e08087e00490000427e4200004a002040423e02004b00007e081462004c00007e404040004d007e0418047e004e00007e04087e004f003c4242423c005000007e12120c005100003c5262bc005200007e12126c00530000244a522400540002027e0202005500003e40403e005600001e70701e0057007e2018207e00580042241824420059000608700806005a000062524a46005b00007e424200005c000006081060005d000042427e00005e000804020408005f00808080808000600000000204000061000030484878006200007e4848300063000030484848006400003048487e006500003068585000660000107c12040067000018a4a478006800007e08087000690000487a4000006a000040847d00006b00007e102840006c0000427e4000006d007808300870006e000078080870006f00003048483000700000fc24241800710000182424fc0072000078100810007300005058682800740000083e48200075000038404078007600001860601800770038403040380078000048303048007900005ca0a07c007a000048685848007b000008364100007c000000fe0000007d000041360800007e00000804080400a000000000000000a10000007a000000a200003048fc4800a30090fc92928400a400542844285400a5002a2c782c2a00a6000000ee000000a7000094aaaa5200a800000200020000a9003e414955413eaa0000242a2e0000ab00102854284400ac00001010107000ad00001010101000ae003e415d45413eaf00000202020200b000000814140800b1008888be888800b2000024322c0000b30000222a140000b400000004020000b50000f840207800b6000c1e7e027e00b700000010000000b800000080400000b90000243e200000ba0000242a240000bb00442854281000bc00025f70f84000bd00021f90c8b000be0011557af84000bf000030484d2000c000601916186000c100601816196000c200601a151a6000c300601a151a6100c400601914196000c500601a151a6000c6007c0a7e4a4200c700001ea1611200c800007c55564400c900007c56554400ca00007c56554600cb00007c55544500cc0000457e440000cd0000447e450000ce0000467d460000cf0000457c450000d000087e4a423c00d100007e09127d00d200003845463800d300003846453800d400003846453a00d500003a45463900d600003845443900d700442810284400d80000fc724e3f00d900003c41423c00da00003c42413c00db00003c42413e00dc00003c41403d00dd00040872090400de00007e24241800df00007c025a2400e0000030494a7800e10000304a497800e20000304a497a00e3000032494a7900e40000304a487a00e50000304a4d7a00e600304878685000e7000018a4642400e8000030695a5000e90000306a595000ea0000306a595200eb0000306a585200ec0000497a400000ed0000487a410000ee00004a79420000ef00004a78420000f00000304a4b3d00f100007a090a7100f2000030494a3000f30000304a493000f40000304a493200f5000032494a3100f60000304a483200f700101054101000f800007068583800f900003841427800fa00003842417800fb00003842417a00fc00003842407a00fd0000b84241f800fe0000ff24241800ff00005ca1a07d000001601915196000010100304a4a7a000201611a16196000030100314a4a790004013c0a094abc00050100182464bc000601003846452800070100304a4948000801003846452a00090100304a494a000a010038444528000b010030484a48000c010038454629000d010030494a49000e01007c454639000f0100314a497e001001087e4a423c00110130484c7e04001201007d55554500130100326a5a52001401007d56564500150100316a5a51001601007c55544400170100306a5850001801003f65a521001901001874ac28001a01007c555645001b010030695a51001c010038465536001d0100304a49f2001e010039465635001f0100314a4af100200100384455340021010018a4a578002201001ea1691a0023010018a6a578002401007812117a0025017e080a7102002601047e147e04002701047e0c08700028010002457e450029010002497a41002a0100457d4500002b01004a7a4200002c0100014a7a49002d0100014a7a41002e0100217fa100002f0100247da00000300100447d440000310100487840000032017e0022423e0033013d0040847d0034012040463d0600350100800af90200360100bf440a3100370100bf4814200038010078102848003901007c404241003a0100467d4000003b01003fa06020003c0100a17f2000003d01007c414241003e0100457e4100003f01007e40484000400100427e4008004101107e48404000420100527e4800004301007c0a117c00440100780a097000450100bf42043f00460100bc440438004701007c09127d00480100790a09700049010a06780870004a01003f02847f004b01003c048478004c013945454539004d0100324a4a32004e013946464639004f0100314a4a310050013a4544463900510132494832010052013c427e4a420053013048306850005401007c163548005501007812091000560100bf49093600570100bc480408005801007d1635480059010079120910005a010048565524005b0100505a6928005c010048565526005d0100505a692a005e010012a56912005f010028ac741400600100485556250061010050596a290062010101bf410100630100049f641000640104057e050400650100083d4a2100660102127e120200670100183e5820006801003a414239006901003a414279006a01003d41413d006b01003a42427a006c010039424239006d010039424279006e01003a45453a006f01003a45457a0070013a41403a010071013a41407a01007201001f60a01f007301001c60a03c00740178221122780075013842314238007601081261120800770100b84241fa00780104097009040079010064564d44007a0100486a5948007b010064544d44007c010048685a48007d010064554e45007e010048695a49007f0100087c0204008f01003452523c00920100887e090200a0013c42423c0806a101003048483008af01003e403e0806b001003840781008b501006a5a4a4e00b601005878585800d101003845463900d2010030494a3100e601003845563500e7010030494af100fa0100742a750000fb0100304c4a7d00fc0178147e554400fd0130487a695000fe010078744e3d00ff0100706a59380018020012a569120019020028ac7414001a020101bf4101001b0200049f641000bb0200000c0a0000bc0200000a060000bd020000060a0000c602000201020000c702000102010000c902000202020000d802000102020100d902000002000000da02000205020000db02000040800000dc02000201020100dd02020100020100740300000201000075030000804000007a030000c08000007e03000096760000840300000300000085030200030002008603037c12127c008703000010000000880303007e4a4200890303007e087e008a030300427e42008c03033c42423c008e0303000e700e008f03035c62625c00900302003b400200910378141214780092037e4a4a4a34009303007e0202020094036058465860009503007e4a4a420096030062524a46009703007e08087e0098033c4a4a4a3c00990300427e4200009a03007e081462009b036018061860009c037e0418047e009d03007e04087e009e0300424a4a42009f033c4242423c00a003007e02027e00a103007e12120c00a30300665a424200a40302027e020200a503060870080600a60318247e241800a703422418244200a8030e107e100e00a9035c6202625c00aa0300457c450000ab03040970090400ac030030484a7900ad030030685a5100ae0378100a09f000af03003a41200000b0033a4043403a00b103003048487800b20300fe25251a00b3030c30c0300c00b403344a4a4a3000b503003068585000b603021aa6a24200b7033c080404f800b803003c4a4a3c00b903003840200000ba03007820504800bb03641212227c00bc03fc2020103c00bd03182040201800be03112d2ba94100bf03003048483000c003087808780800c103f82424241800c2031824a4a44800c303304848582800c403000838482800c503384040403800c6031c20f8241800c703c4281028c400c8031c20fc201c00c903304820483000ca03000238422000cb03384240423800cc0330484a493000cd03384042413800ce03304822493000d0033c52525c2000d10310344a3c0800d203067804020400d303120a7c020400d4030d7009040800d5031824ff241800d603384828483800d70348302221d800da031c2221a14200db031824a4a44200dc037e1212020200dd0300fc24240400de033e2010087c00df030c0ac9281800e003700c621c7000e10301092516f800e2039ea0bea07e00e30398a0b8a07800e4030c1214107e00e503001028207800e603be9088887000e70348544e443800e803245252524c00e903285454544800ea0364524c526400eb03086458640800ec03385454542200ed03306848682400ee03184a7e4a1800ef031848ff0a0800f003483020205800f10378a4a4a49800f203304848485000f303006080847d00f4033c4a4a4a3c00f5030030585848000004007c555644000104007c55544500020401013f8579000304007c0605040004043c4a4a422400050400244a522400060400427e420000070400457c45000008042040423e020009047c027e4830000a047e087e4830000b0402027e0a72000c04007c102a45000d047c2112087c000e040c5152523d000f043f20e0203f00100478141214780011047e4a4a4a300012047e4a4a4a34001304007e020202001404c07c427ec0001504007e4a4a4200160476087e087600170424424a4a34001804007e08047e001904007d120a7d001a04007e081462001b04403c02027e001c047e0418047e001d04007e08087e001e043c4242423c001f047e0202027e002004007e12120c002104003c42422400220402027e02020023040e5050503e00240418247e241800250442241824420026043f2020bf600027040e1010107e0028047e407e407e0029043f203fa07f002a04027e484830002b047e4848307e002c04007e484830002d0424424a4a3c002e047e183c423c002f04006c12127e0030043048487840003104003c4a4a3100320400786850200033040078080808003404c0704878c000350430686850000036044830783048003704004058683000380478402010780039047942221279003a040078203048003b044030080878003c047810201078003d047810101078003e043048484830003f047808080878004004fc24242418004104304848485000420408087808080043041ca0a0a07c0044041824ff241800450400483030480046043c2020bc60004704182020207800480478407840780049043c203ca07c004a040878505020004b047850502078004c040078505020004d044858683000004e047830304830004f0450282878000050040030696a500051040032686a50005204023f0a887000530400780a09080054040030685848005504005058682800560400487a4000005704004a784200005804004080847d0059047008785020005a047810785020005b04047e141060005c040078223148005d047841221078005e0418a1a2a279005f043c20e0203c006204027f4a4830006304087e5850200070040e107e100e00710418207820180072043c4a4a4a3c0073043068586830007404001e70180c0075040018603010009004007e020203009104007808080c009204087e0a0a0200930420782808080096043b043f043be0970424183c1824c09a04003f040a31c09b04003c101824c0ae04060870080600af040c10e0100c00b004161870181600b1042c30e0302c00b20421120c1221c0b3040024181824c0ba047e0808087000bb04007e08087000d804003452523c00d904002868583000e20400457d450000e304004a7a420000e8043c4a4a4a3c00e904003058583000ee04003d41413d00ef04003a42427a00d005681020285000d105484848784000d205004830600000d305080808780800d405680808087800d505000008780000d605080818680800d705087808087800d805784050487800d905000008180000da0504040404fc00db05484848483800dc050e4848281800dd05087848487800de05582010487000df05000004fc0000e005004040487800e105000878483800e205487840281800e305041c0404fc00e405485848483800e50504f820140800e605485060685000e705f40424241c00e805080808087000e905785058403800ea05487808087800f005087800087800f105081800087800f205081800081800f305000010080000f405100800100800021e7c5455542800031e007e484930000a1e007c454438000b1e003049487e001e1e007c151404001f1e001079140800401e7e0419047e00411e780832087000561e007c15140800571e00fc25241800601e004854552400611e0050586a28006a1e04047d0404006b1e00083d482000801e7c2112207c00811e384132403800821e7c2012217c00831e384032413800841e7c2110217c00851e384230423800f21e040972080400f31e00b84142f800a3207e0a7a120a00a420a8fcaa828400a720087e2a1c0800ab200098a4a6bf02ac20183c5a5a4200af20627f224438009021103854101000912108047e0408009221101054381000932110207e201000942110381010381095212844fe442800")
@@ -3400,7 +3407,7 @@ function gameOverConfig_inline__P612348_mk(s) {
 
 
 
-function JSBI_BigInt_toNumber__P969080(s) {
+function JSBI_BigInt_toNumber__P1026734(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3410,13 +3417,13 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.value___969155 = undefined;
+    s.value___1026809 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
@@ -3442,15 +3449,15 @@ switch (step) {
     r0 = pxsim_Array__getAt(s.tmp_7, 0);
     s.tmp_6 = r0;
     r0 = (s.tmp_6 >>> 0);
-    s.value___969155 = (r0);
+    s.value___1026809 = (r0);
     r0 = s.arg0.fields["sign"];
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    r0 = (0 - s.value___969155);
+    r0 = (0 - s.value___1026809);
     { step = 4; continue; }
   case 3:
-    r0 = s.value___969155;
+    r0 = s.value___1026809;
   case 4:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -3458,7 +3465,7 @@ switch (step) {
     { step = 7; continue; }
   case 5:
   case 6:
-    s.tmp_2 = JSBI_toDouble__P969165_mk(s);
+    s.tmp_2 = JSBI_toDouble__P1026819_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.callLocIdx = 67; s.pc = 8; return s.tmp_2;
   case 8:
@@ -3467,12 +3474,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt_toNumber__P969080.info = {"start":2364,"length":311,"line":64,"column":8,"endLine":72,"endColumn":9,"fileName":"jsbi.ts","functionName":"toNumber","argumentNames":["this"]}
+JSBI_BigInt_toNumber__P1026734.info = {"start":2364,"length":311,"line":64,"column":8,"endLine":72,"endColumn":9,"fileName":"jsbi.ts","functionName":"toNumber","argumentNames":["this"]}
 
-function JSBI_BigInt_toNumber__P969080_mk(s) {
+function JSBI_BigInt_toNumber__P1026734_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt_toNumber__P969080, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt_toNumber__P1026734, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3482,7 +3489,7 @@ function JSBI_BigInt_toNumber__P969080_mk(s) {
   tmp_5: undefined,
   tmp_6: undefined,
   tmp_7: undefined,
-  value___969155: undefined,
+  value___1026809: undefined,
   arg0: undefined,
 } }
 
@@ -3490,7 +3497,7 @@ function JSBI_BigInt_toNumber__P969080_mk(s) {
 
 
 
-function JSBI_toDouble__P969165(s) {
+function JSBI_toDouble__P1026819(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3500,20 +3507,20 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.xLength___970798 = undefined;
-    s.xMsd___970805 = undefined;
-    s.msdLeadingZeros___970811 = undefined;
-    s.xBitLength___970815 = undefined;
-    s.exponent___970827 = undefined;
-    s.currentDigit___970830 = undefined;
-    s.digitIndex___970832 = undefined;
-    s.shift___970835 = undefined;
-    s.mantissaHigh___970839 = undefined;
-    s.mantissaHighBitsUnset___970848 = undefined;
-    s.mantissaLow___970851 = undefined;
-    s.mantissaLowBitsUnset___970859 = undefined;
-    s.rounding___970924 = undefined;
-    s.signBit___970965 = undefined;
+    s.xLength___1028584 = undefined;
+    s.xMsd___1028591 = undefined;
+    s.msdLeadingZeros___1028597 = undefined;
+    s.xBitLength___1028601 = undefined;
+    s.exponent___1028613 = undefined;
+    s.currentDigit___1028616 = undefined;
+    s.digitIndex___1028618 = undefined;
+    s.shift___1028621 = undefined;
+    s.mantissaHigh___1028625 = undefined;
+    s.mantissaHighBitsUnset___1028634 = undefined;
+    s.mantissaLow___1028637 = undefined;
+    s.mantissaLowBitsUnset___1028645 = undefined;
+    s.rounding___1028710 = undefined;
+    s.signBit___1028751 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -3521,15 +3528,15 @@ switch (step) {
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    s.xLength___970798 = (r0);
-    r0 = (s.xLength___970798 === 0);
+    s.xLength___1028584 = (r0);
+    r0 = (s.xLength___1028584 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     r0 = pxsim_pxtcore.throwValue("toDouble: length zero handled elsewhere.");
   case 1:
   case 2:
-    r0 = (s.xLength___970798 === 1);
+    r0 = (s.xLength___1028584 === 1);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 3; continue; }
@@ -3537,23 +3544,23 @@ switch (step) {
   case 3:
   case 4:
     s.tmp_2 = r0 = s.arg0;
-    r0 = (s.xLength___970798 - 1);
+    r0 = (s.xLength___1028584 - 1);
     s.tmp_3 = r0;
     r0 = s.tmp_2.fields["data"];
     s.tmp_4 = r0;
     r0 = pxsim_Array__getAt(s.tmp_4, s.tmp_3);
-    s.xMsd___970805 = (r0);
-    s.tmp_0 = JSBI_clz30__P969184_mk(s);
-    s.tmp_0.arg0 = s.xMsd___970805;
-    s.callLocIdx = 224; s.pc = 40; return s.tmp_0;
+    s.xMsd___1028591 = (r0);
+    s.tmp_0 = JSBI_clz30__P1026838_mk(s);
+    s.tmp_0.arg0 = s.xMsd___1028591;
+    s.callLocIdx = 239; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
-    s.msdLeadingZeros___970811 = (r0);
-    r0 = (s.xLength___970798 * 30);
+    s.msdLeadingZeros___1028597 = (r0);
+    r0 = (s.xLength___1028584 * 30);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.msdLeadingZeros___970811);
-    s.xBitLength___970815 = (r0);
-    r0 = (s.xBitLength___970815 > 1024);
+    r0 = (s.tmp_0 - s.msdLeadingZeros___1028597);
+    s.xBitLength___1028601 = (r0);
+    r0 = (s.xBitLength___1028601 > 1024);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 7; continue; }
@@ -3572,153 +3579,153 @@ switch (step) {
     { step = 39; continue; }
   case 7:
   case 8:
-    r0 = (s.xBitLength___970815 - 1);
-    s.exponent___970827 = (r0);
-    s.currentDigit___970830 = (s.xMsd___970805);
-    r0 = (s.xLength___970798 - 1);
-    s.digitIndex___970832 = (r0);
-    r0 = (s.msdLeadingZeros___970811 + 3);
-    s.shift___970835 = (r0);
-    r0 = (s.shift___970835 === 32);
+    r0 = (s.xBitLength___1028601 - 1);
+    s.exponent___1028613 = (r0);
+    s.currentDigit___1028616 = (s.xMsd___1028591);
+    r0 = (s.xLength___1028584 - 1);
+    s.digitIndex___1028618 = (r0);
+    r0 = (s.msdLeadingZeros___1028597 + 3);
+    s.shift___1028621 = (r0);
+    r0 = (s.shift___1028621 === 32);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 9; continue; }
     r0 = 0;
     { step = 10; continue; }
   case 9:
-    r0 = (s.currentDigit___970830 << s.shift___970835);
+    r0 = (s.currentDigit___1028616 << s.shift___1028621);
   case 10:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    s.mantissaHigh___970839 = (s.tmp_1);
-    r0 = (s.mantissaHigh___970839 >>> 12);
-    s.mantissaHigh___970839 = (r0);
-    r0 = (s.shift___970835 - 12);
-    s.mantissaHighBitsUnset___970848 = (r0);
-    r0 = (s.shift___970835 >= 12);
+    s.mantissaHigh___1028625 = (s.tmp_1);
+    r0 = (s.mantissaHigh___1028625 >>> 12);
+    s.mantissaHigh___1028625 = (r0);
+    r0 = (s.shift___1028621 - 12);
+    s.mantissaHighBitsUnset___1028634 = (r0);
+    r0 = (s.shift___1028621 >= 12);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 11; continue; }
     r0 = 0;
     { step = 12; continue; }
   case 11:
-    s.tmp_1 = r0 = s.currentDigit___970830;
-    r0 = (20 + s.shift___970835);
+    s.tmp_1 = r0 = s.currentDigit___1028616;
+    r0 = (20 + s.shift___1028621);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 << s.tmp_2);
   case 12:
     // jmp value (already in r0)
     s.tmp_3 = r0;
-    s.mantissaLow___970851 = (s.tmp_3);
-    r0 = (20 + s.shift___970835);
-    s.mantissaLowBitsUnset___970859 = (r0);
-    r0 = (s.mantissaHighBitsUnset___970848 > 0);
+    s.mantissaLow___1028637 = (s.tmp_3);
+    r0 = (20 + s.shift___1028621);
+    s.mantissaLowBitsUnset___1028645 = (r0);
+    r0 = (s.mantissaHighBitsUnset___1028634 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 13; continue; }
     r0 = s.tmp_0;
     { step = 14; continue; }
   case 13:
-    r0 = (s.digitIndex___970832 > 0);
+    r0 = (s.digitIndex___1028618 > 0);
   case 14:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 15; continue; }
-    r0 = (s.digitIndex___970832 - 1);
-    s.digitIndex___970832 = (r0);
+    r0 = (s.digitIndex___1028618 - 1);
+    s.digitIndex___1028618 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.digitIndex___970832);
-    s.currentDigit___970830 = (r0);
-    s.tmp_0 = r0 = s.mantissaHigh___970839;
-    s.tmp_2 = r0 = s.currentDigit___970830;
-    r0 = (30 - s.mantissaHighBitsUnset___970848);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.digitIndex___1028618);
+    s.currentDigit___1028616 = (r0);
+    s.tmp_0 = r0 = s.mantissaHigh___1028625;
+    s.tmp_2 = r0 = s.currentDigit___1028616;
+    r0 = (30 - s.mantissaHighBitsUnset___1028634);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 >>> s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.mantissaHigh___970839 = (r0);
-    s.tmp_0 = r0 = s.currentDigit___970830;
-    r0 = (s.mantissaHighBitsUnset___970848 + 2);
+    s.mantissaHigh___1028625 = (r0);
+    s.tmp_0 = r0 = s.currentDigit___1028616;
+    r0 = (s.mantissaHighBitsUnset___1028634 + 2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 << s.tmp_1);
-    s.mantissaLow___970851 = (r0);
-    r0 = (s.mantissaHighBitsUnset___970848 + 2);
-    s.mantissaLowBitsUnset___970859 = (r0);
+    s.mantissaLow___1028637 = (r0);
+    r0 = (s.mantissaHighBitsUnset___1028634 + 2);
+    s.mantissaLowBitsUnset___1028645 = (r0);
   case 15:
   case 16:
   case 17:
-    r0 = (s.mantissaLowBitsUnset___970859 > 0);
+    r0 = (s.mantissaLowBitsUnset___1028645 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 18; continue; }
     r0 = s.tmp_0;
     { step = 19; continue; }
   case 18:
-    r0 = (s.digitIndex___970832 > 0);
+    r0 = (s.digitIndex___1028618 > 0);
   case 19:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 22; continue; }
-    r0 = (s.digitIndex___970832 - 1);
-    s.digitIndex___970832 = (r0);
+    r0 = (s.digitIndex___1028618 - 1);
+    s.digitIndex___1028618 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.digitIndex___970832);
-    s.currentDigit___970830 = (r0);
-    r0 = (s.mantissaLowBitsUnset___970859 >= 30);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.digitIndex___1028618);
+    s.currentDigit___1028616 = (r0);
+    r0 = (s.mantissaLowBitsUnset___1028645 >= 30);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 20; continue; }
-    s.tmp_1 = r0 = s.mantissaLow___970851;
-    s.tmp_3 = r0 = s.currentDigit___970830;
-    r0 = (s.mantissaLowBitsUnset___970859 - 30);
+    s.tmp_1 = r0 = s.mantissaLow___1028637;
+    s.tmp_3 = r0 = s.currentDigit___1028616;
+    r0 = (s.mantissaLowBitsUnset___1028645 - 30);
     s.tmp_4 = r0;
     r0 = (s.tmp_3 << s.tmp_4);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 | s.tmp_2);
-    s.mantissaLow___970851 = (r0);
+    s.mantissaLow___1028637 = (r0);
     { step = 21; continue; }
   case 20:
-    s.tmp_0 = r0 = s.mantissaLow___970851;
-    s.tmp_2 = r0 = s.currentDigit___970830;
-    r0 = (30 - s.mantissaLowBitsUnset___970859);
+    s.tmp_0 = r0 = s.mantissaLow___1028637;
+    s.tmp_2 = r0 = s.currentDigit___1028616;
+    r0 = (30 - s.mantissaLowBitsUnset___1028645);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 >>> s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.mantissaLow___970851 = (r0);
+    s.mantissaLow___1028637 = (r0);
   case 21:
-    r0 = (s.mantissaLowBitsUnset___970859 - 30);
-    s.mantissaLowBitsUnset___970859 = (r0);
+    r0 = (s.mantissaLowBitsUnset___1028645 - 30);
+    s.mantissaLowBitsUnset___1028645 = (r0);
     { step = 17; continue; }
   case 22:
-    s.tmp_0 = JSBI_decideRounding__P970741_mk(s);
+    s.tmp_0 = JSBI_decideRounding__P1028474_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.mantissaLowBitsUnset___970859;
-    s.tmp_0.arg2 = s.digitIndex___970832;
-    s.tmp_0.arg3 = s.currentDigit___970830;
-    s.callLocIdx = 227; s.pc = 41; return s.tmp_0;
+    s.tmp_0.arg1 = s.mantissaLowBitsUnset___1028645;
+    s.tmp_0.arg2 = s.digitIndex___1028618;
+    s.tmp_0.arg3 = s.currentDigit___1028616;
+    s.callLocIdx = 242; s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
-    s.rounding___970924 = (r0);
-    r0 = (s.rounding___970924 === 1);
+    s.rounding___1028710 = (r0);
+    r0 = (s.rounding___1028710 === 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 23; continue; }
     r0 = s.tmp_0;
     { step = 26; continue; }
   case 23:
-    r0 = (s.rounding___970924 === 0);
+    r0 = (s.rounding___1028710 === 0);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBool(s.tmp_1);
     if (r0) { step = 24; continue; }
     r0 = s.tmp_1;
     { step = 25; continue; }
   case 24:
-    r0 = (s.mantissaLow___970851 & 1);
+    r0 = (s.mantissaLow___1028637 & 1);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 === 1);
   case 25:
@@ -3730,26 +3737,26 @@ switch (step) {
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_4);
     if (!r0) { step = 35; continue; }
-    r0 = (s.mantissaLow___970851 + 1);
+    r0 = (s.mantissaLow___1028637 + 1);
     s.tmp_5 = r0;
     r0 = (s.tmp_5 >>> 0);
-    s.mantissaLow___970851 = (r0);
-    r0 = (s.mantissaLow___970851 === 0);
+    s.mantissaLow___1028637 = (r0);
+    r0 = (s.mantissaLow___1028637 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 33; continue; }
-    r0 = (s.mantissaHigh___970839 + 1);
-    s.mantissaHigh___970839 = (r0);
-    r0 = (s.mantissaHigh___970839 >>> 20);
+    r0 = (s.mantissaHigh___1028625 + 1);
+    s.mantissaHigh___1028625 = (r0);
+    r0 = (s.mantissaHigh___1028625 >>> 20);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 31; continue; }
-    s.mantissaHigh___970839 = (0);
-    r0 = (s.exponent___970827 + 1);
-    s.exponent___970827 = (r0);
-    r0 = (s.exponent___970827 > 1023);
+    s.mantissaHigh___1028625 = (0);
+    r0 = (s.exponent___1028613 + 1);
+    s.exponent___1028613 = (r0);
+    r0 = (s.exponent___1028613 > 1023);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 29; continue; }
@@ -3785,35 +3792,35 @@ switch (step) {
   case 38:
     // jmp value (already in r0)
     s.tmp_4 = r0;
-    s.signBit___970965 = (s.tmp_4);
-    r0 = (s.exponent___970827 + 1023);
+    s.signBit___1028751 = (s.tmp_4);
+    r0 = (s.exponent___1028613 + 1023);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 << 20);
-    s.exponent___970827 = (r0);
-    s.tmp_0 = r0 = globals.kBitConversionBuffer___969075;
+    s.exponent___1028613 = (r0);
+    s.tmp_0 = r0 = globals.kBitConversionBuffer___1026729;
     s.tmp_2 = Buffer_sizeOfNumberFormat__P607597_mk(s);
     s.tmp_2.arg0 = 5;
-    s.callLocIdx = 228; s.pc = 42; return s.tmp_2;
+    s.callLocIdx = 243; s.pc = 42; return s.tmp_2;
   case 42:
     r0 = s.retval;
     s.tmp_1 = r0;
-    r0 = (s.signBit___970965 | s.exponent___970827);
+    r0 = (s.signBit___1028751 | s.exponent___1028613);
     s.tmp_4 = r0;
-    r0 = (s.tmp_4 | s.mantissaHigh___970839);
+    r0 = (s.tmp_4 | s.mantissaHigh___1028625);
     s.tmp_3 = r0;
     r0 = pxsim.BufferMethods.setNumber(s.tmp_0, 5, s.tmp_1, s.tmp_3);
-    r0 = pxsim.BufferMethods.setNumber(globals.kBitConversionBuffer___969075, 5, 0, s.mantissaLow___970851);
-    r0 = pxsim.BufferMethods.getNumber(globals.kBitConversionBuffer___969075, 14, 0);
+    r0 = pxsim.BufferMethods.setNumber(globals.kBitConversionBuffer___1026729, 5, 0, s.mantissaLow___1028637);
+    r0 = pxsim.BufferMethods.getNumber(globals.kBitConversionBuffer___1026729, 14, 0);
   case 39:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_toDouble__P969165.info = {"start":24324,"length":3087,"line":608,"column":4,"endLine":669,"endColumn":5,"fileName":"jsbi.ts","functionName":"toDouble","argumentNames":["x"]}
+JSBI_toDouble__P1026819.info = {"start":25754,"length":3087,"line":641,"column":4,"endLine":702,"endColumn":5,"fileName":"jsbi.ts","functionName":"toDouble","argumentNames":["x"]}
 
-function JSBI_toDouble__P969165_mk(s) {
+function JSBI_toDouble__P1026819_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_toDouble__P969165, depth: s.depth + 1,
+        parent: s, fn: JSBI_toDouble__P1026819, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3821,20 +3828,20 @@ function JSBI_toDouble__P969165_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  xLength___970798: undefined,
-  xMsd___970805: undefined,
-  msdLeadingZeros___970811: undefined,
-  xBitLength___970815: undefined,
-  exponent___970827: undefined,
-  currentDigit___970830: undefined,
-  digitIndex___970832: undefined,
-  shift___970835: undefined,
-  mantissaHigh___970839: undefined,
-  mantissaHighBitsUnset___970848: undefined,
-  mantissaLow___970851: undefined,
-  mantissaLowBitsUnset___970859: undefined,
-  rounding___970924: undefined,
-  signBit___970965: undefined,
+  xLength___1028584: undefined,
+  xMsd___1028591: undefined,
+  msdLeadingZeros___1028597: undefined,
+  xBitLength___1028601: undefined,
+  exponent___1028613: undefined,
+  currentDigit___1028616: undefined,
+  digitIndex___1028618: undefined,
+  shift___1028621: undefined,
+  mantissaHigh___1028625: undefined,
+  mantissaHighBitsUnset___1028634: undefined,
+  mantissaLow___1028637: undefined,
+  mantissaLowBitsUnset___1028645: undefined,
+  rounding___1028710: undefined,
+  signBit___1028751: undefined,
   arg0: undefined,
 } }
 
@@ -3936,7 +3943,7 @@ function Buffer_sizeOfNumberFormat__P607597_mk(s) {
 
 
 
-function JSBI_decideRounding__P970741(s) {
+function JSBI_decideRounding__P1028474(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3946,8 +3953,8 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.topUnconsumedBit___970750 = undefined;
-    s.mask___970768 = undefined;
+    s.topUnconsumedBit___1028483 = undefined;
+    s.mask___1028501 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -3970,7 +3977,7 @@ switch (step) {
     r0 = (0 - s.arg1);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 - 1);
-    s.topUnconsumedBit___970750 = (r0);
+    s.topUnconsumedBit___1028483 = (r0);
     { step = 6; continue; }
   case 3:
     r0 = (s.arg2 === 0);
@@ -3987,11 +3994,11 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_Array__getAt(s.tmp_0, s.arg2);
     s.arg3 = (r0);
-    s.topUnconsumedBit___970750 = (29);
+    s.topUnconsumedBit___1028483 = (29);
   case 6:
-    r0 = (1 << s.topUnconsumedBit___970750);
-    s.mask___970768 = (r0);
-    r0 = (s.arg3 & s.mask___970768);
+    r0 = (1 << s.topUnconsumedBit___1028483);
+    s.mask___1028501 = (r0);
+    r0 = (s.arg3 & s.mask___1028501);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 === 0);
     s.tmp_0 = r0;
@@ -4001,9 +4008,9 @@ switch (step) {
     { step = 15; continue; }
   case 7:
   case 8:
-    r0 = (s.mask___970768 - 1);
-    s.mask___970768 = (r0);
-    r0 = (s.arg3 & s.mask___970768);
+    r0 = (s.mask___1028501 - 1);
+    s.mask___1028501 = (r0);
+    r0 = (s.arg3 & s.mask___1028501);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 0);
     s.tmp_0 = r0;
@@ -4039,18 +4046,18 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_decideRounding__P970741.info = {"start":23329,"length":989,"line":582,"column":4,"endLine":606,"endColumn":5,"fileName":"jsbi.ts","functionName":"decideRounding","argumentNames":["x","mantissaBitsUnset","digitIndex","currentDigit"]}
+JSBI_decideRounding__P1028474.info = {"start":24057,"length":989,"line":597,"column":4,"endLine":621,"endColumn":5,"fileName":"jsbi.ts","functionName":"decideRounding","argumentNames":["x","mantissaBitsUnset","digitIndex","currentDigit"]}
 
-function JSBI_decideRounding__P970741_mk(s) {
+function JSBI_decideRounding__P1028474_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_decideRounding__P970741, depth: s.depth + 1,
+        parent: s, fn: JSBI_decideRounding__P1028474, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
-  topUnconsumedBit___970750: undefined,
-  mask___970768: undefined,
+  topUnconsumedBit___1028483: undefined,
+  mask___1028501: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -4061,7 +4068,7 @@ function JSBI_decideRounding__P970741_mk(s) {
 
 
 
-function JSBI_clz30__P969184(s) {
+function JSBI_clz30__P1026838(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -4098,12 +4105,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_clz30__P969184.info = {"start":17024,"length":131,"line":440,"column":4,"endLine":443,"endColumn":5,"fileName":"jsbi.ts","functionName":"clz30","argumentNames":["x"]}
+JSBI_clz30__P1026838.info = {"start":17752,"length":131,"line":455,"column":4,"endLine":458,"endColumn":5,"fileName":"jsbi.ts","functionName":"clz30","argumentNames":["x"]}
 
-function JSBI_clz30__P969184_mk(s) {
+function JSBI_clz30__P1026838_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_clz30__P969184, depth: s.depth + 1,
+        parent: s, fn: JSBI_clz30__P1026838, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -4118,7 +4125,7 @@ function JSBI_clz30__P969184_mk(s) {
 
 
 
-function JSBI_BigInt___digit__P969084(s) {
+function JSBI_BigInt___digit__P1026738(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -4134,19 +4141,19 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__getAt(s.tmp_0, s.arg1);
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___digit__P969084.info = {"start":3362,"length":77,"line":94,"column":8,"endLine":96,"endColumn":9,"fileName":"jsbi.ts","functionName":"__digit","argumentNames":["this","i"]}
+JSBI_BigInt___digit__P1026738.info = {"start":3362,"length":77,"line":94,"column":8,"endLine":96,"endColumn":9,"fileName":"jsbi.ts","functionName":"__digit","argumentNames":["this","i"]}
 
-function JSBI_BigInt___digit__P969084_mk(s) {
+function JSBI_BigInt___digit__P1026738_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___digit__P969084, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___digit__P1026738, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -4157,7 +4164,7 @@ function JSBI_BigInt___digit__P969084_mk(s) {
 
 
 
-function JSBI_BigInt___unsignedDigit__P969095(s) {
+function JSBI_BigInt___unsignedDigit__P1026749(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -4173,7 +4180,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
     r0 = pxsim_Array__getAt(s.tmp_1, s.arg1);
@@ -4182,12 +4189,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___unsignedDigit__P969095.info = {"start":10212,"length":91,"line":251,"column":8,"endLine":253,"endColumn":9,"fileName":"jsbi.ts","functionName":"__unsignedDigit","argumentNames":["this","i"]}
+JSBI_BigInt___unsignedDigit__P1026749.info = {"start":10212,"length":91,"line":251,"column":8,"endLine":253,"endColumn":9,"fileName":"jsbi.ts","functionName":"__unsignedDigit","argumentNames":["this","i"]}
 
-function JSBI_BigInt___unsignedDigit__P969095_mk(s) {
+function JSBI_BigInt___unsignedDigit__P1026749_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___unsignedDigit__P969095, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___unsignedDigit__P1026749, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -5073,7 +5080,7 @@ function helpers_arrayJoin__P607485_mk(s) {
 
 
 
-function JSBI_BigInt_toDebugString__P969079(s) {
+function JSBI_BigInt_toDebugString__P1026733(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -5083,44 +5090,44 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.result___969120 = undefined;
-    s.digit___969123 = undefined;
-    s.unnamed10340___U2 = undefined;
-    s.unnamed10341___U3 = undefined;
+    s.result___1026774 = undefined;
+    s.digit___1026777 = undefined;
+    s.unnamed10844___U2 = undefined;
+    s.unnamed10845___U3 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, "BigInt: [");
-    s.result___969120 = (s.tmp_0);
-    s.digit___969123 = (undefined);
+    s.result___1026774 = (s.tmp_0);
+    s.digit___1026777 = (undefined);
     r0 = s.arg0.fields["data"];
-    s.unnamed10340___U2 = (r0);
-    s.unnamed10341___U3 = (0);
+    s.unnamed10844___U2 = (r0);
+    s.unnamed10845___U3 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed10341___U3;
-    r0 = pxsim_Array__length(s.unnamed10340___U2);
+    s.tmp_0 = r0 = s.unnamed10845___U3;
+    r0 = pxsim_Array__length(s.unnamed10844___U2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 4; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed10340___U2, s.unnamed10341___U3);
-    s.digit___969123 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.digit___969123);
+    r0 = pxsim_Array__getAt(s.unnamed10844___U2, s.unnamed10845___U3);
+    s.digit___1026777 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.digit___1026777);
     if (!r0) { step = 2; continue; }
-    r0 = (s.digit___969123 >>> 0);
+    r0 = (s.digit___1026777 >>> 0);
     s.tmp_2 = r0;
     r0 = pxsim_numops.toString(s.tmp_2);
     { step = 3; continue; }
   case 2:
-    r0 = s.digit___969123;
+    r0 = s.digit___1026777;
   case 3:
     // jmp value (already in r0)
     s.tmp_3 = r0;
-    s.tmp_4 = r0 = s.result___969120;
+    s.tmp_4 = r0 = s.result___1026774;
     if ((s.tmp_3) && (s.tmp_3).vtable) {
     setupResume(s, 5);
     pxsim_String__stringConv(s.tmp_3);
@@ -5133,12 +5140,12 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_6, ", ");
     s.tmp_5 = r0;
     r0 = pxsim_Array__push(s.tmp_4, s.tmp_5);
-    r0 = (s.unnamed10341___U3 + 1);
-    s.unnamed10341___U3 = (r0);
+    r0 = (s.unnamed10845___U3 + 1);
+    s.unnamed10845___U3 = (r0);
     { step = 1; continue; }
   case 4:
-    s.unnamed10340___U2 = (undefined);
-    s.tmp_0 = r0 = s.result___969120;
+    s.unnamed10844___U2 = (undefined);
+    s.tmp_0 = r0 = s.result___1026774;
     r0 = s.arg0.fields["sign"];
     s.tmp_3 = r0;
     if ((s.tmp_3) && (s.tmp_3).vtable) {
@@ -5154,7 +5161,7 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_1);
     s.tmp_0 = helpers_arrayJoin__P607485_mk(s);
-    s.tmp_0.arg0 = s.result___969120;
+    s.tmp_0.arg0 = s.result___1026774;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 63; s.pc = 7; return s.tmp_0;
@@ -5163,12 +5170,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt_toDebugString__P969079.info = {"start":2050,"length":304,"line":55,"column":8,"endLine":62,"endColumn":9,"fileName":"jsbi.ts","functionName":"toDebugString","argumentNames":["this"]}
+JSBI_BigInt_toDebugString__P1026733.info = {"start":2050,"length":304,"line":55,"column":8,"endLine":62,"endColumn":9,"fileName":"jsbi.ts","functionName":"toDebugString","argumentNames":["this"]}
 
-function JSBI_BigInt_toDebugString__P969079_mk(s) {
+function JSBI_BigInt_toDebugString__P1026733_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt_toDebugString__P969079, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt_toDebugString__P1026733, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -5177,10 +5184,10 @@ function JSBI_BigInt_toDebugString__P969079_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  result___969120: undefined,
-  digit___969123: undefined,
-  unnamed10340___U2: undefined,
-  unnamed10341___U3: undefined,
+  result___1026774: undefined,
+  digit___1026777: undefined,
+  unnamed10844___U2: undefined,
+  unnamed10845___U3: undefined,
   arg0: undefined,
 } }
 
@@ -20132,7 +20139,7 @@ function control_PollEvent_constructor__P611827_mk(s) {
 
 
 
-function JSBI_mod__P971950(s) {
+function JSBI_divide__P1028530(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20142,9 +20149,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.divisor___971962 = undefined;
-    s.remainderDigit___971976 = undefined;
-    s.r___971988 = undefined;
+    s.resultSign___1028542 = undefined;
+    s.divisor___1028548 = undefined;
+    s.quotient___1028553 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -20158,13 +20165,13 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = pxsim_pxtcore.throwValue("mod: Division by zero.");
+    r0 = pxsim_pxtcore.throwValue("divide: Division by zero.");
   case 1:
   case 2:
-    s.tmp_5 = JSBI_compare__P970365_mk(s);
+    s.tmp_5 = JSBI_absoluteCompare__P1027628_mk(s);
     s.tmp_5.arg0 = s.arg0;
     s.tmp_5.arg1 = s.arg1;
-    s.callLocIdx = 279; s.pc = 14; return s.tmp_5;
+    s.callLocIdx = 229; s.pc = 14; return s.tmp_5;
   case 14:
     r0 = s.retval;
     s.tmp_4 = r0;
@@ -20172,16 +20179,25 @@ switch (step) {
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 3; continue; }
-    r0 = s.arg0;
+    s.tmp_6 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 230; s.pc = 15; return s.tmp_6;
+  case 15:
+    r0 = s.retval;
     { step = 13; continue; }
   case 3:
   case 4:
-    r0 = s.arg1.fields["data"];
+    r0 = s.arg0.fields["sign"];
     s.tmp_7 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_7, 0);
-    s.tmp_6 = r0;
-    r0 = (s.tmp_6 >>> 0);
-    s.divisor___971962 = (r0);
+    r0 = s.arg1.fields["sign"];
+    s.tmp_8 = r0;
+    r0 = (s.tmp_7 !== s.tmp_8);
+    s.resultSign___1028542 = (r0);
+    r0 = s.arg1.fields["data"];
+    s.tmp_1 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_1, 0);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 >>> 0);
+    s.divisor___1028548 = (r0);
     r0 = s.arg1.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
@@ -20193,78 +20209,73 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 6; continue; }
   case 5:
-    r0 = (s.divisor___971962 <= 32767);
+    r0 = (s.divisor___1028548 <= 32767);
   case 6:
     // jmp value (already in r0)
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 11; continue; }
-    r0 = (s.divisor___971962 === 1);
+    r0 = (s.divisor___1028548 === 1);
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_4);
+    if (!r0) { step = 9; continue; }
+    r0 = s.arg0.fields["sign"];
+    s.tmp_6 = r0;
+    r0 = (s.resultSign___1028542 === s.tmp_6);
+    s.tmp_5 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_5);
     if (!r0) { step = 7; continue; }
-    s.tmp_5 = JSBI_zero__P969800_mk(s);
-    s.callLocIdx = 282; s.pc = 15; return s.tmp_5;
-  case 15:
-    r0 = s.retval;
-    { step = 13; continue; }
+    r0 = s.arg0;
+    { step = 8; continue; }
   case 7:
-  case 8:
-    s.tmp_6 = JSBI_absoluteModSmall__P970237_mk(s);
-    s.tmp_6.arg0 = s.arg0;
-    s.tmp_6.arg1 = s.divisor___971962;
-    s.callLocIdx = 283; s.pc = 16; return s.tmp_6;
+    s.tmp_7 = JSBI_unaryMinus__P1027540_mk(s);
+    s.tmp_7.arg0 = s.arg0;
+    s.callLocIdx = 233; s.pc = 16; return s.tmp_7;
   case 16:
     r0 = s.retval;
-    s.remainderDigit___971976 = (r0);
-    r0 = (s.remainderDigit___971976 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 9; continue; }
-    s.tmp_1 = JSBI_zero__P969800_mk(s);
-    s.callLocIdx = 284; s.pc = 17; return s.tmp_1;
-  case 17:
-    r0 = s.retval;
+  case 8:
+    // jmp value (already in r0)
+    s.tmp_8 = r0;
+    r0 = s.tmp_8;
     { step = 13; continue; }
   case 9:
   case 10:
-    s.tmp_2 = JSBI_oneDigit__P969807_mk(s);
-    s.tmp_2.arg0 = s.remainderDigit___971976;
-    r0 = s.arg0.fields["sign"];
-    s.tmp_2.arg1 = r0;
-    s.callLocIdx = 285; s.pc = 18; return s.tmp_2;
+    s.tmp_9 = JSBI_absoluteDivSmall__P1027670_mk(s);
+    s.tmp_9.arg0 = s.arg0;
+    s.tmp_9.arg1 = s.divisor___1028548;
+    s.tmp_9.arg2 = null;
+    s.callLocIdx = 234; s.pc = 17; return s.tmp_9;
+  case 17:
+    r0 = s.retval;
+    s.quotient___1028553 = (r0);
+    { step = 12; continue; }
+  case 11:
+    s.tmp_0 = JSBI_absoluteDivLarge__P1027749_mk(s);
+    s.tmp_0.arg0 = s.arg0;
+    s.tmp_0.arg1 = s.arg1;
+    s.tmp_0.arg2 = true;
+    s.tmp_0.arg3 = false;
+    s.callLocIdx = 235; s.pc = 18; return s.tmp_0;
   case 18:
     r0 = s.retval;
-    { step = 13; continue; }
-  case 11:
+    s.quotient___1028553 = (r0);
   case 12:
-    s.tmp_3 = JSBI_absoluteDivLarge__P970016_mk(s);
-    s.tmp_3.arg0 = s.arg0;
-    s.tmp_3.arg1 = s.arg1;
-    s.tmp_3.arg2 = false;
-    s.tmp_3.arg3 = true;
-    s.callLocIdx = 286; s.pc = 19; return s.tmp_3;
+    r0 = (s.quotient___1028553).fields["sign"] = (s.resultSign___1028542);
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.quotient___1028553;
+    s.callLocIdx = 236; s.pc = 19; return s.tmp_0;
   case 19:
-    r0 = s.retval;
-    s.r___971988 = (r0);
-    r0 = s.arg0.fields["sign"];
-    s.tmp_0 = r0;
-    r0 = (s.r___971988).fields["sign"] = (s.tmp_0);
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.r___971988;
-    s.callLocIdx = 287; s.pc = 20; return s.tmp_0;
-  case 20:
     r0 = s.retval;
   case 13:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_mod__P971950.info = {"start":41256,"length":611,"line":1016,"column":4,"endLine":1029,"endColumn":5,"fileName":"jsbi.ts","functionName":"mod","argumentNames":["x","y"]}
+JSBI_divide__P1028530.info = {"start":25052,"length":696,"line":623,"column":4,"endLine":639,"endColumn":5,"fileName":"jsbi.ts","functionName":"divide","argumentNames":["x","y"]}
 
-function JSBI_mod__P971950_mk(s) {
+function JSBI_divide__P1028530_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_mod__P971950, depth: s.depth + 1,
+        parent: s, fn: JSBI_divide__P1028530, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -20274,9 +20285,11 @@ function JSBI_mod__P971950_mk(s) {
   tmp_5: undefined,
   tmp_6: undefined,
   tmp_7: undefined,
-  divisor___971962: undefined,
-  remainderDigit___971976: undefined,
-  r___971988: undefined,
+  tmp_8: undefined,
+  tmp_9: undefined,
+  resultSign___1028542: undefined,
+  divisor___1028548: undefined,
+  quotient___1028553: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -20285,7 +20298,7 @@ function JSBI_mod__P971950_mk(s) {
 
 
 
-function JSBI_BigInt___trim__P969094(s) {
+function JSBI_BigInt___trim__P1026748(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20295,43 +20308,43 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.newLength___969758 = undefined;
-    s.last___969762 = undefined;
+    s.newLength___1027412 = undefined;
+    s.last___1027416 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    s.newLength___969758 = (r0);
+    s.newLength___1027412 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
-    r0 = (s.newLength___969758 - 1);
+    r0 = (s.newLength___1027412 - 1);
     s.tmp_1 = r0;
     r0 = pxsim_Array__getAt(s.tmp_0, s.tmp_1);
-    s.last___969762 = (r0);
+    s.last___1027416 = (r0);
   case 1:
-    r0 = (s.last___969762 === 0);
+    r0 = (s.last___1027416 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    r0 = (s.newLength___969758 - 1);
-    s.newLength___969758 = (r0);
+    r0 = (s.newLength___1027412 - 1);
+    s.newLength___1027412 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
-    r0 = (s.newLength___969758 - 1);
+    r0 = (s.newLength___1027412 - 1);
     s.tmp_1 = r0;
     r0 = pxsim_Array__getAt(s.tmp_0, s.tmp_1);
-    s.last___969762 = (r0);
+    s.last___1027416 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array_.pop(s.tmp_0);
     { step = 1; continue; }
   case 2:
-    r0 = (s.newLength___969758 === 0);
+    r0 = (s.newLength___1027412 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
@@ -20342,17 +20355,17 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___trim__P969094.info = {"start":9846,"length":356,"line":239,"column":8,"endLine":249,"endColumn":9,"fileName":"jsbi.ts","functionName":"__trim","argumentNames":["this"]}
+JSBI_BigInt___trim__P1026748.info = {"start":9846,"length":356,"line":239,"column":8,"endLine":249,"endColumn":9,"fileName":"jsbi.ts","functionName":"__trim","argumentNames":["this"]}
 
-function JSBI_BigInt___trim__P969094_mk(s) {
+function JSBI_BigInt___trim__P1026748_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___trim__P969094, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___trim__P1026748, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  newLength___969758: undefined,
-  last___969762: undefined,
+  newLength___1027412: undefined,
+  last___1027416: undefined,
   arg0: undefined,
 } }
 
@@ -20360,7 +20373,7 @@ function JSBI_BigInt___trim__P969094_mk(s) {
 
 
 
-function JSBI_absoluteDivLarge__P970016(s) {
+function JSBI_absoluteDivLarge__P1027749(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20370,23 +20383,23 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.n___970021 = undefined;
-    s.n2___970025 = undefined;
-    s.m___970028 = undefined;
-    s.q___970034 = undefined;
-    s.qhatv___970047 = undefined;
-    s.shift___970057 = undefined;
-    s.u___970073 = undefined;
-    s.vn1___970078 = undefined;
-    s.halfDigitBuffer___970084 = undefined;
-    s.j___970085 = undefined;
-    s.qhat___970090 = undefined;
-    s.ujn___970091 = undefined;
-    s.input___970101 = undefined;
-    s.rhat___970120 = undefined;
-    s.vn2___970126 = undefined;
-    s.ujn2___970132 = undefined;
-    s.c___970169 = undefined;
+    s.n___1027754 = undefined;
+    s.n2___1027758 = undefined;
+    s.m___1027761 = undefined;
+    s.q___1027767 = undefined;
+    s.qhatv___1027780 = undefined;
+    s.shift___1027790 = undefined;
+    s.u___1027806 = undefined;
+    s.vn1___1027811 = undefined;
+    s.halfDigitBuffer___1027817 = undefined;
+    s.j___1027818 = undefined;
+    s.qhat___1027823 = undefined;
+    s.ujn___1027824 = undefined;
+    s.input___1027834 = undefined;
+    s.rhat___1027853 = undefined;
+    s.vn2___1027859 = undefined;
+    s.ujn2___1027865 = undefined;
+    s.c___1027902 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -20394,178 +20407,178 @@ switch (step) {
       s.arg3 = (s.lambdaArgs[3]);
       s.lambdaArgs = null;
     }
-    s.tmp_0 = JSBI_BigInt___halfDigitLength__P969086_mk(s);
+    s.tmp_0 = JSBI_BigInt___halfDigitLength__P1026740_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    s.callLocIdx = 145; s.pc = 26; return s.tmp_0;
+    s.callLocIdx = 151; s.pc = 26; return s.tmp_0;
   case 26:
     r0 = s.retval;
-    s.n___970021 = (r0);
+    s.n___1027754 = (r0);
     r0 = s.arg1.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    s.n2___970025 = (r0);
-    s.tmp_1 = JSBI_BigInt___halfDigitLength__P969086_mk(s);
+    s.n2___1027758 = (r0);
+    s.tmp_1 = JSBI_BigInt___halfDigitLength__P1026740_mk(s);
     s.tmp_1.arg0 = s.arg0;
-    s.callLocIdx = 147; s.pc = 27; return s.tmp_1;
+    s.callLocIdx = 153; s.pc = 27; return s.tmp_1;
   case 27:
     r0 = s.retval;
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.n___970021);
-    s.m___970028 = (r0);
-    s.q___970034 = (null);
+    r0 = (s.tmp_0 - s.n___1027754);
+    s.m___1027761 = (r0);
+    s.q___1027767 = (null);
     r0 = pxsim_numops_toBoolDecr(s.arg2);
     if (!r0) { step = 1; continue; }
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    r0 = (s.m___970028 + 2);
+    r0 = (s.m___1027761 + 2);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 1);
     s.tmp_1.arg1 = r0;
     s.tmp_1.arg2 = false;
-    s.callLocIdx = 148; s.pc = 28; return s.tmp_1;
+    s.callLocIdx = 154; s.pc = 28; return s.tmp_1;
   case 28:
     r0 = s.retval;
-    s.q___970034 = (s.tmp_0);
-    s.tmp_0 = JSBI_BigInt___initializeDigits__P969087_mk(s);
-    s.tmp_0.arg0 = s.q___970034;
-    s.callLocIdx = 149; s.pc = 29; return s.tmp_0;
+    s.q___1027767 = (s.tmp_0);
+    s.tmp_0 = JSBI_BigInt___initializeDigits__P1026741_mk(s);
+    s.tmp_0.arg0 = s.q___1027767;
+    s.callLocIdx = 155; s.pc = 29; return s.tmp_0;
   case 29:
     r0 = s.retval;
   case 1:
   case 2:
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    r0 = (s.n___970021 + 2);
+    r0 = (s.n___1027754 + 2);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 1);
     s.tmp_1.arg1 = r0;
     s.tmp_1.arg2 = false;
-    s.callLocIdx = 150; s.pc = 30; return s.tmp_1;
+    s.callLocIdx = 156; s.pc = 30; return s.tmp_1;
   case 30:
     r0 = s.retval;
-    s.qhatv___970047 = (s.tmp_0);
-    s.tmp_0 = JSBI_BigInt___initializeDigits__P969087_mk(s);
-    s.tmp_0.arg0 = s.qhatv___970047;
-    s.callLocIdx = 151; s.pc = 31; return s.tmp_0;
+    s.qhatv___1027780 = (s.tmp_0);
+    s.tmp_0 = JSBI_BigInt___initializeDigits__P1026741_mk(s);
+    s.tmp_0.arg0 = s.qhatv___1027780;
+    s.callLocIdx = 157; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
-    s.tmp_0 = JSBI_clz15__P970063_mk(s);
-    s.tmp_1 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.tmp_0 = JSBI_clz15__P1027796_mk(s);
+    s.tmp_1 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_1.arg0 = s.arg1;
-    r0 = (s.n___970021 - 1);
+    r0 = (s.n___1027754 - 1);
     s.tmp_1.arg1 = r0;
-    s.callLocIdx = 152; s.pc = 33; return s.tmp_1;
+    s.callLocIdx = 158; s.pc = 33; return s.tmp_1;
   case 33:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 153; s.pc = 32; return s.tmp_0;
+    s.callLocIdx = 159; s.pc = 32; return s.tmp_0;
   case 32:
     r0 = s.retval;
-    s.shift___970057 = (r0);
-    r0 = (s.shift___970057 > 0);
+    s.shift___1027790 = (r0);
+    r0 = (s.shift___1027790 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_1 = JSBI_specialLeftShift__P970070_mk(s);
+    s.tmp_1 = JSBI_specialLeftShift__P1027803_mk(s);
     s.tmp_1.arg0 = s.arg1;
-    s.tmp_1.arg1 = s.shift___970057;
+    s.tmp_1.arg1 = s.shift___1027790;
     s.tmp_1.arg2 = 0;
-    s.callLocIdx = 154; s.pc = 34; return s.tmp_1;
+    s.callLocIdx = 160; s.pc = 34; return s.tmp_1;
   case 34:
     r0 = s.retval;
     s.arg1 = (r0);
   case 3:
   case 4:
-    s.tmp_0 = JSBI_specialLeftShift__P970070_mk(s);
+    s.tmp_0 = JSBI_specialLeftShift__P1027803_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.shift___970057;
+    s.tmp_0.arg1 = s.shift___1027790;
     s.tmp_0.arg2 = 1;
-    s.callLocIdx = 155; s.pc = 35; return s.tmp_0;
+    s.callLocIdx = 161; s.pc = 35; return s.tmp_0;
   case 35:
     r0 = s.retval;
-    s.u___970073 = (r0);
-    s.tmp_0 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.u___1027806 = (r0);
+    s.tmp_0 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    r0 = (s.n___970021 - 1);
+    r0 = (s.n___1027754 - 1);
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 156; s.pc = 36; return s.tmp_0;
+    s.callLocIdx = 162; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
-    s.vn1___970078 = (r0);
-    s.halfDigitBuffer___970084 = (0);
-    s.j___970085 = (s.m___970028);
+    s.vn1___1027811 = (r0);
+    s.halfDigitBuffer___1027817 = (0);
+    s.j___1027818 = (s.m___1027761);
   case 5:
-    r0 = (s.j___970085 >= 0);
+    r0 = (s.j___1027818 >= 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 18; continue; }
-    s.qhat___970090 = (32767);
-    s.tmp_0 = JSBI_BigInt___halfDigit__P969085_mk(s);
-    s.tmp_0.arg0 = s.u___970073;
-    r0 = (s.j___970085 + s.n___970021);
+    s.qhat___1027823 = (32767);
+    s.tmp_0 = JSBI_BigInt___halfDigit__P1026739_mk(s);
+    s.tmp_0.arg0 = s.u___1027806;
+    r0 = (s.j___1027818 + s.n___1027754);
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 157; s.pc = 37; return s.tmp_0;
+    s.callLocIdx = 163; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    s.ujn___970091 = (r0);
-    r0 = (s.ujn___970091 !== s.vn1___970078);
+    s.ujn___1027824 = (r0);
+    r0 = (s.ujn___1027824 !== s.vn1___1027811);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 10; continue; }
-    r0 = (s.ujn___970091 << 15);
+    r0 = (s.ujn___1027824 << 15);
     s.tmp_2 = r0;
-    s.tmp_4 = JSBI_BigInt___halfDigit__P969085_mk(s);
-    s.tmp_4.arg0 = s.u___970073;
-    r0 = (s.j___970085 + s.n___970021);
+    s.tmp_4 = JSBI_BigInt___halfDigit__P1026739_mk(s);
+    s.tmp_4.arg0 = s.u___1027806;
+    r0 = (s.j___1027818 + s.n___1027754);
     s.tmp_5 = r0;
     r0 = (s.tmp_5 - 1);
     s.tmp_4.arg1 = r0;
-    s.callLocIdx = 158; s.pc = 38; return s.tmp_4;
+    s.callLocIdx = 164; s.pc = 38; return s.tmp_4;
   case 38:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = (s.tmp_2 | s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 >>> 0);
-    s.input___970101 = (r0);
-    r0 = (s.input___970101 / s.vn1___970078);
+    s.input___1027834 = (r0);
+    r0 = (s.input___1027834 / s.vn1___1027811);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.qhat___970090 = (r0);
-    r0 = (s.input___970101 % s.vn1___970078);
+    s.qhat___1027823 = (r0);
+    r0 = (s.input___1027834 % s.vn1___1027811);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.rhat___970120 = (r0);
-    s.tmp_0 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.rhat___1027853 = (r0);
+    s.tmp_0 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    r0 = (s.n___970021 - 2);
+    r0 = (s.n___1027754 - 2);
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 159; s.pc = 39; return s.tmp_0;
+    s.callLocIdx = 165; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
-    s.vn2___970126 = (r0);
-    s.tmp_0 = JSBI_BigInt___halfDigit__P969085_mk(s);
-    s.tmp_0.arg0 = s.u___970073;
-    r0 = (s.j___970085 + s.n___970021);
+    s.vn2___1027859 = (r0);
+    s.tmp_0 = JSBI_BigInt___halfDigit__P1026739_mk(s);
+    s.tmp_0.arg0 = s.u___1027806;
+    r0 = (s.j___1027818 + s.n___1027754);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 - 2);
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 160; s.pc = 40; return s.tmp_0;
+    s.callLocIdx = 166; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
-    s.ujn2___970132 = (r0);
+    s.ujn2___1027865 = (r0);
   case 6:
-    r0 = pxsim.Math_.imul(s.qhat___970090, s.vn2___970126);
+    r0 = pxsim.Math_.imul(s.qhat___1027823, s.vn2___1027859);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 0);
     s.tmp_1 = r0;
-    r0 = (s.rhat___970120 << 16);
+    r0 = (s.rhat___1027853 << 16);
     s.tmp_5 = r0;
-    r0 = (s.tmp_5 | s.ujn2___970132);
+    r0 = (s.tmp_5 | s.ujn2___1027865);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 >>> 0);
     s.tmp_3 = r0;
@@ -20573,11 +20586,11 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 9; continue; }
-    r0 = (s.qhat___970090 - 1);
-    s.qhat___970090 = (r0);
-    r0 = (s.rhat___970120 + s.vn1___970078);
-    s.rhat___970120 = (r0);
-    r0 = (s.rhat___970120 > 32767);
+    r0 = (s.qhat___1027823 - 1);
+    s.qhat___1027823 = (r0);
+    r0 = (s.rhat___1027853 + s.vn1___1027811);
+    s.rhat___1027853 = (r0);
+    r0 = (s.rhat___1027853 > 32767);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 7; continue; }
@@ -20588,112 +20601,112 @@ switch (step) {
   case 9:
   case 10:
   case 11:
-    s.tmp_1 = JSBI_internalMultiplyAdd__P970164_mk(s);
+    s.tmp_1 = JSBI_internalMultiplyAdd__P1027897_mk(s);
     s.tmp_1.arg0 = s.arg1;
-    s.tmp_1.arg1 = s.qhat___970090;
+    s.tmp_1.arg1 = s.qhat___1027823;
     s.tmp_1.arg2 = 0;
-    s.tmp_1.arg3 = s.n2___970025;
-    s.tmp_1.arg4 = s.qhatv___970047;
-    s.callLocIdx = 161; s.pc = 41; return s.tmp_1;
+    s.tmp_1.arg3 = s.n2___1027758;
+    s.tmp_1.arg4 = s.qhatv___1027780;
+    s.callLocIdx = 167; s.pc = 41; return s.tmp_1;
   case 41:
     r0 = s.retval;
-    s.tmp_0 = JSBI_BigInt___inplaceSub__P969091_mk(s);
-    s.tmp_0.arg0 = s.u___970073;
-    s.tmp_0.arg1 = s.qhatv___970047;
-    s.tmp_0.arg2 = s.j___970085;
-    r0 = (s.n___970021 + 1);
+    s.tmp_0 = JSBI_BigInt___inplaceSub__P1026745_mk(s);
+    s.tmp_0.arg0 = s.u___1027806;
+    s.tmp_0.arg1 = s.qhatv___1027780;
+    s.tmp_0.arg2 = s.j___1027818;
+    r0 = (s.n___1027754 + 1);
     s.tmp_0.arg3 = r0;
-    s.callLocIdx = 162; s.pc = 42; return s.tmp_0;
+    s.callLocIdx = 168; s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
-    s.c___970169 = (r0);
-    r0 = (s.c___970169 !== 0);
+    s.c___1027902 = (r0);
+    r0 = (s.c___1027902 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 12; continue; }
-    s.tmp_1 = JSBI_BigInt___inplaceAdd__P969088_mk(s);
-    s.tmp_1.arg0 = s.u___970073;
+    s.tmp_1 = JSBI_BigInt___inplaceAdd__P1026742_mk(s);
+    s.tmp_1.arg0 = s.u___1027806;
     s.tmp_1.arg1 = s.arg1;
-    s.tmp_1.arg2 = s.j___970085;
-    s.tmp_1.arg3 = s.n___970021;
-    s.callLocIdx = 163; s.pc = 43; return s.tmp_1;
+    s.tmp_1.arg2 = s.j___1027818;
+    s.tmp_1.arg3 = s.n___1027754;
+    s.callLocIdx = 169; s.pc = 43; return s.tmp_1;
   case 43:
     r0 = s.retval;
-    s.c___970169 = (r0);
-    s.tmp_0 = JSBI_BigInt___setHalfDigit__P969093_mk(s);
-    s.tmp_0.arg0 = s.u___970073;
-    r0 = (s.j___970085 + s.n___970021);
+    s.c___1027902 = (r0);
+    s.tmp_0 = JSBI_BigInt___setHalfDigit__P1026747_mk(s);
+    s.tmp_0.arg0 = s.u___1027806;
+    r0 = (s.j___1027818 + s.n___1027754);
     s.tmp_0.arg1 = r0;
-    s.tmp_3 = JSBI_BigInt___halfDigit__P969085_mk(s);
-    s.tmp_3.arg0 = s.u___970073;
-    r0 = (s.j___970085 + s.n___970021);
+    s.tmp_3 = JSBI_BigInt___halfDigit__P1026739_mk(s);
+    s.tmp_3.arg0 = s.u___1027806;
+    r0 = (s.j___1027818 + s.n___1027754);
     s.tmp_3.arg1 = r0;
-    s.callLocIdx = 164; s.pc = 45; return s.tmp_3;
+    s.callLocIdx = 170; s.pc = 45; return s.tmp_3;
   case 45:
     r0 = s.retval;
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 + s.c___970169);
+    r0 = (s.tmp_2 + s.c___1027902);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 & 32767);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 165; s.pc = 44; return s.tmp_0;
+    s.callLocIdx = 171; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
-    r0 = (s.qhat___970090 - 1);
-    s.qhat___970090 = (r0);
+    r0 = (s.qhat___1027823 - 1);
+    s.qhat___1027823 = (r0);
   case 12:
   case 13:
     r0 = pxsim_numops_toBoolDecr(s.arg2);
     if (!r0) { step = 16; continue; }
-    r0 = (s.j___970085 & 1);
+    r0 = (s.j___1027818 & 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 14; continue; }
-    r0 = (s.qhat___970090 << 15);
-    s.halfDigitBuffer___970084 = (r0);
+    r0 = (s.qhat___1027823 << 15);
+    s.halfDigitBuffer___1027817 = (r0);
     { step = 15; continue; }
   case 14:
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.q___970034;
-    r0 = (s.j___970085 >>> 1);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.q___1027767;
+    r0 = (s.j___1027818 >>> 1);
     s.tmp_0.arg1 = r0;
-    r0 = (s.halfDigitBuffer___970084 | s.qhat___970090);
+    r0 = (s.halfDigitBuffer___1027817 | s.qhat___1027823);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 166; s.pc = 46; return s.tmp_0;
+    s.callLocIdx = 172; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
   case 15:
   case 16:
   case 17:
-    r0 = (s.j___970085 - 1);
-    s.j___970085 = (r0);
+    r0 = (s.j___1027818 - 1);
+    s.j___1027818 = (r0);
     { step = 5; continue; }
   case 18:
     r0 = pxsim_numops_toBoolDecr(s.arg3);
     if (!r0) { step = 21; continue; }
-    s.tmp_0 = JSBI_BigInt___inplaceRightShift__P969090_mk(s);
-    s.tmp_0.arg0 = s.u___970073;
-    s.tmp_0.arg1 = s.shift___970057;
-    s.callLocIdx = 167; s.pc = 47; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___inplaceRightShift__P1026744_mk(s);
+    s.tmp_0.arg0 = s.u___1027806;
+    s.tmp_0.arg1 = s.shift___1027790;
+    s.callLocIdx = 173; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     r0 = pxsim_numops_toBoolDecr(s.arg2);
     if (!r0) { step = 19; continue; }
     r0 = pxsim_pxtrt.mkMap();
     s.tmp_0 = r0;
-    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "quotient", s.q___970034);
-    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "remainder", s.u___970073);
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "quotient", s.q___1027767);
+    r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "remainder", s.u___1027806);
     r0 = s.tmp_0;
     { step = 25; continue; }
   case 19:
   case 20:
-    r0 = s.u___970073;
+    r0 = s.u___1027806;
     { step = 25; continue; }
   case 21:
   case 22:
     r0 = pxsim_numops_toBoolDecr(s.arg2);
     if (!r0) { step = 23; continue; }
-    r0 = s.q___970034;
+    r0 = s.q___1027767;
     { step = 25; continue; }
   case 23:
   case 24:
@@ -20703,12 +20716,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_absoluteDivLarge__P970016.info = {"start":12584,"length":2665,"line":319,"column":4,"endLine":383,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteDivLarge","argumentNames":["dividend","divisor","wantQuotient","wantRemainder"]}
+JSBI_absoluteDivLarge__P1027749.info = {"start":13316,"length":2661,"line":334,"column":4,"endLine":398,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteDivLarge","argumentNames":["dividend","divisor","wantQuotient","wantRemainder"]}
 
-function JSBI_absoluteDivLarge__P970016_mk(s) {
+function JSBI_absoluteDivLarge__P1027749_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_absoluteDivLarge__P970016, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteDivLarge__P1027749, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -20716,23 +20729,23 @@ function JSBI_absoluteDivLarge__P970016_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  n___970021: undefined,
-  n2___970025: undefined,
-  m___970028: undefined,
-  q___970034: undefined,
-  qhatv___970047: undefined,
-  shift___970057: undefined,
-  u___970073: undefined,
-  vn1___970078: undefined,
-  halfDigitBuffer___970084: undefined,
-  j___970085: undefined,
-  qhat___970090: undefined,
-  ujn___970091: undefined,
-  input___970101: undefined,
-  rhat___970120: undefined,
-  vn2___970126: undefined,
-  ujn2___970132: undefined,
-  c___970169: undefined,
+  n___1027754: undefined,
+  n2___1027758: undefined,
+  m___1027761: undefined,
+  q___1027767: undefined,
+  qhatv___1027780: undefined,
+  shift___1027790: undefined,
+  u___1027806: undefined,
+  vn1___1027811: undefined,
+  halfDigitBuffer___1027817: undefined,
+  j___1027818: undefined,
+  qhat___1027823: undefined,
+  ujn___1027824: undefined,
+  input___1027834: undefined,
+  rhat___1027853: undefined,
+  vn2___1027859: undefined,
+  ujn2___1027865: undefined,
+  c___1027902: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -20743,7 +20756,7 @@ function JSBI_absoluteDivLarge__P970016_mk(s) {
 
 
 
-function JSBI_BigInt___inplaceRightShift__P969090(s) {
+function JSBI_BigInt___inplaceRightShift__P1026744(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20753,17 +20766,17 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.carry___969402 = undefined;
-    s.last___969408 = undefined;
-    s.i___969411 = undefined;
-    s.d___969416 = undefined;
+    s.carry___1027056 = undefined;
+    s.last___1027062 = undefined;
+    s.i___1027065 = undefined;
+    s.d___1027070 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = (s.arg1 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -20776,51 +20789,51 @@ switch (step) {
     r0 = pxsim_Array__getAt(s.tmp_2, 0);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 >>> s.arg1);
-    s.carry___969402 = (r0);
+    s.carry___1027056 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
     r0 = pxsim_Array__length(s.tmp_1);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 - 1);
-    s.last___969408 = (r0);
-    s.i___969411 = (0);
+    s.last___1027062 = (r0);
+    s.i___1027065 = (0);
   case 3:
-    r0 = (s.i___969411 < s.last___969408);
+    r0 = (s.i___1027065 < s.last___1027062);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
     s.tmp_1 = r0 = s.arg0;
-    r0 = (s.i___969411 + 1);
+    r0 = (s.i___1027065 + 1);
     s.tmp_2 = r0;
     r0 = s.tmp_1.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__getAt(s.tmp_3, s.tmp_2);
-    s.d___969416 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.d___1027070 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.i___969411;
-    s.tmp_3 = r0 = s.d___969416;
+    s.tmp_0.arg1 = s.i___1027065;
+    s.tmp_3 = r0 = s.d___1027070;
     r0 = (30 - s.arg1);
     s.tmp_4 = r0;
     r0 = (s.tmp_3 << s.tmp_4);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 & 1073741823);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 | s.carry___969402);
+    r0 = (s.tmp_1 | s.carry___1027056);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 88; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
-    r0 = (s.d___969416 >>> s.arg1);
-    s.carry___969402 = (r0);
-    r0 = (s.i___969411 + 1);
-    s.i___969411 = (r0);
+    r0 = (s.d___1027070 >>> s.arg1);
+    s.carry___1027056 = (r0);
+    r0 = (s.i___1027065 + 1);
+    s.i___1027065 = (r0);
     { step = 3; continue; }
   case 4:
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.last___969408;
-    s.tmp_0.arg2 = s.carry___969402;
+    s.tmp_0.arg1 = s.last___1027062;
+    s.tmp_0.arg2 = s.carry___1027056;
     s.callLocIdx = 89; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
@@ -20829,22 +20842,22 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___inplaceRightShift__P969090.info = {"start":5749,"length":471,"line":154,"column":8,"endLine":164,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceRightShift","argumentNames":["this","shift"]}
+JSBI_BigInt___inplaceRightShift__P1026744.info = {"start":5749,"length":471,"line":154,"column":8,"endLine":164,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceRightShift","argumentNames":["this","shift"]}
 
-function JSBI_BigInt___inplaceRightShift__P969090_mk(s) {
+function JSBI_BigInt___inplaceRightShift__P1026744_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___inplaceRightShift__P969090, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___inplaceRightShift__P1026744, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
-  carry___969402: undefined,
-  last___969408: undefined,
-  i___969411: undefined,
-  d___969416: undefined,
+  carry___1027056: undefined,
+  last___1027062: undefined,
+  i___1027065: undefined,
+  d___1027070: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -20853,7 +20866,7 @@ function JSBI_BigInt___inplaceRightShift__P969090_mk(s) {
 
 
 
-function JSBI_BigInt___setDigit__P969092(s) {
+function JSBI_BigInt___setDigit__P1026746(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20870,7 +20883,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     s.tmp_1 = r0 = s.arg1;
@@ -20881,12 +20894,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___setDigit__P969092.info = {"start":9381,"length":99,"line":227,"column":8,"endLine":229,"endColumn":9,"fileName":"jsbi.ts","functionName":"__setDigit","argumentNames":["this","i","digit"]}
+JSBI_BigInt___setDigit__P1026746.info = {"start":9381,"length":99,"line":227,"column":8,"endLine":229,"endColumn":9,"fileName":"jsbi.ts","functionName":"__setDigit","argumentNames":["this","i","digit"]}
 
-function JSBI_BigInt___setDigit__P969092_mk(s) {
+function JSBI_BigInt___setDigit__P1026746_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___setDigit__P969092, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___setDigit__P1026746, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -20900,7 +20913,7 @@ function JSBI_BigInt___setDigit__P969092_mk(s) {
 
 
 
-function JSBI_BigInt___setHalfDigit__P969093(s) {
+function JSBI_BigInt___setHalfDigit__P1026747(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20910,9 +20923,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.digitIndex___969731 = undefined;
-    s.previous___969734 = undefined;
-    s.updated___969738 = undefined;
+    s.digitIndex___1027385 = undefined;
+    s.previous___1027388 = undefined;
+    s.updated___1027392 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -20920,25 +20933,25 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = (s.arg1 >>> 1);
-    s.digitIndex___969731 = (r0);
+    s.digitIndex___1027385 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.digitIndex___969731);
-    s.previous___969734 = (r0);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.digitIndex___1027385);
+    s.previous___1027388 = (r0);
     r0 = (s.arg1 & 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = (s.previous___969734 & 32767);
+    r0 = (s.previous___1027388 & 32767);
     s.tmp_1 = r0;
     r0 = (s.arg2 << 15);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 | s.tmp_2);
     { step = 2; continue; }
   case 1:
-    r0 = (s.previous___969734 & 1073709056);
+    r0 = (s.previous___1027388 & 1073709056);
     s.tmp_3 = r0;
     r0 = (s.arg2 & 32767);
     s.tmp_4 = r0;
@@ -20946,11 +20959,11 @@ switch (step) {
   case 2:
     // jmp value (already in r0)
     s.tmp_5 = r0;
-    s.updated___969738 = (s.tmp_5);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.updated___1027392 = (s.tmp_5);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.digitIndex___969731;
-    s.tmp_0.arg2 = s.updated___969738;
+    s.tmp_0.arg1 = s.digitIndex___1027385;
+    s.tmp_0.arg2 = s.updated___1027392;
     s.callLocIdx = 108; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
@@ -20958,12 +20971,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___setHalfDigit__P969093.info = {"start":9490,"length":346,"line":231,"column":8,"endLine":237,"endColumn":9,"fileName":"jsbi.ts","functionName":"__setHalfDigit","argumentNames":["this","i","value"]}
+JSBI_BigInt___setHalfDigit__P1026747.info = {"start":9490,"length":346,"line":231,"column":8,"endLine":237,"endColumn":9,"fileName":"jsbi.ts","functionName":"__setHalfDigit","argumentNames":["this","i","value"]}
 
-function JSBI_BigInt___setHalfDigit__P969093_mk(s) {
+function JSBI_BigInt___setHalfDigit__P1026747_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___setHalfDigit__P969093, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___setHalfDigit__P1026747, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -20971,9 +20984,9 @@ function JSBI_BigInt___setHalfDigit__P969093_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  digitIndex___969731: undefined,
-  previous___969734: undefined,
-  updated___969738: undefined,
+  digitIndex___1027385: undefined,
+  previous___1027388: undefined,
+  updated___1027392: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -20983,7 +20996,7 @@ function JSBI_BigInt___setHalfDigit__P969093_mk(s) {
 
 
 
-function JSBI_BigInt___inplaceAdd__P969088(s) {
+function JSBI_BigInt___inplaceAdd__P1026742(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -20993,9 +21006,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.carry___969262 = undefined;
-    s.i___969263 = undefined;
-    s.sum___969268 = undefined;
+    s.carry___1026916 = undefined;
+    s.i___1026917 = undefined;
+    s.sum___1026922 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -21004,58 +21017,58 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
-    s.carry___969262 = (0);
-    s.i___969263 = (0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    s.carry___1026916 = (0);
+    s.i___1026917 = (0);
   case 1:
-    r0 = (s.i___969263 < s.arg3);
+    r0 = (s.i___1026917 < s.arg3);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_3 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.tmp_3 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_3.arg0 = s.arg0;
-    r0 = (s.arg2 + s.i___969263);
+    r0 = (s.arg2 + s.i___1026917);
     s.tmp_3.arg1 = r0;
     s.callLocIdx = 78; s.pc = 3; return s.tmp_3;
   case 3:
     r0 = s.retval;
     s.tmp_2 = r0;
-    s.tmp_5 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.tmp_5 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_5.arg0 = s.arg1;
-    s.tmp_5.arg1 = s.i___969263;
+    s.tmp_5.arg1 = s.i___1026917;
     s.callLocIdx = 79; s.pc = 4; return s.tmp_5;
   case 4:
     r0 = s.retval;
     s.tmp_4 = r0;
     r0 = (s.tmp_2 + s.tmp_4);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 + s.carry___969262);
-    s.sum___969268 = (r0);
-    r0 = (s.sum___969268 >>> 15);
-    s.carry___969262 = (r0);
-    s.tmp_0 = JSBI_BigInt___setHalfDigit__P969093_mk(s);
+    r0 = (s.tmp_1 + s.carry___1026916);
+    s.sum___1026922 = (r0);
+    r0 = (s.sum___1026922 >>> 15);
+    s.carry___1026916 = (r0);
+    s.tmp_0 = JSBI_BigInt___setHalfDigit__P1026747_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    r0 = (s.arg2 + s.i___969263);
+    r0 = (s.arg2 + s.i___1026917);
     s.tmp_0.arg1 = r0;
-    r0 = (s.sum___969268 & 32767);
+    r0 = (s.sum___1026922 & 32767);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 80; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
-    r0 = (s.i___969263 + 1);
-    s.i___969263 = (r0);
+    r0 = (s.i___1026917 + 1);
+    s.i___1026917 = (r0);
     { step = 1; continue; }
   case 2:
-    r0 = s.carry___969262;
+    r0 = s.carry___1026916;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___inplaceAdd__P969088.info = {"start":3988,"length":464,"line":115,"column":8,"endLine":125,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceAdd","argumentNames":["this","summand","startIndex","halfDigits"]}
+JSBI_BigInt___inplaceAdd__P1026742.info = {"start":3988,"length":464,"line":115,"column":8,"endLine":125,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceAdd","argumentNames":["this","summand","startIndex","halfDigits"]}
 
-function JSBI_BigInt___inplaceAdd__P969088_mk(s) {
+function JSBI_BigInt___inplaceAdd__P1026742_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___inplaceAdd__P969088, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___inplaceAdd__P1026742, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -21063,9 +21076,9 @@ function JSBI_BigInt___inplaceAdd__P969088_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  carry___969262: undefined,
-  i___969263: undefined,
-  sum___969268: undefined,
+  carry___1026916: undefined,
+  i___1026917: undefined,
+  sum___1026922: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -21076,7 +21089,7 @@ function JSBI_BigInt___inplaceAdd__P969088_mk(s) {
 
 
 
-function JSBI_BigInt___inplaceSub__P969091(s) {
+function JSBI_BigInt___inplaceSub__P1026745(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21086,25 +21099,25 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.fullSteps___969447 = undefined;
-    s.borrow___969452 = undefined;
-    s.current___969458 = undefined;
-    s.r0___969461 = undefined;
-    s.i___969464 = undefined;
-    s.sub___969469 = undefined;
-    s.r15___969474 = undefined;
-    s.sub___969523 = undefined;
-    s.r15___969528 = undefined;
-    s.subTop___969554 = undefined;
-    s.i___969602 = undefined;
-    s.current___969609 = undefined;
-    s.sub___969615 = undefined;
-    s.r0___969620 = undefined;
-    s.r15___969634 = undefined;
-    s.current___969662 = undefined;
-    s.sub___969668 = undefined;
-    s.r0___969673 = undefined;
-    s.r15___969687 = undefined;
+    s.fullSteps___1027101 = undefined;
+    s.borrow___1027106 = undefined;
+    s.current___1027112 = undefined;
+    s.r0___1027115 = undefined;
+    s.i___1027118 = undefined;
+    s.sub___1027123 = undefined;
+    s.r15___1027128 = undefined;
+    s.sub___1027177 = undefined;
+    s.r15___1027182 = undefined;
+    s.subTop___1027208 = undefined;
+    s.i___1027256 = undefined;
+    s.current___1027263 = undefined;
+    s.sub___1027269 = undefined;
+    s.r0___1027274 = undefined;
+    s.r15___1027288 = undefined;
+    s.current___1027316 = undefined;
+    s.sub___1027322 = undefined;
+    s.r0___1027327 = undefined;
+    s.r15___1027341 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -21113,12 +21126,12 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = (s.arg3 - 1);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 >>> 1);
-    s.fullSteps___969447 = (r0);
-    s.borrow___969452 = (0);
+    s.fullSteps___1027101 = (r0);
+    s.borrow___1027106 = (0);
     r0 = (s.arg2 & 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -21128,40 +21141,40 @@ switch (step) {
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__getAt(s.tmp_0, s.arg2);
-    s.current___969458 = (r0);
-    r0 = (s.current___969458 & 32767);
-    s.r0___969461 = (r0);
-    s.i___969464 = (0);
+    s.current___1027112 = (r0);
+    r0 = (s.current___1027112 & 32767);
+    s.r0___1027115 = (r0);
+    s.i___1027118 = (0);
   case 1:
-    r0 = (s.i___969464 < s.fullSteps___969447);
+    r0 = (s.i___1027118 < s.fullSteps___1027101);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
     r0 = s.arg1.fields["data"];
     s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_1, s.i___969464);
-    s.sub___969469 = (r0);
-    r0 = (s.current___969458 >>> 15);
+    r0 = pxsim_Array__getAt(s.tmp_1, s.i___1027118);
+    s.sub___1027123 = (r0);
+    r0 = (s.current___1027112 >>> 15);
     s.tmp_1 = r0;
-    r0 = (s.sub___969469 & 32767);
+    r0 = (s.sub___1027123 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r15___969474 = (r0);
-    r0 = (s.r15___969474 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r15___1027128 = (r0);
+    r0 = (s.r15___1027128 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.borrow___1027106 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    r0 = (s.arg2 + s.i___969464);
+    r0 = (s.arg2 + s.i___1027118);
     s.tmp_0.arg1 = r0;
-    r0 = (s.r15___969474 & 32767);
+    r0 = (s.r15___1027128 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 << 15);
     s.tmp_1 = r0;
-    r0 = (s.r0___969461 & 32767);
+    r0 = (s.r0___1027115 & 32767);
     s.tmp_3 = r0;
     r0 = (s.tmp_1 | s.tmp_3);
     s.tmp_0.arg2 = r0;
@@ -21169,64 +21182,64 @@ switch (step) {
   case 13:
     r0 = s.retval;
     s.tmp_0 = r0 = s.arg0;
-    r0 = (s.arg2 + s.i___969464);
+    r0 = (s.arg2 + s.i___1027118);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 + 1);
     s.tmp_1 = r0;
     r0 = s.tmp_0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__getAt(s.tmp_3, s.tmp_1);
-    s.current___969458 = (r0);
-    r0 = (s.current___969458 & 32767);
+    s.current___1027112 = (r0);
+    r0 = (s.current___1027112 & 32767);
     s.tmp_1 = r0;
-    r0 = (s.sub___969469 >>> 15);
+    r0 = (s.sub___1027123 >>> 15);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r0___969461 = (r0);
-    r0 = (s.r0___969461 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r0___1027115 = (r0);
+    r0 = (s.r0___1027115 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    r0 = (s.i___969464 + 1);
-    s.i___969464 = (r0);
+    s.borrow___1027106 = (r0);
+    r0 = (s.i___1027118 + 1);
+    s.i___1027118 = (r0);
     { step = 1; continue; }
   case 2:
     r0 = s.arg1.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.i___969464);
-    s.sub___969523 = (r0);
-    r0 = (s.current___969458 >>> 15);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.i___1027118);
+    s.sub___1027177 = (r0);
+    r0 = (s.current___1027112 >>> 15);
     s.tmp_1 = r0;
-    r0 = (s.sub___969523 & 32767);
+    r0 = (s.sub___1027177 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r15___969528 = (r0);
-    r0 = (s.r15___969528 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r15___1027182 = (r0);
+    r0 = (s.r15___1027182 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.borrow___1027106 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    r0 = (s.arg2 + s.i___969464);
+    r0 = (s.arg2 + s.i___1027118);
     s.tmp_0.arg1 = r0;
-    r0 = (s.r15___969528 & 32767);
+    r0 = (s.r15___1027182 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 << 15);
     s.tmp_1 = r0;
-    r0 = (s.r0___969461 & 32767);
+    r0 = (s.r0___1027115 & 32767);
     s.tmp_3 = r0;
     r0 = (s.tmp_1 | s.tmp_3);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 95; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
-    r0 = (s.sub___969523 >>> 15);
-    s.subTop___969554 = (r0);
-    r0 = (s.arg2 + s.i___969464);
+    r0 = (s.sub___1027177 >>> 15);
+    s.subTop___1027208 = (r0);
+    r0 = (s.arg2 + s.i___1027118);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 + 1);
     s.tmp_1 = r0;
@@ -21248,25 +21261,25 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_5);
     if (!r0) { step = 5; continue; }
     s.tmp_7 = r0 = s.arg0;
-    r0 = (s.arg2 + s.i___969464);
+    r0 = (s.arg2 + s.i___1027118);
     s.tmp_9 = r0;
     r0 = (s.tmp_9 + 1);
     s.tmp_8 = r0;
     r0 = s.tmp_7.fields["data"];
     s.tmp_10 = r0;
     r0 = pxsim_Array__getAt(s.tmp_10, s.tmp_8);
-    s.current___969458 = (r0);
-    r0 = (s.current___969458 & 32767);
+    s.current___1027112 = (r0);
+    r0 = (s.current___1027112 & 32767);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 - s.subTop___969554);
+    r0 = (s.tmp_1 - s.subTop___1027208);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r0___969461 = (r0);
-    r0 = (s.r0___969461 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r0___1027115 = (r0);
+    r0 = (s.r0___1027115 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.borrow___1027106 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_1 = r0 = s.arg2;
     r0 = s.arg1.fields["data"];
@@ -21275,9 +21288,9 @@ switch (step) {
     s.tmp_2 = r0;
     r0 = (s.tmp_1 + s.tmp_2);
     s.tmp_0.arg1 = r0;
-    r0 = (s.current___969458 & 1073709056);
+    r0 = (s.current___1027112 & 1073709056);
     s.tmp_4 = r0;
-    r0 = (s.r0___969461 & 32767);
+    r0 = (s.r0___1027115 & 32767);
     s.tmp_5 = r0;
     r0 = (s.tmp_4 | s.tmp_5);
     s.tmp_0.arg2 = r0;
@@ -21290,9 +21303,9 @@ switch (step) {
   case 7:
     r0 = (s.arg2 >> 1);
     s.arg2 = (r0);
-    s.i___969602 = (0);
+    s.i___1027256 = (0);
   case 8:
-    s.tmp_1 = r0 = s.i___969602;
+    s.tmp_1 = r0 = s.i___1027256;
     r0 = s.arg1.fields["data"];
     s.tmp_4 = r0;
     r0 = pxsim_Array__length(s.tmp_4);
@@ -21304,112 +21317,112 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 9; continue; }
     s.tmp_5 = r0 = s.arg0;
-    r0 = (s.arg2 + s.i___969602);
+    r0 = (s.arg2 + s.i___1027256);
     s.tmp_6 = r0;
     r0 = s.tmp_5.fields["data"];
     s.tmp_7 = r0;
     r0 = pxsim_Array__getAt(s.tmp_7, s.tmp_6);
-    s.current___969609 = (r0);
+    s.current___1027263 = (r0);
     r0 = s.arg1.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.i___969602);
-    s.sub___969615 = (r0);
-    r0 = (s.current___969609 & 32767);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.i___1027256);
+    s.sub___1027269 = (r0);
+    r0 = (s.current___1027263 & 32767);
     s.tmp_1 = r0;
-    r0 = (s.sub___969615 & 32767);
+    r0 = (s.sub___1027269 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r0___969620 = (r0);
-    r0 = (s.r0___969620 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r0___1027274 = (r0);
+    r0 = (s.r0___1027274 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    r0 = (s.current___969609 >>> 15);
+    s.borrow___1027106 = (r0);
+    r0 = (s.current___1027263 >>> 15);
     s.tmp_1 = r0;
-    r0 = (s.sub___969615 >>> 15);
+    r0 = (s.sub___1027269 >>> 15);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r15___969634 = (r0);
-    r0 = (s.r15___969634 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r15___1027288 = (r0);
+    r0 = (s.r15___1027288 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.borrow___1027106 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    r0 = (s.arg2 + s.i___969602);
+    r0 = (s.arg2 + s.i___1027256);
     s.tmp_0.arg1 = r0;
-    r0 = (s.r15___969634 & 32767);
+    r0 = (s.r15___1027288 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 << 15);
     s.tmp_1 = r0;
-    r0 = (s.r0___969620 & 32767);
+    r0 = (s.r0___1027274 & 32767);
     s.tmp_3 = r0;
     r0 = (s.tmp_1 | s.tmp_3);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 103; s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
-    r0 = (s.i___969602 + 1);
-    s.i___969602 = (r0);
+    r0 = (s.i___1027256 + 1);
+    s.i___1027256 = (r0);
     { step = 8; continue; }
   case 9:
     s.tmp_0 = r0 = s.arg0;
-    r0 = (s.arg2 + s.i___969602);
+    r0 = (s.arg2 + s.i___1027256);
     s.tmp_1 = r0;
     r0 = s.tmp_0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__getAt(s.tmp_2, s.tmp_1);
-    s.current___969662 = (r0);
+    s.current___1027316 = (r0);
     r0 = s.arg1.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.i___969602);
-    s.sub___969668 = (r0);
-    r0 = (s.current___969662 & 32767);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.i___1027256);
+    s.sub___1027322 = (r0);
+    r0 = (s.current___1027316 & 32767);
     s.tmp_1 = r0;
-    r0 = (s.sub___969668 & 32767);
+    r0 = (s.sub___1027322 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.borrow___969452);
-    s.r0___969673 = (r0);
-    r0 = (s.r0___969673 >>> 15);
+    r0 = (s.tmp_0 - s.borrow___1027106);
+    s.r0___1027327 = (r0);
+    r0 = (s.r0___1027327 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
-    s.r15___969687 = (0);
+    s.borrow___1027106 = (r0);
+    s.r15___1027341 = (0);
     r0 = (s.arg3 & 1);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 10; continue; }
-    r0 = (s.current___969662 >>> 15);
+    r0 = (s.current___1027316 >>> 15);
     s.tmp_3 = r0;
-    r0 = (s.sub___969668 >>> 15);
+    r0 = (s.sub___1027322 >>> 15);
     s.tmp_4 = r0;
     r0 = (s.tmp_3 - s.tmp_4);
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 - s.borrow___969452);
-    s.r15___969687 = (r0);
-    r0 = (s.r15___969687 >>> 15);
+    r0 = (s.tmp_2 - s.borrow___1027106);
+    s.r15___1027341 = (r0);
+    r0 = (s.r15___1027341 >>> 15);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___969452 = (r0);
+    s.borrow___1027106 = (r0);
   case 10:
   case 11:
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    r0 = (s.arg2 + s.i___969602);
+    r0 = (s.arg2 + s.i___1027256);
     s.tmp_0.arg1 = r0;
-    r0 = (s.r15___969687 & 32767);
+    r0 = (s.r15___1027341 & 32767);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 << 15);
     s.tmp_1 = r0;
-    r0 = (s.r0___969673 & 32767);
+    r0 = (s.r0___1027327 & 32767);
     s.tmp_3 = r0;
     r0 = (s.tmp_1 | s.tmp_3);
     s.tmp_0.arg2 = r0;
@@ -21417,16 +21430,16 @@ switch (step) {
   case 17:
     r0 = s.retval;
   case 12:
-    r0 = s.borrow___969452;
+    r0 = s.borrow___1027106;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___inplaceSub__P969091.info = {"start":6230,"length":3141,"line":166,"column":8,"endLine":225,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceSub","argumentNames":["this","subtrahend","startIndex","halfDigits"]}
+JSBI_BigInt___inplaceSub__P1026745.info = {"start":6230,"length":3141,"line":166,"column":8,"endLine":225,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceSub","argumentNames":["this","subtrahend","startIndex","halfDigits"]}
 
-function JSBI_BigInt___inplaceSub__P969091_mk(s) {
+function JSBI_BigInt___inplaceSub__P1026745_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___inplaceSub__P969091, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___inplaceSub__P1026745, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -21439,25 +21452,25 @@ function JSBI_BigInt___inplaceSub__P969091_mk(s) {
   tmp_8: undefined,
   tmp_9: undefined,
   tmp_10: undefined,
-  fullSteps___969447: undefined,
-  borrow___969452: undefined,
-  current___969458: undefined,
-  r0___969461: undefined,
-  i___969464: undefined,
-  sub___969469: undefined,
-  r15___969474: undefined,
-  sub___969523: undefined,
-  r15___969528: undefined,
-  subTop___969554: undefined,
-  i___969602: undefined,
-  current___969609: undefined,
-  sub___969615: undefined,
-  r0___969620: undefined,
-  r15___969634: undefined,
-  current___969662: undefined,
-  sub___969668: undefined,
-  r0___969673: undefined,
-  r15___969687: undefined,
+  fullSteps___1027101: undefined,
+  borrow___1027106: undefined,
+  current___1027112: undefined,
+  r0___1027115: undefined,
+  i___1027118: undefined,
+  sub___1027123: undefined,
+  r15___1027128: undefined,
+  sub___1027177: undefined,
+  r15___1027182: undefined,
+  subTop___1027208: undefined,
+  i___1027256: undefined,
+  current___1027263: undefined,
+  sub___1027269: undefined,
+  r0___1027274: undefined,
+  r15___1027288: undefined,
+  current___1027316: undefined,
+  sub___1027322: undefined,
+  r0___1027327: undefined,
+  r15___1027341: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -21468,7 +21481,7 @@ function JSBI_BigInt___inplaceSub__P969091_mk(s) {
 
 
 
-function JSBI_internalMultiplyAdd__P970164(s) {
+function JSBI_internalMultiplyAdd__P1027897(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21478,13 +21491,13 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.carry___971829 = undefined;
-    s.high___971831 = undefined;
-    s.i___971832 = undefined;
-    s.digit___971837 = undefined;
-    s.rx___971842 = undefined;
-    s.ry___971848 = undefined;
-    s.r___971854 = undefined;
+    s.carry___1029615 = undefined;
+    s.high___1029617 = undefined;
+    s.i___1029618 = undefined;
+    s.digit___1029623 = undefined;
+    s.rx___1029628 = undefined;
+    s.ry___1029634 = undefined;
+    s.r___1029640 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -21493,51 +21506,51 @@ switch (step) {
       s.arg4 = (s.lambdaArgs[4]);
       s.lambdaArgs = null;
     }
-    s.carry___971829 = (s.arg2);
-    s.high___971831 = (0);
-    s.i___971832 = (0);
+    s.carry___1029615 = (s.arg2);
+    s.high___1029617 = (0);
+    s.i___1029618 = (0);
   case 1:
-    r0 = (s.i___971832 < s.arg3);
+    r0 = (s.i___1029618 < s.arg3);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_1, s.i___971832);
-    s.digit___971837 = (r0);
-    r0 = (s.digit___971837 & 32767);
+    r0 = pxsim_Array__getAt(s.tmp_1, s.i___1029618);
+    s.digit___1029623 = (r0);
+    r0 = (s.digit___1029623 & 32767);
     s.tmp_0 = r0;
     r0 = pxsim.Math_.imul(s.tmp_0, s.arg1);
-    s.rx___971842 = (r0);
-    r0 = (s.digit___971837 >>> 15);
+    s.rx___1029628 = (r0);
+    r0 = (s.digit___1029623 >>> 15);
     s.tmp_0 = r0;
     r0 = pxsim.Math_.imul(s.tmp_0, s.arg1);
-    s.ry___971848 = (r0);
-    s.tmp_2 = r0 = s.rx___971842;
-    r0 = (s.ry___971848 & 32767);
+    s.ry___1029634 = (r0);
+    s.tmp_2 = r0 = s.rx___1029628;
+    r0 = (s.ry___1029634 & 32767);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 << 15);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 + s.tmp_3);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 + s.high___971831);
+    r0 = (s.tmp_1 + s.high___1029617);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 + s.carry___971829);
-    s.r___971854 = (r0);
-    r0 = (s.r___971854 >>> 30);
-    s.carry___971829 = (r0);
-    r0 = (s.ry___971848 >>> 15);
-    s.high___971831 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    r0 = (s.tmp_0 + s.carry___1029615);
+    s.r___1029640 = (r0);
+    r0 = (s.r___1029640 >>> 30);
+    s.carry___1029615 = (r0);
+    r0 = (s.ry___1029634 >>> 15);
+    s.high___1029617 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg4;
-    s.tmp_0.arg1 = s.i___971832;
-    r0 = (s.r___971854 & 1073741823);
+    s.tmp_0.arg1 = s.i___1029618;
+    r0 = (s.r___1029640 & 1073741823);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 273; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 288; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    r0 = (s.i___971832 + 1);
-    s.i___971832 = (r0);
+    r0 = (s.i___1029618 + 1);
+    s.i___1029618 = (r0);
     { step = 1; continue; }
   case 2:
     r0 = s.arg4.fields["data"];
@@ -21551,12 +21564,12 @@ switch (step) {
     s.tmp_3 = r0 = s.arg3;
     r0 = (s.tmp_3 + 1);
     s.arg3 = (r0);
-    s.tmp_4 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.tmp_4 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_4.arg0 = s.arg4;
     s.tmp_4.arg1 = s.tmp_3;
-    r0 = (s.carry___971829 + s.high___971831);
+    r0 = (s.carry___1029615 + s.high___1029617);
     s.tmp_4.arg2 = r0;
-    s.callLocIdx = 275; s.pc = 10; return s.tmp_4;
+    s.callLocIdx = 290; s.pc = 10; return s.tmp_4;
   case 10:
     r0 = s.retval;
   case 3:
@@ -21572,18 +21585,18 @@ switch (step) {
     s.tmp_4 = r0 = s.arg3;
     r0 = (s.tmp_4 + 1);
     s.arg3 = (r0);
-    s.tmp_5 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.tmp_5 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_5.arg0 = s.arg4;
     s.tmp_5.arg1 = s.tmp_4;
     s.tmp_5.arg2 = 0;
-    s.callLocIdx = 277; s.pc = 11; return s.tmp_5;
+    s.callLocIdx = 292; s.pc = 11; return s.tmp_5;
   case 11:
     r0 = s.retval;
     { step = 3; continue; }
   case 4:
     { step = 8; continue; }
   case 5:
-    r0 = (s.carry___971829 + s.high___971831);
+    r0 = (s.carry___1029615 + s.high___1029617);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 0);
     s.tmp_0 = r0;
@@ -21597,12 +21610,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_internalMultiplyAdd__P970164.info = {"start":39823,"length":888,"line":975,"column":4,"endLine":996,"endColumn":5,"fileName":"jsbi.ts","functionName":"internalMultiplyAdd","argumentNames":["source","factor","summand","n","result"]}
+JSBI_internalMultiplyAdd__P1027897.info = {"start":41253,"length":888,"line":1008,"column":4,"endLine":1029,"endColumn":5,"fileName":"jsbi.ts","functionName":"internalMultiplyAdd","argumentNames":["source","factor","summand","n","result"]}
 
-function JSBI_internalMultiplyAdd__P970164_mk(s) {
+function JSBI_internalMultiplyAdd__P1027897_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_internalMultiplyAdd__P970164, depth: s.depth + 1,
+        parent: s, fn: JSBI_internalMultiplyAdd__P1027897, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -21610,13 +21623,13 @@ function JSBI_internalMultiplyAdd__P970164_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  carry___971829: undefined,
-  high___971831: undefined,
-  i___971832: undefined,
-  digit___971837: undefined,
-  rx___971842: undefined,
-  ry___971848: undefined,
-  r___971854: undefined,
+  carry___1029615: undefined,
+  high___1029617: undefined,
+  i___1029618: undefined,
+  digit___1029623: undefined,
+  rx___1029628: undefined,
+  ry___1029634: undefined,
+  r___1029640: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -21628,7 +21641,7 @@ function JSBI_internalMultiplyAdd__P970164_mk(s) {
 
 
 
-function JSBI_specialLeftShift__P970070(s) {
+function JSBI_specialLeftShift__P1027803(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21638,13 +21651,13 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.n___972209 = undefined;
-    s.resultLength___972212 = undefined;
-    s.result___972216 = undefined;
-    s.i___972222 = undefined;
-    s.carry___972241 = undefined;
-    s.i___972242 = undefined;
-    s.d___972247 = undefined;
+    s.n___1029995 = undefined;
+    s.resultLength___1029998 = undefined;
+    s.result___1030002 = undefined;
+    s.i___1030008 = undefined;
+    s.carry___1030027 = undefined;
+    s.i___1030028 = undefined;
+    s.d___1030033 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -21654,127 +21667,127 @@ switch (step) {
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    s.n___972209 = (r0);
-    r0 = (s.n___972209 + s.arg2);
-    s.resultLength___972212 = (r0);
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    s.n___1029995 = (r0);
+    r0 = (s.n___1029995 + s.arg2);
+    s.resultLength___1029998 = (r0);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.resultLength___972212;
+    s.tmp_1.arg1 = s.resultLength___1029998;
     s.tmp_1.arg2 = false;
-    s.callLocIdx = 309; s.pc = 12; return s.tmp_1;
+    s.callLocIdx = 324; s.pc = 12; return s.tmp_1;
   case 12:
     r0 = s.retval;
-    s.result___972216 = (s.tmp_0);
+    s.result___1030002 = (s.tmp_0);
     r0 = (s.arg1 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    s.i___972222 = (0);
+    s.i___1030008 = (0);
   case 1:
-    r0 = (s.i___972222 < s.n___972209);
+    r0 = (s.i___1030008 < s.n___1029995);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_1 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_1.arg0 = s.result___972216;
-    s.tmp_1.arg1 = s.i___972222;
+    s.tmp_1 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_1.arg0 = s.result___1030002;
+    s.tmp_1.arg1 = s.i___1030008;
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_2, s.i___972222);
+    r0 = pxsim_Array__getAt(s.tmp_2, s.i___1030008);
     s.tmp_1.arg2 = r0;
-    s.callLocIdx = 311; s.pc = 13; return s.tmp_1;
+    s.callLocIdx = 326; s.pc = 13; return s.tmp_1;
   case 13:
     r0 = s.retval;
-    r0 = (s.i___972222 + 1);
-    s.i___972222 = (r0);
+    r0 = (s.i___1030008 + 1);
+    s.i___1030008 = (r0);
     { step = 1; continue; }
   case 2:
     r0 = (s.arg2 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_1 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_1.arg0 = s.result___972216;
-    s.tmp_1.arg1 = s.n___972209;
+    s.tmp_1 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_1.arg0 = s.result___1030002;
+    s.tmp_1.arg1 = s.n___1029995;
     s.tmp_1.arg2 = 0;
-    s.callLocIdx = 312; s.pc = 14; return s.tmp_1;
+    s.callLocIdx = 327; s.pc = 14; return s.tmp_1;
   case 14:
     r0 = s.retval;
   case 3:
   case 4:
-    r0 = s.result___972216;
+    r0 = s.result___1030002;
     { step = 11; continue; }
   case 5:
   case 6:
-    s.carry___972241 = (0);
-    s.i___972242 = (0);
+    s.carry___1030027 = (0);
+    s.i___1030028 = (0);
   case 7:
-    r0 = (s.i___972242 < s.n___972209);
+    r0 = (s.i___1030028 < s.n___1029995);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_1, s.i___972242);
-    s.d___972247 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___972216;
-    s.tmp_0.arg1 = s.i___972242;
-    r0 = (s.d___972247 << s.arg1);
+    r0 = pxsim_Array__getAt(s.tmp_1, s.i___1030028);
+    s.d___1030033 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1030002;
+    s.tmp_0.arg1 = s.i___1030028;
+    r0 = (s.d___1030033 << s.arg1);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 & 1073741823);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 | s.carry___972241);
+    r0 = (s.tmp_1 | s.carry___1030027);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 314; s.pc = 15; return s.tmp_0;
+    s.callLocIdx = 329; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
-    s.tmp_0 = r0 = s.d___972247;
+    s.tmp_0 = r0 = s.d___1030033;
     r0 = (30 - s.arg1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 >>> s.tmp_1);
-    s.carry___972241 = (r0);
-    r0 = (s.i___972242 + 1);
-    s.i___972242 = (r0);
+    s.carry___1030027 = (r0);
+    r0 = (s.i___1030028 + 1);
+    s.i___1030028 = (r0);
     { step = 7; continue; }
   case 8:
     r0 = (s.arg2 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 9; continue; }
-    s.tmp_1 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_1.arg0 = s.result___972216;
-    s.tmp_1.arg1 = s.n___972209;
-    s.tmp_1.arg2 = s.carry___972241;
-    s.callLocIdx = 315; s.pc = 16; return s.tmp_1;
+    s.tmp_1 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_1.arg0 = s.result___1030002;
+    s.tmp_1.arg1 = s.n___1029995;
+    s.tmp_1.arg2 = s.carry___1030027;
+    s.callLocIdx = 330; s.pc = 16; return s.tmp_1;
   case 16:
     r0 = s.retval;
   case 9:
   case 10:
-    r0 = s.result___972216;
+    r0 = s.result___1030002;
   case 11:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_specialLeftShift__P970070.info = {"start":44172,"length":762,"line":1092,"column":4,"endLine":1111,"endColumn":5,"fileName":"jsbi.ts","functionName":"specialLeftShift","argumentNames":["x","shift","addDigit"]}
+JSBI_specialLeftShift__P1027803.info = {"start":45602,"length":762,"line":1125,"column":4,"endLine":1144,"endColumn":5,"fileName":"jsbi.ts","functionName":"specialLeftShift","argumentNames":["x","shift","addDigit"]}
 
-function JSBI_specialLeftShift__P970070_mk(s) {
+function JSBI_specialLeftShift__P1027803_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_specialLeftShift__P970070, depth: s.depth + 1,
+        parent: s, fn: JSBI_specialLeftShift__P1027803, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
-  n___972209: undefined,
-  resultLength___972212: undefined,
-  result___972216: undefined,
-  i___972222: undefined,
-  carry___972241: undefined,
-  i___972242: undefined,
-  d___972247: undefined,
+  n___1029995: undefined,
+  resultLength___1029998: undefined,
+  result___1030002: undefined,
+  i___1030008: undefined,
+  carry___1030027: undefined,
+  i___1030028: undefined,
+  d___1030033: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -21784,7 +21797,7 @@ function JSBI_specialLeftShift__P970070_mk(s) {
 
 
 
-function JSBI_BigInt___halfDigit__P969085(s) {
+function JSBI_BigInt___halfDigit__P1026739(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21800,7 +21813,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
     r0 = (s.arg1 >>> 1);
@@ -21817,12 +21830,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___halfDigit__P969085.info = {"start":3449,"length":117,"line":98,"column":8,"endLine":100,"endColumn":9,"fileName":"jsbi.ts","functionName":"__halfDigit","argumentNames":["this","i"]}
+JSBI_BigInt___halfDigit__P1026739.info = {"start":3449,"length":117,"line":98,"column":8,"endLine":100,"endColumn":9,"fileName":"jsbi.ts","functionName":"__halfDigit","argumentNames":["this","i"]}
 
-function JSBI_BigInt___halfDigit__P969085_mk(s) {
+function JSBI_BigInt___halfDigit__P1026739_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___halfDigit__P969085, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___halfDigit__P1026739, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -21838,7 +21851,7 @@ function JSBI_BigInt___halfDigit__P969085_mk(s) {
 
 
 
-function JSBI_clz15__P970063(s) {
+function JSBI_clz15__P1027796(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21852,9 +21865,9 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    s.tmp_1 = JSBI_clz30__P969184_mk(s);
+    s.tmp_1 = JSBI_clz30__P1026838_mk(s);
     s.tmp_1.arg0 = s.arg0;
-    s.callLocIdx = 187; s.pc = 1; return s.tmp_1;
+    s.callLocIdx = 193; s.pc = 1; return s.tmp_1;
   case 1:
     r0 = s.retval;
     s.tmp_0 = r0;
@@ -21862,12 +21875,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_clz15__P970063.info = {"start":16940,"length":78,"line":436,"column":4,"endLine":438,"endColumn":5,"fileName":"jsbi.ts","functionName":"clz15","argumentNames":["value"]}
+JSBI_clz15__P1027796.info = {"start":17668,"length":78,"line":451,"column":4,"endLine":453,"endColumn":5,"fileName":"jsbi.ts","functionName":"clz15","argumentNames":["value"]}
 
-function JSBI_clz15__P970063_mk(s) {
+function JSBI_clz15__P1027796_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_clz15__P970063, depth: s.depth + 1,
+        parent: s, fn: JSBI_clz15__P1027796, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -21878,7 +21891,7 @@ function JSBI_clz15__P970063_mk(s) {
 
 
 
-function JSBI_BigInt___initializeDigits__P969087(s) {
+function JSBI_BigInt___initializeDigits__P1026741(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21888,16 +21901,16 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.i___969247 = undefined;
+    s.i___1026901 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
-    s.i___969247 = (0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    s.i___1026901 = (0);
   case 1:
-    s.tmp_1 = r0 = s.i___969247;
+    s.tmp_1 = r0 = s.i___1026901;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -21908,28 +21921,28 @@ switch (step) {
     if (!r0) { step = 2; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_4 = r0;
-    r0 = pxsim_Array_.setAt(s.tmp_4, s.i___969247, 0);
-    r0 = (s.i___969247 + 1);
-    s.i___969247 = (r0);
+    r0 = pxsim_Array_.setAt(s.tmp_4, s.i___1026901, 0);
+    r0 = (s.i___1026901 + 1);
+    s.i___1026901 = (r0);
     { step = 1; continue; }
   case 2:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___initializeDigits__P969087.info = {"start":3776,"length":145,"line":108,"column":8,"endLine":112,"endColumn":9,"fileName":"jsbi.ts","functionName":"__initializeDigits","argumentNames":["this"]}
+JSBI_BigInt___initializeDigits__P1026741.info = {"start":3776,"length":145,"line":108,"column":8,"endLine":112,"endColumn":9,"fileName":"jsbi.ts","functionName":"__initializeDigits","argumentNames":["this"]}
 
-function JSBI_BigInt___initializeDigits__P969087_mk(s) {
+function JSBI_BigInt___initializeDigits__P1026741_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___initializeDigits__P969087, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___initializeDigits__P1026741, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
-  i___969247: undefined,
+  i___1026901: undefined,
   arg0: undefined,
 } }
 
@@ -21937,7 +21950,7 @@ function JSBI_BigInt___initializeDigits__P969087_mk(s) {
 
 
 
-function JSBI_BigInt_constructor__P969096(s) {
+function JSBI_BigInt_constructor__P1026750(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -21947,7 +21960,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.i___969104 = undefined;
+    s.i___1026758 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -21955,39 +21968,39 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = (s.arg0).fields["sign"] = (s.arg2);
     s.tmp_0 = r0 = s.arg0;
     r0 = pxsim_Array__mk();
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["data"] = (s.tmp_1);
-    s.i___969104 = (0);
+    s.i___1026758 = (0);
   case 1:
-    r0 = (s.i___969104 < s.arg1);
+    r0 = (s.i___1026758 < s.arg1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
     r0 = pxsim_Array__push(s.tmp_1, 0);
-    r0 = (s.i___969104 + 1);
-    s.i___969104 = (r0);
+    r0 = (s.i___1026758 + 1);
+    s.i___1026758 = (r0);
     { step = 1; continue; }
   case 2:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt_constructor__P969096.info = {"start":1757,"length":198,"line":44,"column":8,"endLine":49,"endColumn":9,"fileName":"jsbi.ts","functionName":"inline","argumentNames":["this","length","sign"]}
+JSBI_BigInt_constructor__P1026750.info = {"start":1757,"length":198,"line":44,"column":8,"endLine":49,"endColumn":9,"fileName":"jsbi.ts","functionName":"inline","argumentNames":["this","length","sign"]}
 
-function JSBI_BigInt_constructor__P969096_mk(s) {
+function JSBI_BigInt_constructor__P1026750_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt_constructor__P969096, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt_constructor__P1026750, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  i___969104: undefined,
+  i___1026758: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -21997,7 +22010,7 @@ function JSBI_BigInt_constructor__P969096_mk(s) {
 
 
 
-function JSBI_BigInt___halfDigitLength__P969086(s) {
+function JSBI_BigInt___halfDigitLength__P1026740(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22007,19 +22020,19 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.len___969232 = undefined;
+    s.len___1026886 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    s.len___969232 = (r0);
+    s.len___1026886 = (r0);
     s.tmp_2 = r0 = s.arg0;
-    r0 = (s.len___969232 - 1);
+    r0 = (s.len___1026886 - 1);
     s.tmp_3 = r0;
     r0 = s.tmp_2.fields["data"];
     s.tmp_5 = r0;
@@ -22031,23 +22044,23 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = (s.len___969232 * 2);
+    r0 = (s.len___1026886 * 2);
     s.tmp_6 = r0;
     r0 = (s.tmp_6 - 1);
     { step = 3; continue; }
   case 1:
   case 2:
-    r0 = (s.len___969232 * 2);
+    r0 = (s.len___1026886 * 2);
   case 3:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___halfDigitLength__P969086.info = {"start":3576,"length":190,"line":102,"column":8,"endLine":106,"endColumn":9,"fileName":"jsbi.ts","functionName":"__halfDigitLength","argumentNames":["this"]}
+JSBI_BigInt___halfDigitLength__P1026740.info = {"start":3576,"length":190,"line":102,"column":8,"endLine":106,"endColumn":9,"fileName":"jsbi.ts","functionName":"__halfDigitLength","argumentNames":["this"]}
 
-function JSBI_BigInt___halfDigitLength__P969086_mk(s) {
+function JSBI_BigInt___halfDigitLength__P1026740_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___halfDigitLength__P969086, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___halfDigitLength__P1026740, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -22056,7 +22069,7 @@ function JSBI_BigInt___halfDigitLength__P969086_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  len___969232: undefined,
+  len___1026886: undefined,
   arg0: undefined,
 } }
 
@@ -22064,7 +22077,7 @@ function JSBI_BigInt___halfDigitLength__P969086_mk(s) {
 
 
 
-function JSBI_oneDigit__P969807(s) {
+function JSBI_absoluteDivSmall__P1027670(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22074,70 +22087,37 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.result___972192 = undefined;
+    s.remainder___1027682 = undefined;
+    s.i___1027683 = undefined;
+    s.input___1027691 = undefined;
+    s.upperHalf___1027701 = undefined;
+    s.lowerHalf___1027724 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
+      s.arg2 = (s.lambdaArgs[2]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = (s.arg2 === null);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
-    s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = 1;
-    s.tmp_1.arg2 = s.arg1;
-    s.callLocIdx = 306; s.pc = 1; return s.tmp_1;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_1 = r0;
+    s.tmp_2 = JSBI_BigInt_constructor__P1026750_mk(s);
+    s.tmp_2.arg0 = s.tmp_1;
+    r0 = s.arg0.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2.arg1 = r0;
+    s.tmp_2.arg2 = false;
+    s.callLocIdx = 146; s.pc = 5; return s.tmp_2;
+  case 5:
+    r0 = s.retval;
+    s.arg2 = (s.tmp_1);
   case 1:
-    r0 = s.retval;
-    s.result___972192 = (s.tmp_0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___972192;
-    s.tmp_0.arg1 = 0;
-    s.tmp_0.arg2 = s.arg0;
-    s.callLocIdx = 307; s.pc = 2; return s.tmp_0;
   case 2:
-    r0 = s.retval;
-    r0 = s.result___972192;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_oneDigit__P969807.info = {"start":43853,"length":164,"line":1079,"column":4,"endLine":1083,"endColumn":5,"fileName":"jsbi.ts","functionName":"oneDigit","argumentNames":["value","sign"]}
-
-function JSBI_oneDigit__P969807_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_oneDigit__P969807, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  result___972192: undefined,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function JSBI_absoluteModSmall__P970237(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.remainder___970240 = undefined;
-    s.i___970241 = undefined;
-    s.input___970249 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    s.remainder___970240 = (0);
+    s.remainder___1027682 = (0);
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
@@ -22145,61 +22125,101 @@ switch (step) {
     r0 = (s.tmp_1 * 2);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 - 1);
-    s.i___970241 = (r0);
-  case 1:
-    r0 = (s.i___970241 >= 0);
+    s.i___1027683 = (r0);
+  case 3:
+    r0 = (s.i___1027683 >= 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 2; continue; }
-    r0 = (s.remainder___970240 << 15);
+    if (!r0) { step = 4; continue; }
+    r0 = (s.remainder___1027682 << 15);
     s.tmp_2 = r0;
-    s.tmp_4 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.tmp_4 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_4.arg0 = s.arg0;
-    s.tmp_4.arg1 = s.i___970241;
-    s.callLocIdx = 169; s.pc = 3; return s.tmp_4;
-  case 3:
+    s.tmp_4.arg1 = s.i___1027683;
+    s.callLocIdx = 148; s.pc = 6; return s.tmp_4;
+  case 6:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = (s.tmp_2 | s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 >>> 0);
-    s.input___970249 = (r0);
-    r0 = (s.input___970249 % s.arg1);
+    s.input___1027691 = (r0);
+    r0 = (s.input___1027691 / s.arg1);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.remainder___970240 = (r0);
-    r0 = (s.i___970241 - 1);
-    s.i___970241 = (r0);
-    { step = 1; continue; }
-  case 2:
-    r0 = s.remainder___970240;
+    s.upperHalf___1027701 = (r0);
+    r0 = (s.input___1027691 % s.arg1);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 | 0);
+    s.remainder___1027682 = (r0);
+    r0 = (s.remainder___1027682 << 15);
+    s.tmp_1 = r0;
+    s.tmp_3 = JSBI_BigInt___halfDigit__P1026739_mk(s);
+    s.tmp_3.arg0 = s.arg0;
+    r0 = (s.i___1027683 - 1);
+    s.tmp_3.arg1 = r0;
+    s.callLocIdx = 149; s.pc = 7; return s.tmp_3;
+  case 7:
+    r0 = s.retval;
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 | s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 >>> 0);
+    s.input___1027691 = (r0);
+    r0 = (s.input___1027691 / s.arg1);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 | 0);
+    s.lowerHalf___1027724 = (r0);
+    r0 = (s.input___1027691 % s.arg1);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 | 0);
+    s.remainder___1027682 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.arg2;
+    r0 = (s.i___1027683 >>> 1);
+    s.tmp_0.arg1 = r0;
+    r0 = (s.upperHalf___1027701 << 15);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 | s.lowerHalf___1027724);
+    s.tmp_0.arg2 = r0;
+    s.callLocIdx = 150; s.pc = 8; return s.tmp_0;
+  case 8:
+    r0 = s.retval;
+    r0 = (s.i___1027683 - 2);
+    s.i___1027683 = (r0);
+    { step = 3; continue; }
+  case 4:
+    r0 = s.arg2;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_absoluteModSmall__P970237.info = {"start":15464,"length":309,"line":393,"column":4,"endLine":400,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteModSmall","argumentNames":["x","divisor"]}
+JSBI_absoluteDivSmall__P1027670.info = {"start":12584,"length":726,"line":319,"column":4,"endLine":332,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteDivSmall","argumentNames":["x","divisor","quotient"]}
 
-function JSBI_absoluteModSmall__P970237_mk(s) {
+function JSBI_absoluteDivSmall__P1027670_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_absoluteModSmall__P970237, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteDivSmall__P1027670, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
-  remainder___970240: undefined,
-  i___970241: undefined,
-  input___970249: undefined,
+  remainder___1027682: undefined,
+  i___1027683: undefined,
+  input___1027691: undefined,
+  upperHalf___1027701: undefined,
+  lowerHalf___1027724: undefined,
   arg0: undefined,
   arg1: undefined,
+  arg2: undefined,
 } }
 
 
 
 
 
-function JSBI_zero__P969800(s) {
+function JSBI_unaryMinus__P1027540(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22209,25 +22229,173 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    s.result___1030273 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 === 0);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    r0 = s.arg0;
+    { step = 3; continue; }
+  case 1:
+  case 2:
+    s.tmp_3 = JSBI_BigInt___copy__P1026737_mk(s);
+    s.tmp_3.arg0 = s.arg0;
+    s.callLocIdx = 358; s.pc = 4; return s.tmp_3;
+  case 4:
+    r0 = s.retval;
+    s.result___1030273 = (r0);
+    s.tmp_0 = r0 = s.result___1030273;
+    r0 = s.arg0.fields["sign"];
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = pxsim_Boolean__bang(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_0).fields["sign"] = (s.tmp_1);
+    r0 = s.result___1030273;
+  case 3:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_unaryMinus__P1027540.info = {"start":49197,"length":176,"line":1212,"column":4,"endLine":1217,"endColumn":5,"fileName":"jsbi.ts","functionName":"unaryMinus","argumentNames":["x"]}
+
+function JSBI_unaryMinus__P1027540_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_unaryMinus__P1027540, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  result___1030273: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function JSBI_BigInt___copy__P1026737(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.result___1026845 = undefined;
+    s.i___1026851 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_0 = r0;
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
+    s.tmp_1.arg0 = s.tmp_0;
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1.arg1 = r0;
+    r0 = s.arg0.fields["sign"];
+    s.tmp_1.arg2 = r0;
+    s.callLocIdx = 74; s.pc = 3; return s.tmp_1;
+  case 3:
+    r0 = s.retval;
+    s.result___1026845 = (s.tmp_0);
+    s.i___1026851 = (0);
+  case 1:
+    s.tmp_1 = r0 = s.i___1026851;
+    r0 = s.arg0.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_1 < s.tmp_2);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 2; continue; }
+    r0 = s.result___1026845.fields["data"];
+    s.tmp_4 = r0;
+    s.tmp_5 = r0 = s.i___1026851;
+    r0 = s.arg0.fields["data"];
+    s.tmp_7 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_7, s.i___1026851);
+    s.tmp_6 = r0;
+    r0 = pxsim_Array_.setAt(s.tmp_4, s.tmp_5, s.tmp_6);
+    r0 = (s.i___1026851 + 1);
+    s.i___1026851 = (r0);
+    { step = 1; continue; }
+  case 2:
+    r0 = s.result___1026845;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_BigInt___copy__P1026737.info = {"start":3117,"length":235,"line":86,"column":8,"endLine":92,"endColumn":9,"fileName":"jsbi.ts","functionName":"__copy","argumentNames":["this"]}
+
+function JSBI_BigInt___copy__P1026737_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_BigInt___copy__P1026737, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  result___1026845: undefined,
+  i___1026851: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function JSBI_zero__P1027454(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_0 = r0;
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = 0;
     s.tmp_1.arg2 = false;
-    s.callLocIdx = 344; s.pc = 1; return s.tmp_1;
+    s.callLocIdx = 359; s.pc = 1; return s.tmp_1;
   case 1:
     r0 = s.retval;
     r0 = s.tmp_0;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_zero__P969800.info = {"start":48051,"length":67,"line":1190,"column":4,"endLine":1192,"endColumn":5,"fileName":"jsbi.ts","functionName":"zero","argumentNames":[]}
+JSBI_zero__P1027454.info = {"start":49481,"length":67,"line":1223,"column":4,"endLine":1225,"endColumn":5,"fileName":"jsbi.ts","functionName":"zero","argumentNames":[]}
 
-function JSBI_zero__P969800_mk(s) {
+function JSBI_zero__P1027454_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_zero__P969800, depth: s.depth + 1,
+        parent: s, fn: JSBI_zero__P1027454, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -22237,7 +22405,7 @@ function JSBI_zero__P969800_mk(s) {
 
 
 
-function JSBI_subtract__P972278(s) {
+function JSBI_absoluteCompare__P1027628(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22247,71 +22415,105 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.sign___972281 = undefined;
+    s.diff___1027631 = undefined;
+    s.i___1027640 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = s.arg0.fields["sign"];
-    s.sign___972281 = (r0);
-    r0 = s.arg1.fields["sign"];
+    r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
-    r0 = (s.sign___972281 !== s.tmp_1);
+    r0 = pxsim_Array__length(s.tmp_1);
+    s.tmp_0 = r0;
+    r0 = s.arg1.fields["data"];
+    s.tmp_3 = r0;
+    r0 = pxsim_Array__length(s.tmp_3);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_0 - s.tmp_2);
+    s.diff___1027631 = (r0);
+    r0 = (s.diff___1027631 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_2 = JSBI_absoluteAdd__P969860_mk(s);
-    s.tmp_2.arg0 = s.arg0;
-    s.tmp_2.arg1 = s.arg1;
-    s.tmp_2.arg2 = s.sign___972281;
-    s.callLocIdx = 316; s.pc = 6; return s.tmp_2;
-  case 6:
-    r0 = s.retval;
-    { step = 5; continue; }
+    r0 = s.diff___1027631;
+    { step = 11; continue; }
   case 1:
   case 2:
-    s.tmp_5 = JSBI_compare__P970365_mk(s);
-    s.tmp_5.arg0 = s.arg0;
-    s.tmp_5.arg1 = s.arg1;
-    s.callLocIdx = 317; s.pc = 7; return s.tmp_5;
-  case 7:
-    r0 = s.retval;
-    s.tmp_4 = r0;
-    r0 = (s.tmp_4 >= 0);
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
-    if (!r0) { step = 3; continue; }
-    s.tmp_6 = JSBI_absoluteSub__P970268_mk(s);
-    s.tmp_6.arg0 = s.arg0;
-    s.tmp_6.arg1 = s.arg1;
-    s.tmp_6.arg2 = s.sign___972281;
-    s.callLocIdx = 318; s.pc = 8; return s.tmp_6;
-  case 8:
-    r0 = s.retval;
-    { step = 5; continue; }
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 - 1);
+    s.i___1027640 = (r0);
   case 3:
+    r0 = (s.i___1027640 >= 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBool(s.tmp_0);
+    if (r0) { step = 4; continue; }
+    r0 = s.tmp_0;
+    { step = 5; continue; }
   case 4:
-    s.tmp_7 = JSBI_absoluteSub__P970268_mk(s);
-    s.tmp_7.arg0 = s.arg1;
-    s.tmp_7.arg1 = s.arg0;
-    r0 = pxsim_numops_toBoolDecr(s.sign___972281);
-    s.tmp_8 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_8);
-    s.tmp_7.arg2 = r0;
-    s.callLocIdx = 319; s.pc = 9; return s.tmp_7;
-  case 9:
-    r0 = s.retval;
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_2, s.i___1027640);
+    s.tmp_1 = r0;
+    r0 = s.arg1.fields["data"];
+    s.tmp_4 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_4, s.i___1027640);
+    s.tmp_3 = r0;
+    r0 = (s.tmp_1 === s.tmp_3);
   case 5:
+    // jmp value (already in r0)
+    s.tmp_5 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_5);
+    if (!r0) { step = 6; continue; }
+    r0 = (s.i___1027640 - 1);
+    s.i___1027640 = (r0);
+    { step = 3; continue; }
+  case 6:
+    r0 = (s.i___1027640 < 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 7; continue; }
+    r0 = 0;
+    { step = 11; continue; }
+  case 7:
+  case 8:
+    r0 = s.arg0.fields["data"];
+    s.tmp_4 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_4, s.i___1027640);
+    s.tmp_3 = r0;
+    r0 = (s.tmp_3 >>> 0);
+    s.tmp_2 = r0;
+    r0 = s.arg1.fields["data"];
+    s.tmp_7 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_7, s.i___1027640);
+    s.tmp_6 = r0;
+    r0 = (s.tmp_6 >>> 0);
+    s.tmp_5 = r0;
+    r0 = (s.tmp_2 > s.tmp_5);
+    s.tmp_1 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_1);
+    if (!r0) { step = 9; continue; }
+    r0 = 1;
+    { step = 10; continue; }
+  case 9:
+    r0 = -1;
+  case 10:
+    // jmp value (already in r0)
+    s.tmp_8 = r0;
+    r0 = s.tmp_8;
+  case 11:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_subtract__P972278.info = {"start":44940,"length":447,"line":1113,"column":4,"endLine":1126,"endColumn":5,"fileName":"jsbi.ts","functionName":"subtract","argumentNames":["x","y"]}
+JSBI_absoluteCompare__P1027628.info = {"start":12238,"length":340,"line":310,"column":4,"endLine":317,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteCompare","argumentNames":["x","y"]}
 
-function JSBI_subtract__P972278_mk(s) {
+function JSBI_absoluteCompare__P1027628_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_subtract__P972278, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteCompare__P1027628, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -22322,7 +22524,8 @@ function JSBI_subtract__P972278_mk(s) {
   tmp_6: undefined,
   tmp_7: undefined,
   tmp_8: undefined,
-  sign___972281: undefined,
+  diff___1027631: undefined,
+  i___1027640: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -22331,7 +22534,7 @@ function JSBI_subtract__P972278_mk(s) {
 
 
 
-function JSBI_absoluteSub__P970268(s) {
+function JSBI_mod__P1029736(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22341,11 +22544,393 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.result___970286 = undefined;
-    s.borrow___970292 = undefined;
-    s.i___970293 = undefined;
-    s.r___970299 = undefined;
-    s.r___970327 = undefined;
+    s.divisor___1029748 = undefined;
+    s.remainderDigit___1029762 = undefined;
+    s.r___1029774 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg1.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    r0 = pxsim_pxtcore.throwValue("mod: Division by zero.");
+  case 1:
+  case 2:
+    s.tmp_5 = JSBI_compare__P1028098_mk(s);
+    s.tmp_5.arg0 = s.arg0;
+    s.tmp_5.arg1 = s.arg1;
+    s.callLocIdx = 294; s.pc = 14; return s.tmp_5;
+  case 14:
+    r0 = s.retval;
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 < 0);
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    if (!r0) { step = 3; continue; }
+    r0 = s.arg0;
+    { step = 13; continue; }
+  case 3:
+  case 4:
+    r0 = s.arg1.fields["data"];
+    s.tmp_7 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_7, 0);
+    s.tmp_6 = r0;
+    r0 = (s.tmp_6 >>> 0);
+    s.divisor___1029748 = (r0);
+    r0 = s.arg1.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 === 1);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBool(s.tmp_0);
+    if (r0) { step = 5; continue; }
+    r0 = s.tmp_0;
+    { step = 6; continue; }
+  case 5:
+    r0 = (s.divisor___1029748 <= 32767);
+  case 6:
+    // jmp value (already in r0)
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    if (!r0) { step = 11; continue; }
+    r0 = (s.divisor___1029748 === 1);
+    s.tmp_4 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_4);
+    if (!r0) { step = 7; continue; }
+    s.tmp_5 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 297; s.pc = 15; return s.tmp_5;
+  case 15:
+    r0 = s.retval;
+    { step = 13; continue; }
+  case 7:
+  case 8:
+    s.tmp_6 = JSBI_absoluteModSmall__P1027970_mk(s);
+    s.tmp_6.arg0 = s.arg0;
+    s.tmp_6.arg1 = s.divisor___1029748;
+    s.callLocIdx = 298; s.pc = 16; return s.tmp_6;
+  case 16:
+    r0 = s.retval;
+    s.remainderDigit___1029762 = (r0);
+    r0 = (s.remainderDigit___1029762 === 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 9; continue; }
+    s.tmp_1 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 299; s.pc = 17; return s.tmp_1;
+  case 17:
+    r0 = s.retval;
+    { step = 13; continue; }
+  case 9:
+  case 10:
+    s.tmp_2 = JSBI_oneDigit__P1027461_mk(s);
+    s.tmp_2.arg0 = s.remainderDigit___1029762;
+    r0 = s.arg0.fields["sign"];
+    s.tmp_2.arg1 = r0;
+    s.callLocIdx = 300; s.pc = 18; return s.tmp_2;
+  case 18:
+    r0 = s.retval;
+    { step = 13; continue; }
+  case 11:
+  case 12:
+    s.tmp_3 = JSBI_absoluteDivLarge__P1027749_mk(s);
+    s.tmp_3.arg0 = s.arg0;
+    s.tmp_3.arg1 = s.arg1;
+    s.tmp_3.arg2 = false;
+    s.tmp_3.arg3 = true;
+    s.callLocIdx = 301; s.pc = 19; return s.tmp_3;
+  case 19:
+    r0 = s.retval;
+    s.r___1029774 = (r0);
+    r0 = s.arg0.fields["sign"];
+    s.tmp_0 = r0;
+    r0 = (s.r___1029774).fields["sign"] = (s.tmp_0);
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.r___1029774;
+    s.callLocIdx = 302; s.pc = 20; return s.tmp_0;
+  case 20:
+    r0 = s.retval;
+  case 13:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_mod__P1029736.info = {"start":42686,"length":611,"line":1049,"column":4,"endLine":1062,"endColumn":5,"fileName":"jsbi.ts","functionName":"mod","argumentNames":["x","y"]}
+
+function JSBI_mod__P1029736_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_mod__P1029736, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  divisor___1029748: undefined,
+  remainderDigit___1029762: undefined,
+  r___1029774: undefined,
+  arg0: undefined,
+  arg1: undefined,
+} }
+
+
+
+
+
+function JSBI_oneDigit__P1027461(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.result___1029978 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.lambdaArgs = null;
+    }
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
+    s.tmp_0 = r0;
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
+    s.tmp_1.arg0 = s.tmp_0;
+    s.tmp_1.arg1 = 1;
+    s.tmp_1.arg2 = s.arg1;
+    s.callLocIdx = 321; s.pc = 1; return s.tmp_1;
+  case 1:
+    r0 = s.retval;
+    s.result___1029978 = (s.tmp_0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1029978;
+    s.tmp_0.arg1 = 0;
+    s.tmp_0.arg2 = s.arg0;
+    s.callLocIdx = 322; s.pc = 2; return s.tmp_0;
+  case 2:
+    r0 = s.retval;
+    r0 = s.result___1029978;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_oneDigit__P1027461.info = {"start":45283,"length":164,"line":1112,"column":4,"endLine":1116,"endColumn":5,"fileName":"jsbi.ts","functionName":"oneDigit","argumentNames":["value","sign"]}
+
+function JSBI_oneDigit__P1027461_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_oneDigit__P1027461, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  result___1029978: undefined,
+  arg0: undefined,
+  arg1: undefined,
+} }
+
+
+
+
+
+function JSBI_absoluteModSmall__P1027970(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.remainder___1027973 = undefined;
+    s.i___1027974 = undefined;
+    s.input___1027982 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.lambdaArgs = null;
+    }
+    s.remainder___1027973 = (0);
+    r0 = s.arg0.fields["data"];
+    s.tmp_2 = r0;
+    r0 = pxsim_Array__length(s.tmp_2);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 * 2);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 - 1);
+    s.i___1027974 = (r0);
+  case 1:
+    r0 = (s.i___1027974 >= 0);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 2; continue; }
+    r0 = (s.remainder___1027973 << 15);
+    s.tmp_2 = r0;
+    s.tmp_4 = JSBI_BigInt___halfDigit__P1026739_mk(s);
+    s.tmp_4.arg0 = s.arg0;
+    s.tmp_4.arg1 = s.i___1027974;
+    s.callLocIdx = 175; s.pc = 3; return s.tmp_4;
+  case 3:
+    r0 = s.retval;
+    s.tmp_3 = r0;
+    r0 = (s.tmp_2 | s.tmp_3);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 >>> 0);
+    s.input___1027982 = (r0);
+    r0 = (s.input___1027982 % s.arg1);
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0 | 0);
+    s.remainder___1027973 = (r0);
+    r0 = (s.i___1027974 - 1);
+    s.i___1027974 = (r0);
+    { step = 1; continue; }
+  case 2:
+    r0 = s.remainder___1027973;
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_absoluteModSmall__P1027970.info = {"start":16192,"length":309,"line":408,"column":4,"endLine":415,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteModSmall","argumentNames":["x","divisor"]}
+
+function JSBI_absoluteModSmall__P1027970_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_absoluteModSmall__P1027970, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  remainder___1027973: undefined,
+  i___1027974: undefined,
+  input___1027982: undefined,
+  arg0: undefined,
+  arg1: undefined,
+} }
+
+
+
+
+
+function JSBI_subtract__P1030064(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.sign___1030067 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.arg1 = (s.lambdaArgs[1]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0.fields["sign"];
+    s.sign___1030067 = (r0);
+    r0 = s.arg1.fields["sign"];
+    s.tmp_1 = r0;
+    r0 = (s.sign___1030067 !== s.tmp_1);
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    s.tmp_2 = JSBI_absoluteAdd__P1027514_mk(s);
+    s.tmp_2.arg0 = s.arg0;
+    s.tmp_2.arg1 = s.arg1;
+    s.tmp_2.arg2 = s.sign___1030067;
+    s.callLocIdx = 331; s.pc = 6; return s.tmp_2;
+  case 6:
+    r0 = s.retval;
+    { step = 5; continue; }
+  case 1:
+  case 2:
+    s.tmp_5 = JSBI_compare__P1028098_mk(s);
+    s.tmp_5.arg0 = s.arg0;
+    s.tmp_5.arg1 = s.arg1;
+    s.callLocIdx = 332; s.pc = 7; return s.tmp_5;
+  case 7:
+    r0 = s.retval;
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 >= 0);
+    s.tmp_3 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
+    if (!r0) { step = 3; continue; }
+    s.tmp_6 = JSBI_absoluteSub__P1028001_mk(s);
+    s.tmp_6.arg0 = s.arg0;
+    s.tmp_6.arg1 = s.arg1;
+    s.tmp_6.arg2 = s.sign___1030067;
+    s.callLocIdx = 333; s.pc = 8; return s.tmp_6;
+  case 8:
+    r0 = s.retval;
+    { step = 5; continue; }
+  case 3:
+  case 4:
+    s.tmp_7 = JSBI_absoluteSub__P1028001_mk(s);
+    s.tmp_7.arg0 = s.arg1;
+    s.tmp_7.arg1 = s.arg0;
+    r0 = pxsim_numops_toBoolDecr(s.sign___1030067);
+    s.tmp_8 = r0;
+    r0 = pxsim_Boolean__bang(s.tmp_8);
+    s.tmp_7.arg2 = r0;
+    s.callLocIdx = 334; s.pc = 9; return s.tmp_7;
+  case 9:
+    r0 = s.retval;
+  case 5:
+    return leave(s, r0)
+  default: oops()
+} } }
+JSBI_subtract__P1030064.info = {"start":46370,"length":447,"line":1146,"column":4,"endLine":1159,"endColumn":5,"fileName":"jsbi.ts","functionName":"subtract","argumentNames":["x","y"]}
+
+function JSBI_subtract__P1030064_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: JSBI_subtract__P1030064, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
+  tmp_6: undefined,
+  tmp_7: undefined,
+  tmp_8: undefined,
+  sign___1030067: undefined,
+  arg0: undefined,
+  arg1: undefined,
+} }
+
+
+
+
+
+function JSBI_absoluteSub__P1028001(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.result___1028019 = undefined;
+    s.borrow___1028025 = undefined;
+    s.i___1028026 = undefined;
+    s.r___1028032 = undefined;
+    s.r___1028060 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -22381,9 +22966,9 @@ switch (step) {
     r0 = s.arg0;
     { step = 4; continue; }
   case 3:
-    s.tmp_8 = JSBI_unaryMinus__P969886_mk(s);
+    s.tmp_8 = JSBI_unaryMinus__P1027540_mk(s);
     s.tmp_8.arg0 = s.arg0;
-    s.callLocIdx = 172; s.pc = 12; return s.tmp_8;
+    s.callLocIdx = 178; s.pc = 12; return s.tmp_8;
   case 12:
     r0 = s.retval;
   case 4:
@@ -22393,23 +22978,23 @@ switch (step) {
     { step = 11; continue; }
   case 5:
   case 6:
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_10 = r0;
-    s.tmp_11 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_11 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_11.arg0 = s.tmp_10;
     r0 = s.arg0.fields["data"];
     s.tmp_12 = r0;
     r0 = pxsim_Array__length(s.tmp_12);
     s.tmp_11.arg1 = r0;
     s.tmp_11.arg2 = s.arg2;
-    s.callLocIdx = 174; s.pc = 13; return s.tmp_11;
+    s.callLocIdx = 180; s.pc = 13; return s.tmp_11;
   case 13:
     r0 = s.retval;
-    s.result___970286 = (s.tmp_10);
-    s.borrow___970292 = (0);
-    s.i___970293 = (0);
+    s.result___1028019 = (s.tmp_10);
+    s.borrow___1028025 = (0);
+    s.i___1028026 = (0);
   case 7:
-    s.tmp_1 = r0 = s.i___970293;
+    s.tmp_1 = r0 = s.i___1028026;
     r0 = s.arg1.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -22420,34 +23005,34 @@ switch (step) {
     if (!r0) { step = 8; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_6 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_6, s.i___970293);
+    r0 = pxsim_Array__getAt(s.tmp_6, s.i___1028026);
     s.tmp_5 = r0;
     r0 = s.arg1.fields["data"];
     s.tmp_8 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_8, s.i___970293);
+    r0 = pxsim_Array__getAt(s.tmp_8, s.i___1028026);
     s.tmp_7 = r0;
     r0 = (s.tmp_5 - s.tmp_7);
     s.tmp_4 = r0;
-    r0 = (s.tmp_4 - s.borrow___970292);
-    s.r___970299 = (r0);
-    r0 = (s.r___970299 >>> 30);
+    r0 = (s.tmp_4 - s.borrow___1028025);
+    s.r___1028032 = (r0);
+    r0 = (s.r___1028032 >>> 30);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___970292 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___970286;
-    s.tmp_0.arg1 = s.i___970293;
-    r0 = (s.r___970299 & 1073741823);
+    s.borrow___1028025 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1028019;
+    s.tmp_0.arg1 = s.i___1028026;
+    r0 = (s.r___1028032 & 1073741823);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 178; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 184; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
-    r0 = (s.i___970293 + 1);
-    s.i___970293 = (r0);
+    r0 = (s.i___1028026 + 1);
+    s.i___1028026 = (r0);
     { step = 7; continue; }
   case 8:
   case 9:
-    s.tmp_1 = r0 = s.i___970293;
+    s.tmp_1 = r0 = s.i___1028026;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -22458,41 +23043,41 @@ switch (step) {
     if (!r0) { step = 10; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_5 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_5, s.i___970293);
+    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1028026);
     s.tmp_4 = r0;
-    r0 = (s.tmp_4 - s.borrow___970292);
-    s.r___970327 = (r0);
-    r0 = (s.r___970327 >>> 30);
+    r0 = (s.tmp_4 - s.borrow___1028025);
+    s.r___1028060 = (r0);
+    r0 = (s.r___1028060 >>> 30);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 1);
-    s.borrow___970292 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___970286;
-    s.tmp_0.arg1 = s.i___970293;
-    r0 = (s.r___970327 & 1073741823);
+    s.borrow___1028025 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1028019;
+    s.tmp_0.arg1 = s.i___1028026;
+    r0 = (s.r___1028060 & 1073741823);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 181; s.pc = 15; return s.tmp_0;
+    s.callLocIdx = 187; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
-    r0 = (s.i___970293 + 1);
-    s.i___970293 = (r0);
+    r0 = (s.i___1028026 + 1);
+    s.i___1028026 = (r0);
     { step = 9; continue; }
   case 10:
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.result___970286;
-    s.callLocIdx = 182; s.pc = 16; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1028019;
+    s.callLocIdx = 188; s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
   case 11:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_absoluteSub__P970268.info = {"start":15779,"length":710,"line":402,"column":4,"endLine":419,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteSub","argumentNames":["x","y","resultSign"]}
+JSBI_absoluteSub__P1028001.info = {"start":16507,"length":710,"line":417,"column":4,"endLine":434,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteSub","argumentNames":["x","y","resultSign"]}
 
-function JSBI_absoluteSub__P970268_mk(s) {
+function JSBI_absoluteSub__P1028001_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_absoluteSub__P970268, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteSub__P1028001, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -22507,11 +23092,11 @@ function JSBI_absoluteSub__P970268_mk(s) {
   tmp_10: undefined,
   tmp_11: undefined,
   tmp_12: undefined,
-  result___970286: undefined,
-  borrow___970292: undefined,
-  i___970293: undefined,
-  r___970299: undefined,
-  r___970327: undefined,
+  result___1028019: undefined,
+  borrow___1028025: undefined,
+  i___1028026: undefined,
+  r___1028032: undefined,
+  r___1028060: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -22521,7 +23106,7 @@ function JSBI_absoluteSub__P970268_mk(s) {
 
 
 
-function JSBI_unaryMinus__P969886(s) {
+function JSBI_absoluteAdd__P1027514(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22531,160 +23116,12 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.result___972487 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_1 === 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    r0 = s.arg0;
-    { step = 3; continue; }
-  case 1:
-  case 2:
-    s.tmp_3 = JSBI_BigInt___copy__P969083_mk(s);
-    s.tmp_3.arg0 = s.arg0;
-    s.callLocIdx = 343; s.pc = 4; return s.tmp_3;
-  case 4:
-    r0 = s.retval;
-    s.result___972487 = (r0);
-    s.tmp_0 = r0 = s.result___972487;
-    r0 = s.arg0.fields["sign"];
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_0).fields["sign"] = (s.tmp_1);
-    r0 = s.result___972487;
-  case 3:
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_unaryMinus__P969886.info = {"start":47767,"length":176,"line":1179,"column":4,"endLine":1184,"endColumn":5,"fileName":"jsbi.ts","functionName":"unaryMinus","argumentNames":["x"]}
-
-function JSBI_unaryMinus__P969886_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_unaryMinus__P969886, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  result___972487: undefined,
-  arg0: undefined,
-} }
-
-
-
-
-
-function JSBI_BigInt___copy__P969083(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.result___969191 = undefined;
-    s.i___969197 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
-    s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
-    s.tmp_1.arg0 = s.tmp_0;
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1.arg1 = r0;
-    r0 = s.arg0.fields["sign"];
-    s.tmp_1.arg2 = r0;
-    s.callLocIdx = 74; s.pc = 3; return s.tmp_1;
-  case 3:
-    r0 = s.retval;
-    s.result___969191 = (s.tmp_0);
-    s.i___969197 = (0);
-  case 1:
-    s.tmp_1 = r0 = s.i___969197;
-    r0 = s.arg0.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_1 < s.tmp_2);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 2; continue; }
-    r0 = s.result___969191.fields["data"];
-    s.tmp_4 = r0;
-    s.tmp_5 = r0 = s.i___969197;
-    r0 = s.arg0.fields["data"];
-    s.tmp_7 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_7, s.i___969197);
-    s.tmp_6 = r0;
-    r0 = pxsim_Array_.setAt(s.tmp_4, s.tmp_5, s.tmp_6);
-    r0 = (s.i___969197 + 1);
-    s.i___969197 = (r0);
-    { step = 1; continue; }
-  case 2:
-    r0 = s.result___969191;
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_BigInt___copy__P969083.info = {"start":3117,"length":235,"line":86,"column":8,"endLine":92,"endColumn":9,"fileName":"jsbi.ts","functionName":"__copy","argumentNames":["this"]}
-
-function JSBI_BigInt___copy__P969083_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_BigInt___copy__P969083, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tmp_6: undefined,
-  tmp_7: undefined,
-  result___969191: undefined,
-  i___969197: undefined,
-  arg0: undefined,
-} }
-
-
-
-
-
-function JSBI_absoluteAdd__P969860(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.resultLength___969888 = undefined;
-    s.result___969908 = undefined;
-    s.carry___969913 = undefined;
-    s.i___969914 = undefined;
-    s.r___969920 = undefined;
-    s.r___969947 = undefined;
+    s.resultLength___1027542 = undefined;
+    s.result___1027562 = undefined;
+    s.carry___1027567 = undefined;
+    s.i___1027568 = undefined;
+    s.r___1027574 = undefined;
+    s.r___1027601 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -22703,7 +23140,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_5 = JSBI_absoluteAdd__P969860_mk(s);
+    s.tmp_5 = JSBI_absoluteAdd__P1027514_mk(s);
     s.tmp_5.arg0 = s.arg1;
     s.tmp_5.arg1 = s.arg0;
     s.tmp_5.arg2 = s.arg2;
@@ -22742,7 +23179,7 @@ switch (step) {
     r0 = s.arg0;
     { step = 6; continue; }
   case 5:
-    s.tmp_14 = JSBI_unaryMinus__P969886_mk(s);
+    s.tmp_14 = JSBI_unaryMinus__P1027540_mk(s);
     s.tmp_14.arg0 = s.arg0;
     s.callLocIdx = 121; s.pc = 23; return s.tmp_14;
   case 23:
@@ -22757,8 +23194,8 @@ switch (step) {
     r0 = s.arg0.fields["data"];
     s.tmp_16 = r0;
     r0 = pxsim_Array__length(s.tmp_16);
-    s.resultLength___969888 = (r0);
-    s.tmp_2 = JSBI_BigInt___clzmsd__P969082_mk(s);
+    s.resultLength___1027542 = (r0);
+    s.tmp_2 = JSBI_BigInt___clzmsd__P1026736_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.callLocIdx = 123; s.pc = 24; return s.tmp_2;
   case 24:
@@ -22786,7 +23223,7 @@ switch (step) {
     r0 = s.tmp_3;
     { step = 11; continue; }
   case 10:
-    s.tmp_9 = JSBI_BigInt___clzmsd__P969082_mk(s);
+    s.tmp_9 = JSBI_BigInt___clzmsd__P1026736_mk(s);
     s.tmp_9.arg0 = s.arg1;
     s.callLocIdx = 126; s.pc = 25; return s.tmp_9;
   case 25:
@@ -22802,24 +23239,24 @@ switch (step) {
     s.tmp_11 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_11);
     if (!r0) { step = 13; continue; }
-    r0 = (s.resultLength___969888 + 1);
-    s.resultLength___969888 = (r0);
+    r0 = (s.resultLength___1027542 + 1);
+    s.resultLength___1027542 = (r0);
   case 13:
   case 14:
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.resultLength___969888;
+    s.tmp_1.arg1 = s.resultLength___1027542;
     s.tmp_1.arg2 = s.arg2;
     s.callLocIdx = 127; s.pc = 26; return s.tmp_1;
   case 26:
     r0 = s.retval;
-    s.result___969908 = (s.tmp_0);
-    s.carry___969913 = (0);
-    s.i___969914 = (0);
+    s.result___1027562 = (s.tmp_0);
+    s.carry___1027567 = (0);
+    s.i___1027568 = (0);
   case 15:
-    s.tmp_1 = r0 = s.i___969914;
+    s.tmp_1 = r0 = s.i___1027568;
     r0 = s.arg1.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -22830,32 +23267,32 @@ switch (step) {
     if (!r0) { step = 16; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_6 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_6, s.i___969914);
+    r0 = pxsim_Array__getAt(s.tmp_6, s.i___1027568);
     s.tmp_5 = r0;
     r0 = s.arg1.fields["data"];
     s.tmp_8 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_8, s.i___969914);
+    r0 = pxsim_Array__getAt(s.tmp_8, s.i___1027568);
     s.tmp_7 = r0;
     r0 = (s.tmp_5 + s.tmp_7);
     s.tmp_4 = r0;
-    r0 = (s.tmp_4 + s.carry___969913);
-    s.r___969920 = (r0);
-    r0 = (s.r___969920 >>> 30);
-    s.carry___969913 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___969908;
-    s.tmp_0.arg1 = s.i___969914;
-    r0 = (s.r___969920 & 1073741823);
+    r0 = (s.tmp_4 + s.carry___1027567);
+    s.r___1027574 = (r0);
+    r0 = (s.r___1027574 >>> 30);
+    s.carry___1027567 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1027562;
+    s.tmp_0.arg1 = s.i___1027568;
+    r0 = (s.r___1027574 & 1073741823);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 131; s.pc = 27; return s.tmp_0;
   case 27:
     r0 = s.retval;
-    r0 = (s.i___969914 + 1);
-    s.i___969914 = (r0);
+    r0 = (s.i___1027568 + 1);
+    s.i___1027568 = (r0);
     { step = 15; continue; }
   case 16:
   case 17:
-    s.tmp_1 = r0 = s.i___969914;
+    s.tmp_1 = r0 = s.i___1027568;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -22866,26 +23303,26 @@ switch (step) {
     if (!r0) { step = 18; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_5 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_5, s.i___969914);
+    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1027568);
     s.tmp_4 = r0;
-    r0 = (s.tmp_4 + s.carry___969913);
-    s.r___969947 = (r0);
-    r0 = (s.r___969947 >>> 30);
-    s.carry___969913 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___969908;
-    s.tmp_0.arg1 = s.i___969914;
-    r0 = (s.r___969947 & 1073741823);
+    r0 = (s.tmp_4 + s.carry___1027567);
+    s.r___1027601 = (r0);
+    r0 = (s.r___1027601 >>> 30);
+    s.carry___1027567 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1027562;
+    s.tmp_0.arg1 = s.i___1027568;
+    r0 = (s.r___1027601 & 1073741823);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 134; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
-    r0 = (s.i___969914 + 1);
-    s.i___969914 = (r0);
+    r0 = (s.i___1027568 + 1);
+    s.i___1027568 = (r0);
     { step = 17; continue; }
   case 18:
-    s.tmp_1 = r0 = s.i___969914;
-    r0 = s.result___969908.fields["data"];
+    s.tmp_1 = r0 = s.i___1027568;
+    r0 = s.result___1027562.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
     s.tmp_2 = r0;
@@ -22893,17 +23330,17 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 19; continue; }
-    s.tmp_4 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_4.arg0 = s.result___969908;
-    s.tmp_4.arg1 = s.i___969914;
-    s.tmp_4.arg2 = s.carry___969913;
+    s.tmp_4 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_4.arg0 = s.result___1027562;
+    s.tmp_4.arg1 = s.i___1027568;
+    s.tmp_4.arg2 = s.carry___1027567;
     s.callLocIdx = 136; s.pc = 29; return s.tmp_4;
   case 29:
     r0 = s.retval;
   case 19:
   case 20:
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.result___969908;
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1027562;
     s.callLocIdx = 137; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
@@ -22911,12 +23348,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_absoluteAdd__P969860.info = {"start":11212,"length":1020,"line":283,"column":4,"endLine":308,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteAdd","argumentNames":["x","y","resultSign"]}
+JSBI_absoluteAdd__P1027514.info = {"start":11212,"length":1020,"line":283,"column":4,"endLine":308,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteAdd","argumentNames":["x","y","resultSign"]}
 
-function JSBI_absoluteAdd__P969860_mk(s) {
+function JSBI_absoluteAdd__P1027514_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_absoluteAdd__P969860, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteAdd__P1027514, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -22935,12 +23372,12 @@ function JSBI_absoluteAdd__P969860_mk(s) {
   tmp_14: undefined,
   tmp_15: undefined,
   tmp_16: undefined,
-  resultLength___969888: undefined,
-  result___969908: undefined,
-  carry___969913: undefined,
-  i___969914: undefined,
-  r___969920: undefined,
-  r___969947: undefined,
+  resultLength___1027542: undefined,
+  result___1027562: undefined,
+  carry___1027567: undefined,
+  i___1027568: undefined,
+  r___1027574: undefined,
+  r___1027601: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -22950,7 +23387,7 @@ function JSBI_absoluteAdd__P969860_mk(s) {
 
 
 
-function JSBI_BigInt___clzmsd__P969082(s) {
+function JSBI_BigInt___clzmsd__P1026736(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -22965,8 +23402,8 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
-    s.tmp_0 = JSBI_clz30__P969184_mk(s);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
+    s.tmp_0 = JSBI_clz30__P1026838_mk(s);
     s.tmp_1 = r0 = s.arg0;
     r0 = s.arg0.fields["data"];
     s.tmp_4 = r0;
@@ -22984,12 +23421,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___clzmsd__P969082.info = {"start":3009,"length":98,"line":82,"column":8,"endLine":84,"endColumn":9,"fileName":"jsbi.ts","functionName":"__clzmsd","argumentNames":["this"]}
+JSBI_BigInt___clzmsd__P1026736.info = {"start":3009,"length":98,"line":82,"column":8,"endLine":84,"endColumn":9,"fileName":"jsbi.ts","functionName":"__clzmsd","argumentNames":["this"]}
 
-function JSBI_BigInt___clzmsd__P969082_mk(s) {
+function JSBI_BigInt___clzmsd__P1026736_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___clzmsd__P969082, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___clzmsd__P1026736, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23004,7 +23441,7 @@ function JSBI_BigInt___clzmsd__P969082_mk(s) {
 
 
 
-function JSBI_add__P970348(s) {
+function JSBI_add__P1028081(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23014,34 +23451,34 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.sign___970351 = undefined;
+    s.sign___1028084 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0.fields["sign"];
-    s.sign___970351 = (r0);
+    s.sign___1028084 = (r0);
     r0 = s.arg1.fields["sign"];
     s.tmp_1 = r0;
-    r0 = (s.sign___970351 === s.tmp_1);
+    r0 = (s.sign___1028084 === s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_2 = JSBI_absoluteAdd__P969860_mk(s);
+    s.tmp_2 = JSBI_absoluteAdd__P1027514_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.tmp_2.arg1 = s.arg1;
-    s.tmp_2.arg2 = s.sign___970351;
-    s.callLocIdx = 183; s.pc = 6; return s.tmp_2;
+    s.tmp_2.arg2 = s.sign___1028084;
+    s.callLocIdx = 189; s.pc = 6; return s.tmp_2;
   case 6:
     r0 = s.retval;
     { step = 5; continue; }
   case 1:
   case 2:
-    s.tmp_5 = JSBI_compare__P970365_mk(s);
+    s.tmp_5 = JSBI_compare__P1028098_mk(s);
     s.tmp_5.arg0 = s.arg0;
     s.tmp_5.arg1 = s.arg1;
-    s.callLocIdx = 184; s.pc = 7; return s.tmp_5;
+    s.callLocIdx = 190; s.pc = 7; return s.tmp_5;
   case 7:
     r0 = s.retval;
     s.tmp_4 = r0;
@@ -23049,36 +23486,36 @@ switch (step) {
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 3; continue; }
-    s.tmp_6 = JSBI_absoluteSub__P970268_mk(s);
+    s.tmp_6 = JSBI_absoluteSub__P1028001_mk(s);
     s.tmp_6.arg0 = s.arg0;
     s.tmp_6.arg1 = s.arg1;
-    s.tmp_6.arg2 = s.sign___970351;
-    s.callLocIdx = 185; s.pc = 8; return s.tmp_6;
+    s.tmp_6.arg2 = s.sign___1028084;
+    s.callLocIdx = 191; s.pc = 8; return s.tmp_6;
   case 8:
     r0 = s.retval;
     { step = 5; continue; }
   case 3:
   case 4:
-    s.tmp_7 = JSBI_absoluteSub__P970268_mk(s);
+    s.tmp_7 = JSBI_absoluteSub__P1028001_mk(s);
     s.tmp_7.arg0 = s.arg1;
     s.tmp_7.arg1 = s.arg0;
-    r0 = pxsim_numops_toBoolDecr(s.sign___970351);
+    r0 = pxsim_numops_toBoolDecr(s.sign___1028084);
     s.tmp_8 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_8);
     s.tmp_7.arg2 = r0;
-    s.callLocIdx = 186; s.pc = 9; return s.tmp_7;
+    s.callLocIdx = 192; s.pc = 9; return s.tmp_7;
   case 9:
     r0 = s.retval;
   case 5:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_add__P970348.info = {"start":16495,"length":439,"line":421,"column":4,"endLine":434,"endColumn":5,"fileName":"jsbi.ts","functionName":"add","argumentNames":["x","y"]}
+JSBI_add__P1028081.info = {"start":17223,"length":439,"line":436,"column":4,"endLine":449,"endColumn":5,"fileName":"jsbi.ts","functionName":"add","argumentNames":["x","y"]}
 
-function JSBI_add__P970348_mk(s) {
+function JSBI_add__P1028081_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_add__P970348, depth: s.depth + 1,
+        parent: s, fn: JSBI_add__P1028081, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23089,7 +23526,7 @@ function JSBI_add__P970348_mk(s) {
   tmp_6: undefined,
   tmp_7: undefined,
   tmp_8: undefined,
-  sign___970351: undefined,
+  sign___1028084: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -23264,7 +23701,7 @@ function helpers_stringToUpperCase__P607502_mk(s) {
 
 
 
-function parseString__P932934(s) {
+function parseString__P983831(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23284,41 +23721,41 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_2 = JSBI_unaryMinus__P969886_mk(s);
-    s.tmp_3 = JSBI_CreateBigInt__P969792_mk(s);
+    s.tmp_2 = JSBI_unaryMinus__P1027540_mk(s);
+    s.tmp_3 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_4 = helpers_stringSlice__P607501_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.tmp_4.arg1 = 1;
     s.tmp_4.arg2 = undefined;
-    s.callLocIdx = 353; s.pc = 6; return s.tmp_4;
+    s.callLocIdx = 368; s.pc = 6; return s.tmp_4;
   case 6:
     r0 = s.retval;
     s.tmp_3.arg0 = r0;
-    s.callLocIdx = 354; s.pc = 5; return s.tmp_3;
+    s.callLocIdx = 369; s.pc = 5; return s.tmp_3;
   case 5:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 355; s.pc = 4; return s.tmp_2;
+    s.callLocIdx = 370; s.pc = 4; return s.tmp_2;
   case 4:
     r0 = s.retval;
     { step = 3; continue; }
   case 1:
   case 2:
-    s.tmp_5 = JSBI_CreateBigInt__P969792_mk(s);
+    s.tmp_5 = JSBI_CreateBigInt__P1027446_mk(s);
     s.tmp_5.arg0 = s.arg0;
-    s.callLocIdx = 356; s.pc = 7; return s.tmp_5;
+    s.callLocIdx = 371; s.pc = 7; return s.tmp_5;
   case 7:
     r0 = s.retval;
   case 3:
     return leave(s, r0)
   default: oops()
 } } }
-parseString__P932934.info = {"start":3349,"length":196,"line":92,"column":0,"endLine":97,"endColumn":1,"fileName":"test.ts","functionName":"parseString","argumentNames":["s"]}
+parseString__P983831.info = {"start":3349,"length":196,"line":92,"column":0,"endLine":97,"endColumn":1,"fileName":"test.ts","functionName":"parseString","argumentNames":["s"]}
 
-function parseString__P932934_mk(s) {
+function parseString__P983831_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: parseString__P932934, depth: s.depth + 1,
+        parent: s, fn: parseString__P983831, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -25294,7 +25731,7 @@ function Sprite_left__P609780_mk(s) {
 
 
 
-function JSBI_compare__P970365(s) {
+function JSBI_compare__P1028098(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25321,29 +25758,29 @@ switch (step) {
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 1; continue; }
-    s.tmp_4 = JSBI_compareWithInt__P970404_mk(s);
+    s.tmp_4 = JSBI_compareWithInt__P1028137_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.tmp_4.arg1 = s.arg1;
-    s.callLocIdx = 189; s.pc = 6; return s.tmp_4;
+    s.callLocIdx = 195; s.pc = 6; return s.tmp_4;
   case 6:
     r0 = s.retval;
     { step = 5; continue; }
     { step = 2; continue; }
   case 1:
-    s.tmp_5 = JSBI_compareWithDouble__P970408_mk(s);
+    s.tmp_5 = JSBI_compareWithDouble__P1028141_mk(s);
     s.tmp_5.arg0 = s.arg0;
     s.tmp_5.arg1 = s.arg1;
-    s.callLocIdx = 190; s.pc = 7; return s.tmp_5;
+    s.callLocIdx = 196; s.pc = 7; return s.tmp_5;
   case 7:
     r0 = s.retval;
     { step = 5; continue; }
   case 2:
     { step = 4; continue; }
   case 3:
-    s.tmp_6 = JSBI_compareWithBigInt__P970412_mk(s);
+    s.tmp_6 = JSBI_compareWithBigInt__P1028145_mk(s);
     s.tmp_6.arg0 = s.arg0;
     s.tmp_6.arg1 = s.arg1;
-    s.callLocIdx = 191; s.pc = 8; return s.tmp_6;
+    s.callLocIdx = 197; s.pc = 8; return s.tmp_6;
   case 8:
     r0 = s.retval;
     { step = 5; continue; }
@@ -25353,12 +25790,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_compare__P970365.info = {"start":17301,"length":338,"line":451,"column":4,"endLine":461,"endColumn":5,"fileName":"jsbi.ts","functionName":"compare","argumentNames":["x","y"]}
+JSBI_compare__P1028098.info = {"start":18029,"length":338,"line":466,"column":4,"endLine":476,"endColumn":5,"fileName":"jsbi.ts","functionName":"compare","argumentNames":["x","y"]}
 
-function JSBI_compare__P970365_mk(s) {
+function JSBI_compare__P1028098_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_compare__P970365, depth: s.depth + 1,
+        parent: s, fn: JSBI_compare__P1028098, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -25375,7 +25812,7 @@ function JSBI_compare__P970365_mk(s) {
 
 
 
-function JSBI_compareWithBigInt__P970412(s) {
+function JSBI_compareWithBigInt__P1028145(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25385,55 +25822,55 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.xSign___970417 = undefined;
-    s.result___970427 = undefined;
+    s.xSign___1028150 = undefined;
+    s.result___1028160 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0.fields["sign"];
-    s.xSign___970417 = (r0);
+    s.xSign___1028150 = (r0);
     r0 = s.arg1.fields["sign"];
     s.tmp_1 = r0;
-    r0 = (s.xSign___970417 !== s.tmp_1);
+    r0 = (s.xSign___1028150 !== s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_2 = JSBI_unequalSign__P970425_mk(s);
-    s.tmp_2.arg0 = s.xSign___970417;
-    s.callLocIdx = 192; s.pc = 8; return s.tmp_2;
+    s.tmp_2 = JSBI_unequalSign__P1028158_mk(s);
+    s.tmp_2.arg0 = s.xSign___1028150;
+    s.callLocIdx = 198; s.pc = 8; return s.tmp_2;
   case 8:
     r0 = s.retval;
     { step = 7; continue; }
   case 1:
   case 2:
-    s.tmp_3 = JSBI_absoluteCompare__P969974_mk(s);
+    s.tmp_3 = JSBI_absoluteCompare__P1027628_mk(s);
     s.tmp_3.arg0 = s.arg0;
     s.tmp_3.arg1 = s.arg1;
-    s.callLocIdx = 193; s.pc = 9; return s.tmp_3;
+    s.callLocIdx = 199; s.pc = 9; return s.tmp_3;
   case 9:
     r0 = s.retval;
-    s.result___970427 = (r0);
-    r0 = (s.result___970427 > 0);
+    s.result___1028160 = (r0);
+    r0 = (s.result___1028160 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_1 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_1.arg0 = s.xSign___970417;
-    s.callLocIdx = 194; s.pc = 10; return s.tmp_1;
+    s.tmp_1 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028150;
+    s.callLocIdx = 200; s.pc = 10; return s.tmp_1;
   case 10:
     r0 = s.retval;
     { step = 7; continue; }
   case 3:
   case 4:
-    r0 = (s.result___970427 < 0);
+    r0 = (s.result___1028160 < 0);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 5; continue; }
-    s.tmp_3 = JSBI_absoluteLess__P970232_mk(s);
-    s.tmp_3.arg0 = s.xSign___970417;
-    s.callLocIdx = 195; s.pc = 11; return s.tmp_3;
+    s.tmp_3 = JSBI_absoluteLess__P1027965_mk(s);
+    s.tmp_3.arg0 = s.xSign___1028150;
+    s.callLocIdx = 201; s.pc = 11; return s.tmp_3;
   case 11:
     r0 = s.retval;
     { step = 7; continue; }
@@ -25444,19 +25881,19 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_compareWithBigInt__P970412.info = {"start":17645,"length":333,"line":463,"column":4,"endLine":470,"endColumn":5,"fileName":"jsbi.ts","functionName":"compareWithBigInt","argumentNames":["x","y"]}
+JSBI_compareWithBigInt__P1028145.info = {"start":18373,"length":333,"line":478,"column":4,"endLine":485,"endColumn":5,"fileName":"jsbi.ts","functionName":"compareWithBigInt","argumentNames":["x","y"]}
 
-function JSBI_compareWithBigInt__P970412_mk(s) {
+function JSBI_compareWithBigInt__P1028145_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_compareWithBigInt__P970412, depth: s.depth + 1,
+        parent: s, fn: JSBI_compareWithBigInt__P1028145, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
-  xSign___970417: undefined,
-  result___970427: undefined,
+  xSign___1028150: undefined,
+  result___1028160: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -25465,7 +25902,7 @@ function JSBI_compareWithBigInt__P970412_mk(s) {
 
 
 
-function JSBI_absoluteLess__P970232(s) {
+function JSBI_absoluteLess__P1027965(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25492,12 +25929,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_absoluteLess__P970232.info = {"start":15361,"length":97,"line":389,"column":4,"endLine":391,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteLess","argumentNames":["bothNegative"]}
+JSBI_absoluteLess__P1027965.info = {"start":16089,"length":97,"line":404,"column":4,"endLine":406,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteLess","argumentNames":["bothNegative"]}
 
-function JSBI_absoluteLess__P970232_mk(s) {
+function JSBI_absoluteLess__P1027965_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_absoluteLess__P970232, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteLess__P1027965, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -25507,7 +25944,7 @@ function JSBI_absoluteLess__P970232_mk(s) {
 
 
 
-function JSBI_absoluteGreater__P970227(s) {
+function JSBI_absoluteGreater__P1027960(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25534,12 +25971,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_absoluteGreater__P970227.info = {"start":15255,"length":100,"line":385,"column":4,"endLine":387,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteGreater","argumentNames":["bothNegative"]}
+JSBI_absoluteGreater__P1027960.info = {"start":15983,"length":100,"line":400,"column":4,"endLine":402,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteGreater","argumentNames":["bothNegative"]}
 
-function JSBI_absoluteGreater__P970227_mk(s) {
+function JSBI_absoluteGreater__P1027960_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_absoluteGreater__P970227, depth: s.depth + 1,
+        parent: s, fn: JSBI_absoluteGreater__P1027960, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -25549,136 +25986,7 @@ function JSBI_absoluteGreater__P970227_mk(s) {
 
 
 
-function JSBI_absoluteCompare__P969974(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.diff___969977 = undefined;
-    s.i___969986 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0.fields["data"];
-    s.tmp_1 = r0;
-    r0 = pxsim_Array__length(s.tmp_1);
-    s.tmp_0 = r0;
-    r0 = s.arg1.fields["data"];
-    s.tmp_3 = r0;
-    r0 = pxsim_Array__length(s.tmp_3);
-    s.tmp_2 = r0;
-    r0 = (s.tmp_0 - s.tmp_2);
-    s.diff___969977 = (r0);
-    r0 = (s.diff___969977 !== 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    r0 = s.diff___969977;
-    { step = 11; continue; }
-  case 1:
-  case 2:
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__length(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_1 - 1);
-    s.i___969986 = (r0);
-  case 3:
-    r0 = (s.i___969986 >= 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_0);
-    if (r0) { step = 4; continue; }
-    r0 = s.tmp_0;
-    { step = 5; continue; }
-  case 4:
-    r0 = s.arg0.fields["data"];
-    s.tmp_2 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_2, s.i___969986);
-    s.tmp_1 = r0;
-    r0 = s.arg1.fields["data"];
-    s.tmp_4 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_4, s.i___969986);
-    s.tmp_3 = r0;
-    r0 = (s.tmp_1 === s.tmp_3);
-  case 5:
-    // jmp value (already in r0)
-    s.tmp_5 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_5);
-    if (!r0) { step = 6; continue; }
-    r0 = (s.i___969986 - 1);
-    s.i___969986 = (r0);
-    { step = 3; continue; }
-  case 6:
-    r0 = (s.i___969986 < 0);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 7; continue; }
-    r0 = 0;
-    { step = 11; continue; }
-  case 7:
-  case 8:
-    r0 = s.arg0.fields["data"];
-    s.tmp_4 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_4, s.i___969986);
-    s.tmp_3 = r0;
-    r0 = (s.tmp_3 >>> 0);
-    s.tmp_2 = r0;
-    r0 = s.arg1.fields["data"];
-    s.tmp_7 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_7, s.i___969986);
-    s.tmp_6 = r0;
-    r0 = (s.tmp_6 >>> 0);
-    s.tmp_5 = r0;
-    r0 = (s.tmp_2 > s.tmp_5);
-    s.tmp_1 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_1);
-    if (!r0) { step = 9; continue; }
-    r0 = 1;
-    { step = 10; continue; }
-  case 9:
-    r0 = -1;
-  case 10:
-    // jmp value (already in r0)
-    s.tmp_8 = r0;
-    r0 = s.tmp_8;
-  case 11:
-    return leave(s, r0)
-  default: oops()
-} } }
-JSBI_absoluteCompare__P969974.info = {"start":12238,"length":340,"line":310,"column":4,"endLine":317,"endColumn":5,"fileName":"jsbi.ts","functionName":"absoluteCompare","argumentNames":["x","y"]}
-
-function JSBI_absoluteCompare__P969974_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: JSBI_absoluteCompare__P969974, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tmp_6: undefined,
-  tmp_7: undefined,
-  tmp_8: undefined,
-  diff___969977: undefined,
-  i___969986: undefined,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function JSBI_unequalSign__P970425(s) {
+function JSBI_unequalSign__P1028158(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25705,12 +26013,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_unequalSign__P970425.info = {"start":47949,"length":96,"line":1186,"column":4,"endLine":1188,"endColumn":5,"fileName":"jsbi.ts","functionName":"unequalSign","argumentNames":["leftNegative"]}
+JSBI_unequalSign__P1028158.info = {"start":49379,"length":96,"line":1219,"column":4,"endLine":1221,"endColumn":5,"fileName":"jsbi.ts","functionName":"unequalSign","argumentNames":["leftNegative"]}
 
-function JSBI_unequalSign__P970425_mk(s) {
+function JSBI_unequalSign__P1028158_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_unequalSign__P970425, depth: s.depth + 1,
+        parent: s, fn: JSBI_unequalSign__P1028158, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -25720,7 +26028,7 @@ function JSBI_unequalSign__P970425_mk(s) {
 
 
 
-function JSBI_compareWithDouble__P970408(s) {
+function JSBI_compareWithDouble__P1028141(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25730,24 +26038,24 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.xSign___970455 = undefined;
-    s.ySign___970458 = undefined;
-    s.rawExponent___970479 = undefined;
-    s.exponent___970491 = undefined;
-    s.xLength___970498 = undefined;
-    s.xMsd___970501 = undefined;
-    s.msdLeadingZeros___970506 = undefined;
-    s.xBitLength___970510 = undefined;
-    s.yBitLength___970515 = undefined;
-    s.mantissaHigh___970531 = undefined;
-    s.mantissaLow___970542 = undefined;
-    s.msdTopBit___970549 = undefined;
-    s.compareMantissa___970561 = undefined;
-    s.remainingMantissaBits___970562 = undefined;
-    s.shift___970566 = undefined;
-    s.shift___970604 = undefined;
-    s.digitIndex___970644 = undefined;
-    s.digit___970669 = undefined;
+    s.xSign___1028188 = undefined;
+    s.ySign___1028191 = undefined;
+    s.rawExponent___1028212 = undefined;
+    s.exponent___1028224 = undefined;
+    s.xLength___1028231 = undefined;
+    s.xMsd___1028234 = undefined;
+    s.msdLeadingZeros___1028239 = undefined;
+    s.xBitLength___1028243 = undefined;
+    s.yBitLength___1028248 = undefined;
+    s.mantissaHigh___1028264 = undefined;
+    s.mantissaLow___1028275 = undefined;
+    s.msdTopBit___1028282 = undefined;
+    s.compareMantissa___1028294 = undefined;
+    s.remainingMantissaBits___1028295 = undefined;
+    s.shift___1028299 = undefined;
+    s.shift___1028337 = undefined;
+    s.digitIndex___1028377 = undefined;
+    s.digit___1028402 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -25778,16 +26086,16 @@ switch (step) {
   case 5:
   case 6:
     r0 = s.arg0.fields["sign"];
-    s.xSign___970455 = (r0);
+    s.xSign___1028188 = (r0);
     r0 = (s.arg1 < 0);
-    s.ySign___970458 = (r0);
-    r0 = (s.xSign___970455 !== s.ySign___970458);
+    s.ySign___1028191 = (r0);
+    r0 = (s.xSign___1028188 !== s.ySign___1028191);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 7; continue; }
-    s.tmp_1 = JSBI_unequalSign__P970425_mk(s);
-    s.tmp_1.arg0 = s.xSign___970455;
-    s.callLocIdx = 196; s.pc = 46; return s.tmp_1;
+    s.tmp_1 = JSBI_unequalSign__P1028158_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028188;
+    s.callLocIdx = 202; s.pc = 46; return s.tmp_1;
   case 46:
     r0 = s.retval;
     { step = 45; continue; }
@@ -25812,11 +26120,11 @@ switch (step) {
     { step = 45; continue; }
   case 11:
   case 12:
-    r0 = pxsim.BufferMethods.setNumber(globals.kBitConversionBuffer___969075, 14, 0, s.arg1);
-    s.tmp_2 = r0 = globals.kBitConversionBuffer___969075;
+    r0 = pxsim.BufferMethods.setNumber(globals.kBitConversionBuffer___1026729, 14, 0, s.arg1);
+    s.tmp_2 = r0 = globals.kBitConversionBuffer___1026729;
     s.tmp_4 = Buffer_sizeOfNumberFormat__P607597_mk(s);
     s.tmp_4.arg0 = 5;
-    s.callLocIdx = 198; s.pc = 47; return s.tmp_4;
+    s.callLocIdx = 204; s.pc = 47; return s.tmp_4;
   case 47:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -25825,23 +26133,23 @@ switch (step) {
     r0 = (s.tmp_1 >>> 20);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 2047);
-    s.rawExponent___970479 = (r0);
-    r0 = (s.rawExponent___970479 === 2047);
+    s.rawExponent___1028212 = (r0);
+    r0 = (s.rawExponent___1028212 === 2047);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 13; continue; }
     r0 = pxsim_pxtcore.throwValue("compareWithDouble: implementation bug: handled elsewhere.");
   case 13:
   case 14:
-    r0 = (s.rawExponent___970479 - 1023);
-    s.exponent___970491 = (r0);
-    r0 = (s.exponent___970491 < 0);
+    r0 = (s.rawExponent___1028212 - 1023);
+    s.exponent___1028224 = (r0);
+    r0 = (s.exponent___1028224 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 15; continue; }
-    s.tmp_1 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_1.arg0 = s.xSign___970455;
-    s.callLocIdx = 199; s.pc = 48; return s.tmp_1;
+    s.tmp_1 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028188;
+    s.callLocIdx = 205; s.pc = 48; return s.tmp_1;
   case 48:
     r0 = s.retval;
     { step = 45; continue; }
@@ -25850,54 +26158,54 @@ switch (step) {
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
-    s.xLength___970498 = (r0);
+    s.xLength___1028231 = (r0);
     s.tmp_0 = r0 = s.arg0;
-    r0 = (s.xLength___970498 - 1);
+    r0 = (s.xLength___1028231 - 1);
     s.tmp_1 = r0;
     r0 = s.tmp_0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__getAt(s.tmp_2, s.tmp_1);
-    s.xMsd___970501 = (r0);
-    s.tmp_0 = JSBI_clz30__P969184_mk(s);
-    s.tmp_0.arg0 = s.xMsd___970501;
-    s.callLocIdx = 202; s.pc = 49; return s.tmp_0;
+    s.xMsd___1028234 = (r0);
+    s.tmp_0 = JSBI_clz30__P1026838_mk(s);
+    s.tmp_0.arg0 = s.xMsd___1028234;
+    s.callLocIdx = 208; s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
-    s.msdLeadingZeros___970506 = (r0);
-    r0 = (s.xLength___970498 * 30);
+    s.msdLeadingZeros___1028239 = (r0);
+    r0 = (s.xLength___1028231 * 30);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - s.msdLeadingZeros___970506);
-    s.xBitLength___970510 = (r0);
-    r0 = (s.exponent___970491 + 1);
-    s.yBitLength___970515 = (r0);
-    r0 = (s.xBitLength___970510 < s.yBitLength___970515);
+    r0 = (s.tmp_0 - s.msdLeadingZeros___1028239);
+    s.xBitLength___1028243 = (r0);
+    r0 = (s.exponent___1028224 + 1);
+    s.yBitLength___1028248 = (r0);
+    r0 = (s.xBitLength___1028243 < s.yBitLength___1028248);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 17; continue; }
-    s.tmp_1 = JSBI_absoluteLess__P970232_mk(s);
-    s.tmp_1.arg0 = s.xSign___970455;
-    s.callLocIdx = 203; s.pc = 50; return s.tmp_1;
+    s.tmp_1 = JSBI_absoluteLess__P1027965_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028188;
+    s.callLocIdx = 209; s.pc = 50; return s.tmp_1;
   case 50:
     r0 = s.retval;
     { step = 45; continue; }
   case 17:
   case 18:
-    r0 = (s.xBitLength___970510 > s.yBitLength___970515);
+    r0 = (s.xBitLength___1028243 > s.yBitLength___1028248);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 19; continue; }
-    s.tmp_3 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_3.arg0 = s.xSign___970455;
-    s.callLocIdx = 204; s.pc = 51; return s.tmp_3;
+    s.tmp_3 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_3.arg0 = s.xSign___1028188;
+    s.callLocIdx = 210; s.pc = 51; return s.tmp_3;
   case 51:
     r0 = s.retval;
     { step = 45; continue; }
   case 19:
   case 20:
-    s.tmp_6 = r0 = globals.kBitConversionBuffer___969075;
+    s.tmp_6 = r0 = globals.kBitConversionBuffer___1026729;
     s.tmp_8 = Buffer_sizeOfNumberFormat__P607597_mk(s);
     s.tmp_8.arg0 = 5;
-    s.callLocIdx = 205; s.pc = 52; return s.tmp_8;
+    s.callLocIdx = 211; s.pc = 52; return s.tmp_8;
   case 52:
     r0 = s.retval;
     s.tmp_7 = r0;
@@ -25906,13 +26214,13 @@ switch (step) {
     r0 = (s.tmp_5 & 1048575);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 | 1048576);
-    s.mantissaHigh___970531 = (r0);
-    r0 = pxsim.BufferMethods.getNumber(globals.kBitConversionBuffer___969075, 5, 0);
-    s.mantissaLow___970542 = (r0);
-    r0 = (29 - s.msdLeadingZeros___970506);
-    s.msdTopBit___970549 = (r0);
-    s.tmp_1 = r0 = s.msdTopBit___970549;
-    r0 = (s.xBitLength___970510 - 1);
+    s.mantissaHigh___1028264 = (r0);
+    r0 = pxsim.BufferMethods.getNumber(globals.kBitConversionBuffer___1026729, 5, 0);
+    s.mantissaLow___1028275 = (r0);
+    r0 = (29 - s.msdLeadingZeros___1028239);
+    s.msdTopBit___1028282 = (r0);
+    s.tmp_1 = r0 = s.msdTopBit___1028282;
+    r0 = (s.xBitLength___1028243 - 1);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 % 30);
     s.tmp_3 = r0;
@@ -25925,173 +26233,173 @@ switch (step) {
     r0 = pxsim_pxtcore.throwValue("compareWithDouble: implementation bug.");
   case 21:
   case 22:
-    s.remainingMantissaBits___970562 = (0);
-    r0 = (s.msdTopBit___970549 < 20);
+    s.remainingMantissaBits___1028295 = (0);
+    r0 = (s.msdTopBit___1028282 < 20);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 23; continue; }
-    r0 = (20 - s.msdTopBit___970549);
-    s.shift___970566 = (r0);
-    r0 = (s.shift___970566 + 32);
-    s.remainingMantissaBits___970562 = (r0);
-    r0 = (s.mantissaHigh___970531 >>> s.shift___970566);
-    s.compareMantissa___970561 = (r0);
-    s.tmp_1 = r0 = s.mantissaHigh___970531;
-    r0 = (32 - s.shift___970566);
+    r0 = (20 - s.msdTopBit___1028282);
+    s.shift___1028299 = (r0);
+    r0 = (s.shift___1028299 + 32);
+    s.remainingMantissaBits___1028295 = (r0);
+    r0 = (s.mantissaHigh___1028264 >>> s.shift___1028299);
+    s.compareMantissa___1028294 = (r0);
+    s.tmp_1 = r0 = s.mantissaHigh___1028264;
+    r0 = (32 - s.shift___1028299);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 << s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.mantissaLow___970542 >>> s.shift___970566);
+    r0 = (s.mantissaLow___1028275 >>> s.shift___1028299);
     s.tmp_3 = r0;
     r0 = (s.tmp_0 | s.tmp_3);
-    s.mantissaHigh___970531 = (r0);
-    s.tmp_0 = r0 = s.mantissaLow___970542;
-    r0 = (32 - s.shift___970566);
+    s.mantissaHigh___1028264 = (r0);
+    s.tmp_0 = r0 = s.mantissaLow___1028275;
+    r0 = (32 - s.shift___1028299);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 << s.tmp_1);
-    s.mantissaLow___970542 = (r0);
+    s.mantissaLow___1028275 = (r0);
     { step = 26; continue; }
   case 23:
-    r0 = (s.msdTopBit___970549 === 20);
+    r0 = (s.msdTopBit___1028282 === 20);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 24; continue; }
-    s.remainingMantissaBits___970562 = (32);
-    s.compareMantissa___970561 = (s.mantissaHigh___970531);
-    s.mantissaHigh___970531 = (s.mantissaLow___970542);
-    s.mantissaLow___970542 = (0);
+    s.remainingMantissaBits___1028295 = (32);
+    s.compareMantissa___1028294 = (s.mantissaHigh___1028264);
+    s.mantissaHigh___1028264 = (s.mantissaLow___1028275);
+    s.mantissaLow___1028275 = (0);
     { step = 25; continue; }
   case 24:
-    r0 = (s.msdTopBit___970549 - 20);
-    s.shift___970604 = (r0);
-    r0 = (32 - s.shift___970604);
-    s.remainingMantissaBits___970562 = (r0);
-    r0 = (s.mantissaHigh___970531 << s.shift___970604);
+    r0 = (s.msdTopBit___1028282 - 20);
+    s.shift___1028337 = (r0);
+    r0 = (32 - s.shift___1028337);
+    s.remainingMantissaBits___1028295 = (r0);
+    r0 = (s.mantissaHigh___1028264 << s.shift___1028337);
     s.tmp_0 = r0;
-    s.tmp_2 = r0 = s.mantissaLow___970542;
-    r0 = (32 - s.shift___970604);
+    s.tmp_2 = r0 = s.mantissaLow___1028275;
+    r0 = (32 - s.shift___1028337);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 >>> s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.compareMantissa___970561 = (r0);
-    r0 = (s.mantissaLow___970542 << s.shift___970604);
-    s.mantissaHigh___970531 = (r0);
-    s.mantissaLow___970542 = (0);
+    s.compareMantissa___1028294 = (r0);
+    r0 = (s.mantissaLow___1028275 << s.shift___1028337);
+    s.mantissaHigh___1028264 = (r0);
+    s.mantissaLow___1028275 = (0);
   case 25:
   case 26:
-    r0 = (s.xMsd___970501 >>> 0);
-    s.xMsd___970501 = (r0);
-    r0 = (s.compareMantissa___970561 >>> 0);
-    s.compareMantissa___970561 = (r0);
-    r0 = (s.xMsd___970501 > s.compareMantissa___970561);
+    r0 = (s.xMsd___1028234 >>> 0);
+    s.xMsd___1028234 = (r0);
+    r0 = (s.compareMantissa___1028294 >>> 0);
+    s.compareMantissa___1028294 = (r0);
+    r0 = (s.xMsd___1028234 > s.compareMantissa___1028294);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 27; continue; }
-    s.tmp_1 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_1.arg0 = s.xSign___970455;
-    s.callLocIdx = 206; s.pc = 53; return s.tmp_1;
+    s.tmp_1 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028188;
+    s.callLocIdx = 212; s.pc = 53; return s.tmp_1;
   case 53:
     r0 = s.retval;
     { step = 45; continue; }
   case 27:
   case 28:
-    r0 = (s.xMsd___970501 < s.compareMantissa___970561);
+    r0 = (s.xMsd___1028234 < s.compareMantissa___1028294);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 29; continue; }
-    s.tmp_3 = JSBI_absoluteLess__P970232_mk(s);
-    s.tmp_3.arg0 = s.xSign___970455;
-    s.callLocIdx = 207; s.pc = 54; return s.tmp_3;
+    s.tmp_3 = JSBI_absoluteLess__P1027965_mk(s);
+    s.tmp_3.arg0 = s.xSign___1028188;
+    s.callLocIdx = 213; s.pc = 54; return s.tmp_3;
   case 54:
     r0 = s.retval;
     { step = 45; continue; }
   case 29:
   case 30:
-    r0 = (s.xLength___970498 - 2);
-    s.digitIndex___970644 = (r0);
+    r0 = (s.xLength___1028231 - 2);
+    s.digitIndex___1028377 = (r0);
   case 31:
-    r0 = (s.digitIndex___970644 >= 0);
+    r0 = (s.digitIndex___1028377 >= 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 38; continue; }
-    r0 = (s.remainingMantissaBits___970562 > 0);
+    r0 = (s.remainingMantissaBits___1028295 > 0);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 32; continue; }
-    r0 = (s.remainingMantissaBits___970562 - 30);
-    s.remainingMantissaBits___970562 = (r0);
-    r0 = (s.mantissaHigh___970531 >>> 2);
-    s.compareMantissa___970561 = (r0);
-    r0 = (s.mantissaHigh___970531 << 30);
+    r0 = (s.remainingMantissaBits___1028295 - 30);
+    s.remainingMantissaBits___1028295 = (r0);
+    r0 = (s.mantissaHigh___1028264 >>> 2);
+    s.compareMantissa___1028294 = (r0);
+    r0 = (s.mantissaHigh___1028264 << 30);
     s.tmp_0 = r0;
-    r0 = (s.mantissaLow___970542 >>> 2);
+    r0 = (s.mantissaLow___1028275 >>> 2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.mantissaHigh___970531 = (r0);
-    r0 = (s.mantissaLow___970542 << 30);
-    s.mantissaLow___970542 = (r0);
+    s.mantissaHigh___1028264 = (r0);
+    r0 = (s.mantissaLow___1028275 << 30);
+    s.mantissaLow___1028275 = (r0);
     { step = 33; continue; }
   case 32:
-    s.compareMantissa___970561 = (0);
+    s.compareMantissa___1028294 = (0);
   case 33:
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_1, s.digitIndex___970644);
+    r0 = pxsim_Array__getAt(s.tmp_1, s.digitIndex___1028377);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 >>> 0);
-    s.digit___970669 = (r0);
-    r0 = (s.digit___970669 > s.compareMantissa___970561);
+    s.digit___1028402 = (r0);
+    r0 = (s.digit___1028402 > s.compareMantissa___1028294);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 34; continue; }
-    s.tmp_1 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_1.arg0 = s.xSign___970455;
-    s.callLocIdx = 209; s.pc = 55; return s.tmp_1;
+    s.tmp_1 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028188;
+    s.callLocIdx = 215; s.pc = 55; return s.tmp_1;
   case 55:
     r0 = s.retval;
     { step = 45; continue; }
   case 34:
   case 35:
-    r0 = (s.digit___970669 < s.compareMantissa___970561);
+    r0 = (s.digit___1028402 < s.compareMantissa___1028294);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 36; continue; }
-    s.tmp_3 = JSBI_absoluteLess__P970232_mk(s);
-    s.tmp_3.arg0 = s.xSign___970455;
-    s.callLocIdx = 210; s.pc = 56; return s.tmp_3;
+    s.tmp_3 = JSBI_absoluteLess__P1027965_mk(s);
+    s.tmp_3.arg0 = s.xSign___1028188;
+    s.callLocIdx = 216; s.pc = 56; return s.tmp_3;
   case 56:
     r0 = s.retval;
     { step = 45; continue; }
   case 36:
   case 37:
-    r0 = (s.digitIndex___970644 - 1);
-    s.digitIndex___970644 = (r0);
+    r0 = (s.digitIndex___1028377 - 1);
+    s.digitIndex___1028377 = (r0);
     { step = 31; continue; }
   case 38:
-    r0 = (s.mantissaHigh___970531 !== 0);
+    r0 = (s.mantissaHigh___1028264 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 39; continue; }
     r0 = s.tmp_0;
     { step = 40; continue; }
   case 39:
-    r0 = (s.mantissaLow___970542 !== 0);
+    r0 = (s.mantissaLow___1028275 !== 0);
   case 40:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 43; continue; }
-    r0 = (s.remainingMantissaBits___970562 === 0);
+    r0 = (s.remainingMantissaBits___1028295 === 0);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 41; continue; }
     r0 = pxsim_pxtcore.throwValue("compareWithDouble: implementation bug.");
   case 41:
   case 42:
-    s.tmp_3 = JSBI_absoluteLess__P970232_mk(s);
-    s.tmp_3.arg0 = s.xSign___970455;
-    s.callLocIdx = 211; s.pc = 57; return s.tmp_3;
+    s.tmp_3 = JSBI_absoluteLess__P1027965_mk(s);
+    s.tmp_3.arg0 = s.xSign___1028188;
+    s.callLocIdx = 217; s.pc = 57; return s.tmp_3;
   case 57:
     r0 = s.retval;
     { step = 45; continue; }
@@ -26102,12 +26410,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_compareWithDouble__P970408.info = {"start":17984,"length":4677,"line":472,"column":4,"endLine":563,"endColumn":5,"fileName":"jsbi.ts","functionName":"compareWithDouble","argumentNames":["x","y"]}
+JSBI_compareWithDouble__P1028141.info = {"start":18712,"length":4677,"line":487,"column":4,"endLine":578,"endColumn":5,"fileName":"jsbi.ts","functionName":"compareWithDouble","argumentNames":["x","y"]}
 
-function JSBI_compareWithDouble__P970408_mk(s) {
+function JSBI_compareWithDouble__P1028141_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_compareWithDouble__P970408, depth: s.depth + 1,
+        parent: s, fn: JSBI_compareWithDouble__P1028141, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -26118,24 +26426,24 @@ function JSBI_compareWithDouble__P970408_mk(s) {
   tmp_6: undefined,
   tmp_7: undefined,
   tmp_8: undefined,
-  xSign___970455: undefined,
-  ySign___970458: undefined,
-  rawExponent___970479: undefined,
-  exponent___970491: undefined,
-  xLength___970498: undefined,
-  xMsd___970501: undefined,
-  msdLeadingZeros___970506: undefined,
-  xBitLength___970510: undefined,
-  yBitLength___970515: undefined,
-  mantissaHigh___970531: undefined,
-  mantissaLow___970542: undefined,
-  msdTopBit___970549: undefined,
-  compareMantissa___970561: undefined,
-  remainingMantissaBits___970562: undefined,
-  shift___970566: undefined,
-  shift___970604: undefined,
-  digitIndex___970644: undefined,
-  digit___970669: undefined,
+  xSign___1028188: undefined,
+  ySign___1028191: undefined,
+  rawExponent___1028212: undefined,
+  exponent___1028224: undefined,
+  xLength___1028231: undefined,
+  xMsd___1028234: undefined,
+  msdLeadingZeros___1028239: undefined,
+  xBitLength___1028243: undefined,
+  yBitLength___1028248: undefined,
+  mantissaHigh___1028264: undefined,
+  mantissaLow___1028275: undefined,
+  msdTopBit___1028282: undefined,
+  compareMantissa___1028294: undefined,
+  remainingMantissaBits___1028295: undefined,
+  shift___1028299: undefined,
+  shift___1028337: undefined,
+  digitIndex___1028377: undefined,
+  digit___1028402: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -26144,7 +26452,7 @@ function JSBI_compareWithDouble__P970408_mk(s) {
 
 
 
-function JSBI_compareWithInt__P970404(s) {
+function JSBI_compareWithInt__P1028137(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -26154,26 +26462,26 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.xSign___970697 = undefined;
-    s.ySign___970700 = undefined;
-    s.yAbs___970722 = undefined;
-    s.xDigit___970726 = undefined;
+    s.xSign___1028430 = undefined;
+    s.ySign___1028433 = undefined;
+    s.yAbs___1028455 = undefined;
+    s.xDigit___1028459 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0.fields["sign"];
-    s.xSign___970697 = (r0);
+    s.xSign___1028430 = (r0);
     r0 = (s.arg1 < 0);
-    s.ySign___970700 = (r0);
-    r0 = (s.xSign___970697 !== s.ySign___970700);
+    s.ySign___1028433 = (r0);
+    r0 = (s.xSign___1028430 !== s.ySign___1028433);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_1 = JSBI_unequalSign__P970425_mk(s);
-    s.tmp_1.arg0 = s.xSign___970697;
-    s.callLocIdx = 212; s.pc = 16; return s.tmp_1;
+    s.tmp_1 = JSBI_unequalSign__P1028158_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028430;
+    s.callLocIdx = 218; s.pc = 16; return s.tmp_1;
   case 16:
     r0 = s.retval;
     { step = 15; continue; }
@@ -26187,7 +26495,7 @@ switch (step) {
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 7; continue; }
-    r0 = pxsim_numops_toBoolDecr(s.ySign___970700);
+    r0 = pxsim_numops_toBoolDecr(s.ySign___1028433);
     if (!r0) { step = 3; continue; }
     r0 = pxsim_pxtcore.throwValue("compareWithInt: implementation bug.");
   case 3:
@@ -26215,9 +26523,9 @@ switch (step) {
     s.tmp_7 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_7);
     if (!r0) { step = 9; continue; }
-    s.tmp_10 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_10.arg0 = s.xSign___970697;
-    s.callLocIdx = 215; s.pc = 17; return s.tmp_10;
+    s.tmp_10 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_10.arg0 = s.xSign___1028430;
+    s.callLocIdx = 221; s.pc = 17; return s.tmp_10;
   case 17:
     r0 = s.retval;
     { step = 15; continue; }
@@ -26225,35 +26533,35 @@ switch (step) {
   case 10:
     s.tmp_11 = Math_abs__P607510_mk(s);
     s.tmp_11.arg0 = s.arg1;
-    s.callLocIdx = 216; s.pc = 18; return s.tmp_11;
+    s.callLocIdx = 222; s.pc = 18; return s.tmp_11;
   case 18:
     r0 = s.retval;
-    s.yAbs___970722 = (r0);
+    s.yAbs___1028455 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
     r0 = pxsim_Array__getAt(s.tmp_1, 0);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 >>> 0);
-    s.xDigit___970726 = (r0);
-    r0 = (s.xDigit___970726 > s.yAbs___970722);
+    s.xDigit___1028459 = (r0);
+    r0 = (s.xDigit___1028459 > s.yAbs___1028455);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 11; continue; }
-    s.tmp_1 = JSBI_absoluteGreater__P970227_mk(s);
-    s.tmp_1.arg0 = s.xSign___970697;
-    s.callLocIdx = 218; s.pc = 19; return s.tmp_1;
+    s.tmp_1 = JSBI_absoluteGreater__P1027960_mk(s);
+    s.tmp_1.arg0 = s.xSign___1028430;
+    s.callLocIdx = 224; s.pc = 19; return s.tmp_1;
   case 19:
     r0 = s.retval;
     { step = 15; continue; }
   case 11:
   case 12:
-    r0 = (s.xDigit___970726 < s.yAbs___970722);
+    r0 = (s.xDigit___1028459 < s.yAbs___1028455);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 13; continue; }
-    s.tmp_3 = JSBI_absoluteLess__P970232_mk(s);
-    s.tmp_3.arg0 = s.xSign___970697;
-    s.callLocIdx = 219; s.pc = 20; return s.tmp_3;
+    s.tmp_3 = JSBI_absoluteLess__P1027965_mk(s);
+    s.tmp_3.arg0 = s.xSign___1028430;
+    s.callLocIdx = 225; s.pc = 20; return s.tmp_3;
   case 20:
     r0 = s.retval;
     { step = 15; continue; }
@@ -26264,12 +26572,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_compareWithInt__P970404.info = {"start":22667,"length":656,"line":565,"column":4,"endLine":580,"endColumn":5,"fileName":"jsbi.ts","functionName":"compareWithInt","argumentNames":["x","y"]}
+JSBI_compareWithInt__P1028137.info = {"start":23395,"length":656,"line":580,"column":4,"endLine":595,"endColumn":5,"fileName":"jsbi.ts","functionName":"compareWithInt","argumentNames":["x","y"]}
 
-function JSBI_compareWithInt__P970404_mk(s) {
+function JSBI_compareWithInt__P1028137_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_compareWithInt__P970404, depth: s.depth + 1,
+        parent: s, fn: JSBI_compareWithInt__P1028137, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -26283,10 +26591,10 @@ function JSBI_compareWithInt__P970404_mk(s) {
   tmp_9: undefined,
   tmp_10: undefined,
   tmp_11: undefined,
-  xSign___970697: undefined,
-  ySign___970700: undefined,
-  yAbs___970722: undefined,
-  xDigit___970726: undefined,
+  xSign___1028430: undefined,
+  ySign___1028433: undefined,
+  yAbs___1028455: undefined,
+  xDigit___1028459: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -26340,7 +26648,7 @@ function Math_abs__P607510_mk(s) {
 
 
 
-function JSBI_isOneDigitInt__P969802(s) {
+function JSBI_isOneDigitInt__P1027456(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -26360,12 +26668,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_isOneDigitInt__P969802.info = {"start":40717,"length":88,"line":998,"column":4,"endLine":1000,"endColumn":5,"fileName":"jsbi.ts","functionName":"isOneDigitInt","argumentNames":["x"]}
+JSBI_isOneDigitInt__P1027456.info = {"start":42147,"length":88,"line":1031,"column":4,"endLine":1033,"endColumn":5,"fileName":"jsbi.ts","functionName":"isOneDigitInt","argumentNames":["x"]}
 
-function JSBI_isOneDigitInt__P969802_mk(s) {
+function JSBI_isOneDigitInt__P1027456_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_isOneDigitInt__P969802, depth: s.depth + 1,
+        parent: s, fn: JSBI_isOneDigitInt__P1027456, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -26375,7 +26683,7 @@ function JSBI_isOneDigitInt__P969802_mk(s) {
 
 
 
-function JSBI_BigInt_length__P969078(s) {
+function JSBI_BigInt_length__P1026732(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -26390,20 +26698,20 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
     return leaveAccessor(s, r0)
   default: oops()
 } } }
-JSBI_BigInt_length__P969078.info = {"start":1965,"length":75,"line":51,"column":8,"endLine":53,"endColumn":9,"fileName":"jsbi.ts","functionName":"length","argumentNames":["this"]}
-JSBI_BigInt_length__P969078.isGetter = true;
+JSBI_BigInt_length__P1026732.info = {"start":1965,"length":75,"line":51,"column":8,"endLine":53,"endColumn":9,"fileName":"jsbi.ts","functionName":"length","argumentNames":["this"]}
+JSBI_BigInt_length__P1026732.isGetter = true;
 
-function JSBI_BigInt_length__P969078_mk(s) {
+function JSBI_BigInt_length__P1026732_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt_length__P969078, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt_length__P1026732, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -26413,7 +26721,7 @@ function JSBI_BigInt_length__P969078_mk(s) {
 
 
 
-function JSBI_BigInt_toString__P969081(s) {
+function JSBI_BigInt_toString__P1026735(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -26428,7 +26736,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
@@ -26486,7 +26794,7 @@ switch (step) {
     { step = 7; continue; }
   case 5:
   case 6:
-    s.tmp_12 = JSBI_stringify__P969181_mk(s);
+    s.tmp_12 = JSBI_stringify__P1026835_mk(s);
     s.tmp_12.arg0 = s.arg0;
     s.tmp_12.arg1 = false;
     s.callLocIdx = 70; s.pc = 10; return s.tmp_12;
@@ -26496,12 +26804,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt_toString__P969081.info = {"start":2685,"length":314,"line":74,"column":8,"endLine":80,"endColumn":9,"fileName":"jsbi.ts","functionName":"toString","argumentNames":["this"]}
+JSBI_BigInt_toString__P1026735.info = {"start":2685,"length":314,"line":74,"column":8,"endLine":80,"endColumn":9,"fileName":"jsbi.ts","functionName":"toString","argumentNames":["this"]}
 
-function JSBI_BigInt_toString__P969081_mk(s) {
+function JSBI_BigInt_toString__P1026735_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt_toString__P969081, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt_toString__P1026735, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -26523,7 +26831,7 @@ function JSBI_BigInt_toString__P969081_mk(s) {
 
 
 
-function JSBI_stringify__P969181(s) {
+function JSBI_stringify__P1026835(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -26533,21 +26841,21 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.length___972308 = undefined;
-    s.result___972315 = undefined;
-    s.bitLength___972332 = undefined;
-    s.charsRequired___972347 = undefined;
-    s.secondHalfChars___972363 = undefined;
-    s.conqueror___972369 = undefined;
-    s.quotient___972375 = undefined;
-    s.secondHalf___972376 = undefined;
-    s.divisor___972377 = undefined;
-    s.remainder___972395 = undefined;
-    s.i___972396 = undefined;
-    s.input___972404 = undefined;
-    s.divisionResult___972432 = undefined;
-    s.remainder___972441 = undefined;
-    s.firstHalf___972452 = undefined;
+    s.length___1030094 = undefined;
+    s.result___1030101 = undefined;
+    s.bitLength___1030118 = undefined;
+    s.charsRequired___1030133 = undefined;
+    s.secondHalfChars___1030149 = undefined;
+    s.conqueror___1030155 = undefined;
+    s.quotient___1030161 = undefined;
+    s.secondHalf___1030162 = undefined;
+    s.divisor___1030163 = undefined;
+    s.remainder___1030181 = undefined;
+    s.i___1030182 = undefined;
+    s.input___1030190 = undefined;
+    s.divisionResult___1030218 = undefined;
+    s.remainder___1030227 = undefined;
+    s.firstHalf___1030238 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -26556,8 +26864,8 @@ switch (step) {
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
     r0 = pxsim_Array__length(s.tmp_0);
-    s.length___972308 = (r0);
-    r0 = (s.length___972308 === 0);
+    s.length___1030094 = (r0);
+    r0 = (s.length___1030094 === 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
@@ -26565,7 +26873,7 @@ switch (step) {
     { step = 21; continue; }
   case 1:
   case 2:
-    r0 = (s.length___972308 === 1);
+    r0 = (s.length___1030094 === 1);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 7; continue; }
@@ -26576,7 +26884,7 @@ switch (step) {
     r0 = (s.tmp_3 >>> 0);
     s.tmp_2 = r0;
     r0 = pxsim_numops.toString(s.tmp_2);
-    s.result___972315 = (r0);
+    s.result___1030101 = (r0);
     r0 = (s.arg1 === false);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
@@ -26590,77 +26898,77 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 5; continue; }
-    if ((s.result___972315) && (s.result___972315).vtable) {
+    if ((s.result___1030101) && (s.result___1030101).vtable) {
     setupResume(s, 22);
-    pxsim_String__stringConv(s.result___972315);
+    pxsim_String__stringConv(s.result___1030101);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.result___972315) + ""; }
+    } else { s.retval = (s.result___1030101) + ""; }
   case 22:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("-", s.tmp_2);
-    s.result___972315 = (r0);
+    s.result___1030101 = (r0);
   case 5:
   case 6:
-    r0 = s.result___972315;
+    r0 = s.result___1030101;
     { step = 21; continue; }
   case 7:
   case 8:
-    r0 = (s.length___972308 * 30);
+    r0 = (s.length___1030094 * 30);
     s.tmp_0 = r0;
-    s.tmp_2 = JSBI_clz30__P969184_mk(s);
+    s.tmp_2 = JSBI_clz30__P1026838_mk(s);
     s.tmp_3 = r0 = s.arg0;
-    r0 = (s.length___972308 - 1);
+    r0 = (s.length___1030094 - 1);
     s.tmp_4 = r0;
     r0 = s.tmp_3.fields["data"];
     s.tmp_5 = r0;
     r0 = pxsim_Array__getAt(s.tmp_5, s.tmp_4);
     s.tmp_2.arg0 = r0;
-    s.callLocIdx = 323; s.pc = 23; return s.tmp_2;
+    s.callLocIdx = 338; s.pc = 23; return s.tmp_2;
   case 23:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_0 - s.tmp_1);
-    s.bitLength___972332 = (r0);
-    r0 = (s.bitLength___972332 * 32);
-    s.charsRequired___972347 = (r0);
-    r0 = (s.charsRequired___972347 + 105);
-    s.charsRequired___972347 = (r0);
-    r0 = (s.charsRequired___972347 / 106);
+    s.bitLength___1030118 = (r0);
+    r0 = (s.bitLength___1030118 * 32);
+    s.charsRequired___1030133 = (r0);
+    r0 = (s.charsRequired___1030133 + 105);
+    s.charsRequired___1030133 = (r0);
+    r0 = (s.charsRequired___1030133 / 106);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.charsRequired___972347 = (r0);
-    r0 = (s.charsRequired___972347 + 1);
+    s.charsRequired___1030133 = (r0);
+    r0 = (s.charsRequired___1030133 + 1);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 >> 1);
-    s.secondHalfChars___972363 = (r0);
-    s.tmp_0 = JSBI_exponentiate__P970998_mk(s);
-    s.tmp_1 = JSBI_oneDigit__P969807_mk(s);
+    s.secondHalfChars___1030149 = (r0);
+    s.tmp_0 = JSBI_exponentiate__P1028784_mk(s);
+    s.tmp_1 = JSBI_oneDigit__P1027461_mk(s);
     s.tmp_1.arg0 = 10;
     s.tmp_1.arg1 = false;
-    s.callLocIdx = 324; s.pc = 25; return s.tmp_1;
+    s.callLocIdx = 339; s.pc = 25; return s.tmp_1;
   case 25:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.tmp_2 = JSBI_oneDigit__P969807_mk(s);
-    s.tmp_2.arg0 = s.secondHalfChars___972363;
+    s.tmp_2 = JSBI_oneDigit__P1027461_mk(s);
+    s.tmp_2.arg0 = s.secondHalfChars___1030149;
     s.tmp_2.arg1 = false;
-    s.callLocIdx = 325; s.pc = 26; return s.tmp_2;
+    s.callLocIdx = 340; s.pc = 26; return s.tmp_2;
   case 26:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 326; s.pc = 24; return s.tmp_0;
+    s.callLocIdx = 341; s.pc = 24; return s.tmp_0;
   case 24:
     r0 = s.retval;
-    s.conqueror___972369 = (r0);
-    r0 = s.conqueror___972369.fields["data"];
+    s.conqueror___1030155 = (r0);
+    r0 = s.conqueror___1030155.fields["data"];
     s.tmp_1 = r0;
     r0 = pxsim_Array__getAt(s.tmp_1, 0);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 >>> 0);
-    s.divisor___972377 = (r0);
-    r0 = s.conqueror___972369.fields["data"];
+    s.divisor___1030163 = (r0);
+    r0 = s.conqueror___1030155.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
     s.tmp_1 = r0;
@@ -26671,31 +26979,31 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 10; continue; }
   case 9:
-    r0 = (s.divisor___972377 <= 32767);
+    r0 = (s.divisor___1030163 <= 32767);
   case 10:
     // jmp value (already in r0)
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 13; continue; }
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_4 = r0;
-    s.tmp_5 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_5 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_5.arg0 = s.tmp_4;
     r0 = s.arg0.fields["data"];
     s.tmp_6 = r0;
     r0 = pxsim_Array__length(s.tmp_6);
     s.tmp_5.arg1 = r0;
     s.tmp_5.arg2 = false;
-    s.callLocIdx = 330; s.pc = 27; return s.tmp_5;
+    s.callLocIdx = 345; s.pc = 27; return s.tmp_5;
   case 27:
     r0 = s.retval;
-    s.quotient___972375 = (s.tmp_4);
-    s.tmp_0 = JSBI_BigInt___initializeDigits__P969087_mk(s);
-    s.tmp_0.arg0 = s.quotient___972375;
-    s.callLocIdx = 331; s.pc = 28; return s.tmp_0;
+    s.quotient___1030161 = (s.tmp_4);
+    s.tmp_0 = JSBI_BigInt___initializeDigits__P1026741_mk(s);
+    s.tmp_0.arg0 = s.quotient___1030161;
+    s.callLocIdx = 346; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
-    s.remainder___972395 = (0);
+    s.remainder___1030181 = (0);
     r0 = s.arg0.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__length(s.tmp_2);
@@ -26703,123 +27011,123 @@ switch (step) {
     r0 = (s.tmp_1 * 2);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 - 1);
-    s.i___972396 = (r0);
+    s.i___1030182 = (r0);
   case 11:
-    r0 = (s.i___972396 >= 0);
+    r0 = (s.i___1030182 >= 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 12; continue; }
-    r0 = (s.remainder___972395 << 15);
+    r0 = (s.remainder___1030181 << 15);
     s.tmp_1 = r0;
-    s.tmp_3 = JSBI_BigInt___halfDigit__P969085_mk(s);
+    s.tmp_3 = JSBI_BigInt___halfDigit__P1026739_mk(s);
     s.tmp_3.arg0 = s.arg0;
-    s.tmp_3.arg1 = s.i___972396;
-    s.callLocIdx = 333; s.pc = 29; return s.tmp_3;
+    s.tmp_3.arg1 = s.i___1030182;
+    s.callLocIdx = 348; s.pc = 29; return s.tmp_3;
   case 29:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = (s.tmp_1 | s.tmp_2);
-    s.input___972404 = (r0);
-    s.tmp_0 = JSBI_BigInt___setHalfDigit__P969093_mk(s);
-    s.tmp_0.arg0 = s.quotient___972375;
-    s.tmp_0.arg1 = s.i___972396;
-    r0 = (s.input___972404 / s.divisor___972377);
+    s.input___1030190 = (r0);
+    s.tmp_0 = JSBI_BigInt___setHalfDigit__P1026747_mk(s);
+    s.tmp_0.arg0 = s.quotient___1030161;
+    s.tmp_0.arg1 = s.i___1030182;
+    r0 = (s.input___1030190 / s.divisor___1030163);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 | 0);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 334; s.pc = 30; return s.tmp_0;
+    s.callLocIdx = 349; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
-    r0 = (s.input___972404 % s.divisor___972377);
+    r0 = (s.input___1030190 % s.divisor___1030163);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.remainder___972395 = (r0);
-    r0 = (s.i___972396 - 1);
-    s.i___972396 = (r0);
+    s.remainder___1030181 = (r0);
+    r0 = (s.i___1030182 - 1);
+    s.i___1030182 = (r0);
     { step = 11; continue; }
   case 12:
-    r0 = pxsim_numops.toString(s.remainder___972395);
-    s.secondHalf___972376 = (r0);
+    r0 = pxsim_numops.toString(s.remainder___1030181);
+    s.secondHalf___1030162 = (r0);
     { step = 14; continue; }
   case 13:
-    s.tmp_0 = JSBI_absoluteDivLarge__P970016_mk(s);
+    s.tmp_0 = JSBI_absoluteDivLarge__P1027749_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.conqueror___972369;
+    s.tmp_0.arg1 = s.conqueror___1030155;
     s.tmp_0.arg2 = true;
     s.tmp_0.arg3 = true;
-    s.callLocIdx = 335; s.pc = 31; return s.tmp_0;
+    s.callLocIdx = 350; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
-    s.divisionResult___972432 = (r0);
+    s.divisionResult___1030218 = (r0);
     s.tmp_0 = if_quotient_1_mk(s);
-    s.tmp_0.arg0 = s.divisionResult___972432;
+    s.tmp_0.arg0 = s.divisionResult___1030218;
     if (!s.tmp_0.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_0.arg0, "quotient");
     } else {
       s.tmp_0.fn = s.tmp_0.arg0.vtable.iface["quotient"];
       if (s.tmp_0.fn == null) { s.retval = s.tmp_0.arg0.fields["quotient"]; }
       else if (!s.tmp_0.fn.isGetter) { s.retval = bind(s.tmp_0); }
-     else { s.callLocIdx = 336; s.pc = 32; return s.tmp_0; }
+     else { s.callLocIdx = 351; s.pc = 32; return s.tmp_0; }
     }
   case 32:
     r0 = s.retval;
-    s.quotient___972375 = (r0);
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
+    s.quotient___1030161 = (r0);
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
     s.tmp_1 = if_remainder_1_mk(s);
-    s.tmp_1.arg0 = s.divisionResult___972432;
+    s.tmp_1.arg0 = s.divisionResult___1030218;
     if (!s.tmp_1.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_1.arg0, "remainder");
     } else {
       s.tmp_1.fn = s.tmp_1.arg0.vtable.iface["remainder"];
       if (s.tmp_1.fn == null) { s.retval = s.tmp_1.arg0.fields["remainder"]; }
       else if (!s.tmp_1.fn.isGetter) { s.retval = bind(s.tmp_1); }
-     else { s.callLocIdx = 337; s.pc = 34; return s.tmp_1; }
+     else { s.callLocIdx = 352; s.pc = 34; return s.tmp_1; }
     }
   case 34:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 338; s.pc = 33; return s.tmp_0;
+    s.callLocIdx = 353; s.pc = 33; return s.tmp_0;
   case 33:
     r0 = s.retval;
-    s.remainder___972441 = (r0);
-    s.tmp_0 = JSBI_stringify__P969181_mk(s);
-    s.tmp_0.arg0 = s.remainder___972441;
+    s.remainder___1030227 = (r0);
+    s.tmp_0 = JSBI_stringify__P1026835_mk(s);
+    s.tmp_0.arg0 = s.remainder___1030227;
     s.tmp_0.arg1 = true;
-    s.callLocIdx = 339; s.pc = 35; return s.tmp_0;
+    s.callLocIdx = 354; s.pc = 35; return s.tmp_0;
   case 35:
     r0 = s.retval;
-    s.secondHalf___972376 = (r0);
+    s.secondHalf___1030162 = (r0);
   case 14:
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.quotient___972375;
-    s.callLocIdx = 340; s.pc = 36; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.quotient___1030161;
+    s.callLocIdx = 355; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
-    s.tmp_0 = JSBI_stringify__P969181_mk(s);
-    s.tmp_0.arg0 = s.quotient___972375;
+    s.tmp_0 = JSBI_stringify__P1026835_mk(s);
+    s.tmp_0.arg0 = s.quotient___1030161;
     s.tmp_0.arg1 = true;
-    s.callLocIdx = 341; s.pc = 37; return s.tmp_0;
+    s.callLocIdx = 356; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    s.firstHalf___972452 = (r0);
+    s.firstHalf___1030238 = (r0);
   case 15:
-    r0 = pxsim_String_.length(s.secondHalf___972376);
+    r0 = pxsim_String_.length(s.secondHalf___1030162);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 < s.secondHalfChars___972363);
+    r0 = (s.tmp_1 < s.secondHalfChars___1030149);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 16; continue; }
-    if ((s.secondHalf___972376) && (s.secondHalf___972376).vtable) {
+    if ((s.secondHalf___1030162) && (s.secondHalf___1030162).vtable) {
     setupResume(s, 38);
-    pxsim_String__stringConv(s.secondHalf___972376);
+    pxsim_String__stringConv(s.secondHalf___1030162);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.secondHalf___972376) + ""; }
+    } else { s.retval = (s.secondHalf___1030162) + ""; }
   case 38:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("0", s.tmp_2);
-    s.secondHalf___972376 = (r0);
+    s.secondHalf___1030162 = (r0);
     { step = 15; continue; }
   case 16:
     r0 = (s.arg1 === false);
@@ -26835,34 +27143,34 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 19; continue; }
-    if ((s.firstHalf___972452) && (s.firstHalf___972452).vtable) {
+    if ((s.firstHalf___1030238) && (s.firstHalf___1030238).vtable) {
     setupResume(s, 39);
-    pxsim_String__stringConv(s.firstHalf___972452);
+    pxsim_String__stringConv(s.firstHalf___1030238);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.firstHalf___972452) + ""; }
+    } else { s.retval = (s.firstHalf___1030238) + ""; }
   case 39:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = pxsim_String__concat("-", s.tmp_2);
-    s.firstHalf___972452 = (r0);
+    s.firstHalf___1030238 = (r0);
   case 19:
   case 20:
-    if ((s.firstHalf___972452) && (s.firstHalf___972452).vtable) {
+    if ((s.firstHalf___1030238) && (s.firstHalf___1030238).vtable) {
     setupResume(s, 40);
-    pxsim_String__stringConv(s.firstHalf___972452);
+    pxsim_String__stringConv(s.firstHalf___1030238);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.firstHalf___972452) + ""; }
+    } else { s.retval = (s.firstHalf___1030238) + ""; }
   case 40:
     r0 = s.retval;
     s.tmp_0 = r0;
-    if ((s.secondHalf___972376) && (s.secondHalf___972376).vtable) {
+    if ((s.secondHalf___1030162) && (s.secondHalf___1030162).vtable) {
     setupResume(s, 41);
-    pxsim_String__stringConv(s.secondHalf___972376);
+    pxsim_String__stringConv(s.secondHalf___1030162);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.secondHalf___972376) + ""; }
+    } else { s.retval = (s.secondHalf___1030162) + ""; }
   case 41:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -26871,12 +27179,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_stringify__P969181.info = {"start":45393,"length":2368,"line":1128,"column":4,"endLine":1177,"endColumn":5,"fileName":"jsbi.ts","functionName":"stringify","argumentNames":["x","isRecursiveCall"]}
+JSBI_stringify__P1026835.info = {"start":46823,"length":2368,"line":1161,"column":4,"endLine":1210,"endColumn":5,"fileName":"jsbi.ts","functionName":"stringify","argumentNames":["x","isRecursiveCall"]}
 
-function JSBI_stringify__P969181_mk(s) {
+function JSBI_stringify__P1026835_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_stringify__P969181, depth: s.depth + 1,
+        parent: s, fn: JSBI_stringify__P1026835, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -26885,21 +27193,21 @@ function JSBI_stringify__P969181_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  length___972308: undefined,
-  result___972315: undefined,
-  bitLength___972332: undefined,
-  charsRequired___972347: undefined,
-  secondHalfChars___972363: undefined,
-  conqueror___972369: undefined,
-  quotient___972375: undefined,
-  secondHalf___972376: undefined,
-  divisor___972377: undefined,
-  remainder___972395: undefined,
-  i___972396: undefined,
-  input___972404: undefined,
-  divisionResult___972432: undefined,
-  remainder___972441: undefined,
-  firstHalf___972452: undefined,
+  length___1030094: undefined,
+  result___1030101: undefined,
+  bitLength___1030118: undefined,
+  charsRequired___1030133: undefined,
+  secondHalfChars___1030149: undefined,
+  conqueror___1030155: undefined,
+  quotient___1030161: undefined,
+  secondHalf___1030162: undefined,
+  divisor___1030163: undefined,
+  remainder___1030181: undefined,
+  i___1030182: undefined,
+  input___1030190: undefined,
+  divisionResult___1030218: undefined,
+  remainder___1030227: undefined,
+  firstHalf___1030238: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -26908,7 +27216,7 @@ function JSBI_stringify__P969181_mk(s) {
 
 
 
-function JSBI_exponentiate__P970998(s) {
+function JSBI_exponentiate__P1028784(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -26918,13 +27226,13 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.expValue___971036 = undefined;
-    s.neededDigits___971054 = undefined;
-    s.sign___971062 = undefined;
-    s.result___971070 = undefined;
-    s.msd___971077 = undefined;
-    s.result___971089 = undefined;
-    s.runningSquare___971091 = undefined;
+    s.expValue___1028822 = undefined;
+    s.neededDigits___1028840 = undefined;
+    s.sign___1028848 = undefined;
+    s.result___1028856 = undefined;
+    s.msd___1028863 = undefined;
+    s.result___1028875 = undefined;
+    s.runningSquare___1028877 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -26945,10 +27253,10 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 3; continue; }
-    s.tmp_4 = JSBI_oneDigit__P969807_mk(s);
+    s.tmp_4 = JSBI_oneDigit__P1027461_mk(s);
     s.tmp_4.arg0 = 1;
     s.tmp_4.arg1 = false;
-    s.callLocIdx = 230; s.pc = 36; return s.tmp_4;
+    s.callLocIdx = 245; s.pc = 36; return s.tmp_4;
   case 36:
     r0 = s.retval;
     { step = 35; continue; }
@@ -27006,9 +27314,9 @@ switch (step) {
     s.tmp_18 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_18);
     if (!r0) { step = 11; continue; }
-    s.tmp_19 = JSBI_unaryMinus__P969886_mk(s);
+    s.tmp_19 = JSBI_unaryMinus__P1027540_mk(s);
     s.tmp_19.arg0 = s.arg0;
-    s.callLocIdx = 235; s.pc = 37; return s.tmp_19;
+    s.callLocIdx = 250; s.pc = 37; return s.tmp_19;
   case 37:
     r0 = s.retval;
     { step = 35; continue; }
@@ -27034,8 +27342,8 @@ switch (step) {
     r0 = pxsim_Array__getAt(s.tmp_24, 0);
     s.tmp_23 = r0;
     r0 = (s.tmp_23 >>> 0);
-    s.expValue___971036 = (r0);
-    r0 = (s.expValue___971036 === 1);
+    s.expValue___1028822 = (r0);
+    r0 = (s.expValue___1028822 === 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 17; continue; }
@@ -27043,7 +27351,7 @@ switch (step) {
     { step = 35; continue; }
   case 17:
   case 18:
-    r0 = (s.expValue___971036 >= 1073741824);
+    r0 = (s.expValue___1028822 >= 1073741824);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 19; continue; }
@@ -27071,12 +27379,12 @@ switch (step) {
     s.tmp_7 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_7);
     if (!r0) { step = 25; continue; }
-    r0 = (s.expValue___971036 / 30);
+    r0 = (s.expValue___1028822 / 30);
     s.tmp_9 = r0;
     r0 = (s.tmp_9 | 0);
     s.tmp_8 = r0;
     r0 = (1 + s.tmp_8);
-    s.neededDigits___971054 = (r0);
+    s.neededDigits___1028840 = (r0);
     r0 = s.arg0.fields["sign"];
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
@@ -27084,107 +27392,107 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 24; continue; }
   case 23:
-    r0 = (s.expValue___971036 & 1);
+    r0 = (s.expValue___1028822 & 1);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 0);
   case 24:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.sign___971062 = (s.tmp_2);
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    s.sign___1028848 = (s.tmp_2);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.neededDigits___971054;
-    s.tmp_1.arg2 = s.sign___971062;
-    s.callLocIdx = 240; s.pc = 38; return s.tmp_1;
+    s.tmp_1.arg1 = s.neededDigits___1028840;
+    s.tmp_1.arg2 = s.sign___1028848;
+    s.callLocIdx = 255; s.pc = 38; return s.tmp_1;
   case 38:
     r0 = s.retval;
-    s.result___971070 = (s.tmp_0);
-    s.tmp_0 = JSBI_BigInt___initializeDigits__P969087_mk(s);
-    s.tmp_0.arg0 = s.result___971070;
-    s.callLocIdx = 241; s.pc = 39; return s.tmp_0;
+    s.result___1028856 = (s.tmp_0);
+    s.tmp_0 = JSBI_BigInt___initializeDigits__P1026741_mk(s);
+    s.tmp_0.arg0 = s.result___1028856;
+    s.callLocIdx = 256; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
-    r0 = (s.expValue___971036 % 30);
+    r0 = (s.expValue___1028822 % 30);
     s.tmp_0 = r0;
     r0 = (1 << s.tmp_0);
-    s.msd___971077 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___971070;
-    r0 = (s.neededDigits___971054 - 1);
+    s.msd___1028863 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1028856;
+    r0 = (s.neededDigits___1028840 - 1);
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = s.msd___971077;
-    s.callLocIdx = 242; s.pc = 40; return s.tmp_0;
+    s.tmp_0.arg2 = s.msd___1028863;
+    s.callLocIdx = 257; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
-    r0 = s.result___971070;
+    r0 = s.result___1028856;
     { step = 35; continue; }
   case 25:
   case 26:
-    s.result___971089 = (null);
-    s.runningSquare___971091 = (s.arg0);
-    r0 = (s.expValue___971036 & 1);
+    s.result___1028875 = (null);
+    s.runningSquare___1028877 = (s.arg0);
+    r0 = (s.expValue___1028822 & 1);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 27; continue; }
-    s.result___971089 = (s.arg0);
+    s.result___1028875 = (s.arg0);
   case 27:
   case 28:
-    r0 = (s.expValue___971036 >> 1);
-    s.expValue___971036 = (r0);
+    r0 = (s.expValue___1028822 >> 1);
+    s.expValue___1028822 = (r0);
   case 29:
-    r0 = (s.expValue___971036 !== 0);
+    r0 = (s.expValue___1028822 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 34; continue; }
-    s.tmp_1 = JSBI_multiply__P971107_mk(s);
-    s.tmp_1.arg0 = s.runningSquare___971091;
-    s.tmp_1.arg1 = s.runningSquare___971091;
-    s.callLocIdx = 243; s.pc = 41; return s.tmp_1;
+    s.tmp_1 = JSBI_multiply__P1028893_mk(s);
+    s.tmp_1.arg0 = s.runningSquare___1028877;
+    s.tmp_1.arg1 = s.runningSquare___1028877;
+    s.callLocIdx = 258; s.pc = 41; return s.tmp_1;
   case 41:
     r0 = s.retval;
-    s.runningSquare___971091 = (r0);
-    r0 = (s.expValue___971036 & 1);
+    s.runningSquare___1028877 = (r0);
+    r0 = (s.expValue___1028822 & 1);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 32; continue; }
-    r0 = (s.result___971089 === null);
+    r0 = (s.result___1028875 === null);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 30; continue; }
-    s.result___971089 = (s.runningSquare___971091);
+    s.result___1028875 = (s.runningSquare___1028877);
     { step = 31; continue; }
   case 30:
-    s.tmp_0 = JSBI_multiply__P971107_mk(s);
-    s.tmp_0.arg0 = s.result___971089;
-    s.tmp_0.arg1 = s.runningSquare___971091;
-    s.callLocIdx = 244; s.pc = 42; return s.tmp_0;
+    s.tmp_0 = JSBI_multiply__P1028893_mk(s);
+    s.tmp_0.arg0 = s.result___1028875;
+    s.tmp_0.arg1 = s.runningSquare___1028877;
+    s.callLocIdx = 259; s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
-    s.result___971089 = (r0);
+    s.result___1028875 = (r0);
   case 31:
   case 32:
   case 33:
-    r0 = (s.expValue___971036 >> 1);
-    s.expValue___971036 = (r0);
+    r0 = (s.expValue___1028822 >> 1);
+    s.expValue___1028822 = (r0);
     { step = 29; continue; }
   case 34:
-    r0 = s.result___971089;
+    r0 = s.result___1028875;
   case 35:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_exponentiate__P970998.info = {"start":27417,"length":2148,"line":671,"column":4,"endLine":723,"endColumn":5,"fileName":"jsbi.ts","functionName":"exponentiate","argumentNames":["x","y"]}
+JSBI_exponentiate__P1028784.info = {"start":28847,"length":2148,"line":704,"column":4,"endLine":756,"endColumn":5,"fileName":"jsbi.ts","functionName":"exponentiate","argumentNames":["x","y"]}
 
-function JSBI_exponentiate__P970998_mk(s) {
+function JSBI_exponentiate__P1028784_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_exponentiate__P970998, depth: s.depth + 1,
+        parent: s, fn: JSBI_exponentiate__P1028784, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -27211,13 +27519,13 @@ function JSBI_exponentiate__P970998_mk(s) {
   tmp_22: undefined,
   tmp_23: undefined,
   tmp_24: undefined,
-  expValue___971036: undefined,
-  neededDigits___971054: undefined,
-  sign___971062: undefined,
-  result___971070: undefined,
-  msd___971077: undefined,
-  result___971089: undefined,
-  runningSquare___971091: undefined,
+  expValue___1028822: undefined,
+  neededDigits___1028840: undefined,
+  sign___1028848: undefined,
+  result___1028856: undefined,
+  msd___1028863: undefined,
+  result___1028875: undefined,
+  runningSquare___1028877: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -27226,7 +27534,7 @@ function JSBI_exponentiate__P970998_mk(s) {
 
 
 
-function JSBI_multiply__P971107(s) {
+function JSBI_multiply__P1028893(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -27236,9 +27544,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.resultLength___972009 = undefined;
-    s.result___972025 = undefined;
-    s.i___972036 = undefined;
+    s.resultLength___1029795 = undefined;
+    s.result___1029811 = undefined;
+    s.i___1029822 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -27277,16 +27585,16 @@ switch (step) {
     r0 = pxsim_Array__length(s.tmp_9);
     s.tmp_8 = r0;
     r0 = (s.tmp_6 + s.tmp_8);
-    s.resultLength___972009 = (r0);
-    s.tmp_3 = JSBI_BigInt___clzmsd__P969082_mk(s);
+    s.resultLength___1029795 = (r0);
+    s.tmp_3 = JSBI_BigInt___clzmsd__P1026736_mk(s);
     s.tmp_3.arg0 = s.arg0;
-    s.callLocIdx = 292; s.pc = 10; return s.tmp_3;
+    s.callLocIdx = 307; s.pc = 10; return s.tmp_3;
   case 10:
     r0 = s.retval;
     s.tmp_2 = r0;
-    s.tmp_5 = JSBI_BigInt___clzmsd__P969082_mk(s);
+    s.tmp_5 = JSBI_BigInt___clzmsd__P1026736_mk(s);
     s.tmp_5.arg0 = s.arg1;
-    s.callLocIdx = 293; s.pc = 11; return s.tmp_5;
+    s.callLocIdx = 308; s.pc = 11; return s.tmp_5;
   case 11:
     r0 = s.retval;
     s.tmp_4 = r0;
@@ -27296,33 +27604,33 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    r0 = (s.resultLength___972009 - 1);
-    s.resultLength___972009 = (r0);
+    r0 = (s.resultLength___1029795 - 1);
+    s.resultLength___1029795 = (r0);
   case 5:
   case 6:
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.resultLength___972009;
+    s.tmp_1.arg1 = s.resultLength___1029795;
     r0 = s.arg0.fields["sign"];
     s.tmp_2 = r0;
     r0 = s.arg1.fields["sign"];
     s.tmp_3 = r0;
     r0 = (s.tmp_2 !== s.tmp_3);
     s.tmp_1.arg2 = r0;
-    s.callLocIdx = 294; s.pc = 12; return s.tmp_1;
+    s.callLocIdx = 309; s.pc = 12; return s.tmp_1;
   case 12:
     r0 = s.retval;
-    s.result___972025 = (s.tmp_0);
-    s.tmp_0 = JSBI_BigInt___initializeDigits__P969087_mk(s);
-    s.tmp_0.arg0 = s.result___972025;
-    s.callLocIdx = 295; s.pc = 13; return s.tmp_0;
+    s.result___1029811 = (s.tmp_0);
+    s.tmp_0 = JSBI_BigInt___initializeDigits__P1026741_mk(s);
+    s.tmp_0.arg0 = s.result___1029811;
+    s.callLocIdx = 310; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
-    s.i___972036 = (0);
+    s.i___1029822 = (0);
   case 7:
-    s.tmp_1 = r0 = s.i___972036;
+    s.tmp_1 = r0 = s.i___1029822;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -27331,36 +27639,36 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    s.tmp_4 = JSBI_multiplyAccumulate__P972043_mk(s);
+    s.tmp_4 = JSBI_multiplyAccumulate__P1029829_mk(s);
     s.tmp_4.arg0 = s.arg1;
     r0 = s.arg0.fields["data"];
     s.tmp_5 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_5, s.i___972036);
+    r0 = pxsim_Array__getAt(s.tmp_5, s.i___1029822);
     s.tmp_4.arg1 = r0;
-    s.tmp_4.arg2 = s.result___972025;
-    s.tmp_4.arg3 = s.i___972036;
-    s.callLocIdx = 298; s.pc = 14; return s.tmp_4;
+    s.tmp_4.arg2 = s.result___1029811;
+    s.tmp_4.arg3 = s.i___1029822;
+    s.callLocIdx = 313; s.pc = 14; return s.tmp_4;
   case 14:
     r0 = s.retval;
-    r0 = (s.i___972036 + 1);
-    s.i___972036 = (r0);
+    r0 = (s.i___1029822 + 1);
+    s.i___1029822 = (r0);
     { step = 7; continue; }
   case 8:
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.result___972025;
-    s.callLocIdx = 299; s.pc = 15; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1029811;
+    s.callLocIdx = 314; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
   case 9:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_multiply__P971107.info = {"start":41873,"length":534,"line":1031,"column":4,"endLine":1044,"endColumn":5,"fileName":"jsbi.ts","functionName":"multiply","argumentNames":["x","y"]}
+JSBI_multiply__P1028893.info = {"start":43303,"length":534,"line":1064,"column":4,"endLine":1077,"endColumn":5,"fileName":"jsbi.ts","functionName":"multiply","argumentNames":["x","y"]}
 
-function JSBI_multiply__P971107_mk(s) {
+function JSBI_multiply__P1028893_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_multiply__P971107, depth: s.depth + 1,
+        parent: s, fn: JSBI_multiply__P1028893, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -27372,9 +27680,9 @@ function JSBI_multiply__P971107_mk(s) {
   tmp_7: undefined,
   tmp_8: undefined,
   tmp_9: undefined,
-  resultLength___972009: undefined,
-  result___972025: undefined,
-  i___972036: undefined,
+  resultLength___1029795: undefined,
+  result___1029811: undefined,
+  i___1029822: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -27383,7 +27691,7 @@ function JSBI_multiply__P971107_mk(s) {
 
 
 
-function JSBI_multiplyAccumulate__P972043(s) {
+function JSBI_multiplyAccumulate__P1029829(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -27393,20 +27701,20 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.m2Low___972060 = undefined;
-    s.m2High___972063 = undefined;
-    s.carry___972066 = undefined;
-    s.high___972067 = undefined;
-    s.i___972068 = undefined;
-    s.acc___972074 = undefined;
-    s.m1___972078 = undefined;
-    s.m1Low___972083 = undefined;
-    s.m1High___972086 = undefined;
-    s.rLow___972089 = undefined;
-    s.rMid1___972094 = undefined;
-    s.rMid2___972099 = undefined;
-    s.rHigh___972104 = undefined;
-    s.acc___972169 = undefined;
+    s.m2Low___1029846 = undefined;
+    s.m2High___1029849 = undefined;
+    s.carry___1029852 = undefined;
+    s.high___1029853 = undefined;
+    s.i___1029854 = undefined;
+    s.acc___1029860 = undefined;
+    s.m1___1029864 = undefined;
+    s.m1Low___1029869 = undefined;
+    s.m1High___1029872 = undefined;
+    s.rLow___1029875 = undefined;
+    s.rMid1___1029880 = undefined;
+    s.rMid2___1029885 = undefined;
+    s.rHigh___1029890 = undefined;
+    s.acc___1029955 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -27422,14 +27730,14 @@ switch (step) {
   case 1:
   case 2:
     r0 = (s.arg1 & 32767);
-    s.m2Low___972060 = (r0);
+    s.m2Low___1029846 = (r0);
     r0 = (s.arg1 >>> 15);
-    s.m2High___972063 = (r0);
-    s.carry___972066 = (0);
-    s.high___972067 = (0);
-    s.i___972068 = (0);
+    s.m2High___1029849 = (r0);
+    s.carry___1029852 = (0);
+    s.high___1029853 = (0);
+    s.i___1029854 = (0);
   case 3:
-    s.tmp_1 = r0 = s.i___972068;
+    s.tmp_1 = r0 = s.i___1029854;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -27441,71 +27749,71 @@ switch (step) {
     r0 = s.arg2.fields["data"];
     s.tmp_4 = r0;
     r0 = pxsim_Array__getAt(s.tmp_4, s.arg3);
-    s.acc___972074 = (r0);
+    s.acc___1029860 = (r0);
     r0 = s.arg0.fields["data"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_0, s.i___972068);
-    s.m1___972078 = (r0);
-    r0 = (s.m1___972078 & 32767);
-    s.m1Low___972083 = (r0);
-    r0 = (s.m1___972078 >>> 15);
-    s.m1High___972086 = (r0);
-    r0 = pxsim.Math_.imul(s.m1Low___972083, s.m2Low___972060);
-    s.rLow___972089 = (r0);
-    r0 = pxsim.Math_.imul(s.m1Low___972083, s.m2High___972063);
-    s.rMid1___972094 = (r0);
-    r0 = pxsim.Math_.imul(s.m1High___972086, s.m2Low___972060);
-    s.rMid2___972099 = (r0);
-    r0 = pxsim.Math_.imul(s.m1High___972086, s.m2High___972063);
-    s.rHigh___972104 = (r0);
-    s.tmp_0 = r0 = s.acc___972074;
-    r0 = (s.high___972067 + s.rLow___972089);
+    r0 = pxsim_Array__getAt(s.tmp_0, s.i___1029854);
+    s.m1___1029864 = (r0);
+    r0 = (s.m1___1029864 & 32767);
+    s.m1Low___1029869 = (r0);
+    r0 = (s.m1___1029864 >>> 15);
+    s.m1High___1029872 = (r0);
+    r0 = pxsim.Math_.imul(s.m1Low___1029869, s.m2Low___1029846);
+    s.rLow___1029875 = (r0);
+    r0 = pxsim.Math_.imul(s.m1Low___1029869, s.m2High___1029849);
+    s.rMid1___1029880 = (r0);
+    r0 = pxsim.Math_.imul(s.m1High___1029872, s.m2Low___1029846);
+    s.rMid2___1029885 = (r0);
+    r0 = pxsim.Math_.imul(s.m1High___1029872, s.m2High___1029849);
+    s.rHigh___1029890 = (r0);
+    s.tmp_0 = r0 = s.acc___1029860;
+    r0 = (s.high___1029853 + s.rLow___1029875);
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 + s.carry___972066);
+    r0 = (s.tmp_2 + s.carry___1029852);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 + s.tmp_1);
-    s.acc___972074 = (r0);
-    r0 = (s.acc___972074 >>> 30);
-    s.carry___972066 = (r0);
-    r0 = (s.acc___972074 & 1073741823);
-    s.acc___972074 = (r0);
-    s.tmp_0 = r0 = s.acc___972074;
-    r0 = (s.rMid1___972094 & 32767);
+    s.acc___1029860 = (r0);
+    r0 = (s.acc___1029860 >>> 30);
+    s.carry___1029852 = (r0);
+    r0 = (s.acc___1029860 & 1073741823);
+    s.acc___1029860 = (r0);
+    s.tmp_0 = r0 = s.acc___1029860;
+    r0 = (s.rMid1___1029880 & 32767);
     s.tmp_3 = r0;
     r0 = (s.tmp_3 << 15);
     s.tmp_2 = r0;
-    r0 = (s.rMid2___972099 & 32767);
+    r0 = (s.rMid2___1029885 & 32767);
     s.tmp_5 = r0;
     r0 = (s.tmp_5 << 15);
     s.tmp_4 = r0;
     r0 = (s.tmp_2 + s.tmp_4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 + s.tmp_1);
-    s.acc___972074 = (r0);
-    s.tmp_0 = r0 = s.carry___972066;
-    r0 = (s.acc___972074 >>> 30);
+    s.acc___1029860 = (r0);
+    s.tmp_0 = r0 = s.carry___1029852;
+    r0 = (s.acc___1029860 >>> 30);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 + s.tmp_1);
-    s.carry___972066 = (r0);
-    s.tmp_1 = r0 = s.rHigh___972104;
-    r0 = (s.rMid1___972094 >>> 15);
+    s.carry___1029852 = (r0);
+    s.tmp_1 = r0 = s.rHigh___1029890;
+    r0 = (s.rMid1___1029880 >>> 15);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 + s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.rMid2___972099 >>> 15);
+    r0 = (s.rMid2___1029885 >>> 15);
     s.tmp_3 = r0;
     r0 = (s.tmp_0 + s.tmp_3);
-    s.high___972067 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.high___1029853 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg2;
     s.tmp_0.arg1 = s.arg3;
-    r0 = (s.acc___972074 & 1073741823);
+    r0 = (s.acc___1029860 & 1073741823);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 303; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 318; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
-    r0 = (s.i___972068 + 1);
-    s.i___972068 = (r0);
+    r0 = (s.i___1029854 + 1);
+    s.i___1029854 = (r0);
     s.tmp_0 = r0 = s.arg3;
     r0 = (s.tmp_0 + 1);
     s.arg3 = (r0);
@@ -27513,14 +27821,14 @@ switch (step) {
     { step = 3; continue; }
   case 4:
   case 5:
-    r0 = (s.carry___972066 !== 0);
+    r0 = (s.carry___1029852 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 6; continue; }
     r0 = s.tmp_0;
     { step = 7; continue; }
   case 6:
-    r0 = (s.high___972067 !== 0);
+    r0 = (s.high___1029853 !== 0);
   case 7:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -27529,21 +27837,21 @@ switch (step) {
     r0 = s.arg2.fields["data"];
     s.tmp_2 = r0;
     r0 = pxsim_Array__getAt(s.tmp_2, s.arg3);
-    s.acc___972169 = (r0);
-    s.tmp_0 = r0 = s.acc___972169;
-    r0 = (s.carry___972066 + s.high___972067);
+    s.acc___1029955 = (r0);
+    s.tmp_0 = r0 = s.acc___1029955;
+    r0 = (s.carry___1029852 + s.high___1029853);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 + s.tmp_1);
-    s.acc___972169 = (r0);
-    s.high___972067 = (0);
-    r0 = (s.acc___972169 >>> 30);
-    s.carry___972066 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.acc___1029955 = (r0);
+    s.high___1029853 = (0);
+    r0 = (s.acc___1029955 >>> 30);
+    s.carry___1029852 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg2;
     s.tmp_0.arg1 = s.arg3;
-    r0 = (s.acc___972169 & 1073741823);
+    r0 = (s.acc___1029955 & 1073741823);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 305; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 320; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     r0 = (s.arg3 + 1);
@@ -27555,12 +27863,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_multiplyAccumulate__P972043.info = {"start":42413,"length":1434,"line":1046,"column":4,"endLine":1077,"endColumn":5,"fileName":"jsbi.ts","functionName":"multiplyAccumulate","argumentNames":["multiplicand","multiplier","accumulator","accumulatorIndex"]}
+JSBI_multiplyAccumulate__P1029829.info = {"start":43843,"length":1434,"line":1079,"column":4,"endLine":1110,"endColumn":5,"fileName":"jsbi.ts","functionName":"multiplyAccumulate","argumentNames":["multiplicand","multiplier","accumulator","accumulatorIndex"]}
 
-function JSBI_multiplyAccumulate__P972043_mk(s) {
+function JSBI_multiplyAccumulate__P1029829_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_multiplyAccumulate__P972043, depth: s.depth + 1,
+        parent: s, fn: JSBI_multiplyAccumulate__P1029829, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -27568,20 +27876,20 @@ function JSBI_multiplyAccumulate__P972043_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  m2Low___972060: undefined,
-  m2High___972063: undefined,
-  carry___972066: undefined,
-  high___972067: undefined,
-  i___972068: undefined,
-  acc___972074: undefined,
-  m1___972078: undefined,
-  m1Low___972083: undefined,
-  m1High___972086: undefined,
-  rLow___972089: undefined,
-  rMid1___972094: undefined,
-  rMid2___972099: undefined,
-  rHigh___972104: undefined,
-  acc___972169: undefined,
+  m2Low___1029846: undefined,
+  m2High___1029849: undefined,
+  carry___1029852: undefined,
+  high___1029853: undefined,
+  i___1029854: undefined,
+  acc___1029860: undefined,
+  m1___1029864: undefined,
+  m1Low___1029869: undefined,
+  m1High___1029872: undefined,
+  rLow___1029875: undefined,
+  rMid1___1029880: undefined,
+  rMid2___1029885: undefined,
+  rHigh___1029890: undefined,
+  acc___1029955: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -27592,7 +27900,7 @@ function JSBI_multiplyAccumulate__P972043_mk(s) {
 
 
 
-function JSBI_CreateBigInt__P969792(s) {
+function JSBI_CreateBigInt__P1027446(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -27602,7 +27910,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.result___969840 = undefined;
+    s.result___1027494 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -27617,7 +27925,7 @@ switch (step) {
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 1; continue; }
-    s.tmp_3 = JSBI_zero__P969800_mk(s);
+    s.tmp_3 = JSBI_zero__P1027454_mk(s);
     s.callLocIdx = 109; s.pc = 18; return s.tmp_3;
   case 18:
     r0 = s.retval;
@@ -27634,7 +27942,7 @@ switch (step) {
     s.tmp_6 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_6);
     if (!r0) { step = 3; continue; }
-    s.tmp_7 = JSBI_oneDigit__P969807_mk(s);
+    s.tmp_7 = JSBI_oneDigit__P1027461_mk(s);
     r0 = (0 - s.arg0);
     s.tmp_7.arg0 = r0;
     s.tmp_7.arg1 = true;
@@ -27644,7 +27952,7 @@ switch (step) {
     { step = 17; continue; }
   case 3:
   case 4:
-    s.tmp_8 = JSBI_oneDigit__P969807_mk(s);
+    s.tmp_8 = JSBI_oneDigit__P1027461_mk(s);
     s.tmp_8.arg0 = s.arg0;
     s.tmp_8.arg1 = false;
     s.callLocIdx = 112; s.pc = 20; return s.tmp_8;
@@ -27708,7 +28016,7 @@ switch (step) {
     r0 = pxsim_pxtcore.throwValue(s.tmp_13);
   case 9:
   case 10:
-    s.tmp_19 = JSBI_fromDouble__P969835_mk(s);
+    s.tmp_19 = JSBI_fromDouble__P1027489_mk(s);
     s.tmp_19.arg0 = s.arg0;
     s.callLocIdx = 114; s.pc = 25; return s.tmp_19;
   case 25:
@@ -27722,18 +28030,18 @@ switch (step) {
     s.tmp_20 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_20);
     if (!r0) { step = 15; continue; }
-    s.tmp_22 = JSBI_fromString__P969844_mk(s);
+    s.tmp_22 = JSBI_fromString__P1027498_mk(s);
     s.tmp_22.arg0 = s.arg0;
     s.tmp_22.arg1 = 0;
     s.callLocIdx = 115; s.pc = 26; return s.tmp_22;
   case 26:
     r0 = s.retval;
-    s.result___969840 = (r0);
-    r0 = (s.result___969840 !== null);
+    s.result___1027494 = (r0);
+    r0 = (s.result___1027494 !== null);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 13; continue; }
-    r0 = s.result___969840;
+    r0 = s.result___1027494;
     { step = 17; continue; }
   case 13:
   case 14:
@@ -27773,12 +28081,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_CreateBigInt__P969792.info = {"start":10315,"length":891,"line":256,"column":4,"endLine":281,"endColumn":5,"fileName":"jsbi.ts","functionName":"CreateBigInt","argumentNames":["arg"]}
+JSBI_CreateBigInt__P1027446.info = {"start":10315,"length":891,"line":256,"column":4,"endLine":281,"endColumn":5,"fileName":"jsbi.ts","functionName":"CreateBigInt","argumentNames":["arg"]}
 
-function JSBI_CreateBigInt__P969792_mk(s) {
+function JSBI_CreateBigInt__P1027446_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_CreateBigInt__P969792, depth: s.depth + 1,
+        parent: s, fn: JSBI_CreateBigInt__P1027446, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -27803,7 +28111,7 @@ function JSBI_CreateBigInt__P969792_mk(s) {
   tmp_20: undefined,
   tmp_21: undefined,
   tmp_22: undefined,
-  result___969840: undefined,
+  result___1027494: undefined,
   arg0: undefined,
 } }
 
@@ -27811,7 +28119,7 @@ function JSBI_CreateBigInt__P969792_mk(s) {
 
 
 
-function JSBI_fromString__P969844(s) {
+function JSBI_fromString__P1027498(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -27821,32 +28129,32 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.sign___971400 = undefined;
-    s.leadingZero___971401 = undefined;
-    s.length___971402 = undefined;
-    s.cursor___971405 = undefined;
-    s.current___971410 = undefined;
-    s.chars___971566 = undefined;
-    s.bitsPerChar___971570 = undefined;
-    s.roundup___971573 = undefined;
-    s.bitsMin___971586 = undefined;
-    s.resultLength___971595 = undefined;
-    s.result___971603 = undefined;
-    s.limDigit___971607 = undefined;
-    s.limAlpha___971612 = undefined;
-    s.parts___971628 = undefined;
-    s.partsBits___971630 = undefined;
-    s.done___971632 = undefined;
-    s.part___971634 = undefined;
-    s.bits___971635 = undefined;
-    s.d___971637 = undefined;
-    s.done___971705 = undefined;
-    s.charsSoFar___971706 = undefined;
-    s.part___971708 = undefined;
-    s.multiplier___971709 = undefined;
-    s.d___971711 = undefined;
-    s.m___971737 = undefined;
-    s.digitsSoFar___971770 = undefined;
+    s.sign___1029186 = undefined;
+    s.leadingZero___1029187 = undefined;
+    s.length___1029188 = undefined;
+    s.cursor___1029191 = undefined;
+    s.current___1029196 = undefined;
+    s.chars___1029352 = undefined;
+    s.bitsPerChar___1029356 = undefined;
+    s.roundup___1029359 = undefined;
+    s.bitsMin___1029372 = undefined;
+    s.resultLength___1029381 = undefined;
+    s.result___1029389 = undefined;
+    s.limDigit___1029393 = undefined;
+    s.limAlpha___1029398 = undefined;
+    s.parts___1029414 = undefined;
+    s.partsBits___1029416 = undefined;
+    s.done___1029418 = undefined;
+    s.part___1029420 = undefined;
+    s.bits___1029421 = undefined;
+    s.d___1029423 = undefined;
+    s.done___1029491 = undefined;
+    s.charsSoFar___1029492 = undefined;
+    s.part___1029494 = undefined;
+    s.multiplier___1029495 = undefined;
+    s.d___1029497 = undefined;
+    s.m___1029523 = undefined;
+    s.digitsSoFar___1029556 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -27859,47 +28167,47 @@ switch (step) {
     r0 = pxsim_String_.mkEmpty();
     s.tmp_2.arg1 = r0;
     s.tmp_2.arg2 = undefined;
-    s.callLocIdx = 257; s.pc = 98; return s.tmp_2;
+    s.callLocIdx = 272; s.pc = 98; return s.tmp_2;
   case 98:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.tmp_1.arg1 = join_inline__P971379;
-    s.callLocIdx = 259; s.pc = 97; return s.tmp_1;
+    s.tmp_1.arg1 = join_inline__P1029165;
+    s.callLocIdx = 274; s.pc = 97; return s.tmp_1;
   case 97:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 260; s.pc = 96; return s.tmp_0;
+    s.callLocIdx = 275; s.pc = 96; return s.tmp_0;
   case 96:
     r0 = s.retval;
     s.arg0 = (r0);
-    s.sign___971400 = (0);
-    s.leadingZero___971401 = (false);
+    s.sign___1029186 = (0);
+    s.leadingZero___1029187 = (false);
     r0 = pxsim_String_.length(s.arg0);
-    s.length___971402 = (r0);
-    s.cursor___971405 = (0);
-    r0 = (s.cursor___971405 === s.length___971402);
+    s.length___1029188 = (r0);
+    s.cursor___1029191 = (0);
+    r0 = (s.cursor___1029191 === s.length___1029188);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_1 = JSBI_zero__P969800_mk(s);
-    s.callLocIdx = 261; s.pc = 99; return s.tmp_1;
+    s.tmp_1 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 276; s.pc = 99; return s.tmp_1;
   case 99:
     r0 = s.retval;
     { step = 95; continue; }
   case 1:
   case 2:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    r0 = (s.current___971410 === 43);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    r0 = (s.current___1029196 === 43);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_1 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_1 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_1 === s.length___1029188);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 3; continue; }
@@ -27907,19 +28215,19 @@ switch (step) {
     { step = 95; continue; }
   case 3:
   case 4:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    s.sign___971400 = (1);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    s.sign___1029186 = (1);
     { step = 10; continue; }
   case 5:
-    r0 = (s.current___971410 === 45);
+    r0 = (s.current___1029196 === 45);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_1 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_1 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_1 === s.length___1029188);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 6; continue; }
@@ -27927,9 +28235,9 @@ switch (step) {
     { step = 95; continue; }
   case 6:
   case 7:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    s.sign___971400 = (-1);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    s.sign___1029186 = (-1);
   case 8:
   case 9:
   case 10:
@@ -27938,44 +28246,44 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 33; continue; }
     s.arg1 = (10);
-    r0 = (s.current___971410 === 48);
+    r0 = (s.current___1029196 === 48);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 31; continue; }
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_1 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_1 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_1 === s.length___1029188);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 11; continue; }
-    s.tmp_3 = JSBI_zero__P969800_mk(s);
-    s.callLocIdx = 262; s.pc = 100; return s.tmp_3;
+    s.tmp_3 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 277; s.pc = 100; return s.tmp_3;
   case 100:
     r0 = s.retval;
     { step = 95; continue; }
   case 11:
   case 12:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    r0 = (s.current___971410 === 88);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    r0 = (s.current___1029196 === 88);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 13; continue; }
     r0 = s.tmp_0;
     { step = 14; continue; }
   case 13:
-    r0 = (s.current___971410 === 120);
+    r0 = (s.current___1029196 === 120);
   case 14:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 17; continue; }
     s.arg1 = (16);
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_0 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_0 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_0 === s.length___1029188);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 15; continue; }
@@ -27983,28 +28291,28 @@ switch (step) {
     { step = 95; continue; }
   case 15:
   case 16:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
     { step = 30; continue; }
   case 17:
-    r0 = (s.current___971410 === 79);
+    r0 = (s.current___1029196 === 79);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 18; continue; }
     r0 = s.tmp_0;
     { step = 19; continue; }
   case 18:
-    r0 = (s.current___971410 === 111);
+    r0 = (s.current___1029196 === 111);
   case 19:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 22; continue; }
     s.arg1 = (8);
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_0 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_0 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_0 === s.length___1029188);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 20; continue; }
@@ -28012,28 +28320,28 @@ switch (step) {
     { step = 95; continue; }
   case 20:
   case 21:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
     { step = 29; continue; }
   case 22:
-    r0 = (s.current___971410 === 66);
+    r0 = (s.current___1029196 === 66);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 23; continue; }
     r0 = s.tmp_0;
     { step = 24; continue; }
   case 23:
-    r0 = (s.current___971410 === 98);
+    r0 = (s.current___1029196 === 98);
   case 24:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 27; continue; }
     s.arg1 = (2);
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_0 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_0 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_0 === s.length___1029188);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 25; continue; }
@@ -28041,11 +28349,11 @@ switch (step) {
     { step = 95; continue; }
   case 25:
   case 26:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
     { step = 28; continue; }
   case 27:
-    s.leadingZero___971401 = (true);
+    s.leadingZero___1029187 = (true);
   case 28:
   case 29:
   case 30:
@@ -28057,43 +28365,43 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 44; continue; }
-    r0 = (s.current___971410 === 48);
+    r0 = (s.current___1029196 === 48);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 42; continue; }
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_2 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_2 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_2 === s.length___1029188);
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 34; continue; }
-    s.tmp_4 = JSBI_zero__P969800_mk(s);
-    s.callLocIdx = 263; s.pc = 101; return s.tmp_4;
+    s.tmp_4 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 278; s.pc = 101; return s.tmp_4;
   case 101:
     r0 = s.retval;
     { step = 95; continue; }
   case 34:
   case 35:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    r0 = (s.current___971410 === 88);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    r0 = (s.current___1029196 === 88);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 36; continue; }
     r0 = s.tmp_0;
     { step = 37; continue; }
   case 36:
-    r0 = (s.current___971410 === 120);
+    r0 = (s.current___1029196 === 120);
   case 37:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 40; continue; }
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_2 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_2 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_2 === s.length___1029188);
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 38; continue; }
@@ -28101,18 +28409,18 @@ switch (step) {
     { step = 95; continue; }
   case 38:
   case 39:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
     { step = 41; continue; }
   case 40:
-    s.leadingZero___971401 = (true);
+    s.leadingZero___1029187 = (true);
   case 41:
   case 42:
   case 43:
   case 44:
   case 45:
   case 46:
-    r0 = (s.sign___971400 !== 0);
+    r0 = (s.sign___1029186 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 47; continue; }
@@ -28130,36 +28438,36 @@ switch (step) {
   case 49:
   case 50:
   case 51:
-    r0 = (s.current___971410 === 48);
+    r0 = (s.current___1029196 === 48);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 54; continue; }
-    s.leadingZero___971401 = (true);
-    r0 = (s.cursor___971405 + 1);
+    s.leadingZero___1029187 = (true);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_0 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_0 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_0 === s.length___1029188);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 52; continue; }
-    s.tmp_2 = JSBI_zero__P969800_mk(s);
-    s.callLocIdx = 264; s.pc = 102; return s.tmp_2;
+    s.tmp_2 = JSBI_zero__P1027454_mk(s);
+    s.callLocIdx = 279; s.pc = 102; return s.tmp_2;
   case 102:
     r0 = s.retval;
     { step = 95; continue; }
   case 52:
   case 53:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
     { step = 51; continue; }
   case 54:
-    r0 = (s.length___971402 - s.cursor___971405);
-    s.chars___971566 = (r0);
-    r0 = pxsim_Array__getAt(globals.kMaxBitsPerChar___969065, s.arg1);
-    s.bitsPerChar___971570 = (r0);
-    s.roundup___971573 = (31);
-    s.tmp_1 = r0 = s.chars___971566;
-    r0 = (1073741824 / s.bitsPerChar___971570);
+    r0 = (s.length___1029188 - s.cursor___1029191);
+    s.chars___1029352 = (r0);
+    r0 = pxsim_Array__getAt(globals.kMaxBitsPerChar___1026719, s.arg1);
+    s.bitsPerChar___1029356 = (r0);
+    s.roundup___1029359 = (31);
+    s.tmp_1 = r0 = s.chars___1029352;
+    r0 = (1073741824 / s.bitsPerChar___1029356);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 > s.tmp_2);
     s.tmp_0 = r0;
@@ -28169,28 +28477,28 @@ switch (step) {
     { step = 95; continue; }
   case 55:
   case 56:
-    r0 = (s.bitsPerChar___971570 * s.chars___971566);
+    r0 = (s.bitsPerChar___1029356 * s.chars___1029352);
     s.tmp_4 = r0;
-    r0 = (s.tmp_4 + s.roundup___971573);
+    r0 = (s.tmp_4 + s.roundup___1029359);
     s.tmp_3 = r0;
     r0 = (s.tmp_3 >>> 5);
-    s.bitsMin___971586 = (r0);
-    r0 = (s.bitsMin___971586 + 29);
+    s.bitsMin___1029372 = (r0);
+    r0 = (s.bitsMin___1029372 + 29);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 / 30);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.resultLength___971595 = (r0);
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    s.resultLength___1029381 = (r0);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.resultLength___971595;
+    s.tmp_1.arg1 = s.resultLength___1029381;
     s.tmp_1.arg2 = false;
-    s.callLocIdx = 265; s.pc = 103; return s.tmp_1;
+    s.callLocIdx = 280; s.pc = 103; return s.tmp_1;
   case 103:
     r0 = s.retval;
-    s.result___971603 = (s.tmp_0);
+    s.result___1029389 = (s.tmp_0);
     r0 = (s.arg1 < 10);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -28202,7 +28510,7 @@ switch (step) {
   case 58:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    s.limDigit___971607 = (s.tmp_1);
+    s.limDigit___1029393 = (s.tmp_1);
     r0 = (s.arg1 > 10);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -28214,7 +28522,7 @@ switch (step) {
   case 60:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    s.limAlpha___971612 = (s.tmp_1);
+    s.limAlpha___1029398 = (s.tmp_1);
     s.tmp_2 = r0 = s.arg1;
     r0 = (s.arg1 - 1);
     s.tmp_3 = r0;
@@ -28224,72 +28532,72 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 73; continue; }
-    r0 = (s.bitsPerChar___971570 >> 5);
-    s.bitsPerChar___971570 = (r0);
+    r0 = (s.bitsPerChar___1029356 >> 5);
+    s.bitsPerChar___1029356 = (r0);
     r0 = pxsim_Array__mk();
-    s.parts___971628 = (r0);
+    s.parts___1029414 = (r0);
     r0 = pxsim_Array__mk();
-    s.partsBits___971630 = (r0);
-    s.done___971632 = (false);
+    s.partsBits___1029416 = (r0);
+    s.done___1029418 = (false);
   case 61:
-    s.part___971634 = (0);
-    s.bits___971635 = (0);
+    s.part___1029420 = (0);
+    s.bits___1029421 = (0);
   case 62:
     r0 = pxsim_numops_toBoolDecr(true);
     if (!r0) { step = 71; continue; }
-    s.d___971637 = (undefined);
-    r0 = (s.current___971410 - 48);
+    s.d___1029423 = (undefined);
+    r0 = (s.current___1029196 - 48);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 0);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 < s.limDigit___971607);
+    r0 = (s.tmp_1 < s.limDigit___1029393);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 63; continue; }
-    r0 = (s.current___971410 - 48);
-    s.d___971637 = (r0);
+    r0 = (s.current___1029196 - 48);
+    s.d___1029423 = (r0);
     { step = 66; continue; }
   case 63:
-    r0 = (s.current___971410 | 32);
+    r0 = (s.current___1029196 | 32);
     s.tmp_3 = r0;
     r0 = (s.tmp_3 - 97);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 0);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 < s.limAlpha___971612);
+    r0 = (s.tmp_1 < s.limAlpha___1029398);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 64; continue; }
-    r0 = (s.current___971410 | 32);
+    r0 = (s.current___1029196 | 32);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 - 87);
-    s.d___971637 = (r0);
+    s.d___1029423 = (r0);
     { step = 65; continue; }
   case 64:
-    s.done___971632 = (true);
+    s.done___1029418 = (true);
     { step = 71; continue; }
   case 65:
   case 66:
-    r0 = (s.bits___971635 + s.bitsPerChar___971570);
-    s.bits___971635 = (r0);
-    r0 = (s.part___971634 << s.bitsPerChar___971570);
+    r0 = (s.bits___1029421 + s.bitsPerChar___1029356);
+    s.bits___1029421 = (r0);
+    r0 = (s.part___1029420 << s.bitsPerChar___1029356);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 | s.d___971637);
-    s.part___971634 = (r0);
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.tmp_0 | s.d___1029423);
+    s.part___1029420 = (r0);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_0 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_0 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_0 === s.length___1029188);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 67; continue; }
-    s.done___971632 = (true);
+    s.done___1029418 = (true);
     { step = 71; continue; }
   case 67:
   case 68:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    r0 = (s.bits___971635 + s.bitsPerChar___971570);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    r0 = (s.bits___1029421 + s.bitsPerChar___1029356);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 > 30);
     s.tmp_0 = r0;
@@ -28300,9 +28608,9 @@ switch (step) {
   case 70:
     { step = 62; continue; }
   case 71:
-    r0 = pxsim_Array__push(s.parts___971628, s.part___971634);
-    r0 = pxsim_Array__push(s.partsBits___971630, s.bits___971635);
-    r0 = pxsim_numops_toBoolDecr(s.done___971632);
+    r0 = pxsim_Array__push(s.parts___1029414, s.part___1029420);
+    r0 = pxsim_Array__push(s.partsBits___1029416, s.bits___1029421);
+    r0 = pxsim_numops_toBoolDecr(s.done___1029418);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
@@ -28310,112 +28618,112 @@ switch (step) {
     if (!r0) { step = 72; continue; }
     { step = 61; continue; }
   case 72:
-    s.tmp_2 = JSBI_fillFromParts__P971127_mk(s);
-    s.tmp_2.arg0 = s.result___971603;
-    s.tmp_2.arg1 = s.parts___971628;
-    s.tmp_2.arg2 = s.partsBits___971630;
-    s.callLocIdx = 266; s.pc = 104; return s.tmp_2;
+    s.tmp_2 = JSBI_fillFromParts__P1028913_mk(s);
+    s.tmp_2.arg0 = s.result___1029389;
+    s.tmp_2.arg1 = s.parts___1029414;
+    s.tmp_2.arg2 = s.partsBits___1029416;
+    s.callLocIdx = 281; s.pc = 104; return s.tmp_2;
   case 104:
     r0 = s.retval;
     { step = 86; continue; }
   case 73:
-    s.tmp_0 = JSBI_BigInt___initializeDigits__P969087_mk(s);
-    s.tmp_0.arg0 = s.result___971603;
-    s.callLocIdx = 267; s.pc = 105; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___initializeDigits__P1026741_mk(s);
+    s.tmp_0.arg0 = s.result___1029389;
+    s.callLocIdx = 282; s.pc = 105; return s.tmp_0;
   case 105:
     r0 = s.retval;
-    s.done___971705 = (false);
-    s.charsSoFar___971706 = (0);
+    s.done___1029491 = (false);
+    s.charsSoFar___1029492 = (0);
   case 74:
-    s.part___971708 = (0);
-    s.multiplier___971709 = (1);
+    s.part___1029494 = (0);
+    s.multiplier___1029495 = (1);
   case 75:
     r0 = pxsim_numops_toBoolDecr(true);
     if (!r0) { step = 84; continue; }
-    s.d___971711 = (undefined);
-    r0 = (s.current___971410 - 48);
+    s.d___1029497 = (undefined);
+    r0 = (s.current___1029196 - 48);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 0);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 < s.limDigit___971607);
+    r0 = (s.tmp_1 < s.limDigit___1029393);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 76; continue; }
-    r0 = (s.current___971410 - 48);
-    s.d___971711 = (r0);
+    r0 = (s.current___1029196 - 48);
+    s.d___1029497 = (r0);
     { step = 79; continue; }
   case 76:
-    r0 = (s.current___971410 | 32);
+    r0 = (s.current___1029196 | 32);
     s.tmp_3 = r0;
     r0 = (s.tmp_3 - 97);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 0);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 < s.limAlpha___971612);
+    r0 = (s.tmp_1 < s.limAlpha___1029398);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 77; continue; }
-    r0 = (s.current___971410 | 32);
+    r0 = (s.current___1029196 | 32);
     s.tmp_4 = r0;
     r0 = (s.tmp_4 - 87);
-    s.d___971711 = (r0);
+    s.d___1029497 = (r0);
     { step = 78; continue; }
   case 77:
-    s.done___971705 = (true);
+    s.done___1029491 = (true);
     { step = 84; continue; }
   case 78:
   case 79:
-    r0 = (s.multiplier___971709 * s.arg1);
-    s.m___971737 = (r0);
-    r0 = (s.m___971737 > 1073741823);
+    r0 = (s.multiplier___1029495 * s.arg1);
+    s.m___1029523 = (r0);
+    r0 = (s.m___1029523 > 1073741823);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 80; continue; }
     { step = 84; continue; }
   case 80:
   case 81:
-    s.multiplier___971709 = (s.m___971737);
-    r0 = (s.part___971708 * s.arg1);
+    s.multiplier___1029495 = (s.m___1029523);
+    r0 = (s.part___1029494 * s.arg1);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 + s.d___971711);
-    s.part___971708 = (r0);
-    r0 = (s.charsSoFar___971706 + 1);
-    s.charsSoFar___971706 = (r0);
-    r0 = (s.cursor___971405 + 1);
+    r0 = (s.tmp_0 + s.d___1029497);
+    s.part___1029494 = (r0);
+    r0 = (s.charsSoFar___1029492 + 1);
+    s.charsSoFar___1029492 = (r0);
+    r0 = (s.cursor___1029191 + 1);
     s.tmp_0 = r0;
-    s.cursor___971405 = (r0);
-    r0 = (s.tmp_0 === s.length___971402);
+    s.cursor___1029191 = (r0);
+    r0 = (s.tmp_0 === s.length___1029188);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 82; continue; }
-    s.done___971705 = (true);
+    s.done___1029491 = (true);
     { step = 84; continue; }
   case 82:
   case 83:
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
     { step = 75; continue; }
   case 84:
-    s.roundup___971573 = (959);
-    r0 = (s.bitsPerChar___971570 * s.charsSoFar___971706);
+    s.roundup___1029359 = (959);
+    r0 = (s.bitsPerChar___1029356 * s.charsSoFar___1029492);
     s.tmp_3 = r0;
-    r0 = (s.tmp_3 + s.roundup___971573);
+    r0 = (s.tmp_3 + s.roundup___1029359);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 >>> 5);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 / 30);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 0);
-    s.digitsSoFar___971770 = (r0);
-    s.tmp_0 = JSBI_BigInt___inplaceMultiplyAdd__P969089_mk(s);
-    s.tmp_0.arg0 = s.result___971603;
-    s.tmp_0.arg1 = s.multiplier___971709;
-    s.tmp_0.arg2 = s.part___971708;
-    s.tmp_0.arg3 = s.digitsSoFar___971770;
-    s.callLocIdx = 268; s.pc = 106; return s.tmp_0;
+    s.digitsSoFar___1029556 = (r0);
+    s.tmp_0 = JSBI_BigInt___inplaceMultiplyAdd__P1026743_mk(s);
+    s.tmp_0.arg0 = s.result___1029389;
+    s.tmp_0.arg1 = s.multiplier___1029495;
+    s.tmp_0.arg2 = s.part___1029494;
+    s.tmp_0.arg3 = s.digitsSoFar___1029556;
+    s.callLocIdx = 283; s.pc = 106; return s.tmp_0;
   case 106:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(s.done___971705);
+    r0 = pxsim_numops_toBoolDecr(s.done___1029491);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
@@ -28424,13 +28732,13 @@ switch (step) {
     { step = 74; continue; }
   case 85:
   case 86:
-    r0 = (s.cursor___971405 !== s.length___971402);
+    r0 = (s.cursor___1029191 !== s.length___1029188);
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 93; continue; }
-    s.tmp_6 = JSBI_isWhitespace__P971391_mk(s);
-    s.tmp_6.arg0 = s.current___971410;
-    s.callLocIdx = 269; s.pc = 107; return s.tmp_6;
+    s.tmp_6 = JSBI_isWhitespace__P1029177_mk(s);
+    s.tmp_6.arg0 = s.current___1029196;
+    s.callLocIdx = 284; s.pc = 107; return s.tmp_6;
   case 107:
     r0 = s.retval;
     s.tmp_5 = r0;
@@ -28444,18 +28752,18 @@ switch (step) {
     { step = 95; continue; }
   case 87:
   case 88:
-    r0 = (s.cursor___971405 + 1);
-    s.cursor___971405 = (r0);
+    r0 = (s.cursor___1029191 + 1);
+    s.cursor___1029191 = (r0);
   case 89:
-    r0 = (s.cursor___971405 < s.length___971402);
+    r0 = (s.cursor___1029191 < s.length___1029188);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 92; continue; }
-    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___971405);
-    s.current___971410 = (r0);
-    s.tmp_3 = JSBI_isWhitespace__P971391_mk(s);
-    s.tmp_3.arg0 = s.current___971410;
-    s.callLocIdx = 270; s.pc = 108; return s.tmp_3;
+    r0 = pxsim_String_.charCodeAt(s.arg0, s.cursor___1029191);
+    s.current___1029196 = (r0);
+    s.tmp_3 = JSBI_isWhitespace__P1029177_mk(s);
+    s.tmp_3.arg0 = s.current___1029196;
+    s.callLocIdx = 285; s.pc = 108; return s.tmp_3;
   case 108:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -28469,31 +28777,31 @@ switch (step) {
     { step = 95; continue; }
   case 90:
   case 91:
-    r0 = (s.cursor___971405 + 1);
-    s.cursor___971405 = (r0);
+    r0 = (s.cursor___1029191 + 1);
+    s.cursor___1029191 = (r0);
     { step = 89; continue; }
   case 92:
   case 93:
   case 94:
-    s.tmp_0 = r0 = s.result___971603;
-    r0 = (s.sign___971400 === -1);
+    s.tmp_0 = r0 = s.result___1029389;
+    r0 = (s.sign___1029186 === -1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["sign"] = (s.tmp_1);
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.result___971603;
-    s.callLocIdx = 271; s.pc = 109; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1029389;
+    s.callLocIdx = 286; s.pc = 109; return s.tmp_0;
   case 109:
     r0 = s.retval;
   case 95:
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_fromString__P969844.info = {"start":33598,"length":6219,"line":812,"column":4,"endLine":973,"endColumn":5,"fileName":"jsbi.ts","functionName":"fromString","argumentNames":["s","radix"]}
+JSBI_fromString__P1027498.info = {"start":35028,"length":6219,"line":845,"column":4,"endLine":1006,"endColumn":5,"fileName":"jsbi.ts","functionName":"fromString","argumentNames":["s","radix"]}
 
-function JSBI_fromString__P969844_mk(s) {
+function JSBI_fromString__P1027498_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_fromString__P969844, depth: s.depth + 1,
+        parent: s, fn: JSBI_fromString__P1027498, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -28502,32 +28810,32 @@ function JSBI_fromString__P969844_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  sign___971400: undefined,
-  leadingZero___971401: undefined,
-  length___971402: undefined,
-  cursor___971405: undefined,
-  current___971410: undefined,
-  chars___971566: undefined,
-  bitsPerChar___971570: undefined,
-  roundup___971573: undefined,
-  bitsMin___971586: undefined,
-  resultLength___971595: undefined,
-  result___971603: undefined,
-  limDigit___971607: undefined,
-  limAlpha___971612: undefined,
-  parts___971628: undefined,
-  partsBits___971630: undefined,
-  done___971632: undefined,
-  part___971634: undefined,
-  bits___971635: undefined,
-  d___971637: undefined,
-  done___971705: undefined,
-  charsSoFar___971706: undefined,
-  part___971708: undefined,
-  multiplier___971709: undefined,
-  d___971711: undefined,
-  m___971737: undefined,
-  digitsSoFar___971770: undefined,
+  sign___1029186: undefined,
+  leadingZero___1029187: undefined,
+  length___1029188: undefined,
+  cursor___1029191: undefined,
+  current___1029196: undefined,
+  chars___1029352: undefined,
+  bitsPerChar___1029356: undefined,
+  roundup___1029359: undefined,
+  bitsMin___1029372: undefined,
+  resultLength___1029381: undefined,
+  result___1029389: undefined,
+  limDigit___1029393: undefined,
+  limAlpha___1029398: undefined,
+  parts___1029414: undefined,
+  partsBits___1029416: undefined,
+  done___1029418: undefined,
+  part___1029420: undefined,
+  bits___1029421: undefined,
+  d___1029423: undefined,
+  done___1029491: undefined,
+  charsSoFar___1029492: undefined,
+  part___1029494: undefined,
+  multiplier___1029495: undefined,
+  d___1029497: undefined,
+  m___1029523: undefined,
+  digitsSoFar___1029556: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -28536,7 +28844,7 @@ function JSBI_fromString__P969844_mk(s) {
 
 
 
-function join_inline__P971379(s) {
+function join_inline__P1029165(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -28551,10 +28859,10 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    s.tmp_1 = JSBI_isWhitespace__P971391_mk(s);
+    s.tmp_1 = JSBI_isWhitespace__P1029177_mk(s);
     r0 = pxsim_String_.charCodeAt(s.arg0, 0);
     s.tmp_1.arg0 = r0;
-    s.callLocIdx = 258; s.pc = 7; return s.tmp_1;
+    s.callLocIdx = 273; s.pc = 7; return s.tmp_1;
   case 7:
     r0 = s.retval;
     s.tmp_0 = r0;
@@ -28591,12 +28899,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-join_inline__P971379.info = {"start":33739,"length":174,"line":814,"column":31,"endLine":817,"endColumn":9,"fileName":"jsbi.ts","functionName":"inline","argumentNames":["value","index"]}
+join_inline__P1029165.info = {"start":35169,"length":174,"line":847,"column":31,"endLine":850,"endColumn":9,"fileName":"jsbi.ts","functionName":"inline","argumentNames":["value","index"]}
 
-function join_inline__P971379_mk(s) {
+function join_inline__P1029165_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: join_inline__P971379, depth: s.depth + 1,
+        parent: s, fn: join_inline__P1029165, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -28612,7 +28920,7 @@ function join_inline__P971379_mk(s) {
 
 
 
-function JSBI_BigInt___inplaceMultiplyAdd__P969089(s) {
+function JSBI_BigInt___inplaceMultiplyAdd__P1026743(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -28622,19 +28930,19 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.mLow___969302 = undefined;
-    s.mHigh___969305 = undefined;
-    s.carry___969308 = undefined;
-    s.high___969309 = undefined;
-    s.i___969311 = undefined;
-    s.d___969316 = undefined;
-    s.dLow___969320 = undefined;
-    s.dHigh___969323 = undefined;
-    s.pLow___969326 = undefined;
-    s.pMid1___969331 = undefined;
-    s.pMid2___969336 = undefined;
-    s.pHigh___969341 = undefined;
-    s.result___969346 = undefined;
+    s.mLow___1026956 = undefined;
+    s.mHigh___1026959 = undefined;
+    s.carry___1026962 = undefined;
+    s.high___1026963 = undefined;
+    s.i___1026965 = undefined;
+    s.d___1026970 = undefined;
+    s.dLow___1026974 = undefined;
+    s.dHigh___1026977 = undefined;
+    s.pLow___1026980 = undefined;
+    s.pMid1___1026985 = undefined;
+    s.pMid2___1026990 = undefined;
+    s.pHigh___1026995 = undefined;
+    s.result___1027000 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -28643,7 +28951,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, JSBI_BigInt__C969077_VT)) failedCast(r0);
+    if (!checkSubtype(r0, JSBI_BigInt__C1026731_VT)) failedCast(r0);
     s.tmp_1 = r0 = s.arg3;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
@@ -28660,88 +28968,88 @@ switch (step) {
   case 1:
   case 2:
     r0 = (s.arg1 & 32767);
-    s.mLow___969302 = (r0);
+    s.mLow___1026956 = (r0);
     r0 = (s.arg1 >>> 15);
-    s.mHigh___969305 = (r0);
-    s.carry___969308 = (0);
-    s.high___969309 = (s.arg2);
-    s.i___969311 = (0);
+    s.mHigh___1026959 = (r0);
+    s.carry___1026962 = (0);
+    s.high___1026963 = (s.arg2);
+    s.i___1026965 = (0);
   case 3:
-    r0 = (s.i___969311 < s.arg3);
+    r0 = (s.i___1026965 < s.arg3);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
     r0 = s.arg0.fields["data"];
     s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_1, s.i___969311);
-    s.d___969316 = (r0);
-    r0 = (s.d___969316 & 32767);
-    s.dLow___969320 = (r0);
-    r0 = (s.d___969316 >>> 15);
-    s.dHigh___969323 = (r0);
-    r0 = pxsim.Math_.imul(s.dLow___969320, s.mLow___969302);
-    s.pLow___969326 = (r0);
-    r0 = pxsim.Math_.imul(s.dLow___969320, s.mHigh___969305);
-    s.pMid1___969331 = (r0);
-    r0 = pxsim.Math_.imul(s.dHigh___969323, s.mLow___969302);
-    s.pMid2___969336 = (r0);
-    r0 = pxsim.Math_.imul(s.dHigh___969323, s.mHigh___969305);
-    s.pHigh___969341 = (r0);
-    r0 = (s.high___969309 + s.pLow___969326);
+    r0 = pxsim_Array__getAt(s.tmp_1, s.i___1026965);
+    s.d___1026970 = (r0);
+    r0 = (s.d___1026970 & 32767);
+    s.dLow___1026974 = (r0);
+    r0 = (s.d___1026970 >>> 15);
+    s.dHigh___1026977 = (r0);
+    r0 = pxsim.Math_.imul(s.dLow___1026974, s.mLow___1026956);
+    s.pLow___1026980 = (r0);
+    r0 = pxsim.Math_.imul(s.dLow___1026974, s.mHigh___1026959);
+    s.pMid1___1026985 = (r0);
+    r0 = pxsim.Math_.imul(s.dHigh___1026977, s.mLow___1026956);
+    s.pMid2___1026990 = (r0);
+    r0 = pxsim.Math_.imul(s.dHigh___1026977, s.mHigh___1026959);
+    s.pHigh___1026995 = (r0);
+    r0 = (s.high___1026963 + s.pLow___1026980);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 + s.carry___969308);
-    s.result___969346 = (r0);
-    r0 = (s.result___969346 >>> 30);
-    s.carry___969308 = (r0);
-    r0 = (s.result___969346 & 1073741823);
-    s.result___969346 = (r0);
-    s.tmp_0 = r0 = s.result___969346;
-    r0 = (s.pMid1___969331 & 32767);
+    r0 = (s.tmp_0 + s.carry___1026962);
+    s.result___1027000 = (r0);
+    r0 = (s.result___1027000 >>> 30);
+    s.carry___1026962 = (r0);
+    r0 = (s.result___1027000 & 1073741823);
+    s.result___1027000 = (r0);
+    s.tmp_0 = r0 = s.result___1027000;
+    r0 = (s.pMid1___1026985 & 32767);
     s.tmp_3 = r0;
     r0 = (s.tmp_3 << 15);
     s.tmp_2 = r0;
-    r0 = (s.pMid2___969336 & 32767);
+    r0 = (s.pMid2___1026990 & 32767);
     s.tmp_5 = r0;
     r0 = (s.tmp_5 << 15);
     s.tmp_4 = r0;
     r0 = (s.tmp_2 + s.tmp_4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 + s.tmp_1);
-    s.result___969346 = (r0);
-    s.tmp_0 = r0 = s.carry___969308;
-    r0 = (s.result___969346 >>> 30);
+    s.result___1027000 = (r0);
+    s.tmp_0 = r0 = s.carry___1026962;
+    r0 = (s.result___1027000 >>> 30);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 + s.tmp_1);
-    s.carry___969308 = (r0);
-    s.tmp_1 = r0 = s.pHigh___969341;
-    r0 = (s.pMid1___969331 >>> 15);
+    s.carry___1026962 = (r0);
+    s.tmp_1 = r0 = s.pHigh___1026995;
+    r0 = (s.pMid1___1026985 >>> 15);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 + s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.pMid2___969336 >>> 15);
+    r0 = (s.pMid2___1026990 >>> 15);
     s.tmp_3 = r0;
     r0 = (s.tmp_0 + s.tmp_3);
-    s.high___969309 = (r0);
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.high___1026963 = (r0);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.i___969311;
-    r0 = (s.result___969346 & 1073741823);
+    s.tmp_0.arg1 = s.i___1026965;
+    r0 = (s.result___1027000 & 1073741823);
     s.tmp_0.arg2 = r0;
     s.callLocIdx = 84; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    r0 = (s.i___969311 + 1);
-    s.i___969311 = (r0);
+    r0 = (s.i___1026965 + 1);
+    s.i___1026965 = (r0);
     { step = 3; continue; }
   case 4:
-    r0 = (s.carry___969308 !== 0);
+    r0 = (s.carry___1026962 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 5; continue; }
     r0 = s.tmp_0;
     { step = 6; continue; }
   case 5:
-    r0 = (s.high___969309 !== 0);
+    r0 = (s.high___1026963 !== 0);
   case 6:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -28754,12 +29062,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_BigInt___inplaceMultiplyAdd__P969089.info = {"start":4462,"length":1277,"line":127,"column":8,"endLine":152,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceMultiplyAdd","argumentNames":["this","multiplier","summand","length"]}
+JSBI_BigInt___inplaceMultiplyAdd__P1026743.info = {"start":4462,"length":1277,"line":127,"column":8,"endLine":152,"endColumn":9,"fileName":"jsbi.ts","functionName":"__inplaceMultiplyAdd","argumentNames":["this","multiplier","summand","length"]}
 
-function JSBI_BigInt___inplaceMultiplyAdd__P969089_mk(s) {
+function JSBI_BigInt___inplaceMultiplyAdd__P1026743_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_BigInt___inplaceMultiplyAdd__P969089, depth: s.depth + 1,
+        parent: s, fn: JSBI_BigInt___inplaceMultiplyAdd__P1026743, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -28767,19 +29075,19 @@ function JSBI_BigInt___inplaceMultiplyAdd__P969089_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  mLow___969302: undefined,
-  mHigh___969305: undefined,
-  carry___969308: undefined,
-  high___969309: undefined,
-  i___969311: undefined,
-  d___969316: undefined,
-  dLow___969320: undefined,
-  dHigh___969323: undefined,
-  pLow___969326: undefined,
-  pMid1___969331: undefined,
-  pMid2___969336: undefined,
-  pHigh___969341: undefined,
-  result___969346: undefined,
+  mLow___1026956: undefined,
+  mHigh___1026959: undefined,
+  carry___1026962: undefined,
+  high___1026963: undefined,
+  i___1026965: undefined,
+  d___1026970: undefined,
+  dLow___1026974: undefined,
+  dHigh___1026977: undefined,
+  pLow___1026980: undefined,
+  pMid1___1026985: undefined,
+  pMid2___1026990: undefined,
+  pHigh___1026995: undefined,
+  result___1027000: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -28790,7 +29098,7 @@ function JSBI_BigInt___inplaceMultiplyAdd__P969089_mk(s) {
 
 
 
-function JSBI_fillFromParts__P971127(s) {
+function JSBI_fillFromParts__P1028913(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -28800,93 +29108,93 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.digitIndex___971131 = undefined;
-    s.digit___971132 = undefined;
-    s.bitsInDigit___971133 = undefined;
-    s.i___971134 = undefined;
-    s.part___971141 = undefined;
-    s.partBits___971145 = undefined;
+    s.digitIndex___1028917 = undefined;
+    s.digit___1028918 = undefined;
+    s.bitsInDigit___1028919 = undefined;
+    s.i___1028920 = undefined;
+    s.part___1028927 = undefined;
+    s.partBits___1028931 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.arg2 = (s.lambdaArgs[2]);
       s.lambdaArgs = null;
     }
-    s.digitIndex___971131 = (0);
-    s.digit___971132 = (0);
-    s.bitsInDigit___971133 = (0);
+    s.digitIndex___1028917 = (0);
+    s.digit___1028918 = (0);
+    s.bitsInDigit___1028919 = (0);
     r0 = pxsim_Array__length(s.arg1);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 - 1);
-    s.i___971134 = (r0);
+    s.i___1028920 = (r0);
   case 1:
-    r0 = (s.i___971134 >= 0);
+    r0 = (s.i___1028920 >= 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 6; continue; }
-    r0 = pxsim_Array__getAt(s.arg1, s.i___971134);
-    s.part___971141 = (r0);
-    r0 = pxsim_Array__getAt(s.arg2, s.i___971134);
-    s.partBits___971145 = (r0);
-    s.tmp_0 = r0 = s.digit___971132;
-    r0 = (s.part___971141 << s.bitsInDigit___971133);
+    r0 = pxsim_Array__getAt(s.arg1, s.i___1028920);
+    s.part___1028927 = (r0);
+    r0 = pxsim_Array__getAt(s.arg2, s.i___1028920);
+    s.partBits___1028931 = (r0);
+    s.tmp_0 = r0 = s.digit___1028918;
+    r0 = (s.part___1028927 << s.bitsInDigit___1028919);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.digit___971132 = (r0);
-    r0 = (s.bitsInDigit___971133 + s.partBits___971145);
-    s.bitsInDigit___971133 = (r0);
-    r0 = (s.bitsInDigit___971133 === 30);
+    s.digit___1028918 = (r0);
+    r0 = (s.bitsInDigit___1028919 + s.partBits___1028931);
+    s.bitsInDigit___1028919 = (r0);
+    r0 = (s.bitsInDigit___1028919 === 30);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_1 = r0 = s.digitIndex___971131;
+    s.tmp_1 = r0 = s.digitIndex___1028917;
     r0 = (s.tmp_1 + 1);
-    s.digitIndex___971131 = (r0);
-    s.tmp_2 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.digitIndex___1028917 = (r0);
+    s.tmp_2 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.tmp_2.arg1 = s.tmp_1;
-    s.tmp_2.arg2 = s.digit___971132;
-    s.callLocIdx = 245; s.pc = 13; return s.tmp_2;
+    s.tmp_2.arg2 = s.digit___1028918;
+    s.callLocIdx = 260; s.pc = 13; return s.tmp_2;
   case 13:
     r0 = s.retval;
-    s.bitsInDigit___971133 = (0);
-    s.digit___971132 = (0);
+    s.bitsInDigit___1028919 = (0);
+    s.digit___1028918 = (0);
     { step = 5; continue; }
   case 2:
-    r0 = (s.bitsInDigit___971133 > 30);
+    r0 = (s.bitsInDigit___1028919 > 30);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_1 = r0 = s.digitIndex___971131;
+    s.tmp_1 = r0 = s.digitIndex___1028917;
     r0 = (s.tmp_1 + 1);
-    s.digitIndex___971131 = (r0);
-    s.tmp_2 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.digitIndex___1028917 = (r0);
+    s.tmp_2 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.tmp_2.arg1 = s.tmp_1;
-    r0 = (s.digit___971132 & 1073741823);
+    r0 = (s.digit___1028918 & 1073741823);
     s.tmp_2.arg2 = r0;
-    s.callLocIdx = 246; s.pc = 14; return s.tmp_2;
+    s.callLocIdx = 261; s.pc = 14; return s.tmp_2;
   case 14:
     r0 = s.retval;
-    r0 = (s.bitsInDigit___971133 - 30);
-    s.bitsInDigit___971133 = (r0);
-    s.tmp_0 = r0 = s.part___971141;
-    r0 = (s.partBits___971145 - s.bitsInDigit___971133);
+    r0 = (s.bitsInDigit___1028919 - 30);
+    s.bitsInDigit___1028919 = (r0);
+    s.tmp_0 = r0 = s.part___1028927;
+    r0 = (s.partBits___1028931 - s.bitsInDigit___1028919);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 >>> s.tmp_1);
-    s.digit___971132 = (r0);
+    s.digit___1028918 = (r0);
   case 3:
   case 4:
   case 5:
-    r0 = (s.i___971134 - 1);
-    s.i___971134 = (r0);
+    r0 = (s.i___1028920 - 1);
+    s.i___1028920 = (r0);
     { step = 1; continue; }
   case 6:
-    r0 = (s.digit___971132 !== 0);
+    r0 = (s.digit___1028918 !== 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 9; continue; }
-    s.tmp_2 = r0 = s.digitIndex___971131;
+    s.tmp_2 = r0 = s.digitIndex___1028917;
     r0 = s.arg0.fields["data"];
     s.tmp_4 = r0;
     r0 = pxsim_Array__length(s.tmp_4);
@@ -28898,20 +29206,20 @@ switch (step) {
     r0 = pxsim_pxtcore.throwValue("fillFromParts(): implementation bug.");
   case 7:
   case 8:
-    s.tmp_5 = r0 = s.digitIndex___971131;
+    s.tmp_5 = r0 = s.digitIndex___1028917;
     r0 = (s.tmp_5 + 1);
-    s.digitIndex___971131 = (r0);
-    s.tmp_6 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.digitIndex___1028917 = (r0);
+    s.tmp_6 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_6.arg0 = s.arg0;
     s.tmp_6.arg1 = s.tmp_5;
-    s.tmp_6.arg2 = s.digit___971132;
-    s.callLocIdx = 248; s.pc = 15; return s.tmp_6;
+    s.tmp_6.arg2 = s.digit___1028918;
+    s.callLocIdx = 263; s.pc = 15; return s.tmp_6;
   case 15:
     r0 = s.retval;
   case 9:
   case 10:
   case 11:
-    s.tmp_1 = r0 = s.digitIndex___971131;
+    s.tmp_1 = r0 = s.digitIndex___1028917;
     r0 = s.arg0.fields["data"];
     s.tmp_3 = r0;
     r0 = pxsim_Array__length(s.tmp_3);
@@ -28920,27 +29228,27 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 12; continue; }
-    s.tmp_4 = JSBI_BigInt___setDigit__P969092_mk(s);
+    s.tmp_4 = JSBI_BigInt___setDigit__P1026746_mk(s);
     s.tmp_4.arg0 = s.arg0;
-    s.tmp_4.arg1 = s.digitIndex___971131;
+    s.tmp_4.arg1 = s.digitIndex___1028917;
     s.tmp_4.arg2 = 0;
-    s.callLocIdx = 250; s.pc = 16; return s.tmp_4;
+    s.callLocIdx = 265; s.pc = 16; return s.tmp_4;
   case 16:
     r0 = s.retval;
-    r0 = (s.digitIndex___971131 + 1);
-    s.digitIndex___971131 = (r0);
+    r0 = (s.digitIndex___1028917 + 1);
+    s.digitIndex___1028917 = (r0);
     { step = 11; continue; }
   case 12:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_fillFromParts__P971127.info = {"start":29571,"length":1086,"line":725,"column":4,"endLine":751,"endColumn":5,"fileName":"jsbi.ts","functionName":"fillFromParts","argumentNames":["result","parts","partsBits"]}
+JSBI_fillFromParts__P1028913.info = {"start":31001,"length":1086,"line":758,"column":4,"endLine":784,"endColumn":5,"fileName":"jsbi.ts","functionName":"fillFromParts","argumentNames":["result","parts","partsBits"]}
 
-function JSBI_fillFromParts__P971127_mk(s) {
+function JSBI_fillFromParts__P1028913_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_fillFromParts__P971127, depth: s.depth + 1,
+        parent: s, fn: JSBI_fillFromParts__P1028913, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -28949,12 +29257,12 @@ function JSBI_fillFromParts__P971127_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  digitIndex___971131: undefined,
-  digit___971132: undefined,
-  bitsInDigit___971133: undefined,
-  i___971134: undefined,
-  part___971141: undefined,
-  partBits___971145: undefined,
+  digitIndex___1028917: undefined,
+  digit___1028918: undefined,
+  bitsInDigit___1028919: undefined,
+  i___1028920: undefined,
+  part___1028927: undefined,
+  partBits___1028931: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -28964,7 +29272,7 @@ function JSBI_fillFromParts__P971127_mk(s) {
 
 
 
-function JSBI_isWhitespace__P971391(s) {
+function JSBI_isWhitespace__P1029177(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -29084,12 +29392,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_isWhitespace__P971391.info = {"start":40811,"length":439,"line":1002,"column":4,"endLine":1014,"endColumn":5,"fileName":"jsbi.ts","functionName":"isWhitespace","argumentNames":["c"]}
+JSBI_isWhitespace__P1029177.info = {"start":42241,"length":439,"line":1035,"column":4,"endLine":1047,"endColumn":5,"fileName":"jsbi.ts","functionName":"isWhitespace","argumentNames":["c"]}
 
-function JSBI_isWhitespace__P971391_mk(s) {
+function JSBI_isWhitespace__P1029177_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_isWhitespace__P971391, depth: s.depth + 1,
+        parent: s, fn: JSBI_isWhitespace__P1029177, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -29105,7 +29413,7 @@ function JSBI_isWhitespace__P971391_mk(s) {
 
 
 
-function JSBI_fromDouble__P969835(s) {
+function JSBI_fromDouble__P1027489(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -29115,30 +29423,30 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.sign___971209 = undefined;
-    s.rawExponent___971217 = undefined;
-    s.exponent___971227 = undefined;
-    s.digits___971230 = undefined;
-    s.result___971238 = undefined;
-    s.mantissaHigh___971245 = undefined;
-    s.mantissaLow___971256 = undefined;
-    s.msdTopBit___971263 = undefined;
-    s.remainingMantissaBits___971266 = undefined;
-    s.digit___971267 = undefined;
-    s.shift___971271 = undefined;
-    s.shift___971309 = undefined;
-    s.digitIndex___971338 = undefined;
+    s.sign___1028995 = undefined;
+    s.rawExponent___1029003 = undefined;
+    s.exponent___1029013 = undefined;
+    s.digits___1029016 = undefined;
+    s.result___1029024 = undefined;
+    s.mantissaHigh___1029031 = undefined;
+    s.mantissaLow___1029042 = undefined;
+    s.msdTopBit___1029049 = undefined;
+    s.remainingMantissaBits___1029052 = undefined;
+    s.digit___1029053 = undefined;
+    s.shift___1029057 = undefined;
+    s.shift___1029095 = undefined;
+    s.digitIndex___1029124 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = (s.arg0 < 0);
-    s.sign___971209 = (r0);
-    r0 = pxsim.BufferMethods.setNumber(globals.kBitConversionBuffer___969075, 14, 0, s.arg0);
-    s.tmp_2 = r0 = globals.kBitConversionBuffer___969075;
+    s.sign___1028995 = (r0);
+    r0 = pxsim.BufferMethods.setNumber(globals.kBitConversionBuffer___1026729, 14, 0, s.arg0);
+    s.tmp_2 = r0 = globals.kBitConversionBuffer___1026729;
     s.tmp_4 = Buffer_sizeOfNumberFormat__P607597_mk(s);
     s.tmp_4.arg0 = 5;
-    s.callLocIdx = 251; s.pc = 9; return s.tmp_4;
+    s.callLocIdx = 266; s.pc = 9; return s.tmp_4;
   case 9:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -29147,29 +29455,29 @@ switch (step) {
     r0 = (s.tmp_1 >>> 20);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 & 2047);
-    s.rawExponent___971217 = (r0);
-    r0 = (s.rawExponent___971217 - 1023);
-    s.exponent___971227 = (r0);
-    r0 = (s.exponent___971227 / 30);
+    s.rawExponent___1029003 = (r0);
+    r0 = (s.rawExponent___1029003 - 1023);
+    s.exponent___1029013 = (r0);
+    r0 = (s.exponent___1029013 / 30);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 | 0);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 + 1);
-    s.digits___971230 = (r0);
-    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C969077_VT);
+    s.digits___1029016 = (r0);
+    r0 = pxsim_pxtcore_mkClassInstance(JSBI_BigInt__C1026731_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = JSBI_BigInt_constructor__P969096_mk(s);
+    s.tmp_1 = JSBI_BigInt_constructor__P1026750_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.digits___971230;
-    s.tmp_1.arg2 = s.sign___971209;
-    s.callLocIdx = 252; s.pc = 10; return s.tmp_1;
+    s.tmp_1.arg1 = s.digits___1029016;
+    s.tmp_1.arg2 = s.sign___1028995;
+    s.callLocIdx = 267; s.pc = 10; return s.tmp_1;
   case 10:
     r0 = s.retval;
-    s.result___971238 = (s.tmp_0);
-    s.tmp_2 = r0 = globals.kBitConversionBuffer___969075;
+    s.result___1029024 = (s.tmp_0);
+    s.tmp_2 = r0 = globals.kBitConversionBuffer___1026729;
     s.tmp_4 = Buffer_sizeOfNumberFormat__P607597_mk(s);
     s.tmp_4.arg0 = 5;
-    s.callLocIdx = 253; s.pc = 11; return s.tmp_4;
+    s.callLocIdx = 268; s.pc = 11; return s.tmp_4;
   case 11:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -29178,145 +29486,145 @@ switch (step) {
     r0 = (s.tmp_1 & 1048575);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 | 1048576);
-    s.mantissaHigh___971245 = (r0);
-    r0 = pxsim.BufferMethods.getNumber(globals.kBitConversionBuffer___969075, 5, 0);
-    s.mantissaLow___971256 = (r0);
-    r0 = (s.exponent___971227 % 30);
-    s.msdTopBit___971263 = (r0);
-    s.remainingMantissaBits___971266 = (0);
-    r0 = (s.msdTopBit___971263 < 20);
+    s.mantissaHigh___1029031 = (r0);
+    r0 = pxsim.BufferMethods.getNumber(globals.kBitConversionBuffer___1026729, 5, 0);
+    s.mantissaLow___1029042 = (r0);
+    r0 = (s.exponent___1029013 % 30);
+    s.msdTopBit___1029049 = (r0);
+    s.remainingMantissaBits___1029052 = (0);
+    r0 = (s.msdTopBit___1029049 < 20);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = (20 - s.msdTopBit___971263);
-    s.shift___971271 = (r0);
-    r0 = (s.shift___971271 + 32);
-    s.remainingMantissaBits___971266 = (r0);
-    r0 = (s.mantissaHigh___971245 >>> s.shift___971271);
-    s.digit___971267 = (r0);
-    s.tmp_1 = r0 = s.mantissaHigh___971245;
-    r0 = (32 - s.shift___971271);
+    r0 = (20 - s.msdTopBit___1029049);
+    s.shift___1029057 = (r0);
+    r0 = (s.shift___1029057 + 32);
+    s.remainingMantissaBits___1029052 = (r0);
+    r0 = (s.mantissaHigh___1029031 >>> s.shift___1029057);
+    s.digit___1029053 = (r0);
+    s.tmp_1 = r0 = s.mantissaHigh___1029031;
+    r0 = (32 - s.shift___1029057);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 << s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.mantissaLow___971256 >>> s.shift___971271);
+    r0 = (s.mantissaLow___1029042 >>> s.shift___1029057);
     s.tmp_3 = r0;
     r0 = (s.tmp_0 | s.tmp_3);
-    s.mantissaHigh___971245 = (r0);
-    s.tmp_0 = r0 = s.mantissaLow___971256;
-    r0 = (32 - s.shift___971271);
+    s.mantissaHigh___1029031 = (r0);
+    s.tmp_0 = r0 = s.mantissaLow___1029042;
+    r0 = (32 - s.shift___1029057);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 << s.tmp_1);
-    s.mantissaLow___971256 = (r0);
+    s.mantissaLow___1029042 = (r0);
     { step = 4; continue; }
   case 1:
-    r0 = (s.msdTopBit___971263 === 20);
+    r0 = (s.msdTopBit___1029049 === 20);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.remainingMantissaBits___971266 = (32);
-    s.digit___971267 = (s.mantissaHigh___971245);
-    s.mantissaHigh___971245 = (s.mantissaLow___971256);
-    s.mantissaLow___971256 = (0);
+    s.remainingMantissaBits___1029052 = (32);
+    s.digit___1029053 = (s.mantissaHigh___1029031);
+    s.mantissaHigh___1029031 = (s.mantissaLow___1029042);
+    s.mantissaLow___1029042 = (0);
     { step = 3; continue; }
   case 2:
-    r0 = (s.msdTopBit___971263 - 20);
-    s.shift___971309 = (r0);
-    r0 = (32 - s.shift___971309);
-    s.remainingMantissaBits___971266 = (r0);
-    r0 = (s.mantissaHigh___971245 << s.shift___971309);
+    r0 = (s.msdTopBit___1029049 - 20);
+    s.shift___1029095 = (r0);
+    r0 = (32 - s.shift___1029095);
+    s.remainingMantissaBits___1029052 = (r0);
+    r0 = (s.mantissaHigh___1029031 << s.shift___1029095);
     s.tmp_0 = r0;
-    s.tmp_2 = r0 = s.mantissaLow___971256;
-    r0 = (32 - s.shift___971309);
+    s.tmp_2 = r0 = s.mantissaLow___1029042;
+    r0 = (32 - s.shift___1029095);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 >>> s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.digit___971267 = (r0);
-    r0 = (s.mantissaLow___971256 << s.shift___971309);
-    s.mantissaHigh___971245 = (r0);
-    s.mantissaLow___971256 = (0);
+    s.digit___1029053 = (r0);
+    r0 = (s.mantissaLow___1029042 << s.shift___1029095);
+    s.mantissaHigh___1029031 = (r0);
+    s.mantissaLow___1029042 = (0);
   case 3:
   case 4:
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___971238;
-    r0 = (s.digits___971230 - 1);
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1029024;
+    r0 = (s.digits___1029016 - 1);
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = s.digit___971267;
-    s.callLocIdx = 254; s.pc = 12; return s.tmp_0;
+    s.tmp_0.arg2 = s.digit___1029053;
+    s.callLocIdx = 269; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
-    r0 = (s.digits___971230 - 2);
-    s.digitIndex___971338 = (r0);
+    r0 = (s.digits___1029016 - 2);
+    s.digitIndex___1029124 = (r0);
   case 5:
-    r0 = (s.digitIndex___971338 >= 0);
+    r0 = (s.digitIndex___1029124 >= 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    r0 = (s.remainingMantissaBits___971266 > 0);
+    r0 = (s.remainingMantissaBits___1029052 > 0);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 6; continue; }
-    r0 = (s.remainingMantissaBits___971266 - 30);
-    s.remainingMantissaBits___971266 = (r0);
-    r0 = (s.mantissaHigh___971245 >>> 2);
-    s.digit___971267 = (r0);
-    r0 = (s.mantissaHigh___971245 << 30);
+    r0 = (s.remainingMantissaBits___1029052 - 30);
+    s.remainingMantissaBits___1029052 = (r0);
+    r0 = (s.mantissaHigh___1029031 >>> 2);
+    s.digit___1029053 = (r0);
+    r0 = (s.mantissaHigh___1029031 << 30);
     s.tmp_0 = r0;
-    r0 = (s.mantissaLow___971256 >>> 2);
+    r0 = (s.mantissaLow___1029042 >>> 2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 | s.tmp_1);
-    s.mantissaHigh___971245 = (r0);
-    r0 = (s.mantissaLow___971256 << 30);
-    s.mantissaLow___971256 = (r0);
+    s.mantissaHigh___1029031 = (r0);
+    r0 = (s.mantissaLow___1029042 << 30);
+    s.mantissaLow___1029042 = (r0);
     { step = 7; continue; }
   case 6:
-    s.digit___971267 = (0);
+    s.digit___1029053 = (0);
   case 7:
-    s.tmp_0 = JSBI_BigInt___setDigit__P969092_mk(s);
-    s.tmp_0.arg0 = s.result___971238;
-    s.tmp_0.arg1 = s.digitIndex___971338;
-    s.tmp_0.arg2 = s.digit___971267;
-    s.callLocIdx = 255; s.pc = 13; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___setDigit__P1026746_mk(s);
+    s.tmp_0.arg0 = s.result___1029024;
+    s.tmp_0.arg1 = s.digitIndex___1029124;
+    s.tmp_0.arg2 = s.digit___1029053;
+    s.callLocIdx = 270; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
-    r0 = (s.digitIndex___971338 - 1);
-    s.digitIndex___971338 = (r0);
+    r0 = (s.digitIndex___1029124 - 1);
+    s.digitIndex___1029124 = (r0);
     { step = 5; continue; }
   case 8:
-    s.tmp_0 = JSBI_BigInt___trim__P969094_mk(s);
-    s.tmp_0.arg0 = s.result___971238;
-    s.callLocIdx = 256; s.pc = 14; return s.tmp_0;
+    s.tmp_0 = JSBI_BigInt___trim__P1026748_mk(s);
+    s.tmp_0.arg0 = s.result___1029024;
+    s.callLocIdx = 271; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     return leave(s, r0)
   default: oops()
 } } }
-JSBI_fromDouble__P969835.info = {"start":30663,"length":2929,"line":753,"column":4,"endLine":810,"endColumn":5,"fileName":"jsbi.ts","functionName":"fromDouble","argumentNames":["value"]}
+JSBI_fromDouble__P1027489.info = {"start":32093,"length":2929,"line":786,"column":4,"endLine":843,"endColumn":5,"fileName":"jsbi.ts","functionName":"fromDouble","argumentNames":["value"]}
 
-function JSBI_fromDouble__P969835_mk(s) {
+function JSBI_fromDouble__P1027489_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: JSBI_fromDouble__P969835, depth: s.depth + 1,
+        parent: s, fn: JSBI_fromDouble__P1027489, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
-  sign___971209: undefined,
-  rawExponent___971217: undefined,
-  exponent___971227: undefined,
-  digits___971230: undefined,
-  result___971238: undefined,
-  mantissaHigh___971245: undefined,
-  mantissaLow___971256: undefined,
-  msdTopBit___971263: undefined,
-  remainingMantissaBits___971266: undefined,
-  digit___971267: undefined,
-  shift___971271: undefined,
-  shift___971309: undefined,
-  digitIndex___971338: undefined,
+  sign___1028995: undefined,
+  rawExponent___1029003: undefined,
+  exponent___1029013: undefined,
+  digits___1029016: undefined,
+  result___1029024: undefined,
+  mantissaHigh___1029031: undefined,
+  mantissaLow___1029042: undefined,
+  msdTopBit___1029049: undefined,
+  remainingMantissaBits___1029052: undefined,
+  digit___1029053: undefined,
+  shift___1029057: undefined,
+  shift___1029095: undefined,
+  digitIndex___1029124: undefined,
   arg0: undefined,
 } }
 
@@ -55745,7 +56053,7 @@ const Math_FastRandom__C610440_VT = mkVTable({
     "pickRandom": Math_FastRandom_pickRandom__P610445,
   },
 });
-const JSBI_BigInt__C969077_VT = mkVTable({
+const JSBI_BigInt__C1026731_VT = mkVTable({
   name: "BigInt",
   numFields: 2,
   classNo: 21,
@@ -55758,26 +56066,26 @@ const JSBI_BigInt__C969077_VT = mkVTable({
     "set/data": null,
     "sign": null,
     "set/sign": null,
-    "length": JSBI_BigInt_length__P969078,
-    "toDebugString": JSBI_BigInt_toDebugString__P969079,
-    "toNumber": JSBI_BigInt_toNumber__P969080,
-    "toString": JSBI_BigInt_toString__P969081,
-    "__clzmsd": JSBI_BigInt___clzmsd__P969082,
-    "__copy": JSBI_BigInt___copy__P969083,
-    "__digit": JSBI_BigInt___digit__P969084,
-    "__halfDigit": JSBI_BigInt___halfDigit__P969085,
-    "__halfDigitLength": JSBI_BigInt___halfDigitLength__P969086,
-    "__initializeDigits": JSBI_BigInt___initializeDigits__P969087,
-    "__inplaceAdd": JSBI_BigInt___inplaceAdd__P969088,
-    "__inplaceMultiplyAdd": JSBI_BigInt___inplaceMultiplyAdd__P969089,
-    "__inplaceRightShift": JSBI_BigInt___inplaceRightShift__P969090,
-    "__inplaceSub": JSBI_BigInt___inplaceSub__P969091,
-    "__setDigit": JSBI_BigInt___setDigit__P969092,
-    "__setHalfDigit": JSBI_BigInt___setHalfDigit__P969093,
-    "__trim": JSBI_BigInt___trim__P969094,
-    "__unsignedDigit": JSBI_BigInt___unsignedDigit__P969095,
+    "length": JSBI_BigInt_length__P1026732,
+    "toDebugString": JSBI_BigInt_toDebugString__P1026733,
+    "toNumber": JSBI_BigInt_toNumber__P1026734,
+    "toString": JSBI_BigInt_toString__P1026735,
+    "__clzmsd": JSBI_BigInt___clzmsd__P1026736,
+    "__copy": JSBI_BigInt___copy__P1026737,
+    "__digit": JSBI_BigInt___digit__P1026738,
+    "__halfDigit": JSBI_BigInt___halfDigit__P1026739,
+    "__halfDigitLength": JSBI_BigInt___halfDigitLength__P1026740,
+    "__initializeDigits": JSBI_BigInt___initializeDigits__P1026741,
+    "__inplaceAdd": JSBI_BigInt___inplaceAdd__P1026742,
+    "__inplaceMultiplyAdd": JSBI_BigInt___inplaceMultiplyAdd__P1026743,
+    "__inplaceRightShift": JSBI_BigInt___inplaceRightShift__P1026744,
+    "__inplaceSub": JSBI_BigInt___inplaceSub__P1026745,
+    "__setDigit": JSBI_BigInt___setDigit__P1026746,
+    "__setHalfDigit": JSBI_BigInt___setHalfDigit__P1026747,
+    "__trim": JSBI_BigInt___trim__P1026748,
+    "__unsignedDigit": JSBI_BigInt___unsignedDigit__P1026749,
   },
-  toStringMethod: JSBI_BigInt_toString__P969081,
+  toStringMethod: JSBI_BigInt_toString__P1026735,
 });
 const game_BaseDialog__C610284_VT = mkVTable({
   name: "BaseDialog",
@@ -57152,7 +57460,7 @@ const sprites_BaseSpriteSayRenderer__C609641_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["kBitConversionBuffer___969075","fact___932871","msg___932873","facts___932867","allPassed___932866","TESTS___932932","testNumber___932949","EXPECTED___933041","VALID___933035","INVALID___933037","max___933104","other___933108","result___933111","COMPARISON_TESTS___933173","t63a___933465","t63b___933468","t63d___933481","t63c___933478","t63e___933486","kMaxBitsPerChar___969065"])
+const breakpoints = setupDebugger(1, ["kBitConversionBuffer___1026729","fact___983768","msg___983770","facts___983764","allPassed___983763","TESTS___983829","testNumber___983846","EXPECTED___983942","VALID___983936","INVALID___983938","max___984005","other___984009","result___984012","COMPARISON_TESTS___984074","t63a___984366","t63b___984369","t63d___984382","t63c___984379","t63e___984387","kMaxBitsPerChar___1026719"])
 
-return _main___P976900
+return _main___P1032749
 })
