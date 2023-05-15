@@ -1,5 +1,7 @@
- 
+# MakeCode gets Big Integers!
 
+This repository is (already!) deprecated and archived. Further enhancements will be made at its replacement,
+[BigNum for MakeCode](https://github.com/robo-technical-group/pxt-arcade-bignum). File issues and pull requests there, please.
 
 > Open this page at [https://robo-technical-group.github.io/pxt-arcade-bigint/](https://robo-technical-group.github.io/pxt-arcade-bigint/)
 
