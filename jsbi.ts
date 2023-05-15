@@ -146,7 +146,7 @@ namespace JSBI {
                 this.__setDigit(i, result & 0x3FFFFFFF)
             }
             if (carry !== 0 || high !== 0) {
-                throw 'implementation bug'
+                throw '__inplaceMultiplyAdd: implementation bug.'
             }
         }
 
@@ -188,7 +188,7 @@ namespace JSBI {
                 this.__setDigit(startIndex + i, ((r15 & 0x7FFF) << 15) | (r0 & 0x7FFF))
                 const subTop: number = sub >>> 15
                 if (startIndex + i + 1 >= this.length) {
-                    throw 'out of bounds'
+                    throw '__inplaceSub: out of bounds.'
                 }
                 if ((halfDigits & 1) === 0) {
                     current = this.__digit(startIndex + i + 1)
@@ -265,7 +265,7 @@ namespace JSBI {
             }
             if (Number.isNaN(arg) || Math.floor(arg) !== arg) {
                 throw 'The number ' + arg + ' cannot be converted to ' +
-                'CreateBigInt because it is not an integer'
+                'BigInt because it is not an integer.'
             }
             return fromDouble(arg)
         }
@@ -369,7 +369,7 @@ namespace JSBI {
         }
         if (wantQuotient) return (q as BigInt)
         // TODO find a way to make this statically unreachable?
-        throw 'unreachable'
+        throw 'absoluteDivLarge: unreachable.'
     }
 
     function absoluteModSmall(x: BigInt, divisor: number): number {
@@ -442,7 +442,7 @@ namespace JSBI {
 
     export function exponentiate(x: BigInt, y: BigInt): BigInt {
         if (y.sign) {
-            throw 'Exponent must be positive'
+            throw 'exponentiate: Exponent must be positive.'
         }
         if (y.length === 0) {
             return oneDigit(1, false)
@@ -458,11 +458,11 @@ namespace JSBI {
         }
         // For all bases >= 2, very large exponents would lead to unrepresentable
         // results.
-        if (y.length > 1) throw 'CreateBigInt too big'
+        if (y.length > 1) throw 'exponentiate: BigInt exponent is too big.'
         let expValue: number = y.__unsignedDigit(0)
         if (expValue === 1) return x
         if (expValue >= kMaxLengthBits) {
-            throw 'CreateBigInt too big'
+            throw 'exponentiate: expected product is too big.'
         }
         if (x.length === 1 && x.__digit(0) === 2) {
             // Fast path for 2^n.
@@ -514,7 +514,7 @@ namespace JSBI {
             }
         }
         if (digit !== 0) {
-            if (digitIndex >= result.length) throw 'fillFromParts(): implementation bug'
+            if (digitIndex >= result.length) throw 'fillFromParts(): implementation bug.'
             result.__setDigit(digitIndex++, digit)
         }
         for (; digitIndex < result.length; digitIndex++) {
@@ -763,7 +763,7 @@ namespace JSBI {
                 result.__setDigit(n++, 0)
             }
         } else {
-            if (carry + high !== 0) throw 'implementation bug'
+            if (carry + high !== 0) throw 'internalMultiplyAdd: implementation bug.'
         }
     }
 
@@ -786,7 +786,7 @@ namespace JSBI {
     }
 
     export function mod(x: BigInt, y: BigInt): BigInt {
-        if (y.length === 0) throw 'Division by zero'
+        if (y.length === 0) throw 'mod: Division by zero.'
         if (compare(x, y) < 0) return x
         const divisor: number = y.__unsignedDigit(0)
         if (y.length === 1 && divisor <= 0x7FFF) {
