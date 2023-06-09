@@ -6,13 +6,16 @@ it eventually will include support for the Blocks interface.
 
 # TODO
 
-- [ ] Change namespace to `BigNum`.
-- [ ] Add appropriate jsdoc and cleanup documentation.
+- [X] Change namespace to `BigNum`.
+- [X] Add appropriate jsdoc and cleanup documentation.
 - [ ] Add annotations to enhance debugger support.
 - [ ] Allow `number` arguments to operations where supported.
 - [ ] Implement method chaining to support things like `a.multiply(x).add(b).mod(m).mod(p)`.
 - [ ] Add remaining JSBI operations.
   - [ ] Right shift.
+- [ ] Add tests from `big.js` library.
+  - [ ] Streamline testing where appropriate.
+  - [ ] Backport appropriate tests to BigInt.
 - [ ] Add `big.js` library.
 
 > Open this page at [https://robo-technical-group.github.io/pxt-arcade-bignum/](https://robo-technical-group.github.io/pxt-arcade-bignum/)

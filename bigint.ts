@@ -19,13 +19,15 @@ interface BigDiv {
 namespace BigNum {
     const kMaxLength: number = 1 << 25
     const kMaxLengthBits: number = kMaxLength << 5
-    // Lookup table for the maximum number of bits required per character of a
-    // base-N string representation of a number. To increase accuracy, the array
-    // value is the actual value multiplied by 32. To generate this table:
-    //
-    // for (let i = 0; i <= 36; i++) {
-    //   console.log(Math.ceil(Math.log2(i) * 32) + ',');
-    // }
+    /**
+     * Lookup table for the maximum number of bits required per character of a
+     * base-N string representation of a number. To increase accuracy, the array
+     * value is the actual value multiplied by 32. To generate this table:
+     *
+     * for (let i = 0; i <= 36; i++) {
+     *   console.log(Math.ceil(Math.log2(i) * 32) + ',');
+     * }
+     */
     const kMaxBitsPerChar: number[] = [
         0, 0, 32, 51, 64, 75, 83, 90, 96, // 0..8
         102, 107, 111, 115, 119, 122, 126, 128, // 9..16
@@ -37,11 +39,19 @@ namespace BigNum {
     const kBitsPerCharTableShift: number = 5
     const kBitsPerCharTableMultiplier: number = 1 << kBitsPerCharTableShift
     // const kConversionChars: string[] = '0123456789abcdefghijklmnopqrstuvwxyz'.split('')
+    // Buffer used for conversion among different number representations.
     let kBitConversionBuffer: Buffer = Buffer.create(8)
 
+    /**
+     * Class representing a large integer.
+     */
     export class BigInt {
         protected data: number[]
 
+        /**
+         * @param length initial size of data array used to represent integer.
+         * @param sign indicates positive (false) or negative (true) integer.
+         */
         public constructor(length: number, public sign: boolean) {
             this.data = []
             for (let i: number = 0; i < length; i++) {
@@ -49,12 +59,18 @@ namespace BigNum {
             }
         }
 
+        /**
+         * Returns size of data array.
+         */
         public get length(): number {
             return this.data.length
         }
 
+        /**
+         * Return contents of data array as a string.
+         */
         public toDebugString(): string {
-            const result = ['BigInt: [']
+            const result: string[] = ['BigInt: [']
             for (const digit of this.data) {
                 result.push((digit ? (digit >>> 0).toString() : digit) + ', ')
             }
@@ -62,6 +78,9 @@ namespace BigNum {
             return result.join('')
         }
 
+        /**
+         * Return approximate value as a `number`.
+         */
         public toNumber(): number {
             if (this.length == 0) return 0
             if (this.length == 1) {
@@ -72,13 +91,17 @@ namespace BigNum {
             return toDouble(this)
         }
 
+        /**
+         * Return value in string form.
+         */
         public toString(): string {
-            // return this.toDebugString()
             // Simplifying implementation; always using radix 10.
             if (this.length === 0) return '0'
             if (this.length === 1) return (this.sign ? '-' : '') + this.data[0]
             return stringify(this, false)
         }
+
+        // Helper functions.
 
         public __clzmsd(): number {
             return clz30(this.__digit(this.data.length - 1))
@@ -254,6 +277,10 @@ namespace BigNum {
         }
     }
 
+    /**
+     * Create a BigInt from another type. Can be implemented as a block.
+     * @param arg value of BigInt.
+     */
     export function CreateBigInt(arg: number | string | boolean | object): BigInt {
         if (typeof arg === 'number') {
             if (arg === 0) {
@@ -434,6 +461,11 @@ namespace BigNum {
         return result.__trim()
     }
 
+    /**
+     * Add two BigInts.
+     * @param x first addend.
+     * @param y second addend.
+     */
     export function add(x: BigInt, y: BigInt): BigInt {
         const sign = x.sign
         if (sign === y.sign) {
@@ -463,6 +495,8 @@ namespace BigNum {
      * Negative value ==> x < y
      * Positive value ==> x > y
      * Zero ==> x == y
+     * @param x lhs of comparison.
+     * @param y rhs of comparison.
      */
     export function compare(x: BigInt, y: BigInt | number): number {
         if (typeof y == 'number') {
@@ -621,6 +655,11 @@ namespace BigNum {
         return 0
     }
 
+    /**
+     * Divide two BigInts.
+     * @param x dividend or numerator.
+     * @param y divisor or denominator.
+     */
     export function divide(x: BigInt, y: BigInt): BigInt {
         if (y.length === 0) throw 'divide: Division by zero.'
         if (absoluteCompare(x, y) < 0) return zero()
@@ -639,6 +678,11 @@ namespace BigNum {
         return quotient.__trim();
     }
 
+    /**
+     * Raise a BigInt to a power.
+     * @param x base of exponential expression.
+     * @param y power of exponential expression; must be positive.
+     */
     export function exponentiate(x: BigInt, y: BigInt): BigInt {
         if (y.sign) {
             throw 'exponentiate: Exponent must be positive.'
@@ -984,6 +1028,11 @@ namespace BigNum {
         return c === 0xFEFF;
     }
 
+    /**
+     * Bitwise shift BigInt to the left.
+     * @param x BigInt to shift.
+     * @param shift number of places to shift.
+     */
     export function leftShift(x: BigInt, shift: number): BigInt {
         if (shift === 0 || x.length === 0) return x
         if (shift < 0) throw 'leftShift: right shift is not implemented.'
@@ -1019,6 +1068,11 @@ namespace BigNum {
         return result.__trim()
     }
 
+    /**
+     * Modulo or remainder division.
+     * @param x dividend or numerator.
+     * @param y divisor or denominator.
+     */
     export function mod(x: BigInt, y: BigInt): BigInt {
         if (y.length === 0) throw 'mod: Division by zero.'
         if (compare(x, y) < 0) return x
@@ -1034,6 +1088,11 @@ namespace BigNum {
         return r.__trim()
     }
 
+    /**
+     * Multiply two BigInt values.
+     * @param x first multiplicand or factor.
+     * @param y second multiplicand or factor.
+     */
     export function multiply(x: BigInt, y: BigInt): BigInt {
         if (x.length === 0) return x
         if (y.length === 0) return y
@@ -1116,6 +1175,11 @@ namespace BigNum {
         return result
     }
 
+    /**
+     * Subtract two BigInts.
+     * @param x minuend or first term.
+     * @param y subtrahend or second term.
+     */
     export function subtract(x: BigInt, y: BigInt): BigInt {
         const sign = x.sign;
         if (sign !== y.sign) {
@@ -1245,6 +1309,10 @@ namespace BigNum {
         return kBitConversionBuffer.getNumber(NumberFormat.Float64LE, 0)
     }
 
+    /**
+     * Change sign of BigInt.
+     * @param x BigInt to negate.
+     */
     export function unaryMinus(x: BigInt): BigInt {
         if (x.length === 0) return x
         const result = x.__copy()
