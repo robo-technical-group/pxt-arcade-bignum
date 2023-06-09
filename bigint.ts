@@ -674,8 +674,8 @@ namespace BigNum {
         } else {
             quotient = <BigInt>absoluteDivLarge(x, y, true, false)
         }
-        quotient.sign = resultSign;
-        return quotient.__trim();
+        quotient.sign = resultSign
+        return quotient.__trim()
     }
 
     /**
@@ -985,6 +985,21 @@ namespace BigNum {
         // Get result.
         result.sign = (sign === -1)
         return result.__trim()
+    }
+
+    /**
+     * Divide two BigInts and return both quotient and remainder.
+     * @param x dividend or numerator.
+     * @param y divisor or denominator.
+     */
+    export function fullDivide(x: BigInt, y: BigInt): BigDiv {
+        if (y.length === 0) throw 'fullDivide: Division by zero.'
+        if (absoluteCompare(x, y) < 0) return { quotient: zero(), remainder: zero() }
+        let toReturn: BigDiv = <BigDiv>absoluteDivLarge(x, y, true, true)
+        toReturn.quotient.sign = (x.sign != y.sign)
+        toReturn.quotient = toReturn.quotient.__trim()
+        toReturn.remainder = toReturn.remainder.__trim()
+        return toReturn
     }
 
     function internalMultiplyAdd(source: BigInt, factor: number, summand: number,
