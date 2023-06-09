@@ -1,5 +1,5 @@
 {
-    "name": "pxt-arcade-bigint",
+    "name": "pxt-arcade-bignum",
     "version": "1.1.0",
     "description": "",
     "dependencies": {
@@ -9,7 +9,7 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "jsbi.ts"
+        "bigint.ts"
     ],
     "testFiles": [
         "test.ts"

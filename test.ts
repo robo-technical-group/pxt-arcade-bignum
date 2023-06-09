@@ -26,13 +26,13 @@ let facts: string[] = [
     '2 432 902 008 176 640 000', // 20!
 ]
 
-let fact: JSBI.BigInt = JSBI.CreateBigInt(1)
+let fact: BigNum.BigInt = BigNum.CreateBigInt(1)
 let msg: string = ''
 for (let i: number = 1; i <= 20; i++) {
-    fact = JSBI.multiply(fact, JSBI.CreateBigInt(i))
+    fact = BigNum.multiply(fact, BigNum.CreateBigInt(i))
     msg = `${i}! = ${fact.toString()} (length: ${fact.length})`
-    let verify: JSBI.BigInt = JSBI.CreateBigInt(facts[i])
-    let compare: number = JSBI.compare(fact, verify)
+    let verify: BigNum.BigInt = BigNum.CreateBigInt(facts[i])
+    let compare: number = BigNum.compare(fact, verify)
     msg += compare == 0 ? ' valid!' : ' NOT VALID!'
     if (compare != 0 || INTERACTIVE) {
         game.showLongText(msg, DialogLayout.Full)
@@ -90,45 +90,45 @@ const TESTS: Test[] = [
     },
 ]
 
-function parseString(s: string): JSBI.BigInt {
+function parseString(s: string): BigNum.BigInt {
     if (s.charCodeAt(0) === 0x2D) { // '-'
-        return JSBI.unaryMinus(JSBI.CreateBigInt(s.slice(1)))
+        return BigNum.unaryMinus(BigNum.CreateBigInt(s.slice(1)))
     }
-    return JSBI.CreateBigInt(s)
+    return BigNum.CreateBigInt(s)
 }
 
 let testNumber: number = 0
 function runTests(tests: Test[], testGroupName: string): void {
     for (const test of tests) {
-        const a: JSBI.BigInt = parseString(test.a)
-        const b: JSBI.BigInt = parseString(test.b)
-        const expected: JSBI.BigInt = parseString(test.expected)
-        let result: JSBI.BigInt = null
+        const a: BigNum.BigInt = parseString(test.a)
+        const b: BigNum.BigInt = parseString(test.b)
+        const expected: BigNum.BigInt = parseString(test.expected)
+        let result: BigNum.BigInt = null
         switch (test.operation.toUpperCase()) {
             case 'ADD':
-                result = JSBI.add(a, b)
+                result = BigNum.add(a, b)
                 break
 
             case 'SUBTRACT':
-                result = JSBI.subtract(a, b)
+                result = BigNum.subtract(a, b)
                 break
 
             case 'MULTIPLY':
-                result = JSBI.multiply(a, b)
+                result = BigNum.multiply(a, b)
                 break
 
             case 'REMAINDER':
             case 'MOD':
-                result = JSBI.mod(a, b)
+                result = BigNum.mod(a, b)
                 break
 
             case 'DIVIDE':
-                result = JSBI.divide(a, b)
+                result = BigNum.divide(a, b)
                 break
         }
 
         if (result != null) {
-            let compare: number = JSBI.compare(result, expected)
+            let compare: number = BigNum.compare(result, expected)
             if (compare != 0 || INTERACTIVE) {
                 if (compare == 0) {
                     game.splash(`Group ${testGroupName} Test ${testNumber} passed.`)
@@ -155,11 +155,11 @@ runTests(TESTS, 'JSBI source')
 const VALID: string[] = ['123', ' 123 ', '   123   ']
 const INVALID: string[] = ['x123', 'x 123', ' 123x', '123 x', '123  xx', '123 ?a',
     '-0o0', '-0x0', '-0b0', '-0x1']
-const EXPECTED: JSBI.BigInt = JSBI.CreateBigInt(123)
+const EXPECTED: BigNum.BigInt = BigNum.CreateBigInt(123)
 
 for (const v of VALID) {
-    const result: JSBI.BigInt = JSBI.CreateBigInt(v)
-    if (JSBI.compare(result, EXPECTED) == 0) {
+    const result: BigNum.BigInt = BigNum.CreateBigInt(v)
+    if (BigNum.compare(result, EXPECTED) == 0) {
         if (INTERACTIVE) {
             game.splash(`String "${v}" parsed correctly.`)
         }
@@ -171,7 +171,7 @@ for (const v of VALID) {
 
 for (const i of INVALID) {
     try {
-        const result: JSBI.BigInt = JSBI.CreateBigInt(i)
+        const result: BigNum.BigInt = BigNum.CreateBigInt(i)
         game.showLongText(`String "${i}" was successfully parsed but should have failed. Error!`,
             DialogLayout.Center)
         allPassed = false
@@ -184,10 +184,10 @@ for (const i of INVALID) {
 
 // Test the example from the README.
 const maxInt: number = 9007199254740991
-const max: JSBI.BigInt = JSBI.CreateBigInt(maxInt)
+const max: BigNum.BigInt = BigNum.CreateBigInt(maxInt)
 // → 9007199254740991
-const other: JSBI.BigInt = JSBI.CreateBigInt(2)
-const result: JSBI.BigInt = JSBI.add(max, other)
+const other: BigNum.BigInt = BigNum.CreateBigInt(2)
+const result: BigNum.BigInt = BigNum.add(max, other)
 // → 9007199254740993
 if (result.toString() !== '9007199254740993') {
     msg = 'README test FAILED (string version).'
@@ -196,7 +196,7 @@ if (result.toString() !== '9007199254740993') {
     console.log(msg)
     allPassed = false
 }
-// Test `JSBI.toNumber` as well.
+// Test `BigNum.toNumber` as well.
 if (other.toNumber() !== 2) {
     msg = 'README test FAILED (number version).'
     game.splash(msg)
@@ -253,9 +253,9 @@ const COMPARISON_TESTS: ComparisonTest[] = [
 
 testNumber = 0
 for (let ct of COMPARISON_TESTS) {
-    const a: JSBI.BigInt = JSBI.CreateBigInt(ct.a)
-    const b: JSBI.BigInt = JSBI.CreateBigInt(ct.b)
-    const compare: number = JSBI.compare(a, b)
+    const a: BigNum.BigInt = BigNum.CreateBigInt(ct.a)
+    const b: BigNum.BigInt = BigNum.CreateBigInt(ct.b)
+    const compare: number = BigNum.compare(a, b)
     if ((compare == 0 && ct.expected != 0) ||
     (compare > 0 && ct.expected <= 0) ||
     (compare < 0 && ct.expected >= 0)) {
@@ -281,8 +281,8 @@ for (let ct of COMPARISON_TESTS) {
 
 testNumber = 0
 for (let ct of COMPARISON_TESTS) {
-    const a: JSBI.BigInt = JSBI.CreateBigInt(ct.a)
-    const compare: number = JSBI.compare(a, ct.b)
+    const a: BigNum.BigInt = BigNum.CreateBigInt(ct.a)
+    const compare: number = BigNum.compare(a, ct.b)
     if ((compare == 0 && ct.expected != 0) ||
         (compare > 0 && ct.expected <= 0) ||
         (compare < 0 && ct.expected >= 0)) {
@@ -307,7 +307,7 @@ for (let ct of COMPARISON_TESTS) {
 }
 
 // Regression test for issue #63.
-let t63a: string = JSBI.CreateBigInt(4.4384296245614243e+42).toString()
+let t63a: string = BigNum.CreateBigInt(4.4384296245614243e+42).toString()
 let t63b: string = '4438429624561424320047307980392507864252416'
 if (t63a == t63b) {
     if (INTERACTIVE) {
@@ -320,7 +320,7 @@ if (t63a == t63b) {
 
 // This one will fail as toNumber() will return Infinity.
 const t63c: string = '3361387880631608742970259577528807057005903'
-let t63d: number = JSBI.CreateBigInt(t63c).toNumber()
+let t63d: number = BigNum.CreateBigInt(t63c).toNumber()
 let t63e: number = 3.361387880631609e+42
 if (t63d == t63e) {
     if (INTERACTIVE) {
@@ -333,11 +333,11 @@ if (t63d == t63e) {
 
 /*
 // Regression test for issue #72.
-assertTrue(JSBI.EQ(max, Number.MAX_SAFE_INTEGER));
+assertTrue(BigNum.EQ(max, Number.MAX_SAFE_INTEGER));
 
-assertTrue(JSBI.EQ(JSBI.BigInt(18014398509481980), 18014398509481980));
-assertTrue(JSBI.EQ(JSBI.BigInt(18014398509481982), 18014398509481982));
-assertTrue(JSBI.EQ(JSBI.BigInt(18014398509481988), 18014398509481988));
+assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481980), 18014398509481980));
+assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481982), 18014398509481982));
+assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481988), 18014398509481988));
 */
 
 if (allPassed) {
