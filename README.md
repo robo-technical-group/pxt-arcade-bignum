@@ -1,6 +1,6 @@
 # Big Numbers for MakeCode
 
-This library contains ports of Google's [JavaScript BigInt library *a.k.a.* JSBI](https://github.com/GoogleChromeLabs/jsbi) and
+This library contains ports of Google's [JavaScript BigInt library, *a.k.a.* JSBI](https://github.com/GoogleChromeLabs/jsbi) and
 MikeMcl's [big.js library](https://github.com/MikeMcl/big.js/) to MakeCode. This will start as a TypeScript-only implementation;
 it eventually will include support for the Blocks interface.
 

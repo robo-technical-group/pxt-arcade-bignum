@@ -1,94 +1,22 @@
 const INTERACTIVE: boolean = false
 let allPassed: boolean = true
 
-// Factorial time!
-let facts: string[] = [
-    '                        1', //  0!
-    '                        1', //  1!
-    '                        2', //  2!
-    '                        6', //  3!
-    '                       24', //  4!
-    '                      120', //  5!
-    '                      720', //  6!
-    '                    5 040', //  7!
-    '                   40,320', //  8!
-    '                  362.880', //  9!
-    '                3_628_800', // 10!
-    '               39 916 800', // 11!
-    '              479 001 600', // 12!
-    '            6 227 020 800', // 13!
-    '           87 178 291 200', // 14!
-    '        1 307 674 368 000', // 15!
-    '       20 922 789 888 000', // 16!
-    '      355 687 428 096 000', // 17!
-    '    6 402 373 705 728 000', // 18!
-    '  121 645 100 408 832 000', // 19!
-    '2 432 902 008 176 640 000', // 20!
-]
-
-let fact: BigNum.BigInt = BigNum.CreateBigInt(1)
-let msg: string = ''
-for (let i: number = 1; i <= 20; i++) {
-    fact = BigNum.multiply(fact, BigNum.CreateBigInt(i))
-    msg = `${i}! = ${fact.toString()} (length: ${fact.length})`
-    let verify: BigNum.BigInt = BigNum.CreateBigInt(facts[i])
-    let compare: number = BigNum.compare(fact, verify)
-    msg += compare == 0 ? ' valid!' : ' NOT VALID!'
-    if (compare != 0 || INTERACTIVE) {
-        game.showLongText(msg, DialogLayout.Full)
-    }
-    if (compare != 0) {
-        allPassed = false
-    }
+/**
+ * Data structures for automated tests.
+ * Partly JSBI built-in tests.
+ */
+interface ComparisonTest {
+    a: string | number
+    b: number
+    expected: number
 }
 
-interface Test {
+interface OpsTest {
     operation: string
     a: string
     b: string
     expected: string
 }
-
-// Applicable tests from JSBI source.
-// Operator tests.
-const TESTS: Test[] = [
-    {
-        operation: 'add',
-        a: '-0xF72AAE64D54951CAE560D9B4531CE6CF02426F8CD601B77',
-        b: '-0xF3CF5EDD759DBCC7449962CDB52AE0295BE7306D51555C70',
-        expected: '-0x1034209C3C2F251E3F2EF7068FA5CAE964C0B57661EB577E7',
-    },
-    { // https://github.com/GoogleChromeLabs/jsbi/pull/14
-        operation: 'remainder',
-        a: '0x62A49213A5CD1793CB4518A12CA4FB5F3AB6DBD8B465D0D86975CEBDA6B6093',
-        b: '0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
-        expected: '0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE',
-    },
-    { // https://github.com/GoogleChromeLabs/jsbi/pull/14#issuecomment-439484605
-        operation: 'remainder',
-        a: '0x10000000000000000',
-        b: '0x100000001',
-        expected: '0x1',
-    },
-    { // https://github.com/GoogleChromeLabs/jsbi/issues/44#issue-630518844
-        operation: 'bitwiseAnd',
-        a: '0b10000010001000100010001000100010001000100010001000100010001000100',
-        b: '-0b10000000000000000000000000000000000000000000000000000000000000001',
-        expected: '0b10001000100010001000100010001000100010001000100010001000100',
-    },
-    { // https://github.com/GoogleChromeLabs/jsbi/issues/44#issue-630518844
-        operation: 'bitwiseXor',
-        a: '0',
-        b: '-0b1111111111111111111111111111111111111111111111111111111111111111',
-        expected: '-0b1111111111111111111111111111111111111111111111111111111111111111',
-    },
-    {  // https://github.com/GoogleChromeLabs/jsbi/issues/57
-        operation: 'signedRightShift',
-        a: '-0xFFFFFFFFFFFFFFFF',
-        b: '32',
-        expected: '-0x100000000',
-    },
-]
 
 function parseString(s: string): BigNum.BigInt {
     if (s.charCodeAt(0) === 0x2D) { // '-'
@@ -97,8 +25,59 @@ function parseString(s: string): BigNum.BigInt {
     return BigNum.CreateBigInt(s)
 }
 
-let testNumber: number = 0
-function runTests(tests: Test[], testGroupName: string): void {
+function runCompTests(tests: ComparisonTest[], testGroupName: string): void {
+    let testNumber: number= 0
+    for (let t of tests) {
+        const a: BigNum.BigInt = BigNum.CreateBigInt(t.a)
+        const b1: BigNum.BigInt = BigNum.CreateBigInt(t.b)
+        const compare1: number = BigNum.compare(a, b1)
+        if ((compare1 == 0 && t.expected != 0) ||
+            (compare1 > 0 && t.expected <= 0) ||
+            (compare1 < 0 && t.expected >= 0)) {
+            msg = `Comparison test ${testNumber} (BigInt version) failed. `
+            msg += `Expecting ${t.a} `
+            if (t.expected == 0) {
+                msg += "= "
+            } else if (t.expected < 0) {
+                msg += "< "
+            } else {
+                msg += "> "
+            }
+            msg += `${t.b}. Compare() returned ${compare1} instead.`
+            game.showLongText(msg, DialogLayout.Full)
+            msg += ` a: ${a.toString()} ${a.toDebugString()}, b: ${b1.toString()} ${b1.toDebugString()}`
+            console.log(msg)
+            allPassed = false
+        } else if (INTERACTIVE) {
+            game.splash(`Comparison test ${testNumber} (BigInt version) passed.`)
+        }
+        const compare2: number = BigNum.compare(a, t.b)
+        if ((compare2 == 0 && t.expected != 0) ||
+            (compare2 > 0 && t.expected <= 0) ||
+            (compare2 < 0 && t.expected >= 0)) {
+            msg = `Comparison test ${testNumber} (number version) failed. `
+            msg += `Expecting ${t.a} `
+            if (t.expected == 0) {
+                msg += "= "
+            } else if (t.expected < 0) {
+                msg += "< "
+            } else {
+                msg += "> "
+            }
+            msg += `${t.b}. Compare() returned ${compare2} instead.`
+            game.showLongText(msg, DialogLayout.Full)
+            msg += ` a: ${a.toString()} ${a.toDebugString()}, b: ${t.b.toString()}`
+            console.log(msg)
+            allPassed = false
+        } else if (INTERACTIVE) {
+            game.splash(`Comparison test ${testNumber} (number version) passed.`)
+        }
+        testNumber++
+    }
+}
+
+function runOpsTests(tests: OpsTest[], testGroupName: string): void {
+    let testNumber: number = 0
     for (const test of tests) {
         const a: BigNum.BigInt = parseString(test.a)
         const b: BigNum.BigInt = parseString(test.b)
@@ -149,7 +128,94 @@ function runTests(tests: Test[], testGroupName: string): void {
     }
 }
 
-runTests(TESTS, 'JSBI source')
+/**
+ * Factorial time!
+ */
+let facts: string[] = [
+    '                        1', //  0!
+    '                        1', //  1!
+    '                        2', //  2!
+    '                        6', //  3!
+    '                       24', //  4!
+    '                      120', //  5!
+    '                      720', //  6!
+    '                    5 040', //  7!
+    '                   40,320', //  8!
+    '                  362.880', //  9!
+    '                3_628_800', // 10!
+    '               39 916 800', // 11!
+    '              479 001 600', // 12!
+    '            6 227 020 800', // 13!
+    '           87 178 291 200', // 14!
+    '        1 307 674 368 000', // 15!
+    '       20 922 789 888 000', // 16!
+    '      355 687 428 096 000', // 17!
+    '    6 402 373 705 728 000', // 18!
+    '  121 645 100 408 832 000', // 19!
+    '2 432 902 008 176 640 000', // 20!
+]
+
+let fact: BigNum.BigInt = BigNum.CreateBigInt(1)
+let msg: string = ''
+for (let i: number = 1; i <= 20; i++) {
+    fact = BigNum.multiply(fact, BigNum.CreateBigInt(i))
+    msg = `${i}! = ${fact.toString()} (length: ${fact.length})`
+    let verify: BigNum.BigInt = BigNum.CreateBigInt(facts[i])
+    let compare: number = BigNum.compare(fact, verify)
+    msg += compare == 0 ? ' valid!' : ' NOT VALID!'
+    if (compare != 0 || INTERACTIVE) {
+        game.showLongText(msg, DialogLayout.Full)
+    }
+    if (compare != 0) {
+        allPassed = false
+    }
+}
+// End factorial tests
+
+/**
+ * JSBI tests
+ */
+// Operator tests.
+const JSBI_OPS_TESTS: OpsTest[] = [
+    {
+        operation: 'add',
+        a: '-0xF72AAE64D54951CAE560D9B4531CE6CF02426F8CD601B77',
+        b: '-0xF3CF5EDD759DBCC7449962CDB52AE0295BE7306D51555C70',
+        expected: '-0x1034209C3C2F251E3F2EF7068FA5CAE964C0B57661EB577E7',
+    },
+    { // https://github.com/GoogleChromeLabs/jsbi/pull/14
+        operation: 'remainder',
+        a: '0x62A49213A5CD1793CB4518A12CA4FB5F3AB6DBD8B465D0D86975CEBDA6B6093',
+        b: '0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+        expected: '0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE',
+    },
+    { // https://github.com/GoogleChromeLabs/jsbi/pull/14#issuecomment-439484605
+        operation: 'remainder',
+        a: '0x10000000000000000',
+        b: '0x100000001',
+        expected: '0x1',
+    },
+    { // https://github.com/GoogleChromeLabs/jsbi/issues/44#issue-630518844
+        operation: 'bitwiseAnd',
+        a: '0b10000010001000100010001000100010001000100010001000100010001000100',
+        b: '-0b10000000000000000000000000000000000000000000000000000000000000001',
+        expected: '0b10001000100010001000100010001000100010001000100010001000100',
+    },
+    { // https://github.com/GoogleChromeLabs/jsbi/issues/44#issue-630518844
+        operation: 'bitwiseXor',
+        a: '0',
+        b: '-0b1111111111111111111111111111111111111111111111111111111111111111',
+        expected: '-0b1111111111111111111111111111111111111111111111111111111111111111',
+    },
+    {  // https://github.com/GoogleChromeLabs/jsbi/issues/57
+        operation: 'signedRightShift',
+        a: '-0xFFFFFFFFFFFFFFFF',
+        b: '32',
+        expected: '-0x100000000',
+    },
+]
+
+runOpsTests(JSBI_OPS_TESTS, 'JSBI source')
 
 // Parsing tests https://github.com/GoogleChromeLabs/jsbi/issues/36
 const VALID: string[] = ['123', ' 123 ', '   123   ']
@@ -206,13 +272,7 @@ if (other.toNumber() !== 2) {
 }
 
 // Corner cases near the single digit threshold.
-interface ComparisonTest {
-    a: string | number
-    b: number
-    expected: number
-}
-
-const COMPARISON_TESTS: ComparisonTest[] = [
+const JSBI_COMP_TESTS: ComparisonTest[] = [
     {
         // Test 0
         a: '0x100000000',
@@ -251,60 +311,7 @@ const COMPARISON_TESTS: ComparisonTest[] = [
     }
 ]
 
-testNumber = 0
-for (let ct of COMPARISON_TESTS) {
-    const a: BigNum.BigInt = BigNum.CreateBigInt(ct.a)
-    const b: BigNum.BigInt = BigNum.CreateBigInt(ct.b)
-    const compare: number = BigNum.compare(a, b)
-    if ((compare == 0 && ct.expected != 0) ||
-    (compare > 0 && ct.expected <= 0) ||
-    (compare < 0 && ct.expected >= 0)) {
-        msg = `Comparison test ${testNumber} (BigInt version) failed. `
-        msg += `Expecting ${ct.a} `
-        if (ct.expected == 0) {
-            msg += "= "
-        } else if (ct.expected < 0) {
-            msg += "< "
-        } else {
-            msg += "> "
-        }
-        msg += `${ct.b}. Compare() returned ${compare} instead.`
-        game.showLongText(msg, DialogLayout.Full)
-        msg += ` a: ${a.toString()} ${a.toDebugString()}, b: ${b.toString()} ${b.toDebugString()}`
-        console.log(msg)
-        allPassed = false
-    } else if (INTERACTIVE) {
-        game.splash(`Comparison test ${testNumber} (BigInt version) passed.`)
-    }
-    testNumber++
-}
-
-testNumber = 0
-for (let ct of COMPARISON_TESTS) {
-    const a: BigNum.BigInt = BigNum.CreateBigInt(ct.a)
-    const compare: number = BigNum.compare(a, ct.b)
-    if ((compare == 0 && ct.expected != 0) ||
-        (compare > 0 && ct.expected <= 0) ||
-        (compare < 0 && ct.expected >= 0)) {
-        msg = `Comparison test ${testNumber} (number version) failed. `
-        msg += `Expecting ${ct.a} `
-        if (ct.expected == 0) {
-            msg += "= "
-        } else if (ct.expected < 0) {
-            msg += "< "
-        } else {
-            msg += "> "
-        }
-        msg += `${ct.b}. Compare() returned ${compare} instead.`
-        game.showLongText(msg, DialogLayout.Full)
-        msg += ` a: ${a.toDebugString()}`
-        console.log(msg)
-        allPassed = false
-    } else if (INTERACTIVE) {
-        game.splash(`Comparison test ${testNumber} (number version) passed.`)
-    }
-    testNumber++
-}
+runCompTests(JSBI_COMP_TESTS, 'JSBI Source')
 
 // Regression test for issue #63.
 let t63a: string = BigNum.CreateBigInt(4.4384296245614243e+42).toString()
@@ -331,24 +338,40 @@ if (t63d == t63e) {
     allPassed = false
 }
 
-/*
 // Regression test for issue #72.
-assertTrue(BigNum.EQ(max, Number.MAX_SAFE_INTEGER));
+const issue72tests: ComparisonTest[] = [
+    // assertTrue(BigNum.EQ(max, Number.MAX_SAFE_INTEGER));
+    // No equivalent to Number.MAX_SAFE_INTEGER; skipping.
+    // Test 0:
+    // assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481980), 18014398509481980));
+    {
+        a: '18014398509481980',
+        b: 18014398509481980,
+        expected: 0
+    },
+    // Test 1:
+    // assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481982), 18014398509481982));
+    {
+        a: '18014398509481982',
+        b: 18014398509481982,
+        expected: 0
+    },
+    // Test 2:
+    // assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481988), 18014398509481988));
+    {
+        a: '18014398509481988',
+        b: 18014398509481988,
+        expected: 0
+    }
+]
+runCompTests(issue72tests, 'Issue #72')
+// End JSBI tests.
 
-assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481980), 18014398509481980));
-assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481982), 18014398509481982));
-assertTrue(BigNum.EQ(BigNum.BigInt(18014398509481988), 18014398509481988));
-*/
-
-if (allPassed) {
-    game.splash("All tests passed!")
-} else {
-    game.splash("At least one test failed.")
-}
-
-// Additional tests from Matt McCutchen's C++ bigint library.
-// https://mattmccutchen.net/bigint/
-const MM_TESTS: Test[] = [
+/**
+ * Additional tests from Matt McCutchen's C++ bigint library.
+ * https://mattmccutchen.net/bigint/
+ */
+const MM_TESTS: OpsTest[] = [
     {
         // Test 0
         a: '0',
@@ -417,4 +440,11 @@ const MM_TESTS: Test[] = [
         expected: '81',
     },
 ]
-runTests(MM_TESTS, 'Matt McCutchen')
+runOpsTests(MM_TESTS, 'Matt McCutchen')
+// End Matt McCutchen's tests.
+
+if (allPassed) {
+    game.splash("All tests passed!")
+} else {
+    game.splash("At least one test failed.")
+}
