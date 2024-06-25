@@ -304,6 +304,11 @@ namespace BigNum {
                 return result
             }
         }
+        if (typeof arg === 'boolean') {
+            return arg == false ?
+                zero() :
+                fromDouble(1)
+        }
 
         throw `Cannot convert ${arg} (type ${typeof arg}) to BigInt.`
     }
