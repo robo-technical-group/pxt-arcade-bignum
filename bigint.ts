@@ -54,6 +54,9 @@ namespace BigNum {
          */
         public constructor(length: number, public sign: boolean) {
             this.data = []
+            if (length > kMaxLength) {
+                throw 'Maximum BigInt size exceeded.'
+            }
             for (let i: number = 0; i < length; i++) {
                 this.data.push(0)
             }
@@ -252,6 +255,10 @@ namespace BigNum {
             this.data[i] = digit | 0;
         }
 
+        public __setDigitGrow(i: number, digit: number): void {
+            this.data[i] = digit | 0
+        }
+
         public __setHalfDigit(i: number, value: number): void {
             const digitIndex = i >>> 1;
             const previous = this.__digit(digitIndex);
@@ -338,6 +345,25 @@ namespace BigNum {
             result.__setDigit(i, carry)
         }
         return result.__trim()
+    }
+
+    function absoluteAddOne(x: BigInt, sign: boolean, result: BigInt | null = null): BigInt | null {
+        const inputLength = x.length;
+        if (result === null) {
+            result = new BigInt(inputLength, sign);
+        } else {
+            result.sign = sign;
+        }
+        let carry = 1;
+        for (let i = 0; i < inputLength; i++) {
+            const r = x.__digit(i) + carry;
+            carry = r >>> 30;
+            result.__setDigit(i, r & 0x3FFFFFFF);
+        }
+        if (carry !== 0) {
+            result.__setDigitGrow(inputLength, 1);
+        }
+        return result;
     }
 
     function absoluteCompare(x: BigInt, y: BigInt): number {
@@ -1049,13 +1075,13 @@ namespace BigNum {
     }
 
     /**
-     * Bitwise shift BigInt to the left.
+     * Bitwise shift BigInt to the left. Taken from JSBI.__leftShiftByAbsolute()
      * @param x BigInt to shift.
      * @param shift number of places to shift.
      */
     export function leftShift(x: BigInt, shift: number): BigInt {
         if (shift === 0 || x.length === 0) return x
-        if (shift < 0) throw 'leftShift: right shift is not implemented.'
+        if (shift < 0) return rightShift(x, Math.abs(shift))
         if (shift > kMaxLengthBits) throw 'leftShift: shift is too large.'
         const digitShift: number = (shift / 30) | 0
         const bitsShift: number = shift % 30
@@ -1172,6 +1198,77 @@ namespace BigNum {
      */
     function remainder(x: BigInt, y: BigInt): BigInt {
         return mod(x, y)
+    }
+
+    /**
+     * Bitwise shift BigInt to the right.
+     * @param x BigInt to shift.
+     * @param shift number of places to shift.
+     */
+    export function rightShift(x: BigInt, shift: number): BigInt {
+        if (x.length === 0 || shift === 0) return x
+        if (shift < 0) return leftShift(x, Math.abs(shift))
+        const length = x.length
+        const sign = x.sign
+        const digitShift = (shift / 30) | 0
+        const bitsShift = shift % 30
+        let resultLength = length - digitShift
+        if (resultLength <= 0) return rightShiftByMaximum(sign)
+        // For negative numbers, round down if any bit was shifted out (so that
+        // e.g. -5n >> 1n == -3n and not -2n). Check now whether this will happen
+        // and whether itc an cause overflow into a new digit. If we allocate the
+        // result large enough up front, it avoids having to do grow it later.
+        let mustRoundDown = false
+        if (sign) {
+            const mask = (1 << bitsShift) - 1
+            if ((x.__digit(digitShift) & mask) !== 0) {
+                mustRoundDown = true
+            } else {
+                for (let i = 0; i < digitShift; i++) {
+                    if (x.__digit(i) !== 0) {
+                        mustRoundDown = true
+                        break
+                    }
+                }
+            }
+        }
+        // If bitsShift is non-zero, it frees up bits, preventing overflow.
+        if (mustRoundDown && bitsShift === 0) {
+            // Overflow cannot happen if the most significant digit has unset bits.
+            const msd = x.__digit(length - 1)
+            const roundingCanOverflow = ~msd === 0
+            if (roundingCanOverflow) resultLength++
+        }
+        let result = new BigInt(resultLength, sign)
+        if (bitsShift === 0) {
+            // Zero out any overflow digit (see "roundingCanOverflow" above).
+            result.__setDigit(resultLength - 1, 0)
+            for (let i = digitShift; i < length; i++) {
+                result.__setDigit(i - digitShift, x.__digit(i))
+            }
+        } else {
+            let carry = x.__digit(digitShift) >>> bitsShift
+            const last = length - digitShift - 1
+            for (let i = 0; i < last; i++) {
+                const d = x.__digit(i + digitShift + 1)
+                result.__setDigit(i, ((d << (30 - bitsShift)) & 0x3FFFFFFF) | carry)
+                carry = d >>> bitsShift
+            }
+            result.__setDigit(last, carry)
+        }
+        if (mustRoundDown) {
+            // Since the result is negative, rounding down means adding one to its
+            // absolute value. This cannot overflow.
+            result = absoluteAddOne(result, true, result)
+        }
+        return result.__trim()
+    }
+
+    function rightShiftByMaximum(sign: boolean): BigInt {
+        if (sign) {
+            return oneDigit(1, true);
+        }
+        return zero();
     }
 
     function specialLeftShift(x: BigInt, shift: number, addDigit: 0 | 1): BigInt {
