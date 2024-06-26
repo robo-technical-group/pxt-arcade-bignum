@@ -1082,6 +1082,7 @@ namespace BigNum {
     export function leftShift(x: BigInt, shift: number): BigInt {
         if (shift === 0 || x.length === 0) return x
         if (shift < 0) return rightShift(x, Math.abs(shift))
+        if (Math.round(shift) != shift) throw 'leftShift: shift must be an integer.'
         if (shift > kMaxLengthBits) throw 'leftShift: shift is too large.'
         const digitShift: number = (shift / 30) | 0
         const bitsShift: number = shift % 30
@@ -1207,6 +1208,8 @@ namespace BigNum {
      */
     export function rightShift(x: BigInt, shift: number): BigInt {
         if (x.length === 0 || shift === 0) return x
+        if (Math.round(shift) != shift) throw 'rightShift: shift must be an integer.'
+        if (shift > kMaxLengthBits) throw 'rightShift: shift is too large.'
         if (shift < 0) return leftShift(x, Math.abs(shift))
         const length = x.length
         const sign = x.sign
