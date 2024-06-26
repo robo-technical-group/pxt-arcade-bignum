@@ -11,7 +11,7 @@ it eventually will include support for the Blocks interface.
 - [X] Allow creation from boolean.
 - [ ] Add annotations to enhance debugger support.
 - [X] Allow `number` arguments to operations where supported.
-- [ ] Implement method chaining to support things like `a.multiply(x).add(b).mod(m).mod(p)`.
+- [X] Implement method chaining to support things like `a.multiply(x).add(b).mod(m).mod(p)`.
 - [X] Add remaining JSBI operations.
   - [X] Right shift.
 - [ ] Add tests from `big.js` library.

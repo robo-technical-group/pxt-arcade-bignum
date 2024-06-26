@@ -70,6 +70,49 @@ namespace BigNum {
         }
 
         /**
+         * Add a BigInt or a number to this BigInt, *i.e.*, return this + y.
+         * @param y second addend.
+         */
+        public add(y: BigInt | number): BigInt {
+            return add(this, y)
+        }
+
+        /**
+         * Standard comparator function.
+         * Negative value ==> this < y
+         * Positive value ==> this > y
+         * Zero ==> this == y
+         * @param y rhs of comparison.
+         */
+        public compare(y: BigInt | number): number {
+            return compare(this, y)
+        }
+
+        /**
+         * Divide by a BigInt or by a number, *i.e.*, return this / y.
+         * @param y divisor or denominator.
+         */
+        public divide(y: BigInt | number): BigInt {
+            return divide(this, y)
+        }
+
+        /**
+         * Raise to a power, *i.e.*, return this ^ y.
+         * @param y power of exponential expression; must be positive.
+         */
+        public exponentiate(y: BigInt | number): BigInt {
+            return exponentiate(this, y)
+        }
+
+        /**
+         * Divide by a BigInt or by a number and return both quotient and remainder, *i.e.*, return this / y.
+         * @param y divisor or denominator.
+         */
+        public fullDivide(y: BigInt | number): BigDiv {
+            return fullDivide(this, y)
+        }
+
+        /**
          * Return contents of data array as a string.
          */
         public toDebugString(): string {
@@ -79,6 +122,62 @@ namespace BigNum {
             }
             result.push(`] sign: ${this.sign}`)
             return result.join('')
+        }
+
+        /**
+         * Bitwise shift to the left.
+         * @param shift number of places to shift.
+         */
+        public leftShift(shift: number): BigInt {
+            return leftShift(this, shift)
+        }
+
+        /**
+         * Modulo or remainder division, *i.e.*, return this mod y.
+         * @param y divisor or denominator.
+         */
+        public mod(y: BigInt | number): BigInt {
+            return mod(this, y)
+        }
+
+        /**
+         * Multiply by a BigInt or by a number, *i.e.*, return this * y.
+         * @param y second multiplicand or factor.
+         */
+        public multiply(y: BigInt | number): BigInt {
+            return multiply(this, y)
+        }
+
+        /**
+         * Synonym for exponentiate().
+         * @param y power of exponential expression; must be positive.
+         */
+        public pow(y: BigInt | number): BigInt {
+            return exponentiate(this, y)
+        }
+
+        /**
+         * Synonym for mod().
+         * @param y divisor or denominator.
+         */
+        public remainder(y: BigInt | number): BigInt {
+            return mod(this, y)
+        }
+
+        /**
+         * Bitwise shift to the right.
+         * @param shift number of places to shift.
+         */
+        public rightShift(shift: number): BigInt {
+            return rightShift(this, shift)
+        }
+
+        /**
+         * Subtract a BigInt or a number, *i.e.*, return this - y.
+         * @param y subtrahend or second term.
+         */
+        public subtract(y: BigInt | number): BigInt {
+            return subtract(this, y)
         }
 
         /**
@@ -102,6 +201,13 @@ namespace BigNum {
             if (this.length === 0) return '0'
             if (this.length === 1) return (this.sign ? '-' : '') + this.data[0]
             return stringify(this, false)
+        }
+
+        /**
+         * Change sign of BigInt.
+         */
+        public unaryMinus(): BigInt {
+            return unaryMinus(this)
         }
 
         // Helper functions.
@@ -493,7 +599,7 @@ namespace BigNum {
     }
 
     /**
-     * Add two BigInts.
+     * Add two BigInts or a BigInt and a number.
      * @param x first addend.
      * @param y second addend.
      */
@@ -688,7 +794,7 @@ namespace BigNum {
     }
 
     /**
-     * Divide two BigInts.
+     * Divide two BigInts or a BigInt by a number.
      * @param x dividend or numerator.
      * @param y divisor or denominator.
      */
@@ -1022,7 +1128,7 @@ namespace BigNum {
     }
 
     /**
-     * Divide two BigInts and return both quotient and remainder.
+     * Divide two BigInts (or a BigInt and a number) and return both quotient and remainder.
      * @param x dividend or numerator.
      * @param y divisor or denominator.
      */
@@ -1141,7 +1247,7 @@ namespace BigNum {
     }
 
     /**
-     * Multiply two BigInt values.
+     * Multiply two BigInt values or a BigInt by a number.
      * @param x first multiplicand or factor.
      * @param y second multiplicand or factor.
      */
@@ -1208,7 +1314,7 @@ namespace BigNum {
     }
 
     /**
-     * Bitwise shift BigInt to the right.
+     * Bitwise shift BigInt to the right. Taken from JSBI.__rightShiftByAbsolute()
      * @param x BigInt to shift.
      * @param shift number of places to shift.
      */
@@ -1302,7 +1408,7 @@ namespace BigNum {
     }
 
     /**
-     * Subtract two BigInts.
+     * Subtract two BigInts or a BigInt and a number.
      * @param x minuend or first term.
      * @param y subtrahend or second term.
      */
