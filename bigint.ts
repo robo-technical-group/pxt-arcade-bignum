@@ -497,7 +497,8 @@ namespace BigNum {
      * @param x first addend.
      * @param y second addend.
      */
-    export function add(x: BigInt, y: BigInt): BigInt {
+    export function add(x: BigInt, y: BigInt | number): BigInt {
+        if (typeof y === 'number') return add(x, CreateBigInt(y))
         const sign = x.sign
         if (sign === y.sign) {
             // x + y == x + y
@@ -691,7 +692,8 @@ namespace BigNum {
      * @param x dividend or numerator.
      * @param y divisor or denominator.
      */
-    export function divide(x: BigInt, y: BigInt): BigInt {
+    export function divide(x: BigInt, y: BigInt | number): BigInt {
+        if (typeof y === 'number') return divide(x, CreateBigInt(y))
         if (y.length === 0) throw 'divide: Division by zero.'
         if (absoluteCompare(x, y) < 0) return zero()
         const resultSign: boolean = x.sign !== y.sign
@@ -714,7 +716,8 @@ namespace BigNum {
      * @param x base of exponential expression.
      * @param y power of exponential expression; must be positive.
      */
-    export function exponentiate(x: BigInt, y: BigInt): BigInt {
+    export function exponentiate(x: BigInt, y: BigInt | number): BigInt {
+        if (typeof y === 'number') return exponentiate(x, CreateBigInt(y))
         if (y.sign) {
             throw 'exponentiate: Exponent must be positive.'
         }
@@ -1023,7 +1026,8 @@ namespace BigNum {
      * @param x dividend or numerator.
      * @param y divisor or denominator.
      */
-    export function fullDivide(x: BigInt, y: BigInt): BigDiv {
+    export function fullDivide(x: BigInt, y: BigInt | number): BigDiv {
+        if (typeof y === 'number') return fullDivide(x, CreateBigInt(y))
         if (y.length === 0) throw 'fullDivide: Division by zero.'
         if (absoluteCompare(x, y) < 0) return { quotient: zero(), remainder: zero() }
         let toReturn: BigDiv = <BigDiv>absoluteDivLarge(x, y, true, true)
@@ -1120,7 +1124,8 @@ namespace BigNum {
      * @param x dividend or numerator.
      * @param y divisor or denominator.
      */
-    export function mod(x: BigInt, y: BigInt): BigInt {
+    export function mod(x: BigInt, y: BigInt | number): BigInt {
+        if (typeof y === 'number') return mod(x, CreateBigInt(y))
         if (y.length === 0) throw 'mod: Division by zero.'
         if (compare(x, y) < 0) return x
         const divisor: number = y.__unsignedDigit(0)
@@ -1140,7 +1145,8 @@ namespace BigNum {
      * @param x first multiplicand or factor.
      * @param y second multiplicand or factor.
      */
-    export function multiply(x: BigInt, y: BigInt): BigInt {
+    export function multiply(x: BigInt, y: BigInt | number): BigInt {
+        if (typeof y === 'number') return multiply(x, CreateBigInt(y))
         if (x.length === 0) return x
         if (y.length === 0) return y
         let resultLength: number = x.length + y.length
@@ -1300,7 +1306,8 @@ namespace BigNum {
      * @param x minuend or first term.
      * @param y subtrahend or second term.
      */
-    export function subtract(x: BigInt, y: BigInt): BigInt {
+    export function subtract(x: BigInt, y: BigInt | number): BigInt {
+        if (typeof y === 'number') return subtract(x, CreateBigInt(y))
         const sign = x.sign
         if (sign !== y.sign) {
             // x - (-y) == x + y
