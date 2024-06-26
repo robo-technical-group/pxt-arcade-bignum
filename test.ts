@@ -110,9 +110,9 @@ function runOpsTests(tests: OpsTest[], testGroupName: string): void {
             let compare: number = BigNum.compare(result, expected)
             if (compare != 0 || INTERACTIVE) {
                 if (compare == 0) {
-                    game.splash(`Group ${testGroupName} Test ${testNumber} passed.`)
+                    game.splash(`Group ${testGroupName} Test ${testNumber} operator passed.`)
                 } else {
-                    msg = `Group ${testGroupName} Test ${testNumber} failed!`
+                    msg = `Group ${testGroupName} Test ${testNumber} operator failed!`
                     game.splash(msg)
                     msg += ` a = ${test.a} b = ${test.b} operator ${test.operation}`
                     msg += ` expected ${test.expected} result ${result.toString()} `
@@ -122,7 +122,50 @@ function runOpsTests(tests: OpsTest[], testGroupName: string): void {
                 }
             }
         } else if (INTERACTIVE) {
-            game.splash(`Group ${testGroupName} Test ${testNumber} not implemented; skipped.`)
+            game.splash(`Group ${testGroupName} Test ${testNumber} operator not implemented; skipped.`)
+        }
+
+        result = null
+        switch (test.operation.toUpperCase()) {
+            case 'ADD':
+                result = a.add(b)
+                break
+
+            case 'SUBTRACT':
+                result = a.subtract(b)
+                break
+
+            case 'MULTIPLY':
+                result = a.multiply(b)
+                break
+
+            case 'REMAINDER':
+            case 'MOD':
+                result = a.mod(b)
+                break
+
+            case 'DIVIDE':
+                result = a.divide(b)
+                break
+        }
+
+        if (result != null) {
+            let compare: number = BigNum.compare(result, expected)
+            if (compare != 0 || INTERACTIVE) {
+                if (compare == 0) {
+                    game.splash(`Group ${testGroupName} Test ${testNumber} chain operator passed.`)
+                } else {
+                    msg = `Group ${testGroupName} Test ${testNumber} chain operator failed!`
+                    game.splash(msg)
+                    msg += ` a = ${test.a} b = ${test.b} operator ${test.operation}`
+                    msg += ` expected ${test.expected} result ${result.toString()} `
+                    msg += result.toDebugString()
+                    console.log(msg)
+                    allPassed = false
+                }
+            }
+        } else if (INTERACTIVE) {
+            game.splash(`Group ${testGroupName} Test ${testNumber} chain operator not implemented; skipped.`)
         }
         testNumber++
     }
