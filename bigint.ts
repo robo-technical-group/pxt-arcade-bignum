@@ -134,13 +134,13 @@ namespace BigNum {
 
         public __initializeDigits(): void {
             for (let i = 0; i < this.length; i++) {
-                this.data[i] = 0;
+                this.data[i] = 0
             }
         }
 
         // TODO: work on full digits, like __inplaceSub?
         public __inplaceAdd(summand: BigInt, startIndex: number, halfDigits: number): number {
-            let carry: number = 0;
+            let carry: number = 0
             for (let i = 0; i < halfDigits; i++) {
                 const sum: number = this.__halfDigit(startIndex + i) +
                     summand.__halfDigit(i) +
@@ -207,11 +207,11 @@ namespace BigNum {
                     this.__setDigit(startIndex + i, ((r15 & 0x7FFF) << 15) | (r0 & 0x7FFF))
                     current = this.__digit(startIndex + i + 1)
                     r0 = (current & 0x7FFF) - (sub >>> 15) - borrow
-                    borrow = (r0 >>> 15) & 1;
+                    borrow = (r0 >>> 15) & 1
                 }
                 // Unrolling the last iteration gives a 5% performance benefit!
                 const sub: number = subtrahend.__digit(i)
-                const r15: number = (current >>> 15) - (sub & 0x7FFF) - borrow;
+                const r15: number = (current >>> 15) - (sub & 0x7FFF) - borrow
                 borrow = (r15 >>> 15) & 1
                 this.__setDigit(startIndex + i, ((r15 & 0x7FFF) << 15) | (r0 & 0x7FFF))
                 const subTop: number = sub >>> 15
@@ -252,7 +252,7 @@ namespace BigNum {
         }
 
         public __setDigit(i: number, digit: number): void {
-            this.data[i] = digit | 0;
+            this.data[i] = digit | 0
         }
 
         public __setDigitGrow(i: number, digit: number): void {
@@ -260,11 +260,11 @@ namespace BigNum {
         }
 
         public __setHalfDigit(i: number, value: number): void {
-            const digitIndex = i >>> 1;
-            const previous = this.__digit(digitIndex);
+            const digitIndex = i >>> 1
+            const previous = this.__digit(digitIndex)
             const updated = (i & 1) ? (previous & 0x7FFF) | (value << 15)
-                : (previous & 0x3FFF8000) | (value & 0x7FFF);
-            this.__setDigit(digitIndex, updated);
+                : (previous & 0x3FFF8000) | (value & 0x7FFF)
+            this.__setDigit(digitIndex, updated)
         }
 
         public __trim(): this {
@@ -332,7 +332,7 @@ namespace BigNum {
         let carry = 0
         let i = 0
         for (; i < y.length; i++) {
-            const r: number = x.__digit(i) + y.__digit(i) + carry;
+            const r: number = x.__digit(i) + y.__digit(i) + carry
             carry = r >>> 30
             result.__setDigit(i, r & 0x3FFFFFFF)
         }
@@ -348,22 +348,22 @@ namespace BigNum {
     }
 
     function absoluteAddOne(x: BigInt, sign: boolean, result: BigInt | null = null): BigInt | null {
-        const inputLength = x.length;
+        const inputLength = x.length
         if (result === null) {
-            result = new BigInt(inputLength, sign);
+            result = new BigInt(inputLength, sign)
         } else {
-            result.sign = sign;
+            result.sign = sign
         }
-        let carry = 1;
+        let carry = 1
         for (let i = 0; i < inputLength; i++) {
-            const r = x.__digit(i) + carry;
-            carry = r >>> 30;
-            result.__setDigit(i, r & 0x3FFFFFFF);
+            const r = x.__digit(i) + carry
+            carry = r >>> 30
+            result.__setDigit(i, r & 0x3FFFFFFF)
         }
         if (carry !== 0) {
-            result.__setDigitGrow(inputLength, 1);
+            result.__setDigitGrow(inputLength, 1)
         }
-        return result;
+        return result
     }
 
     function absoluteCompare(x: BigInt, y: BigInt): number {
@@ -640,7 +640,7 @@ namespace BigNum {
             if (remainingMantissaBits === 0) throw 'compareWithDouble: implementation bug.'
             return absoluteLess(xSign)
         }
-        return 0;
+        return 0
     }
 
     function compareWithInt(x: BigInt, y: number): number {
@@ -1061,17 +1061,17 @@ namespace BigNum {
     }
 
     function isWhitespace(c: number): boolean {
-        if (c <= 0x0D && c >= 0x09) return true;
-        if (c <= 0x9F) return c === 0x20;
+        if (c <= 0x0D && c >= 0x09) return true
+        if (c <= 0x9F) return c === 0x20
         if (c <= 0x01FFFF) {
-            return c === 0xA0 || c === 0x1680;
+            return c === 0xA0 || c === 0x1680
         }
         if (c <= 0x02FFFF) {
-            c &= 0x01FFFF;
+            c &= 0x01FFFF
             return c <= 0x0A || c === 0x28 || c === 0x29 || c === 0x2F ||
-                c === 0x5F || c === 0x1000;
+                c === 0x5F || c === 0x1000
         }
-        return c === 0xFEFF;
+        return c === 0xFEFF
     }
 
     /**
@@ -1148,7 +1148,7 @@ namespace BigNum {
             resultLength--
         }
         const result: BigInt = new BigInt(resultLength, x.sign !== y.sign)
-        result.__initializeDigits();
+        result.__initializeDigits()
         for (let i = 0; i < x.length; i++) {
             multiplyAccumulate(y, x.__digit(i), result, i)
         }
@@ -1269,9 +1269,9 @@ namespace BigNum {
 
     function rightShiftByMaximum(sign: boolean): BigInt {
         if (sign) {
-            return oneDigit(1, true);
+            return oneDigit(1, true)
         }
-        return zero();
+        return zero()
     }
 
     function specialLeftShift(x: BigInt, shift: number, addDigit: 0 | 1): BigInt {
@@ -1301,18 +1301,18 @@ namespace BigNum {
      * @param y subtrahend or second term.
      */
     export function subtract(x: BigInt, y: BigInt): BigInt {
-        const sign = x.sign;
+        const sign = x.sign
         if (sign !== y.sign) {
             // x - (-y) == x + y
             // (-x) - y == -(x + y)
-            return absoluteAdd(x, y, sign);
+            return absoluteAdd(x, y, sign)
         }
         // x - y == -(y - x)
         // (-x) - (-y) == y - x == -(x - y)
         if (compare(x, y) >= 0) {
-            return absoluteSub(x, y, sign);
+            return absoluteSub(x, y, sign)
         }
-        return absoluteSub(y, x, !sign);
+        return absoluteSub(y, x, !sign)
     }
 
     function stringify(x: BigInt, isRecursiveCall: boolean): string {
