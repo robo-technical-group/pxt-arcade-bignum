@@ -19,6 +19,12 @@ it eventually will include support for the Blocks interface.
 - [X] Implement method chaining to support things like `a.multiply(x).add(b).mod(m).mod(p)`.
 - [X] Add remaining JSBI operations.
   - [X] Right shift.
+- [ ] Add BigInt constants.
+  - [ ] BigInt.Zero
+  - [ ] BigInt.One
+  - [ ] BigInt.Two
+  - [ ] BigInt.NegativeOne
+- [ ] Add BigInt.IsPrime (Use Miller deterministic algorithm.)
 - [ ] Add tests from `big.js` library.
   - [ ] Streamline testing where appropriate.
   - [ ] Backport appropriate tests to BigInt.
