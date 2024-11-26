@@ -1,7 +1,12 @@
-# Big Numbers for MakeCode
+# Big numbers for MakeCode
 
-This library contains ports of Google's [JavaScript BigInt library, *a.k.a.* JSBI](https://github.com/GoogleChromeLabs/jsbi) and
-MikeMcl's [big.js library](https://github.com/MikeMcl/big.js/) to MakeCode. This will start as a TypeScript-only implementation;
+This library contains ports of the following libraries to MakeCode:
+
+* Google's [JavaScript BigInt library, *a.k.a.* JSBI](https://github.com/GoogleChromeLabs/jsbi) and
+* MikeMcl's [big.js library](https://github.com/MikeMcl/big.js/)
+* (Perhaps) Daninet's [exactnumber library](https://github.com/Daninet/exactnumber)
+
+This will start as a TypeScript-only implementation;
 it eventually will include support for the Blocks interface.
 
 # TODO
@@ -18,6 +23,7 @@ it eventually will include support for the Blocks interface.
   - [ ] Streamline testing where appropriate.
   - [ ] Backport appropriate tests to BigInt.
 - [ ] Add `big.js` library.
+- [ ] Add `exactnumber.ts` library.
 
 > Open this page at [https://robo-technical-group.github.io/pxt-arcade-bignum/](https://robo-technical-group.github.io/pxt-arcade-bignum/)
 
